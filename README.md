@@ -1,4 +1,4 @@
-## How to connect g29-force-feedback to Cognata simulation
+## Autonomous control a vehicle in Cognata simulation
 
 first, make sure to source ros2 in each terminal
 
@@ -84,7 +84,6 @@ ros2 run cognata_sdk_ros2 ROS2SDK 10.2.2.57 3056
 
 
 ### How to run the ACC 
-
 
 make sure the pkg -pyhton_publisher- is built
 
