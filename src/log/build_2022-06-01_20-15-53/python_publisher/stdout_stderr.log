@@ -1,0 +1,28 @@
+running egg_info
+writing ../build/python_publisher/python_publisher.egg-info/PKG-INFO
+writing dependency_links to ../build/python_publisher/python_publisher.egg-info/dependency_links.txt
+writing entry points to ../build/python_publisher/python_publisher.egg-info/entry_points.txt
+writing requirements to ../build/python_publisher/python_publisher.egg-info/requires.txt
+writing top-level names to ../build/python_publisher/python_publisher.egg-info/top_level.txt
+reading manifest file '../build/python_publisher/python_publisher.egg-info/SOURCES.txt'
+writing manifest file '../build/python_publisher/python_publisher.egg-info/SOURCES.txt'
+running build
+running build_py
+copying python_publisher/adaptive_cruise_control.py -> /home/kcg/ROS2Sample/src/build/python_publisher/build/lib/python_publisher
+running install
+running install_lib
+copying /home/kcg/ROS2Sample/src/build/python_publisher/build/lib/python_publisher/adaptive_cruise_control.py -> /home/kcg/ROS2Sample/src/install/python_publisher/lib/python3.8/site-packages/python_publisher
+byte-compiling /home/kcg/ROS2Sample/src/install/python_publisher/lib/python3.8/site-packages/python_publisher/adaptive_cruise_control.py to adaptive_cruise_control.cpython-38.pyc
+running install_data
+  File "/home/kcg/ROS2Sample/src/install/python_publisher/lib/python3.8/site-packages/python_publisher/adaptive_cruise_control.py", line 194
+    if
+     ^
+SyntaxError: invalid syntax
+
+running install_egg_info
+removing '/home/kcg/ROS2Sample/src/install/python_publisher/lib/python3.8/site-packages/python_publisher-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../build/python_publisher/python_publisher.egg-info to /home/kcg/ROS2Sample/src/install/python_publisher/lib/python3.8/site-packages/python_publisher-0.0.0-py3.8.egg-info
+running install_scripts
+Installing acc script to /home/kcg/ROS2Sample/src/install/python_publisher/lib/python_publisher
+Installing publisher script to /home/kcg/ROS2Sample/src/install/python_publisher/lib/python_publisher
+writing list of installed files to '/home/kcg/ROS2Sample/src/build/python_publisher/install.log'

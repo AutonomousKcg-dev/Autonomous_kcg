@@ -1,0 +1,5 @@
+[console_scripts]
+acc = python_publisher.adaptive_cruise_control:main
+pid = controllerPID.PID:output
+publisher = python_publisher.steertry:main
+

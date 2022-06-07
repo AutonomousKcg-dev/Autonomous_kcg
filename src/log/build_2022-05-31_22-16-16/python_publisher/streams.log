@@ -1,0 +1,25 @@
+[0.540s] Invoking command in '/home/kcg/ROS2Sample/src/python_publisher': PYTHONPATH=/home/kcg/ROS2Sample/src/install/python_publisher/lib/python3.8/site-packages:/home/kcg/ROS2Sample/src/install/cognata_sdk_ros2/lib/python3.8/site-packages:/home/kcg/ROS2Sample/src/install/python_publisher/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../build/python_publisher build --build-base /home/kcg/ROS2Sample/src/build/python_publisher/build install --prefix /home/kcg/ROS2Sample/src/install/python_publisher --record /home/kcg/ROS2Sample/src/build/python_publisher/install.log --single-version-externally-managed
+[0.721s] running egg_info
+[0.721s] writing ../build/python_publisher/python_publisher.egg-info/PKG-INFO
+[0.721s] writing dependency_links to ../build/python_publisher/python_publisher.egg-info/dependency_links.txt
+[0.722s] writing entry points to ../build/python_publisher/python_publisher.egg-info/entry_points.txt
+[0.722s] writing requirements to ../build/python_publisher/python_publisher.egg-info/requires.txt
+[0.722s] writing top-level names to ../build/python_publisher/python_publisher.egg-info/top_level.txt
+[0.748s] reading manifest file '../build/python_publisher/python_publisher.egg-info/SOURCES.txt'
+[0.749s] writing manifest file '../build/python_publisher/python_publisher.egg-info/SOURCES.txt'
+[0.749s] running build
+[0.749s] running build_py
+[0.749s] copying python_publisher/adaptive_cruise_control.py -> /home/kcg/ROS2Sample/src/build/python_publisher/build/lib/python_publisher
+[0.749s] running install
+[0.750s] running install_lib
+[0.751s] copying /home/kcg/ROS2Sample/src/build/python_publisher/build/lib/python_publisher/adaptive_cruise_control.py -> /home/kcg/ROS2Sample/src/install/python_publisher/lib/python3.8/site-packages/python_publisher
+[0.751s] byte-compiling /home/kcg/ROS2Sample/src/install/python_publisher/lib/python3.8/site-packages/python_publisher/adaptive_cruise_control.py to adaptive_cruise_control.cpython-38.pyc
+[0.753s] running install_data
+[0.753s] running install_egg_info
+[0.754s] removing '/home/kcg/ROS2Sample/src/install/python_publisher/lib/python3.8/site-packages/python_publisher-0.0.0-py3.8.egg-info' (and everything under it)
+[0.754s] Copying ../build/python_publisher/python_publisher.egg-info to /home/kcg/ROS2Sample/src/install/python_publisher/lib/python3.8/site-packages/python_publisher-0.0.0-py3.8.egg-info
+[0.755s] running install_scripts
+[0.767s] Installing acc script to /home/kcg/ROS2Sample/src/install/python_publisher/lib/python_publisher
+[0.767s] Installing publisher script to /home/kcg/ROS2Sample/src/install/python_publisher/lib/python_publisher
+[0.767s] writing list of installed files to '/home/kcg/ROS2Sample/src/build/python_publisher/install.log'
+[0.787s] Invoked command in '/home/kcg/ROS2Sample/src/python_publisher' returned '0': PYTHONPATH=/home/kcg/ROS2Sample/src/install/python_publisher/lib/python3.8/site-packages:/home/kcg/ROS2Sample/src/install/cognata_sdk_ros2/lib/python3.8/site-packages:/home/kcg/ROS2Sample/src/install/python_publisher/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../build/python_publisher build --build-base /home/kcg/ROS2Sample/src/build/python_publisher/build install --prefix /home/kcg/ROS2Sample/src/install/python_publisher --record /home/kcg/ROS2Sample/src/build/python_publisher/install.log --single-version-externally-managed

@@ -1,0 +1,28 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from cognata_sdk_ros2/msg/ROIAndDOGTOutput.msg
+// generated code does not contain a copyright notice
+
+#include "cognata_sdk_ros2/msg/AnnotationMsg.idl"
+#include "cognata_sdk_ros2/msg/ObjectDescription.idl"
+#include "cognata_sdk_ros2/msg/PedestrianMsg.idl"
+#include "cognata_sdk_ros2/msg/TrafficLightMsg.idl"
+#include "cognata_sdk_ros2/msg/VehicleMsg.idl"
+#include "std_msgs/msg/Header.idl"
+
+module cognata_sdk_ros2 {
+  module msg {
+    struct ROIAndDOGTOutput {
+      std_msgs::msg::Header header;
+
+      sequence<cognata_sdk_ros2::msg::ObjectDescription> other_list;
+
+      sequence<cognata_sdk_ros2::msg::AnnotationMsg> annotation_list;
+
+      sequence<cognata_sdk_ros2::msg::PedestrianMsg> pedestrian_list;
+
+      sequence<cognata_sdk_ros2::msg::VehicleMsg> vehicle_list;
+
+      sequence<cognata_sdk_ros2::msg::TrafficLightMsg> traffic_light_list;
+    };
+  };
+};

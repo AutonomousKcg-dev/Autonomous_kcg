@@ -1,0 +1,24 @@
+[0.455s] Invoking command in '/home/kcg/ROS2Sample/src/python_publisher': PYTHONPATH=/home/kcg/ROS2Sample/src/python_publisher/install/python_publisher/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/python_publisher build --build-base /home/kcg/ROS2Sample/src/python_publisher/build/python_publisher/build install --prefix /home/kcg/ROS2Sample/src/python_publisher/install/python_publisher --record /home/kcg/ROS2Sample/src/python_publisher/build/python_publisher/install.log --single-version-externally-managed
+[0.609s] running egg_info
+[0.609s] writing build/python_publisher/python_publisher.egg-info/PKG-INFO
+[0.609s] writing dependency_links to build/python_publisher/python_publisher.egg-info/dependency_links.txt
+[0.610s] writing entry points to build/python_publisher/python_publisher.egg-info/entry_points.txt
+[0.610s] writing requirements to build/python_publisher/python_publisher.egg-info/requires.txt
+[0.610s] writing top-level names to build/python_publisher/python_publisher.egg-info/top_level.txt
+[0.630s] reading manifest file 'build/python_publisher/python_publisher.egg-info/SOURCES.txt'
+[0.631s] writing manifest file 'build/python_publisher/python_publisher.egg-info/SOURCES.txt'
+[0.631s] running build
+[0.631s] running build_py
+[0.631s] copying python_publisher/steertry.py -> /home/kcg/ROS2Sample/src/python_publisher/build/python_publisher/build/lib/python_publisher
+[0.631s] running install
+[0.632s] running install_lib
+[0.632s] copying /home/kcg/ROS2Sample/src/python_publisher/build/python_publisher/build/lib/python_publisher/steertry.py -> /home/kcg/ROS2Sample/src/python_publisher/install/python_publisher/lib/python3.8/site-packages/python_publisher
+[0.632s] byte-compiling /home/kcg/ROS2Sample/src/python_publisher/install/python_publisher/lib/python3.8/site-packages/python_publisher/steertry.py to steertry.cpython-38.pyc
+[0.634s] running install_data
+[0.634s] running install_egg_info
+[0.635s] removing '/home/kcg/ROS2Sample/src/python_publisher/install/python_publisher/lib/python3.8/site-packages/python_publisher-0.0.0-py3.8.egg-info' (and everything under it)
+[0.635s] Copying build/python_publisher/python_publisher.egg-info to /home/kcg/ROS2Sample/src/python_publisher/install/python_publisher/lib/python3.8/site-packages/python_publisher-0.0.0-py3.8.egg-info
+[0.635s] running install_scripts
+[0.645s] Installing publisher script to /home/kcg/ROS2Sample/src/python_publisher/install/python_publisher/lib/python_publisher
+[0.645s] writing list of installed files to '/home/kcg/ROS2Sample/src/python_publisher/build/python_publisher/install.log'
+[0.657s] Invoked command in '/home/kcg/ROS2Sample/src/python_publisher' returned '0': PYTHONPATH=/home/kcg/ROS2Sample/src/python_publisher/install/python_publisher/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/python_publisher build --build-base /home/kcg/ROS2Sample/src/python_publisher/build/python_publisher/build install --prefix /home/kcg/ROS2Sample/src/python_publisher/install/python_publisher --record /home/kcg/ROS2Sample/src/python_publisher/build/python_publisher/install.log --single-version-externally-managed

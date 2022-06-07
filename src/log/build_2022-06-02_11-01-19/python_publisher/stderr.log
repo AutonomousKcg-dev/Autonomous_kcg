@@ -1,0 +1,5 @@
+  File "/home/kcg/ROS2Sample/src/install/python_publisher/lib/python3.8/site-packages/python_publisher/adaptive_cruise_control.py", line 119
+    self.ego_car_pose_x =
+                        ^
+SyntaxError: invalid syntax
+
