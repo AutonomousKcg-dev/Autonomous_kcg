@@ -1,0 +1,14 @@
+source;share/ros_g29_force_feedback/hook/cmake_prefix_path.ps1
+source;share/ros_g29_force_feedback/hook/cmake_prefix_path.dsv
+source;share/ros_g29_force_feedback/hook/cmake_prefix_path.sh
+source;share/ros_g29_force_feedback/hook/ld_library_path_lib.ps1
+source;share/ros_g29_force_feedback/hook/ld_library_path_lib.dsv
+source;share/ros_g29_force_feedback/hook/ld_library_path_lib.sh
+source;share/ros_g29_force_feedback/hook/pythonpath.ps1
+source;share/ros_g29_force_feedback/hook/pythonpath.dsv
+source;share/ros_g29_force_feedback/hook/pythonpath.sh
+source;share/ros_g29_force_feedback/local_setup.bash
+source;share/ros_g29_force_feedback/local_setup.dsv
+source;share/ros_g29_force_feedback/local_setup.ps1
+source;share/ros_g29_force_feedback/local_setup.sh
+source;share/ros_g29_force_feedback/local_setup.zsh

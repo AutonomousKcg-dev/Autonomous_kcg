@@ -1,0 +1,3 @@
+[console_scripts]
+listener = py_pkg.py_node:main
+

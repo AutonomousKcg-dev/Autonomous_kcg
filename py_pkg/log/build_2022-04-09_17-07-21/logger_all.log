@@ -1,0 +1,95 @@
+[0.125s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.125s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=['-DCMAKE_BUILD_TYPE=RelWithDebInfo'], cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f236f4d3100>>, merge_install=False, metas=['./colcon.meta'], mixin=None, mixin_files=None, mixin_verb=('build',), packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=8, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f236f4d3100>, verb_name='build', verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f236f4d3580>)
+[0.129s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.129s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.129s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.129s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.129s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.129s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.129s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/eyal/AutowareAuto/my_packages/py_pkg'
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.140s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_python' and name 'py_pkg'
+[0.140s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.140s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.140s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.140s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.140s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.156s] Level 5:colcon.colcon_core.verb:set package 'py_pkg' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=RelWithDebInfo']'
+[0.156s] Level 5:colcon.colcon_core.verb:set package 'py_pkg' build argument 'cmake_target' from command line to 'None'
+[0.156s] Level 5:colcon.colcon_core.verb:set package 'py_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.156s] Level 5:colcon.colcon_core.verb:set package 'py_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.156s] Level 5:colcon.colcon_core.verb:set package 'py_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.156s] Level 5:colcon.colcon_core.verb:set package 'py_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.156s] Level 5:colcon.colcon_core.verb:set package 'py_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.156s] Level 5:colcon.colcon_core.verb:set package 'py_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.156s] Level 5:colcon.colcon_core.verb:set package 'py_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.156s] DEBUG:colcon.colcon_core.verb:Building package 'py_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eyal/AutowareAuto/my_packages/py_pkg/build/py_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=RelWithDebInfo'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eyal/AutowareAuto/my_packages/py_pkg/install/py_pkg', 'merge_install': False, 'path': '/home/eyal/AutowareAuto/my_packages/py_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.159s] WARNING:colcon.colcon_core.verb:Some selected packages are already built in one or more underlay workspaces:
+	'py_pkg' is in: /home/eyal/AutowareAuto/my_packages/py_pkg/install/py_pkg
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding py_pkg
+
+This may be promoted to an error in a future release of colcon-core.
+[0.159s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.161s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.161s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/eyal/AutowareAuto/my_packages/py_pkg' with build type 'ament_python'
+[0.161s] Level 1:colcon.colcon_core.shell:create_environment_hook('py_pkg', 'ament_prefix_path')
+[0.164s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.164s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eyal/AutowareAuto/my_packages/py_pkg/install/py_pkg/share/py_pkg/hook/ament_prefix_path.ps1'
+[0.165s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eyal/AutowareAuto/my_packages/py_pkg/install/py_pkg/share/py_pkg/hook/ament_prefix_path.dsv'
+[0.165s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eyal/AutowareAuto/my_packages/py_pkg/install/py_pkg/share/py_pkg/hook/ament_prefix_path.sh'
+[0.166s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.166s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.354s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/eyal/AutowareAuto/my_packages/py_pkg'
+[0.355s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.355s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.729s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eyal/AutowareAuto/my_packages/py_pkg': PYTHONPATH=/home/eyal/AutowareAuto/my_packages/py_pkg/install/py_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/py_pkg build --build-base /home/eyal/AutowareAuto/my_packages/py_pkg/build/py_pkg/build install --prefix /home/eyal/AutowareAuto/my_packages/py_pkg/install/py_pkg --record /home/eyal/AutowareAuto/my_packages/py_pkg/build/py_pkg/install.log --single-version-externally-managed
+[0.963s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eyal/AutowareAuto/my_packages/py_pkg' returned '0': PYTHONPATH=/home/eyal/AutowareAuto/my_packages/py_pkg/install/py_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/py_pkg build --build-base /home/eyal/AutowareAuto/my_packages/py_pkg/build/py_pkg/build install --prefix /home/eyal/AutowareAuto/my_packages/py_pkg/install/py_pkg --record /home/eyal/AutowareAuto/my_packages/py_pkg/build/py_pkg/install.log --single-version-externally-managed
+[0.966s] Level 1:colcon.colcon_core.environment:checking '/home/eyal/AutowareAuto/my_packages/py_pkg/install/py_pkg' for CMake module files
+[0.966s] Level 1:colcon.colcon_core.environment:checking '/home/eyal/AutowareAuto/my_packages/py_pkg/install/py_pkg' for CMake config files
+[0.967s] Level 1:colcon.colcon_core.environment:checking '/home/eyal/AutowareAuto/my_packages/py_pkg/install/py_pkg/lib'
+[0.967s] Level 1:colcon.colcon_core.environment:checking '/home/eyal/AutowareAuto/my_packages/py_pkg/install/py_pkg/bin'
+[0.967s] Level 1:colcon.colcon_core.environment:checking '/home/eyal/AutowareAuto/my_packages/py_pkg/install/py_pkg/lib/pkgconfig/py_pkg.pc'
+[0.967s] Level 1:colcon.colcon_core.environment:checking '/home/eyal/AutowareAuto/my_packages/py_pkg/install/py_pkg/lib/python3.8/site-packages'
+[0.967s] Level 1:colcon.colcon_core.shell:create_environment_hook('py_pkg', 'pythonpath')
+[0.968s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eyal/AutowareAuto/my_packages/py_pkg/install/py_pkg/share/py_pkg/hook/pythonpath.ps1'
+[0.968s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eyal/AutowareAuto/my_packages/py_pkg/install/py_pkg/share/py_pkg/hook/pythonpath.dsv'
+[0.968s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eyal/AutowareAuto/my_packages/py_pkg/install/py_pkg/share/py_pkg/hook/pythonpath.sh'
+[0.969s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(py_pkg)
+[0.969s] INFO:colcon.colcon_core.shell:Creating package script '/home/eyal/AutowareAuto/my_packages/py_pkg/install/py_pkg/share/py_pkg/package.ps1'
+[0.970s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eyal/AutowareAuto/my_packages/py_pkg/install/py_pkg/share/py_pkg/package.dsv'
+[0.970s] INFO:colcon.colcon_core.shell:Creating package script '/home/eyal/AutowareAuto/my_packages/py_pkg/install/py_pkg/share/py_pkg/package.sh'
+[0.971s] INFO:colcon.colcon_core.shell:Creating package script '/home/eyal/AutowareAuto/my_packages/py_pkg/install/py_pkg/share/py_pkg/package.bash'
+[0.971s] INFO:colcon.colcon_core.shell:Creating package script '/home/eyal/AutowareAuto/my_packages/py_pkg/install/py_pkg/share/py_pkg/package.zsh'
+[0.972s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eyal/AutowareAuto/my_packages/py_pkg/install/py_pkg/share/colcon-core/packages/py_pkg)
+[0.972s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[0.972s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[0.973s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[0.973s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[0.978s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[0.978s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[0.978s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[0.978s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[0.983s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[0.984s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[0.984s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/eyal/AutowareAuto/my_packages/py_pkg/install/local_setup.ps1'
+[0.985s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/eyal/AutowareAuto/my_packages/py_pkg/install/_local_setup_util_ps1.py'
+[0.986s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/eyal/AutowareAuto/my_packages/py_pkg/install/setup.ps1'
+[0.987s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/eyal/AutowareAuto/my_packages/py_pkg/install/local_setup.sh'
+[0.988s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/eyal/AutowareAuto/my_packages/py_pkg/install/_local_setup_util_sh.py'
+[0.988s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/eyal/AutowareAuto/my_packages/py_pkg/install/setup.sh'
+[0.989s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/eyal/AutowareAuto/my_packages/py_pkg/install/local_setup.bash'
+[0.989s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/eyal/AutowareAuto/my_packages/py_pkg/install/setup.bash'
+[0.990s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/eyal/AutowareAuto/my_packages/py_pkg/install/local_setup.zsh'
+[0.991s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/eyal/AutowareAuto/my_packages/py_pkg/install/setup.zsh'

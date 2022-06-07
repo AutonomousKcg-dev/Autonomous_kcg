@@ -1,0 +1,12 @@
+[01m[K/home/kcg/AlonBarak-Joy/ros2_ws/src/ros-g29-force-feedback/src/g29_force_feedback.cpp:[m[K In member function ‘[01m[Kvoid G29ForceFeedback::loop()[m[K’:
+[01m[K/home/kcg/AlonBarak-Joy/ros2_ws/src/ros-g29-force-feedback/src/g29_force_feedback.cpp:113:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klast_position[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  113 |     double [01;35m[Klast_position[m[K = m_position;
+      |            [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/kcg/AlonBarak-Joy/ros2_ws/src/ros-g29-force-feedback/src/g29_force_feedback.cpp:[m[K In member function ‘[01m[Kvoid G29ForceFeedback::uploadForce(const double&, const double&, const double&)[m[K’:
+[01m[K/home/kcg/AlonBarak-Joy/ros2_ws/src/ros-g29-force-feedback/src/g29_force_feedback.cpp:178:50:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kposition[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  178 | void G29ForceFeedback::uploadForce([01;35m[Kconst double &position[m[K,
+      |                                    [01;35m[K~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/kcg/AlonBarak-Joy/ros2_ws/src/ros-g29-force-feedback/src/g29_force_feedback.cpp:[m[K In member function ‘[01m[Kvoid G29ForceFeedback::initDevice()[m[K’:
+[01m[K/home/kcg/AlonBarak-Joy/ros2_ws/src/ros-g29-force-feedback/src/g29_force_feedback.cpp:216:19:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kkey_bits[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  216 |     unsigned char [01;35m[Kkey_bits[m[K[1+KEY_MAX/8/sizeof(unsigned char)];
+      |                   [01;35m[K^~~~~~~~[m[K

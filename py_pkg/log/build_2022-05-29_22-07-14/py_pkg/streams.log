@@ -1,0 +1,24 @@
+[0.790s] Invoking command in '/home/kcg/Downloads/py_pkg': PYTHONPATH=/home/kcg/Downloads/py_pkg/install/py_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/py_pkg build --build-base /home/kcg/Downloads/py_pkg/build/py_pkg/build install --prefix /home/kcg/Downloads/py_pkg/install/py_pkg --record /home/kcg/Downloads/py_pkg/build/py_pkg/install.log --single-version-externally-managed
+[0.990s] running egg_info
+[0.991s] writing build/py_pkg/py_pkg.egg-info/PKG-INFO
+[0.991s] writing dependency_links to build/py_pkg/py_pkg.egg-info/dependency_links.txt
+[0.991s] writing entry points to build/py_pkg/py_pkg.egg-info/entry_points.txt
+[0.991s] writing requirements to build/py_pkg/py_pkg.egg-info/requires.txt
+[0.992s] writing top-level names to build/py_pkg/py_pkg.egg-info/top_level.txt
+[1.024s] reading manifest file 'build/py_pkg/py_pkg.egg-info/SOURCES.txt'
+[1.024s] writing manifest file 'build/py_pkg/py_pkg.egg-info/SOURCES.txt'
+[1.024s] running build
+[1.025s] running build_py
+[1.025s] copying py_pkg/py_node.py -> /home/kcg/Downloads/py_pkg/build/py_pkg/build/lib/py_pkg
+[1.025s] running install
+[1.026s] running install_lib
+[1.027s] copying /home/kcg/Downloads/py_pkg/build/py_pkg/build/lib/py_pkg/py_node.py -> /home/kcg/Downloads/py_pkg/install/py_pkg/lib/python3.8/site-packages/py_pkg
+[1.028s] byte-compiling /home/kcg/Downloads/py_pkg/install/py_pkg/lib/python3.8/site-packages/py_pkg/py_node.py to py_node.cpython-38.pyc
+[1.030s] running install_data
+[1.030s] running install_egg_info
+[1.033s] removing '/home/kcg/Downloads/py_pkg/install/py_pkg/lib/python3.8/site-packages/py_pkg-0.0.0-py3.8.egg-info' (and everything under it)
+[1.033s] Copying build/py_pkg/py_pkg.egg-info to /home/kcg/Downloads/py_pkg/install/py_pkg/lib/python3.8/site-packages/py_pkg-0.0.0-py3.8.egg-info
+[1.034s] running install_scripts
+[1.052s] Installing listener script to /home/kcg/Downloads/py_pkg/install/py_pkg/lib/py_pkg
+[1.052s] writing list of installed files to '/home/kcg/Downloads/py_pkg/build/py_pkg/install.log'
+[1.077s] Invoked command in '/home/kcg/Downloads/py_pkg' returned '0': PYTHONPATH=/home/kcg/Downloads/py_pkg/install/py_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/py_pkg build --build-base /home/kcg/Downloads/py_pkg/build/py_pkg/build install --prefix /home/kcg/Downloads/py_pkg/install/py_pkg --record /home/kcg/Downloads/py_pkg/build/py_pkg/install.log --single-version-externally-managed

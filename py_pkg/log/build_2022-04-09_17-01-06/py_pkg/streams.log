@@ -1,0 +1,24 @@
+[0.548s] Invoking command in '/home/eyal/AutowareAuto/my_packages/py_pkg': PYTHONPATH=/home/eyal/AutowareAuto/my_packages/py_pkg/install/py_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/py_pkg build --build-base /home/eyal/AutowareAuto/my_packages/py_pkg/build/py_pkg/build install --prefix /home/eyal/AutowareAuto/my_packages/py_pkg/install/py_pkg --record /home/eyal/AutowareAuto/my_packages/py_pkg/build/py_pkg/install.log --single-version-externally-managed
+[0.708s] running egg_info
+[0.709s] writing build/py_pkg/py_pkg.egg-info/PKG-INFO
+[0.709s] writing dependency_links to build/py_pkg/py_pkg.egg-info/dependency_links.txt
+[0.709s] writing entry points to build/py_pkg/py_pkg.egg-info/entry_points.txt
+[0.709s] writing requirements to build/py_pkg/py_pkg.egg-info/requires.txt
+[0.710s] writing top-level names to build/py_pkg/py_pkg.egg-info/top_level.txt
+[0.738s] reading manifest file 'build/py_pkg/py_pkg.egg-info/SOURCES.txt'
+[0.739s] writing manifest file 'build/py_pkg/py_pkg.egg-info/SOURCES.txt'
+[0.739s] running build
+[0.739s] running build_py
+[0.739s] copying py_pkg/py_node.py -> /home/eyal/AutowareAuto/my_packages/py_pkg/build/py_pkg/build/lib/py_pkg
+[0.739s] running install
+[0.740s] running install_lib
+[0.741s] copying /home/eyal/AutowareAuto/my_packages/py_pkg/build/py_pkg/build/lib/py_pkg/py_node.py -> /home/eyal/AutowareAuto/my_packages/py_pkg/install/py_pkg/lib/python3.8/site-packages/py_pkg
+[0.741s] byte-compiling /home/eyal/AutowareAuto/my_packages/py_pkg/install/py_pkg/lib/python3.8/site-packages/py_pkg/py_node.py to py_node.cpython-38.pyc
+[0.742s] running install_data
+[0.743s] running install_egg_info
+[0.744s] removing '/home/eyal/AutowareAuto/my_packages/py_pkg/install/py_pkg/lib/python3.8/site-packages/py_pkg-0.0.0-py3.8.egg-info' (and everything under it)
+[0.744s] Copying build/py_pkg/py_pkg.egg-info to /home/eyal/AutowareAuto/my_packages/py_pkg/install/py_pkg/lib/python3.8/site-packages/py_pkg-0.0.0-py3.8.egg-info
+[0.745s] running install_scripts
+[0.758s] Installing listener script to /home/eyal/AutowareAuto/my_packages/py_pkg/install/py_pkg/lib/py_pkg
+[0.759s] writing list of installed files to '/home/eyal/AutowareAuto/my_packages/py_pkg/build/py_pkg/install.log'
+[0.775s] Invoked command in '/home/eyal/AutowareAuto/my_packages/py_pkg' returned '0': PYTHONPATH=/home/eyal/AutowareAuto/my_packages/py_pkg/install/py_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/py_pkg build --build-base /home/eyal/AutowareAuto/my_packages/py_pkg/build/py_pkg/build install --prefix /home/eyal/AutowareAuto/my_packages/py_pkg/install/py_pkg --record /home/eyal/AutowareAuto/my_packages/py_pkg/build/py_pkg/install.log --single-version-externally-managed

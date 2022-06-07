@@ -1,0 +1,4 @@
+source;share/ros_g29_force_feedback/environment/ament_prefix_path.sh
+source;share/ros_g29_force_feedback/environment/library_path.sh
+source;share/ros_g29_force_feedback/environment/path.sh
+source;share/ros_g29_force_feedback/environment/pythonpath.sh
