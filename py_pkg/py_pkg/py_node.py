@@ -1,3 +1,4 @@
+from cv2 import CV_8UC3
 import rclpy
 from rclpy.node import Node
 
@@ -22,13 +23,12 @@ from tracked_lane_msgs.msg import Point
 import cv2
 import numpy as np 
 
+colormap = [[0,0,0],[0,240,0],[0,100,0],[120,0,0],[255,0,0]]+[[255,255,255] for i in range(251)]
+color_lookup = np.array(colormap, dtype=np.uint8)
+channels = 3
+
 def change_color(number):
-    if (number > 0):
-    	return 1
-    elif number < 0:
-    	return 0.5 
-    else:
-    	return 0.0
+    return colormap[number]
 
 class MinimalSubscriber(Node):
 
@@ -63,15 +63,20 @@ class MinimalSubscriber(Node):
         
         data = map(change_color, msg.data) 
         
-        grid = np.array(list(data))
-        grid = np.reshape(grid, (1500, 500))
         
+        grid = np.array(list(data), dtype=np.uint8)
+        # image = np.zeros_like((grid,3))
+        grid = np.reshape(grid, (msg.info.height, msg.info.width, 3))
+        
+        # for c in range(channels):
+        # 	image[:,:,channels-c-1] = cv2.LUT(src=grid, lut=color_lookup[:,c])
+
         cv2.imshow("frame", grid)
         cv2.waitKey(1)
     
     def ego_motion(self, msg):
-        # print(msg)
-        print("something")
+        print(msg)
+        # print("something")
     
     def tracked_objects(self, msg):
         print(msg)
