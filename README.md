@@ -7,22 +7,8 @@ MAKE SURE TO SOURCE ROS2 IN EACH TERMINAL
 Open a new terminal
 ```ruby
 $ ros2 run joy joy_node
+
 ```
-
-
-### How to run the python Publisher
-
-MAKE SURE THE PACKAGE 'python_publisher' IS BUILT
-
-Open a new terminal
-```ruby
-$ cd ROS2Sample
-$ source install/setup.bash
-$ cd .. && cd python_publisher_ws/python_publisher
-$ source install/setup.bash
-$ ros2 run python_publisher publisher
-```
-
 
 ### How to control the wheel from the Keyboard
 
@@ -44,6 +30,23 @@ source install/setup.bash
 ```ruby
 python3 talker_shovalsus.py
 ```
+
+#### Note: if usage is at the lab CPU - $ cd copy/ - before running each block of instruction below.
+
+
+### How to run the python Publisher
+
+MAKE SURE THE PACKAGE 'python_publisher' IS BUILT
+
+Open a new terminal
+```ruby
+$ cd ROS2Sample
+$ source install/setup.bash
+$ cd .. && cd python_publisher_ws/python_publisher
+$ source install/setup.bash
+$ ros2 run python_publisher publisher
+```
+
 
 
 ### How to start the Cognata station-simulation
