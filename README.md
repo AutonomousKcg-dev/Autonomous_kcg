@@ -31,12 +31,11 @@ source install/setup.bash
 python3 talker_shovalsus.py
 ```
 
-#### Note: if usage is at the lab CPU - $ cd copy/ - before running each block of instruction below.
-
 
 ### How to run the python Publisher
 
 MAKE SURE THE PACKAGE 'python_publisher' IS BUILT
+#### Note: if usage is at the lab CPU - $ cd copy/
 
 Open a new terminal
 ```ruby
@@ -67,6 +66,8 @@ $ ./CognataStation-2022.1.4.AppImage
 ### How to run the Cognata linked-code
 
 Open a new terminal
+#### Note: if usage is at the lab CPU - $ cd copy/
+
 ```ruby
 $ cd to ROS2Sample
 $ source install/setup.bash
@@ -78,6 +79,7 @@ $ ros2 run cognata_sdk_ros2 ROS2SDK 10.2.2.57 3056
 ### How to run the ACC 
 
 make sure the pkg -pyhton_publisher- is built
+#### Note: if usage is at the lab CPU - $ cd copy/
 
 1. cd to ROS2Sample/src
 2. open a new terminal
