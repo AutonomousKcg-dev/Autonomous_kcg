@@ -1,2 +1,0 @@
-ros_g29_force_feedback
--DCATKIN_DEVEL_PREFIX=/home/kcg/AlonBarak-Joy/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/kcg/AlonBarak-Joy/catkin_ws/install -G Unix Makefiles

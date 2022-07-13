@@ -1,2 +1,0 @@
-set(g29_force_feedback_MESSAGE_FILES "/home/kcg/AlonBarak-Joy/catkin_ws/src/ros-g29-force-feedback/msg/ForceFeedback.msg")
-set(g29_force_feedback_SERVICE_FILES "")

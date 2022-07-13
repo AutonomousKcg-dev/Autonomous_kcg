@@ -1,5 +1,0 @@
-  File "/home/kcg/ROS2Sample/src/install/python_publisher/lib/python3.8/site-packages/python_publisher/adaptive_cruise_control.py", line 194
-    if
-     ^
-SyntaxError: invalid syntax
-

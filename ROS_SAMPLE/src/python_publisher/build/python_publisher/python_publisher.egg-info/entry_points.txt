@@ -1,3 +1,0 @@
-[console_scripts]
-publisher = python_publisher.steertry:main
-

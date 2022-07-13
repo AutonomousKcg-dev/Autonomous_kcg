@@ -1,8 +1,0 @@
-prefix=/home/kcg/AlonBarak-Joy/catkin_ws/install
-
-Name: g29_force_feedback
-Description: Description of g29_force_feedback
-Version: 0.0.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib 
-Requires: roscpp rospy message_runtime

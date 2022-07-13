@@ -1,4 +1,0 @@
-Invoking command in '/home/kcg/AlonBarak-Joy/ros2_ws/build/ros_g29_force_feedback': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/kcg/AlonBarak-Joy/ros2_ws/build/ros_g29_force_feedback -- -j20 -l20
-Invoked command in '/home/kcg/AlonBarak-Joy/ros2_ws/build/ros_g29_force_feedback' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/kcg/AlonBarak-Joy/ros2_ws/build/ros_g29_force_feedback -- -j20 -l20
-Invoking command in '/home/kcg/AlonBarak-Joy/ros2_ws/build/ros_g29_force_feedback': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/kcg/AlonBarak-Joy/ros2_ws/build/ros_g29_force_feedback
-Invoked command in '/home/kcg/AlonBarak-Joy/ros2_ws/build/ros_g29_force_feedback' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/kcg/AlonBarak-Joy/ros2_ws/build/ros_g29_force_feedback
