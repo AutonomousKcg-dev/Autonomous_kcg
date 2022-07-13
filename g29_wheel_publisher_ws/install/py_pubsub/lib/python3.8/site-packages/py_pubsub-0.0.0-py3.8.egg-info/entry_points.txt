@@ -1,0 +1,3 @@
+[console_scripts]
+G29_Talker = py_pubsub.G29_Talker:main
+

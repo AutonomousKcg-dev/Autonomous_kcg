@@ -1,43 +1,36 @@
 ## Autonomous control a vehicle in Cognata simulation
 
-first, make sure to source ros2 in each terminal
+MAKE SURE TO SOURCE ROS2 IN EACH TERMINAL
 
 ### How to run the joy_node subscriber
 
-1. cd to ROS2Sample/src
-2. open a new terminal
-3. run the next command: 
+Open a new terminal
 ```ruby
-ros2 run joy joy_node
+$ ros2 run joy joy_node
 ```
 
 
 ### How to run the python Publisher
 
-make sure the pkg -pyhton_publisher- is built
+MAKE SURE THE PACKAGE 'python_publisher' IS BUILT
 
-1. cd to ROS2Sample/src
-2. open a new terminal
-3. run the next command:
+Open a new terminal
 ```ruby
-source install/setup.bash
-```
-4. run the next command:
-```ruby
-ros2 run python_publisher publisher
+$ cd ROS2Sample
+$ source install/setup.bash
+$ cd .. && cd python_publisher_ws/python_publisher
+$ source install/setup.bash
+$ ros2 run python_publisher publisher
 ```
 
 
 ### How to control the wheel from the Keyboard
 
-1. cd to AlonBarak-Joy/ros_ws
-2. run the next command:
+Open a new terminal
 ```ruby
-source install/setup.bash
-```
-3. run the next command:
-```ruby
-ros2 run ros_g29_force_feedback g29_force_feedback
+$ cd AlonBarak-Joy_ws/ros2_ws
+$ source install/setup.bash
+$ ros2 run ros_g29_force_feedback g29_force_feedback
 ```
 
 4. open a new terminal
@@ -55,30 +48,26 @@ python3 talker_shovalsus.py
 
 ### How to start the Cognata station-simulation
 
-1. cd to cognataStation
-
-2. run the next command:
+1. Open a new terminal
 ```ruby
-./CognataStation-2022.1.4.AppImage
+$ cd cognataStation
+$ ./CognataStation-2022.1.4.AppImage
 ```
-3. goto Scenarios
-4. quick start try1_now
-5. Choose "shovaltry" in Ego car sensors preset 
-6. goto Summary
-7. Click Generate 
+2. Go to Scenarios
+3. Quick start try1_now
+4. Choose "shovaltry" in Ego car sensors preset 
+5. Go to Summary
+6. Click Generate 
 
 
 
 ### How to run the Cognata linked-code
 
-1. cd to ROS2Sample
-2. run the next command:
+Open a new terminal
 ```ruby
-source install/setup.bash
-```
-3. run the next command:
-```ruby
-ros2 run cognata_sdk_ros2 ROS2SDK 10.2.2.57 3056
+$ cd to ROS2Sample
+$ source install/setup.bash
+$ ros2 run cognata_sdk_ros2 ROS2SDK 10.2.2.57 3056
 ```
 
 

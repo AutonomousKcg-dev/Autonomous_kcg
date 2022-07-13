@@ -1,0 +1,43 @@
+[15:24] Kamal Lamichhane
+    ros2 run cognata_sdk_ros2 ROS2SDK 10.8.4.103 3056 --ai --render-fps 30 --optimize-rendering
+​[16:01] Derek Dimech
+    colormap = [[0,0,0],[0,240,0],[0,100,0],[120,0,0],[255,0,0]]+[[255,255,255] for i in range(251)]
+​[16:03] Derek Dimech
+    for c in range(channels):
+image[:,:,channels-c-1] = cv2.LUT(src=mat, lut=colour_lookup[:,c])
+​[16:05] Derek Dimech
+    colour_lookup = np.array(colormap,dtype=np.uint8)
+
+
+[16:54] Ron Zibman
+    Sure, i'll try to get someone to help
+​[16:55] kcg (Guest)
+    thank you
+​[16:58] 
+      
+      Alon Barak (Guest) was invited to the meeting.
+      
+    ​[17:03] Kamal Lamichhane
+    ps -ef | grep ros2
+​[17:12] Kamal Lamichhane
+    
+export RMW_FASTRTPS_USE_QOS_FROM_XML=1
+​[17:20] Kamal Lamichhane
+    
+RMW_IMPLEMENTATION = export rmw_connext_cpp
+​[17:21] Kamal Lamichhane
+    
+export RMW_IMPLEMENTATION = rmw_connext_cpp
+​[17:27] Kamal Lamichhane
+    
+
+apt install ros-foxy
+-rmw-cyclonedds-cpp
+
+​[17:28] Kamal Lamichhane
+    
+export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+​[17:28] Kamal Lamichhane
+    
+ros2 doctor --report
+
