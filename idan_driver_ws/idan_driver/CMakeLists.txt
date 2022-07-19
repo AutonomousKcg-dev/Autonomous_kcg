@@ -11,6 +11,7 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
 endif()
 
 find_package(ament_cmake_auto REQUIRED)
+
 ament_auto_find_build_dependencies()
 
 ament_auto_add_library(${PROJECT_NAME} SHARED
@@ -31,9 +32,9 @@ ament_auto_add_library(${PROJECT_NAME} SHARED
 
 )
 
-autoware_set_compile_options(${PROJECT_NAME})
-target_compile_options(${PROJECT_NAME} PRIVATE
-  -Wno-useless-cast -Wno-double-promotion -Wno-old-style-cast -Wno-sign-conversion -Wno-unused-variable -Wno-unused-parameter -Wno-format -Wno-unused-value -Wno-unused-but-set-variable) 
+#autoware_set_compile_options(${PROJECT_NAME})
+#target_compile_options(${PROJECT_NAME} PRIVATE
+#  -Wno-useless-cast -Wno-double-promotion -Wno-old-style-cast -Wno-sign-conversion -Wno-unused-variable -Wno-unused-parameter -Wno-format -Wno-unused-value -Wno-unused-but-set-variable) 
 
 ament_auto_add_executable(can_communication_titan_exe 
 		src/can_communication_titan/can_communication_node.cpp
@@ -43,7 +44,7 @@ ament_auto_add_executable(can_communication_titan_exe
 		include/can_communication_titan/LinuxCAN_API.h
 		include/can_communication_titan/titan_can.hpp
 )
-ament_target_dependencies(can_communication_titan_exe rclcpp std_msgs additional_msgs )
+ament_target_dependencies(can_communication_titan_exe rclcpp std_msgs additional_msgs)
 target_link_libraries(can_communication_titan_exe ${CMAKE_CURRENT_SOURCE_DIR}/lib/libLinuxCAN_API.a)
 #libLinuxCAN_API
 #libLinuxCAN_API_x64

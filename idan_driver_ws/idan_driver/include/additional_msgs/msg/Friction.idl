@@ -1,0 +1,12 @@
+
+module additional_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "friction coefficient")
+    struct Friction {
+      @default (value=0.0)
+      float value;
+
+    };
+  };
+};

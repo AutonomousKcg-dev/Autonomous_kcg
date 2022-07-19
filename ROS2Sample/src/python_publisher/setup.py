@@ -1,11 +1,12 @@
 from setuptools import setup
 
 package_name = 'python_publisher'
+sub_modules = "python_publisher/submodules"
 
 setup(
     name=package_name,
     version='0.0.0',
-    packages=[package_name],
+    packages=[package_name, sub_modules],
     data_files=[
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
@@ -23,6 +24,7 @@ setup(
         "publisher = python_publisher.steertry:main",
         "acc = python_publisher.adaptive_cruise_control:main",
         "pid = controllerPID.PID:output",
+        "rcc = python_publisher.record_sub:main",
         ],
     },
 )

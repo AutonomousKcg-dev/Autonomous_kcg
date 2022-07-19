@@ -1,6 +1,0 @@
-{
-  "package_name": "ros_g29_force_feedback",
-  "non_idl_tuples": [
-    "/home/kcg/newSample/Autonomous_kcg/AlonBarak-Joy-workspaces/ros2_ws/src/ros-g29-force-feedback:msg/ForceFeedback.msg"
-  ]
-}

@@ -3,18 +3,27 @@
 # for Cognata SDK_ROS1-v0.1.04 and G920 wheel and pedals.
 # include acc control and speed display with brake response to stop acc
 
+from concurrent.futures import thread
+from threading import Thread
+import threading
 import rclpy
 from rclpy.node import Node
 import math
-# import cognata_sdk_ros2.msg 
-from cognata_sdk_ros2.msg import * 
+import keyboard
+import json
+import datetime
+# import cognata_sdk_ros2.msg
+from cognata_sdk_ros2.msg import *
 import keyboard  # Requires Super User (sudo -s)
 import datetime
 from sensor_msgs.msg import Joy
 from std_msgs.msg import Float32
+from python_publisher.adaptive_cruise_control import adaptive_cruise_control
 
 
-
+########################################################################################################
+########################################################################################################
+########################################################################################################
 
 
 class MinimalPublisher(Node):
@@ -22,14 +31,18 @@ class MinimalPublisher(Node):
     def __init__(self):
         super().__init__('minimal_publisher')
         # subscribers
-        self.joy_sus = self.create_subscription(Joy, "/joy", self.joy_callback, 10)
+        self.joy_sus = self.create_subscription(
+            Joy, "/joy", self.joy_callback, 10)
 
         # publishers
-        self.car_cmd_publisher_steer = self.create_publisher(Float32, '/cognataSDK/car_command/steer_cmd', 10)
-        self.car_cmd_publisher_accel = self.create_publisher(Float32, '/cognataSDK/car_command/acceleration_cmd', 10)
-        self.car_cmd_publisher_brake = self.create_publisher(Float32, '/cognataSDK/car_command/brake_cmd', 10)
-        self.car_cmd_publisher_gas = self.create_publisher(Float32, '/cognataSDK/car_command/gas_cmd', 10)
-
+        self.car_cmd_publisher_steer = self.create_publisher(
+            Float32, '/cognataSDK/car_command/steer_cmd', 10)
+        self.car_cmd_publisher_accel = self.create_publisher(
+            Float32, '/cognataSDK/car_command/acceleration_cmd', 10)
+        self.car_cmd_publisher_brake = self.create_publisher(
+            Float32, '/cognataSDK/car_command/brake_cmd', 10)
+        self.car_cmd_publisher_gas = self.create_publisher(
+            Float32, '/cognataSDK/car_command/gas_cmd', 10)
 
         # timer
         timer_period = 0.1  # seconds
@@ -52,11 +65,10 @@ class MinimalPublisher(Node):
     def joy_callback(self, message: Joy):
         # recieve
         self.pub = True
-        print("hello world")
+        print(message)
         self.car_cmd_steer.data = -1 * message.axes[0]
         self.car_cmd_gas.data = (1 + message.axes[2]) / 2
         self.car_cmd_brake.data = (1 + message.axes[3]) / 2
-        
 
 
 def main(args=None):
@@ -75,7 +87,3 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
-
-      
-
-

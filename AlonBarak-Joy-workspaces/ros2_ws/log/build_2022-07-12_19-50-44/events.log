@@ -1,0 +1,316 @@
+[0.000000] (-) TimerEvent: {}
+[0.001662] (ros_g29_force_feedback) JobQueued: {'identifier': 'ros_g29_force_feedback', 'dependencies': OrderedDict()}
+[0.001692] (ros_g29_force_feedback) JobStarted: {'identifier': 'ros_g29_force_feedback'}
+[0.016116] (ros_g29_force_feedback) JobProgress: {'identifier': 'ros_g29_force_feedback', 'progress': 'cmake'}
+[0.016273] (ros_g29_force_feedback) Command: {'cmd': ['/usr/bin/cmake', '/home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/src/ros-g29-force-feedback', '-DCMAKE_INSTALL_PREFIX=/home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback'], 'cwd': '/home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/build/ros_g29_force_feedback', 'env': OrderedDict([('OPENBLAS_CORETYPE', 'ARMV8'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IL:en'), ('USER', 'kcg'), ('SSH_AGENT_PID', '1591'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/kcg'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1259'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1ed179cb521cc1c2638fcf0b62c6ec84'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'kcg'), ('JOURNAL_STREAM', '8:50425'), ('_', '/home/kcg/.local/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'kcg'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/kcg/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/kcg-ROG-Strix-G35CZ-G35CZ:@/tmp/.ICE-unix/1626,unix/kcg-ROG-Strix-G35CZ-G35CZ:/tmp/.ICE-unix/1626'), ('INVOCATION_ID', '6566b3063f584fe6b074100ea0600449'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/deb792da_36b2_4666_954c_7d89f8825f11'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.253'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('ROS_MASTER_URI', 'http://localhost:11311'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/build/ros_g29_force_feedback'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1ed179cb521cc1c2638fcf0b62c6ec84'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('ROS_HOSTNAME', 'localhost'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.048553] (ros_g29_force_feedback) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.084514] (ros_g29_force_feedback) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.088107] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.100043] (-) TimerEvent: {}
+[0.134523] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.135116] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.176422] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.184312] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.184546] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.186169] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.200150] (-) TimerEvent: {}
+[0.241553] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.242609] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.300355] (-) TimerEvent: {}
+[0.368868] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.381173] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.381714] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.383478] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.400436] (-) TimerEvent: {}
+[0.406702] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.406929] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.500558] (-) TimerEvent: {}
+[0.548177] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[0.573337] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.576828] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.600662] (-) TimerEvent: {}
+[0.619274] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[0.637300] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[0.684742] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.700768] (-) TimerEvent: {}
+[0.720192] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[0.721131] (ros_g29_force_feedback) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.721679] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.762787] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.763166] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.800906] (-) TimerEvent: {}
+[0.804748] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[0.804960] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[0.840221] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[0.840478] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[0.886729] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[0.887578] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.901003] (-) TimerEvent: {}
+[0.991078] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[1.001109] (-) TimerEvent: {}
+[1.011354] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[1.101233] (-) TimerEvent: {}
+[1.110437] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[1.201351] (-) TimerEvent: {}
+[1.214673] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.252444] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.267948] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[1.268585] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[1.284970] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[1.285048] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.285098] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[1.285145] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so\n'}
+[1.298390] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.301459] (-) TimerEvent: {}
+[1.336978] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[1.347739] (ros_g29_force_feedback) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.372100] (ros_g29_force_feedback) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.372841] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.372908] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.397156] (ros_g29_force_feedback) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[1.397227] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[1.400757] (ros_g29_force_feedback) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.401524] (-) TimerEvent: {}
+[1.406928] (ros_g29_force_feedback) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.410373] (ros_g29_force_feedback) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[1.434280] (ros_g29_force_feedback) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.434355] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.437625] (ros_g29_force_feedback) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.440747] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.467396] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Generating done\n'}
+[1.469167] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Build files have been written to: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/build/ros_g29_force_feedback\n'}
+[1.474389] (ros_g29_force_feedback) CommandEnded: {'returncode': 0}
+[1.476524] (ros_g29_force_feedback) JobProgress: {'identifier': 'ros_g29_force_feedback', 'progress': 'build'}
+[1.476569] (ros_g29_force_feedback) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/build/ros_g29_force_feedback', '--', '-j20', '-l20'], 'cwd': '/home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/build/ros_g29_force_feedback', 'env': OrderedDict([('OPENBLAS_CORETYPE', 'ARMV8'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IL:en'), ('USER', 'kcg'), ('SSH_AGENT_PID', '1591'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/kcg'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1259'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1ed179cb521cc1c2638fcf0b62c6ec84'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'kcg'), ('JOURNAL_STREAM', '8:50425'), ('_', '/home/kcg/.local/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'kcg'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/kcg/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/kcg-ROG-Strix-G35CZ-G35CZ:@/tmp/.ICE-unix/1626,unix/kcg-ROG-Strix-G35CZ-G35CZ:/tmp/.ICE-unix/1626'), ('INVOCATION_ID', '6566b3063f584fe6b074100ea0600449'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/deb792da_36b2_4666_954c_7d89f8825f11'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.253'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('ROS_MASTER_URI', 'http://localhost:11311'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/build/ros_g29_force_feedback'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1ed179cb521cc1c2638fcf0b62c6ec84'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('ROS_HOSTNAME', 'localhost'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[1.499046] (ros_g29_force_feedback) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ros_g29_force_feedback__cpp\x1b[0m\n'}
+[1.499488] (ros_g29_force_feedback) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.501638] (-) TimerEvent: {}
+[1.504857] (ros_g29_force_feedback) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.601765] (-) TimerEvent: {}
+[1.635690] (ros_g29_force_feedback) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ros_g29_force_feedback__rosidl_generator_c\x1b[0m\n'}
+[1.639503] (ros_g29_force_feedback) StdoutLine: {'line': b'[  6%] Built target ros_g29_force_feedback__cpp\n'}
+[1.642428] (ros_g29_force_feedback) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/ros_g29_force_feedback__rosidl_generator_c.dir/rosidl_generator_c/ros_g29_force_feedback/msg/detail/force_feedback__functions.c.o\x1b[0m\n'}
+[1.645303] (ros_g29_force_feedback) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.645560] (ros_g29_force_feedback) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.645712] (ros_g29_force_feedback) StdoutLine: {'line': b'[ 18%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[1.667158] (ros_g29_force_feedback) StdoutLine: {'line': b'[ 21%] \x1b[32m\x1b[1mLinking C shared library libros_g29_force_feedback__rosidl_generator_c.so\x1b[0m\n'}
+[1.689767] (ros_g29_force_feedback) StdoutLine: {'line': b'[ 21%] Built target ros_g29_force_feedback__rosidl_generator_c\n'}
+[1.696165] (ros_g29_force_feedback) StdoutLine: {'line': b'[ 27%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.696273] (ros_g29_force_feedback) StdoutLine: {'line': b'[ 27%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[1.701856] (-) TimerEvent: {}
+[1.769745] (ros_g29_force_feedback) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ros_g29_force_feedback__rosidl_typesupport_cpp\x1b[0m\n'}
+[1.777321] (ros_g29_force_feedback) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/ros_g29_force_feedback__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_g29_force_feedback/msg/force_feedback__type_support.cpp.o\x1b[0m\n'}
+[1.779161] (ros_g29_force_feedback) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ros_g29_force_feedback__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[1.785046] (ros_g29_force_feedback) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ros_g29_force_feedback__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[1.786580] (ros_g29_force_feedback) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/ros_g29_force_feedback__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_g29_force_feedback/msg/detail/force_feedback__type_support.cpp.o\x1b[0m\n'}
+[1.793520] (ros_g29_force_feedback) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/ros_g29_force_feedback__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_g29_force_feedback/msg/detail/dds_fastrtps/force_feedback__type_support.cpp.o\x1b[0m\n'}
+[1.801976] (-) TimerEvent: {}
+[1.821117] (ros_g29_force_feedback) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ros_g29_force_feedback__rosidl_typesupport_c\x1b[0m\n'}
+[1.828463] (ros_g29_force_feedback) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/ros_g29_force_feedback__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_g29_force_feedback/msg/force_feedback__type_support.cpp.o\x1b[0m\n'}
+[1.831650] (ros_g29_force_feedback) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ros_g29_force_feedback__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[1.839720] (ros_g29_force_feedback) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding C object CMakeFiles/ros_g29_force_feedback__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_g29_force_feedback/msg/detail/force_feedback__type_support.c.o\x1b[0m\n'}
+[1.848283] (ros_g29_force_feedback) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking CXX shared library libros_g29_force_feedback__rosidl_typesupport_c.so\x1b[0m\n'}
+[1.860433] (ros_g29_force_feedback) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking C shared library libros_g29_force_feedback__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[1.873620] (ros_g29_force_feedback) StdoutLine: {'line': b'[ 48%] Built target ros_g29_force_feedback__rosidl_typesupport_c\n'}
+[1.879591] (ros_g29_force_feedback) StdoutLine: {'line': b'[ 48%] Built target ros_g29_force_feedback__rosidl_typesupport_introspection_c\n'}
+[1.902100] (-) TimerEvent: {}
+[1.964916] (ros_g29_force_feedback) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libros_g29_force_feedback__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[1.974566] (ros_g29_force_feedback) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libros_g29_force_feedback__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[1.989979] (ros_g29_force_feedback) StdoutLine: {'line': b'[ 54%] Built target ros_g29_force_feedback__rosidl_typesupport_cpp\n'}
+[2.002228] (-) TimerEvent: {}
+[2.011060] (ros_g29_force_feedback) StdoutLine: {'line': b'[ 54%] Built target ros_g29_force_feedback__rosidl_typesupport_introspection_cpp\n'}
+[2.061156] (ros_g29_force_feedback) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX shared library libros_g29_force_feedback__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[2.102358] (-) TimerEvent: {}
+[2.110271] (ros_g29_force_feedback) StdoutLine: {'line': b'[ 57%] Built target ros_g29_force_feedback__rosidl_typesupport_fastrtps_cpp\n'}
+[2.116239] (ros_g29_force_feedback) StdoutLine: {'line': b'[ 60%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.202475] (-) TimerEvent: {}
+[2.244089] (ros_g29_force_feedback) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ros_g29_force_feedback__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[2.251903] (ros_g29_force_feedback) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/ros_g29_force_feedback__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_g29_force_feedback/msg/detail/force_feedback__type_support_c.cpp.o\x1b[0m\n'}
+[2.302600] (-) TimerEvent: {}
+[2.402909] (-) TimerEvent: {}
+[2.463838] (ros_g29_force_feedback) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library libros_g29_force_feedback__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[2.503043] (-) TimerEvent: {}
+[2.511600] (ros_g29_force_feedback) StdoutLine: {'line': b'[ 66%] Built target ros_g29_force_feedback__rosidl_typesupport_fastrtps_c\n'}
+[2.517102] (ros_g29_force_feedback) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ros_g29_force_feedback\x1b[0m\n'}
+[2.522903] (ros_g29_force_feedback) StdoutLine: {'line': b'[ 66%] Built target ros_g29_force_feedback\n'}
+[2.528173] (ros_g29_force_feedback) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target g29_force_feedback\x1b[0m\n'}
+[2.528534] (ros_g29_force_feedback) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ros_g29_force_feedback__py\x1b[0m\n'}
+[2.534508] (ros_g29_force_feedback) StdoutLine: {'line': b'[ 69%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[2.546987] (ros_g29_force_feedback) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/g29_force_feedback.dir/src/g29_force_feedback.cpp.o\x1b[0m\n'}
+[2.603168] (-) TimerEvent: {}
+[2.703393] (-) TimerEvent: {}
+[2.751729] (ros_g29_force_feedback) StdoutLine: {'line': b'[ 72%] Built target ros_g29_force_feedback__py\n'}
+[2.757021] (ros_g29_force_feedback) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ros_g29_force_feedback__python\x1b[0m\n'}
+[2.767476] (ros_g29_force_feedback) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding C object CMakeFiles/ros_g29_force_feedback__python.dir/rosidl_generator_py/ros_g29_force_feedback/msg/_force_feedback_s.c.o\x1b[0m\n'}
+[2.803528] (-) TimerEvent: {}
+[2.819947] (ros_g29_force_feedback) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ros_g29_force_feedback/libros_g29_force_feedback__python.so\x1b[0m\n'}
+[2.844921] (ros_g29_force_feedback) StdoutLine: {'line': b'[ 78%] Built target ros_g29_force_feedback__python\n'}
+[2.851247] (ros_g29_force_feedback) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ros_g29_force_feedback__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[2.851379] (ros_g29_force_feedback) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ros_g29_force_feedback__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[2.851429] (ros_g29_force_feedback) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ros_g29_force_feedback__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[2.861560] (ros_g29_force_feedback) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/ros_g29_force_feedback__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ros_g29_force_feedback/_ros_g29_force_feedback_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[2.861767] (ros_g29_force_feedback) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/ros_g29_force_feedback__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/ros_g29_force_feedback/_ros_g29_force_feedback_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[2.861978] (ros_g29_force_feedback) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/ros_g29_force_feedback__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ros_g29_force_feedback/_ros_g29_force_feedback_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[2.903655] (-) TimerEvent: {}
+[2.911319] (ros_g29_force_feedback) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/ros_g29_force_feedback/ros_g29_force_feedback_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[2.911474] (ros_g29_force_feedback) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ros_g29_force_feedback/ros_g29_force_feedback_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[2.911530] (ros_g29_force_feedback) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ros_g29_force_feedback/ros_g29_force_feedback_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[2.935055] (ros_g29_force_feedback) StdoutLine: {'line': b'[ 96%] Built target ros_g29_force_feedback__rosidl_typesupport_c__pyext\n'}
+[2.935200] (ros_g29_force_feedback) StdoutLine: {'line': b'[ 96%] Built target ros_g29_force_feedback__rosidl_typesupport_introspection_c__pyext\n'}
+[2.953453] (ros_g29_force_feedback) StdoutLine: {'line': b'[ 96%] Built target ros_g29_force_feedback__rosidl_typesupport_fastrtps_c__pyext\n'}
+[3.003782] (-) TimerEvent: {}
+[3.104035] (-) TimerEvent: {}
+[3.204294] (-) TimerEvent: {}
+[3.304570] (-) TimerEvent: {}
+[3.404833] (-) TimerEvent: {}
+[3.505093] (-) TimerEvent: {}
+[3.605353] (-) TimerEvent: {}
+[3.705607] (-) TimerEvent: {}
+[3.805861] (-) TimerEvent: {}
+[3.906125] (-) TimerEvent: {}
+[4.006389] (-) TimerEvent: {}
+[4.106648] (-) TimerEvent: {}
+[4.206907] (-) TimerEvent: {}
+[4.307175] (-) TimerEvent: {}
+[4.407431] (-) TimerEvent: {}
+[4.507676] (-) TimerEvent: {}
+[4.607917] (-) TimerEvent: {}
+[4.708161] (-) TimerEvent: {}
+[4.808403] (-) TimerEvent: {}
+[4.908641] (-) TimerEvent: {}
+[5.008893] (-) TimerEvent: {}
+[5.109133] (-) TimerEvent: {}
+[5.209374] (-) TimerEvent: {}
+[5.309609] (-) TimerEvent: {}
+[5.409858] (-) TimerEvent: {}
+[5.510075] (-) TimerEvent: {}
+[5.585168] (ros_g29_force_feedback) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable g29_force_feedback\x1b[0m\n'}
+[5.610209] (-) TimerEvent: {}
+[5.708197] (ros_g29_force_feedback) StdoutLine: {'line': b'[100%] Built target g29_force_feedback\n'}
+[5.710327] (-) TimerEvent: {}
+[5.714287] (ros_g29_force_feedback) CommandEnded: {'returncode': 0}
+[5.740634] (ros_g29_force_feedback) JobProgress: {'identifier': 'ros_g29_force_feedback', 'progress': 'install'}
+[5.747692] (ros_g29_force_feedback) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/build/ros_g29_force_feedback'], 'cwd': '/home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/build/ros_g29_force_feedback', 'env': OrderedDict([('OPENBLAS_CORETYPE', 'ARMV8'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IL:en'), ('USER', 'kcg'), ('SSH_AGENT_PID', '1591'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/kcg'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1259'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1ed179cb521cc1c2638fcf0b62c6ec84'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'kcg'), ('JOURNAL_STREAM', '8:50425'), ('_', '/home/kcg/.local/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'kcg'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/kcg/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/kcg-ROG-Strix-G35CZ-G35CZ:@/tmp/.ICE-unix/1626,unix/kcg-ROG-Strix-G35CZ-G35CZ:/tmp/.ICE-unix/1626'), ('INVOCATION_ID', '6566b3063f584fe6b074100ea0600449'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/deb792da_36b2_4666_954c_7d89f8825f11'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.253'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('ROS_MASTER_URI', 'http://localhost:11311'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/build/ros_g29_force_feedback'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1ed179cb521cc1c2638fcf0b62c6ec84'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('ROS_HOSTNAME', 'localhost'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[5.752610] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.752943] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ament_index/resource_index/rosidl_interfaces/ros_g29_force_feedback\n'}
+[5.753013] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/include/ros_g29_force_feedback\n'}
+[5.753364] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/include/ros_g29_force_feedback/msg\n'}
+[5.753434] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/include/ros_g29_force_feedback/msg/rosidl_generator_c__visibility_control.h\n'}
+[5.753580] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/include/ros_g29_force_feedback/msg/force_feedback.h\n'}
+[5.753648] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/include/ros_g29_force_feedback/msg/detail\n'}
+[5.753693] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/include/ros_g29_force_feedback/msg/detail/force_feedback__functions.h\n'}
+[5.753737] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/include/ros_g29_force_feedback/msg/detail/force_feedback__struct.h\n'}
+[5.753781] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/include/ros_g29_force_feedback/msg/detail/force_feedback__type_support.h\n'}
+[5.753862] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/include/ros_g29_force_feedback/msg/detail/force_feedback__functions.c\n'}
+[5.753906] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/environment/library_path.sh\n'}
+[5.753949] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/environment/library_path.dsv\n'}
+[5.753993] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/lib/libros_g29_force_feedback__rosidl_generator_c.so\n'}
+[5.754308] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/lib/libros_g29_force_feedback__rosidl_generator_c.so" to ""\n'}
+[5.754423] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/include/ros_g29_force_feedback\n'}
+[5.754485] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/include/ros_g29_force_feedback/msg\n'}
+[5.754533] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/include/ros_g29_force_feedback/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[5.754590] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/include/ros_g29_force_feedback/msg/detail\n'}
+[5.754670] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/include/ros_g29_force_feedback/msg/detail/force_feedback__rosidl_typesupport_fastrtps_c.h\n'}
+[5.754732] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/lib/libros_g29_force_feedback__rosidl_typesupport_fastrtps_c.so\n'}
+[5.754775] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/lib/libros_g29_force_feedback__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[5.754822] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/include/ros_g29_force_feedback\n'}
+[5.754891] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/include/ros_g29_force_feedback/msg\n'}
+[5.754936] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/include/ros_g29_force_feedback/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[5.754981] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/include/ros_g29_force_feedback/msg/detail\n'}
+[5.755025] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/include/ros_g29_force_feedback/msg/detail/dds_fastrtps\n'}
+[5.755068] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/include/ros_g29_force_feedback/msg/detail/force_feedback__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.755111] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/lib/libros_g29_force_feedback__rosidl_typesupport_fastrtps_cpp.so\n'}
+[5.755158] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/lib/libros_g29_force_feedback__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[5.755238] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/include/ros_g29_force_feedback\n'}
+[5.755314] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/include/ros_g29_force_feedback/msg\n'}
+[5.755373] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/include/ros_g29_force_feedback/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[5.755537] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/include/ros_g29_force_feedback/msg/detail\n'}
+[5.755601] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/include/ros_g29_force_feedback/msg/detail/force_feedback__rosidl_typesupport_introspection_c.h\n'}
+[5.755644] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/include/ros_g29_force_feedback/msg/detail/force_feedback__type_support.c\n'}
+[5.755699] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/lib/libros_g29_force_feedback__rosidl_typesupport_introspection_c.so\n'}
+[5.755768] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/lib/libros_g29_force_feedback__rosidl_typesupport_introspection_c.so" to ""\n'}
+[5.755832] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/lib/libros_g29_force_feedback__rosidl_typesupport_c.so\n'}
+[5.755889] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/lib/libros_g29_force_feedback__rosidl_typesupport_c.so" to ""\n'}
+[5.755948] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/include/ros_g29_force_feedback\n'}
+[5.755994] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/include/ros_g29_force_feedback/msg\n'}
+[5.756067] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/include/ros_g29_force_feedback/msg/force_feedback.hpp\n'}
+[5.756123] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/include/ros_g29_force_feedback/msg/detail\n'}
+[5.756166] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/include/ros_g29_force_feedback/msg/detail/force_feedback__builder.hpp\n'}
+[5.756209] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/include/ros_g29_force_feedback/msg/detail/force_feedback__traits.hpp\n'}
+[5.756264] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/include/ros_g29_force_feedback/msg/detail/force_feedback__struct.hpp\n'}
+[5.756309] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/include/ros_g29_force_feedback\n'}
+[5.756354] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/include/ros_g29_force_feedback/msg\n'}
+[5.756397] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/include/ros_g29_force_feedback/msg/detail\n'}
+[5.756452] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/include/ros_g29_force_feedback/msg/detail/force_feedback__type_support.cpp\n'}
+[5.756507] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/include/ros_g29_force_feedback/msg/detail/force_feedback__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.756551] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/lib/libros_g29_force_feedback__rosidl_typesupport_introspection_cpp.so\n'}
+[5.756594] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/lib/libros_g29_force_feedback__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[5.756637] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/lib/libros_g29_force_feedback__rosidl_typesupport_cpp.so\n'}
+[5.756692] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/lib/libros_g29_force_feedback__rosidl_typesupport_cpp.so" to ""\n'}
+[5.756746] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/environment/pythonpath.sh\n'}
+[5.756808] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/environment/pythonpath.dsv\n'}
+[5.756892] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/lib/python3.8/site-packages/ros_g29_force_feedback/__init__.py\n'}
+[5.775869] (ros_g29_force_feedback) StdoutLine: {'line': b"Compiling '/home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/lib/python3.8/site-packages/ros_g29_force_feedback/__init__.py'...\n"}
+[5.777929] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/lib/python3.8/site-packages/ros_g29_force_feedback/msg\n'}
+[5.778023] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/lib/python3.8/site-packages/ros_g29_force_feedback/msg/__init__.py\n'}
+[5.778126] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/lib/python3.8/site-packages/ros_g29_force_feedback/msg/_force_feedback_s.c\n'}
+[5.778176] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/lib/python3.8/site-packages/ros_g29_force_feedback/msg/_force_feedback.py\n'}
+[5.778259] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/lib/python3.8/site-packages/ros_g29_force_feedback/ros_g29_force_feedback_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[5.778516] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/lib/python3.8/site-packages/ros_g29_force_feedback/ros_g29_force_feedback_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[5.779030] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/lib/python3.8/site-packages/ros_g29_force_feedback/ros_g29_force_feedback_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[5.779225] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/lib/python3.8/site-packages/ros_g29_force_feedback/ros_g29_force_feedback_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[5.779877] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/lib/python3.8/site-packages/ros_g29_force_feedback/ros_g29_force_feedback_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[5.780000] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/lib/python3.8/site-packages/ros_g29_force_feedback/ros_g29_force_feedback_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[5.780070] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/lib/libros_g29_force_feedback__python.so\n'}
+[5.780271] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/lib/libros_g29_force_feedback__python.so" to ""\n'}
+[5.780368] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/msg/ForceFeedback.idl\n'}
+[5.780417] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/msg/ForceFeedback.msg\n'}
+[5.780463] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/lib/ros_g29_force_feedback/g29_force_feedback\n'}
+[5.781248] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/lib/ros_g29_force_feedback/g29_force_feedback" to ""\n'}
+[5.781720] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/config\n'}
+[5.781783] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/config/g29.yaml\n'}
+[5.781843] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/launch\n'}
+[5.781912] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/launch/g29_feedback.launch.py\n'}
+[5.781972] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/launch/msg\n'}
+[5.782028] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/launch/msg/__init__.py\n'}
+[5.782084] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/launch/msg/__pycache__\n'}
+[5.782128] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/launch/msg/__pycache__/_ForceFeedback.cpython-38.pyc\n'}
+[5.782184] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/launch/msg/__pycache__/__init__.cpython-38.pyc\n'}
+[5.782240] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/launch/msg/_ForceFeedback.py\n'}
+[5.782295] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ament_index/resource_index/package_run_dependencies/ros_g29_force_feedback\n'}
+[5.782339] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ament_index/resource_index/parent_prefix_path/ros_g29_force_feedback\n'}
+[5.782394] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/environment/ament_prefix_path.sh\n'}
+[5.782441] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/environment/ament_prefix_path.dsv\n'}
+[5.782501] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/environment/path.sh\n'}
+[5.782558] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/environment/path.dsv\n'}
+[5.782626] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/local_setup.bash\n'}
+[5.782739] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/local_setup.sh\n'}
+[5.782783] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/local_setup.zsh\n'}
+[5.782842] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/local_setup.dsv\n'}
+[5.782887] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/package.dsv\n'}
+[5.782930] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ament_index/resource_index/packages/ros_g29_force_feedback\n'}
+[5.782986] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/cmake/ros_g29_force_feedback__rosidl_generator_cExport.cmake\n'}
+[5.783048] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/cmake/ros_g29_force_feedback__rosidl_generator_cExport-noconfig.cmake\n'}
+[5.783145] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/cmake/ros_g29_force_feedback__rosidl_typesupport_introspection_cExport.cmake\n'}
+[5.783416] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/cmake/ros_g29_force_feedback__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[5.783500] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/cmake/ros_g29_force_feedback__rosidl_typesupport_cExport.cmake\n'}
+[5.783571] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/cmake/ros_g29_force_feedback__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[5.783646] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/cmake/ros_g29_force_feedback__rosidl_generator_cppExport.cmake\n'}
+[5.783796] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/cmake/ros_g29_force_feedback__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[5.783867] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/cmake/ros_g29_force_feedback__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[5.783980] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/cmake/ros_g29_force_feedback__rosidl_typesupport_cppExport.cmake\n'}
+[5.784061] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/cmake/ros_g29_force_feedback__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[5.784141] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/cmake/rosidl_cmake-extras.cmake\n'}
+[5.784217] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[5.784298] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[5.784378] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[5.784455] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[5.784537] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[5.784614] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[5.784692] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/cmake/ros_g29_force_feedbackConfig.cmake\n'}
+[5.784751] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/cmake/ros_g29_force_feedbackConfig-version.cmake\n'}
+[5.784815] (ros_g29_force_feedback) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/AlonBarak-Joy-workspaces/ros2_ws/install/ros_g29_force_feedback/share/ros_g29_force_feedback/package.xml\n'}
+[5.786156] (ros_g29_force_feedback) CommandEnded: {'returncode': 0}
+[5.810511] (-) TimerEvent: {}
+[5.865962] (ros_g29_force_feedback) JobEnded: {'identifier': 'ros_g29_force_feedback', 'rc': 0}
+[5.866503] (-) EventReactorShutdown: {}

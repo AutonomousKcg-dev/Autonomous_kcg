@@ -1,16 +1,20 @@
 #!/usr/bin/env python
-import rospy2
-import keyboard # Requires Super User (sudo -s)
-from cognata_sdk_ros2.msg import * 
+import rclpy
+from rclpy.node import Node
+
+import keyboard  # Requires Super User (sudo -s)
+# from cognata_sdk_ros2.msg import *
+from cognata_sdk_ros2.msg import ROIAndDOGTOutput, GPSAdditionalData, VehicleMsg
 from sensor_msgs.msg import NavSatFix
 from geometry_msgs.msg import Twist
 from std_msgs.msg import Float32
-
-
+import numpy as np
+from .controllerPID import PID
+from msg._ForceFeedback import ForceFeedback
 # TODO 1 - closing loop with PID on the distance to front car as well as y axis for staying in the lane
 # TODO 2 - front car class
 
-class fonts: # works only for print() function
+class fonts:  # works only for print() function
     CYAN = '\033[96m'
     GREEN = '\033[92m'
     YELLOW = '\033[93m'
@@ -19,74 +23,107 @@ class fonts: # works only for print() function
     ENDC = '\033[0m'
     BOLD = '\033[1m'
 
+
 class front_car:
     id = -1
-    distance_x = 0
+    distance_x = 100
     distance_y = 0
     velocity_x = 0
     velocity_y = 0
-class adaptive_cruise_control:
 
+
+class adaptive_cruise_control(Node):
     def __init__(self):
-        rospy2.init_node('adaptive_cruise_control_node', anonymous=True)
-        self.in_session = False # for running and shutting down purposes
-        rospy2.on_shutdown(self.shutdown_handler)
-        self.vehicleList = None
-        self.ego_car_lane = 0
-        self.vehicle_cmd = Twist()
-        self.acc_on = False # ACC Flag
-        self.keyboard_increment_factor = 0.1
-        self.lane_size = 3.7 # meters
+        super().__init__("adaptive_cruise_control")
+        # self.in_session = False  # for running and shutting down purposes
+        
+        # acc :
+        self.vehicleList: VehicleMsg = []
+        self.acc_on = False  # ACC Flag
+        self.lane_size = 3.7  # meters
         self.front_car = front_car()
         self.currentListIdx = 0
-        self.maximum_front_car_distance = 100 # Initializing maximum front car distance
+        self.maximum_front_car_distance = 100  # Initializing maximum front car distance
 
-        self.reference_distance = 20 # Desired keeping distance
+        self.reference_distance = 25  # Desired keeping distance
+        self.keyboard_increment_factor = 0.1
+        
+        # ego car:
+        self.ego_car_lane = 0
+        self.ego_car_lane_offset = 0.0
+        self.vehicle_cmd = Twist()
+        
+        # PID
+        self.velocity_PID = PID(kp=0.75, ki=0, kd=0.5)
 
-        self.kp = 0.5 # PID control Parameters
-        self.kd = 0.5
-        self.ka = 1
+        self.wheel_PID = PID(kp=0.2, ki=0.0, kd=0.5)
 
         # subscribers
-        self.dogt_listener = rospy2.Subscriber("/cognataSDK/dogt/GlobalSensors", ROIAndDOGTOutput, self.DOGTcb) # DOGT Listener
-        self.gps_listener = rospy2.Subscriber("/cognataSDK/GPS/info/CognataGPS", GPSAdditionalData, self.GPScb) # GPS Listener
-        
+        self.dogt_listener = self.create_subscription(
+            ROIAndDOGTOutput, "/cognataSDK/dogt/GlobalSensors", self.DOGTcb, 10)  # DOGT Listener
+        self.gps_listener = self.create_subscription(
+            GPSAdditionalData, "/cognataSDK/GPS/info/CognataGPS", self.GPScb, 10)  # GPS Listener
+
         # publishers
         # self.vehicle_cmd_publisher = rospy2.Publisher('/cognataSDK/vehicle_cmd', Twist, queue_size=10) # Publisher
-        self.car_cmd_publisher_steer = rospy2.Publisher(Float32, '/cognataSDK/car_command/steer_cmd', 10)
-        self.car_cmd_publisher_accel = rospy2.Publisher(Float32, '/cognataSDK/car_command/acceleration_cmd', 10)
-        self.car_cmd_publisher_brake = rospy2.Publisher(Float32, '/cognataSDK/car_command/brake_cmd', 10)
-        self.car_cmd_publisher_gas = rospy2.Publisher(Float32, '/cognataSDK/car_command/gas_cmd', 10)
+        self.car_cmd_publisher_steer = self.create_publisher(
+            Float32, '/cognataSDK/car_command/steer_cmd', 10)
+        self.car_cmd_publisher_accel = self.create_publisher(
+            Float32, '/cognataSDK/car_command/acceleration_cmd', 10)
+        self.car_cmd_publisher_brake = self.create_publisher(
+            Float32, '/cognataSDK/car_command/brake_cmd', 10)
+        self.car_cmd_publisher_gas = self.create_publisher(
+            Float32, '/cognataSDK/car_command/gas_cmd', 10)
+
+        # Wheel publisher -g29 force feedback -> will be replaced by Idan driver.
+        self.wheel_publisher_g29 = self.create_publisher(
+            ForceFeedback, '/ff_target', 10)
+
+        # timer
+        time_period = 0.1
+        self.create_timer(time_period, self.control)
 
         print(fonts.YELLOW + "waiting for all topics to be avalable...")
-        rospy2.wait_for_message("/cognataSDK/dogt", ROIAndDOGTOutput, 120)
-        rospy2.wait_for_message("/cognataSDK/GPS/info/CognataGPS", GPSAdditionalData, 120)
+        # saelf..wait_for_message("/cognataSDK/dogt", ROIAndDOGTOutput, 120)
+        # rospy2.wait_for_message("/cognataSDK/GPS/info/CognataGPS", GPSAdditionalData, 120)
         print(fonts.BLUE + "starting ACC application" + fonts.ENDC)
         self.number_of_agents = len(self.vehicleList)
-        #print(fonts.BOLD + fonts.BLUE + "Vehicle List Size = " +str(len(self.vehicleList))) # Printing Number of Vehicle Agents
-        self.rate =  rospy2.Rate(10) # 10 [Hz]
-        while not rospy2.is_shutdown():
-            self.keyboard_listener()
-            if (self.acc_on):
-                self.get_front_car()
-                self.control()
-            # self.vehicle_cmd_publisher.publish(self.vehicle_cmd)
-            self.rate.sleep()
+        # print(fonts.BOLD + fonts.BLUE + "Vehicle List Size = " +str(len(self.vehicleList))) # Printing Number of Vehicle Agents
+        self.rate = self.create_rate(30)  # 10 [Hz]
+        # while not rospy2.is_shutdown():
+        #     self.keyboard_listener()
+        #     if (self.acc_on):
+        #         self.get_front_car()
+        #         self.control()
+        #     # self.vehicle_cmd_publisher.publish(self.vehicle_cmd)
+        #     self.rate.sleep()
 
-        self.in_session = True
+        # self.in_session = True
 
-
+    #####################################################
     # DOGT message callback
-    def DOGTcb(self, msg):
-        self.vehicleList = msg.vehicleList
+    #####################################################
+    def DOGTcb(self, msg: ROIAndDOGTOutput):
+        self.vehicleList = msg.vehicle_list
 
+    #####################################################
     # GPS message callback
-    def GPScb(self, msg):
-        self.ego_car_lane = msg.position_covariance_type
+    #####################################################
+    def GPScb(self, msg: GPSAdditionalData):
+        self.ego_car_lane = msg.lane_number
+        self.ego_car_lane_offset = msg.lane_offset
+        self.ego_car_velocity = msg._velocity_local_3d
+        self.ego_car_speed = msg.speed * 3.6
+        self.ego_car_degree = np.arccos(self.ego_car_velocity._x / (self.ego_car_speed/3.6))
+        self.ego_car_pose_y = msg.position._y
+        self.ego_car_pose_x = msg.position._x
+        self.ego_car_pose = msg.position
+
+
         #print(fonts.GREEN + "Ego car lane ID = " + str(self.ego_car_lane))
 
     def shutdown_handler(self):
-        #if self.in_session:
+        # if self.in_session:
         print(fonts.BOLD + fonts.CYAN + "Quitting Adaptive Cruise Control")
 
     # Pull Front Car
@@ -99,50 +136,141 @@ class adaptive_cruise_control:
         self.front_car.velocity = 0
 
         for idx, car in enumerate(self.vehicleList):
-            if(-int(car.laneId) == self.ego_car_lane and car.description.boundingBox.transform.translation.x > 0 and abs(car.description.boundingBox.transform.translation.y) < self.lane_size): #
-                #print("Distance =" + str(car.description.boundingBox.transform.translation.x) +" to Car#"+ str(idx) +" in vehicle list ")
-                if (car.description.boundingBox.transform.translation.x < self.front_car.distance_x):
-                    self.front_car.distance_x = car.description.boundingBox.transform.translation.x
-                    self.front_car.distance_y = car.description.boundingBox.transform.translation.y
+            if(int(car.lane_id) == self.ego_car_lane and car.description.bounding_box.transform.translation.x > 0 and abs(car.description.bounding_box.transform.translation.y) < self.lane_size):
+                # print("Distance =" + str(car.description.bounding_box.transform.translation.x) +" to Car#"+ str(idx) +" in vehicle list ")
+                if (car.description.bounding_box.transform.translation.x < self.front_car.distance_x):
+                    print("Detected Front Car")
+                    self.front_car.distance_x = car.description.bounding_box.transform.translation.x
+                    self.front_car.distance_y = car.description.bounding_box.transform.translation.y
                     self.front_car.velocity_x = car.description.motion.linear.x
                     self.front_car.velocity_y = car.description.motion.angular.z
                     self.front_car.id = idx
+                    print(self.front_car.distance_x)
+                    print(car.lane_id, " not ego car ")
                     # print("[" + self.vehicleList[idx].description.objectId + "," + self.vehicleList[idx].description.ROISubtype + "," + str(self.dist_to_front_car) + "]")
         # if (self.front_car.id >= 0):
-        #     print("front car No." + fonts.BOLD + fonts.BLUE + self.vehicleList[self.front_car.id].description.objectId + fonts.ENDC + " is : " + fonts.BOLD + fonts.BLUE + self.vehicleList[self.front_car.id].description.ROISubtype + fonts.ENDC + ", with distance : "+ fonts.BOLD + fonts.BLUE +str(self.vehicleList[self.front_car.id].description.boundingBox.transform.translation.x) + fonts.ENDC)
+        #     print("front car No." + fonts.BOLD + fonts.BLUE + self.vehicleList[self.front_car.id].description.objectId + fonts.ENDC + " is : " + fonts.BOLD + fonts.BLUE + self.vehicleList[self.front_car.id].description.ROISubtype + fonts.ENDC + ", with distance : "+ fonts.BOLD + fonts.BLUE +str(self.vehicleList[self.front_car.id].description.bounding_box.transform.translation.x) + fonts.ENDC)
         # else:
         #     print(fonts.BOLD + fonts.BLUE + "Maximum Space" + fonts.ENDC)
         # return 1
 
-    #   PID control for applying adaptive cruise
+    #####################################################
+    # PID control for applying adaptive cruise
+    #####################################################
     def control(self):
-        # X Control
-        error = self.front_car.distance_x - self.reference_distance
-        error_dot = self.front_car.velocity_x #- ego_car_speed
-        error_itg = 0 #
-        output = self.kp * error + self.kd * error_dot + self.ka * error_itg
+        self.get_front_car()
 
+        #####################################################
+        # printing
+        print("ego lane id :", self.ego_car_lane)
+        print("ego car lane offset dis :",self.ego_car_lane_offset)
+        print("speed Km/h:", self.ego_car_speed)
+        print("ego car deg :", self.ego_car_degree)
+        print("ego car pose x",  self.ego_car_pose_x)
+        print("ego car pose y",  self.ego_car_pose_y)
+        print("ego car pose",  self.ego_car_pose)
+        print("ego car v",  self.ego_car_velocity)
+        #####################################################
+
+        # gas and barke Control
+        error = self.front_car.distance_x - self.reference_distance
+        output = self.velocity_PID.output(error)
+
+        #####################################################
+        # wheel control
+        #####################################################
+        error_w = self.ego_car_lane_offset
+        error_w = error_w**2 if error_w > 0.0 else -(error_w**2)
+        output_w = self.wheel_PID.output(error_w)
+        
+        #####################################################
+        # gas & brake Control
+        #####################################################
         if (error > 1 or error < -1):
-            print("Error = " + fonts.RED + str(error) + fonts.ENDC + " Output = " +str(output))
+            print("Error = " + fonts.RED + str(error) +
+                  fonts.ENDC + " Output = " + str(output))
         else:
-            print("Error = " + fonts.GREEN + str(error) + fonts.ENDC +  " Output = " +str(output))
+            print("Error = " + fonts.GREEN + str(error) +
+                  fonts.ENDC + " Output = " + str(output))
 
         if (output > 0):
+            print("output > 0")
             # self.vehicle_cmd.linear.x = output
             # self.vehicle_cmd.linear.y = 0
-            self.car_cmd_publisher_gas(output)
+            msg = Float32()
+            if (self.ego_car_speed > 80):
+                msg.data = 0.0
+            elif (50 <self.ego_car_speed < 80):
+                msg.data = output * 0.7
+            else:
+                msg.data = output
+                print("output important :", output)
+            self.car_cmd_publisher_gas.publish(msg)
         elif (output < 0):
+            print("output < 0")
             # self.vehicle_cmd.linear.x = 0
             # self.vehicle_cmd.linear.y = -output
-            self.car_cmd_publisher_brake(-output)
+            msg = Float32()
+            msg.data = -(output)
+            self.car_cmd_publisher_brake.publish(msg)
         else:
             # self.vehicle_cmd.linear.x = 0
             # self.vehicle_cmd.linear.y = 0
-            self.car_cmd_publisher_gas(0)
-            self.car_cmd_publisher_brake(0)
+            msg = Float32()
+            msg.data = 0.0
+            self.car_cmd_publisher_gas.publish(msg)
+            self.car_cmd_publisher_brake.publish(msg)
+        
+        #####################################################
+        # wheel Control
+        #####################################################
+        print("output w : ", output_w)
+        # ~~~~~~~~~~~~~~~~ #
+        # if self.ego_car_lane != self.desired_lane:
+        #     output_w = -output_w
+        # ~~~~~~~~~~~~~~~~ #
+        
+        if (0 < output_w < 1):
+            # self.vehicle_cmd.linear.x = output
+            # self.vehicle_cmd.linear.y = 0
+            msg = Float32()
+            msg.data = output_w
+            self.car_cmd_publisher_steer.publish(msg)
+            # g29 wheel
+            msg29 = ForceFeedback()
+            msg29.position = output_w
+            msg29.torque = 0.2
+            print("g29")
+            self.wheel_publisher_g29.publish(msg29)
 
-        # Y Control
+        elif (-1 < output_w < 0 ):
+            # self.vehicle_cmd.linear.x = 0
+            # self.vehicle_cmd.linear.y = -output
+            msg = Float32()
+            msg.data = output_w
+            self.car_cmd_publisher_steer.publish(msg)
+            # g29 wheel
+            msg29 = ForceFeedback()
+            msg29.position = output_w
+            msg29.torque = 0.2
+            print("g29")
+            self.wheel_publisher_g29.publish(msg29)
 
+        else:
+            msg = Float32()
+            msg.data = output_w
+            self.car_cmd_publisher_steer.publish(msg)
+            # g29 wheel
+            msg29 = ForceFeedback()
+            msg29.position = output_w
+            msg29.torque = 0.2
+            print("g29")
+            self.wheel_publisher_g29.publish(msg29)
+
+
+    #####################################################
+    # keyboard listener
+    #####################################################
     def keyboard_listener(self):
         # TODO - write it in switch-case format
         if keyboard.is_pressed('escape'):
@@ -216,8 +344,21 @@ class adaptive_cruise_control:
     #     if keyboard.is_released('d'):
     #         print(fonts.BOLD + fonts.CYAN + "D key released")
 
+
+
+def main(args=None):
+    rclpy.init(args=args)
+
+    acc = adaptive_cruise_control()
+
+    rclpy.spin(acc)
+
+    # Destroy the node explicitly
+    # (optional - otherwise it will be done automatically
+    # when the garbage collector destroys the node object)
+    acc.destroy_node()
+    rclpy.shutdown()
+
+
 if __name__ == '__main__':
-    try:
-        adaptive_cruise_control()
-    except rospy2.ROSInterruptException:
-        rospy2.loginfo("adaptive_cruise_control_node finished")
+    main()

@@ -1,0 +1,15 @@
+-- Found ament_cmake_auto: 0.9.9 (/opt/ros/foxy/share/ament_cmake_auto/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+CMake Error at /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:162 (message):
+  rosidl_generate_interfaces() the passed dependency
+  'autoware_auto_planning_msgs' has not been found before using
+  find_package()
+Call Stack (most recent call first):
+  CMakeLists.txt:11 (rosidl_generate_interfaces)
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/kcg/copy/idan_driver_ws/idan_driver/autoware_auto_msgs/autoware_auto_vehicle_msgs/build/autoware_auto_vehicle_msgs/CMakeFiles/CMakeOutput.log".

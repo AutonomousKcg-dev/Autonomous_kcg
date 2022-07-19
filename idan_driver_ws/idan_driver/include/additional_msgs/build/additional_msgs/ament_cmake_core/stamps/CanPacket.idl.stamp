@@ -1,0 +1,19 @@
+#include "std_msgs/msg/Header.idl"
+module additional_msgs {
+  module msg {
+    typedef uint8 uint8__8[8];
+    @verbatim (language="comment", text=
+      " CAN packet")
+
+    struct CanPacket {
+ 	std_msgs::msg::Header header;
+	@default (value=0)
+	uint32 count;
+	uint32 id;
+	uint8  len;
+	uint8__8  dat;
+	uint16 flag;
+	uint32 time;
+    };
+  };
+};

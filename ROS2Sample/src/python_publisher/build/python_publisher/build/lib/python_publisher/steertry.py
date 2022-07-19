@@ -18,14 +18,12 @@ import keyboard  # Requires Super User (sudo -s)
 import datetime
 from sensor_msgs.msg import Joy
 from std_msgs.msg import Float32
-from adaptive_cruise_control import adaptive_cruise_control
+from python_publisher.adaptive_cruise_control import adaptive_cruise_control
 
 
 ########################################################################################################
 ########################################################################################################
 ########################################################################################################
-def acc():
-    adaptive_cruise_control()
 
 
 class MinimalPublisher(Node):
@@ -88,7 +86,4 @@ def main(args=None):
 
 
 if __name__ == '__main__':
-    th = threading.Thread(target=acc)
-    th.start() 
     main()
-    th.join()
