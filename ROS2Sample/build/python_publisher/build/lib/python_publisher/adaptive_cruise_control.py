@@ -88,7 +88,7 @@ class adaptive_cruise_control(Node):
         # PID
         self.velocity_PID = PID(kp=0.75, ki=0, kd=0.3)
 
-        self.wheel_PID = PID(kp=0.095, ki=0.005, kd=0.02)
+        self.wheel_PID = PID(kp=0.05, ki=0.01, kd=0.002)
 
         # subscribers
         self.dogt_listener = self.create_subscription(
@@ -115,8 +115,8 @@ class adaptive_cruise_control(Node):
 
         # pure pursuit algo
         cy, cx = get_path(
-            "/home/kcg/copy/ROS2Sample/src/python_publisher/python_publisher/submodules/path2.txt")
-        # self.pure_pursuit = PurePursuit(cy, cx, 0.0)
+            "/home/kcg/copy/ROS2Sample/path.txt")
+        self.pure_pursuit = PurePursuit(cy, cx, 0.0)
         # self.ai = 0  # speed proportion control
         # self.di = 0  # steer control
 
@@ -160,8 +160,19 @@ class adaptive_cruise_control(Node):
         self.ego_car_pose_y_nav = msg.latitude
         self.ego_car_pose_x_nav = msg.longitude
 
-        # # use pure pursuit algo
-        # self.di, self.ai = self.pure_pursuit.process()
+        # use pure pursuit algo
+        self.pure_pursuit.car_state.last_x_coord = self.pure_pursuit.car_state.x_coord
+        self.pure_pursuit.car_state.last_y_coord = self.pure_pursuit.car_state.y_coord
+        self.pure_pursuit.car_state.x_coord = self.ego_car_pose_x_nav
+        self.pure_pursuit.car_state.y_coord = self.ego_car_pose_y_nav
+        self.pure_pursuit.run()
+
+        # plot
+        ax.clear()
+        ax.plot(self.pure_pursuit.cx, self.pure_pursuit.cy)
+        ax.scatter([self.pure_pursuit.cx[self.pure_pursuit.curr_index + value_dist]], [self.pure_pursuit.cy[self.pure_pursuit.curr_index + value_dist]], marker="+")
+        ax.scatter([self.pure_pursuit.car_state.x_coord], [self.pure_pursuit.car_state.y_coord])
+        plt.pause(0.001)
 
         # self.pure_pursuit.state.update(self.ai, self.di)
         # self.pure_pursuit.state.y = self.ego_car_pose_y_nav * 10000000000000
@@ -269,7 +280,8 @@ class adaptive_cruise_control(Node):
         #####################################################
         # wheel control
         #####################################################
-        error_w = self.ego_car_lane_offset #need zavit and live gps offset
+        error_yaw, error_dist = self.pure_pursuit.run()
+        error_w = error_dist + error_yaw
         output_w = self.wheel_PID.output(error_w)
         print("steer: ", output_w)
 
