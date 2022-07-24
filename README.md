@@ -96,7 +96,26 @@ source install/setup.bash
 ros2 run python_publisher acc
 ```
 
+### How to run the RCC
 
+1. cd copy/ROS2Sample
+2. colcon build
+3. source install/setup.bash
+- For recording a scenario:
+  create an enviorment variable Named ACTION
+ ```ruby
+  export ACTION=RECORD
+  ```
+- For playing a scenario:
+  create an enviorment variable named ACTION
+```ruby
+  export ACTION=PLAY
+```
 
+4. run the ros2 node : rcc
+```ruby
+ros2 run python_publisher rcc
+```
 
+Note: the path info is located into a file named - path.txt 
 
