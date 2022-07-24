@@ -2,4 +2,5 @@
 acc = python_publisher.adaptive_cruise_control:main
 pid = controllerPID.PID:output
 publisher = python_publisher.steertry:main
+rcc = python_publisher.record_sub:main
 

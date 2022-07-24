@@ -86,13 +86,13 @@ class adaptive_cruise_control(Node):
         self.ego_car_speed = 0.0
 
         # PID
-        self.velocity_PID = PID(kp=0.75, ki=0, kd=0.5)
+        self.velocity_PID = PID(kp=0.75, ki=0, kd=0.3)
 
-        self.wheel_PID = PID(kp=0.2, ki=0.0, kd=0.5)
+        self.wheel_PID = PID(kp=0.095, ki=0.005, kd=0.02)
 
         # subscribers
         self.dogt_listener = self.create_subscription(
-            ROIAndDOGTOutput, "/cognataSDK/dogt/GlobalSensors", self.DOGTcb, 10)  # DOGT Listener
+            ROIAndDOGTOutput, "/cognataSDK/dogt/DynamicObjectGroundTruth", self.DOGTcb, 10)  # DOGT Listener
         self.gps_listener = self.create_subscription(
             GPSAdditionalData, "/cognataSDK/GPS/info/CognataGPS0002", self.GPScb, 10)  # GPS Listener
         self.GPSnavPoint = self.create_subscription(
@@ -116,9 +116,9 @@ class adaptive_cruise_control(Node):
         # pure pursuit algo
         cy, cx = get_path(
             "/home/kcg/copy/ROS2Sample/src/python_publisher/python_publisher/submodules/path2.txt")
-        self.pure_pursuit = PurePursuit(cy, cx, 0.0)
-        self.ai = 0  # speed proportion control
-        self.di = 0  # steer control
+        # self.pure_pursuit = PurePursuit(cy, cx, 0.0)
+        # self.ai = 0  # speed proportion control
+        # self.di = 0  # steer control
 
         # start putr pursuit
         # self.pure_pursuit_thread = Thread(target=self.pure_sus)
@@ -160,21 +160,21 @@ class adaptive_cruise_control(Node):
         self.ego_car_pose_y_nav = msg.latitude
         self.ego_car_pose_x_nav = msg.longitude
 
-        # use pure pursuit algo
-        self.di, self.ai = self.pure_pursuit.process()
+        # # use pure pursuit algo
+        # self.di, self.ai = self.pure_pursuit.process()
 
-        self.pure_pursuit.state.update(self.ai, self.di)
-        self.pure_pursuit.state.y = self.ego_car_pose_y_nav * 10000000000000
-        self.pure_pursuit.state.x = self.ego_car_pose_x_nav
+        # self.pure_pursuit.state.update(self.ai, self.di)
+        # self.pure_pursuit.state.y = self.ego_car_pose_y_nav * 10000000000000
+        # self.pure_pursuit.state.x = self.ego_car_pose_x_nav
 
-        ax.clear()
-        ax.plot(self.pure_pursuit.target_course.cy,
-                self.pure_pursuit.target_course.cx, "-r")
-        # ax.scatter([self.pure_pursuit.state.y], [self.pure_pursuit.state.x])
-        plt.pause(0.033)
+        # ax.clear()
+        # ax.plot(self.pure_pursuit.target_course.cy,
+        #         self.pure_pursuit.target_course.cx, "-r")
+        # # ax.scatter([self.pure_pursuit.state.y], [self.pure_pursuit.state.x])
+        # plt.pause(0.033)
 
-        print("i am sus nav: ", self.ego_car_pose_y_nav)
-        print(" i am sus target: ", max(self.pure_pursuit.target_course.cy))
+        # print("i am sus nav: ", self.ego_car_pose_y_nav)
+        # print(" i am sus target: ", max(self.pure_pursuit.target_course.cy))
 
     #####################################################
     # GPS message callback
@@ -191,23 +191,23 @@ class adaptive_cruise_control(Node):
         self.ego_car_pose_x = msg.position._x
         self.ego_car_pose = msg.position
 
-        self.pure_pursuit.state.v = self.ego_car_velocity._x
+        # self.pure_pursuit.state.v = self.ego_car_velocity._x
         # self.pure_pursuit.state.yaw = msg.yaw
         #print(fonts.GREEN + "Ego car lane ID = " + str(self.ego_car_lane))
 
-    def pure_sus(self):
-        # for plotting
-        ax.clear()
-        ax.plot(self.pure_pursuit.target_course.cx,
-                self.pure_pursuit.target_course.cy, "-r")
-        plt.plot(self.pure_pursuit.sus_states.x,
-                 self.pure_pursuit.sus_states.y, "-b", label="trajectory")
+    # def pure_sus(self):
+    #     # for plotting
+    #     ax.clear()
+    #     ax.plot(self.pure_pursuit.target_course.cx,
+    #             self.pure_pursuit.target_course.cy, "-r")
+    #     plt.plot(self.pure_pursuit.sus_states.x,
+    #              self.pure_pursuit.sus_states.y, "-b", label="trajectory")
 
-        # for plotting
-        print("Degree: ", self.di)
-        plot_arrow(self.pure_pursuit.state.x,
-                   self.pure_pursuit.state.y, self.pure_pursuit.state.yaw)
-        plt.pause(0.001)
+    #     # for plotting
+    #     print("Degree: ", self.di)
+    #     plot_arrow(self.pure_pursuit.state.x,
+    #                self.pure_pursuit.state.y, self.pure_pursuit.state.yaw)
+    #     plt.pause(0.001)
 
     def shutdown_handler(self):
         # if self.in_session:
@@ -260,16 +260,17 @@ class adaptive_cruise_control(Node):
         #####################################################
 
         # gas and barke Control
-        #error = self.front_car.distance_x - self.reference_distance
-        output = self.ai / self.pure_pursuit.target_speed
+        error = self.front_car.distance_x - self.reference_distance
+        output = self.velocity_PID.output(error)
+        print("sus error: ", error)
+        print("self sus distanse: ", self.front_car.distance_x)
         print("speed pid: ", output)
 
         #####################################################
         # wheel control
         #####################################################
-        #error_w = self.ego_car_lane_offset
-        #error_w = error_w**2 if error_w > 0.0 else -(error_w**2)
-        output_w = float(self.di)
+        error_w = self.ego_car_lane_offset #need zavit and live gps offset
+        output_w = self.wheel_PID.output(error_w)
         print("steer: ", output_w)
 
         #####################################################
@@ -287,9 +288,11 @@ class adaptive_cruise_control(Node):
             # self.vehicle_cmd.linear.x = output
             # self.vehicle_cmd.linear.y = 0
             msg = Float32()
-            if (self.ego_car_speed > 80):
+            if (self.ego_car_speed > 30):
+                msg.data = 0.3
+                self.car_cmd_publisher_brake.publish(msg)
                 msg.data = 0.0
-            elif (50 < self.ego_car_speed < 80):
+            elif (20 < self.ego_car_speed < 30):
                 msg.data = output * 0.7
             else:
                 msg.data = output

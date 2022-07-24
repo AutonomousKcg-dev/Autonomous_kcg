@@ -13,7 +13,10 @@ python_publisher/__init__.py
 python_publisher/adaptive_cruise_control.py
 python_publisher/controllerPID.py
 python_publisher/controllerPID_test.py
+python_publisher/record_sub.py
 python_publisher/steertry.py
+python_publisher/submodules/Pure_Pursuit.py
+python_publisher/submodules/__init__.py
 resource/python_publisher
 test/test_copyright.py
 test/test_flake8.py
