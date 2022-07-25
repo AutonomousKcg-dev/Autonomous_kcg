@@ -7,6 +7,7 @@ from rclpy.node import Node
 import matplotlib.pyplot as plt
 import csv
 import keyboard  # Requires Super User (sudo -s)
+
 # from cognata_sdk_ros2.msg import *
 from cognata_sdk_ros2.msg import ROIAndDOGTOutput, GPSAdditionalData, VehicleMsg
 from sensor_msgs.msg import NavSatFix
@@ -63,6 +64,13 @@ class front_car:
     velocity_y = 0
 
 
+def abline(slope, intercept, ax, min_x, max_x):
+    """Plot a line from slope and intercept"""
+    x_vals = np.array([min_x, max_x])
+    y_vals = intercept + slope * x_vals
+    ax.plot(x_vals.flatten(), y_vals.flatten(), '--')
+
+
 class adaptive_cruise_control(Node):
     def __init__(self):
         super().__init__("adaptive_cruise_control")
@@ -88,15 +96,18 @@ class adaptive_cruise_control(Node):
         # PID
         self.velocity_PID = PID(kp=0.75, ki=0, kd=0.3)
 
-        self.wheel_PID = PID(kp=0.05, ki=0.01, kd=0.002)
+        self.wheel_PID = PID(kp=0.05, ki=0, kd=0.002)
+        # self.wheel_PID = PID(kp=0.05, ki=0, kd=0)
 
         # subscribers
+        # self.dogt_listener = self.create_subscription(
+        #     ROIAndDOGTOutput, "/cognataSDK/dogt/DynamicObjectGroundTruth", self.DOGTcb, 10)  # DOGT Listener
         self.dogt_listener = self.create_subscription(
-            ROIAndDOGTOutput, "/cognataSDK/dogt/DynamicObjectGroundTruth", self.DOGTcb, 10)  # DOGT Listener
+            ROIAndDOGTOutput, "/cognataSDK/dogt/GlobalSensors", self.DOGTcb, 10)  # DOGT Listener
         self.gps_listener = self.create_subscription(
             GPSAdditionalData, "/cognataSDK/GPS/info/CognataGPS0002", self.GPScb, 10)  # GPS Listener
         self.GPSnavPoint = self.create_subscription(
-            NavSatFix, "cognataSDK/GPS/navsat/CognataGPS0002", self.GPScb_nav, 30)  # GPS Point listener
+            NavSatFix, "cognataSDK/GPS/navsat/CognataGPS0002", self.GPScb_nav, 10)  # GPS Point listener
 
         # publishers
         # self.vehicle_cmd_publisher = rospy2.Publisher('/cognataSDK/vehicle_cmd', Twist, queue_size=10) # Publisher
@@ -150,6 +161,7 @@ class adaptive_cruise_control(Node):
     #####################################################
     def DOGTcb(self, msg: ROIAndDOGTOutput):
         self.vehicleList = msg.vehicle_list
+        # print("sus vehiclelist sususususuususususuusususus:", self.vehicleList)
 
     #####################################################
     # GPS message callback
@@ -169,9 +181,19 @@ class adaptive_cruise_control(Node):
 
         # plot
         ax.clear()
-        ax.plot(self.pure_pursuit.cx, self.pure_pursuit.cy)
-        ax.scatter([self.pure_pursuit.cx[self.pure_pursuit.curr_index + value_dist]], [self.pure_pursuit.cy[self.pure_pursuit.curr_index + value_dist]], marker="+")
-        ax.scatter([self.pure_pursuit.car_state.x_coord], [self.pure_pursuit.car_state.y_coord])
+        ax.plot(self.pure_pursuit.cx, self.pure_pursuit.cy, "-r") # plot course
+
+        ax.plot([self.pure_pursuit.car_state.x_coord, self.pure_pursuit.target_point[0]],
+                [self.pure_pursuit.car_state.y_coord, self.pure_pursuit.target_point[1]], "-g") # pot target point
+
+        abline(self.pure_pursuit.linear_reg.coef_, self.pure_pursuit.linear_reg.intercept_, ax,
+               self.pure_pursuit.cx[self.pure_pursuit.curr_index], self.pure_pursuit.cx[self.pure_pursuit.curr_index + sample]) # draw linear regression
+
+        ax.scatter([self.pure_pursuit.target_point[0]], 
+                   [self.pure_pursuit.target_point[1]], marker="+") # mark target point
+
+        ax.scatter([self.pure_pursuit.car_state.x_coord],
+                   [self.pure_pursuit.car_state.y_coord]) # draw car
         plt.pause(0.001)
 
         # self.pure_pursuit.state.update(self.ai, self.di)
@@ -237,14 +259,14 @@ class adaptive_cruise_control(Node):
             if(int(car.lane_id) == self.ego_car_lane and car.description.bounding_box.transform.translation.x > 0 and abs(car.description.bounding_box.transform.translation.y) < self.lane_size):
                 # print("Distance =" + str(car.description.bounding_box.transform.translation.x) +" to Car#"+ str(idx) +" in vehicle list ")
                 if (car.description.bounding_box.transform.translation.x < self.front_car.distance_x):
-                    print("Detected Front Car")
+                    # print("Detected Front Car")
                     self.front_car.distance_x = car.description.bounding_box.transform.translation.x
                     self.front_car.distance_y = car.description.bounding_box.transform.translation.y
                     self.front_car.velocity_x = car.description.motion.linear.x
                     self.front_car.velocity_y = car.description.motion.angular.z
                     self.front_car.id = idx
-                    print(self.front_car.distance_x)
-                    print(car.lane_id, " not ego car ")
+                    # print(self.front_car.distance_x)
+                    # print(car.lane_id, " not ego car ")
                     # print("[" + self.vehicleList[idx].description.objectId + "," + self.vehicleList[idx].description.ROISubtype + "," + str(self.dist_to_front_car) + "]")
         # if (self.front_car.id >= 0):
         #     print("front car No." + fonts.BOLD + fonts.BLUE + self.vehicleList[self.front_car.id].description.objectId + fonts.ENDC + " is : " + fonts.BOLD + fonts.BLUE + self.vehicleList[self.front_car.id].description.ROISubtype + fonts.ENDC + ", with distance : "+ fonts.BOLD + fonts.BLUE +str(self.vehicleList[self.front_car.id].description.bounding_box.transform.translation.x) + fonts.ENDC)
@@ -273,15 +295,17 @@ class adaptive_cruise_control(Node):
         # gas and barke Control
         error = self.front_car.distance_x - self.reference_distance
         output = self.velocity_PID.output(error)
-        print("sus error: ", error)
-        print("self sus distanse: ", self.front_car.distance_x)
-        print("speed pid: ", output)
+        # print("sus error: ", error)
+        # print("self sus distanse: ", self.front_car.distance_x,
+        #       "i am the sus of the sus not change")
+        # print("speed pid: ", output)
 
         #####################################################
         # wheel control
         #####################################################
         error_yaw, error_dist = self.pure_pursuit.run()
-        error_w = error_dist + error_yaw
+        # error_w = error_dist + error_yaw
+        error_w = error_yaw
         output_w = self.wheel_PID.output(error_w)
         print("steer: ", output_w)
 
