@@ -1,0 +1,38 @@
+[0.671s] Invoking command in '/home/kcg/copy/ROS2Sample/src/python_publisher': AMENT_PREFIX_PATH=/home/kcg/copy/ROS2Sample/src/install/cognata_sdk_ros2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kcg/copy/ROS2Sample/src/install/cognata_sdk_ros2 LD_LIBRARY_PATH=/home/kcg/copy/ROS2Sample/src/install/cognata_sdk_ros2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kcg/copy/ROS2Sample/src/install/python_publisher/lib/python3.8/site-packages:/home/kcg/copy/ROS2Sample/src/install/cognata_sdk_ros2/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/python_publisher build --build-base /home/kcg/copy/ROS2Sample/src/build/python_publisher/build install --prefix /home/kcg/copy/ROS2Sample/src/install/python_publisher --record /home/kcg/copy/ROS2Sample/src/build/python_publisher/install.log --single-version-externally-managed
+[0.851s] running egg_info
+[0.851s] writing ../build/python_publisher/python_publisher.egg-info/PKG-INFO
+[0.851s] writing dependency_links to ../build/python_publisher/python_publisher.egg-info/dependency_links.txt
+[0.851s] writing entry points to ../build/python_publisher/python_publisher.egg-info/entry_points.txt
+[0.851s] writing requirements to ../build/python_publisher/python_publisher.egg-info/requires.txt
+[0.851s] writing top-level names to ../build/python_publisher/python_publisher.egg-info/top_level.txt
+[0.877s] reading manifest file '../build/python_publisher/python_publisher.egg-info/SOURCES.txt'
+[0.879s] writing manifest file '../build/python_publisher/python_publisher.egg-info/SOURCES.txt'
+[0.879s] running build
+[0.879s] running build_py
+[0.880s] copying python_publisher/adaptive_cruise_control.py -> /home/kcg/copy/ROS2Sample/src/build/python_publisher/build/lib/python_publisher
+[0.881s] copying python_publisher/record_sub.py -> /home/kcg/copy/ROS2Sample/src/build/python_publisher/build/lib/python_publisher
+[0.882s] creating /home/kcg/copy/ROS2Sample/src/build/python_publisher/build/lib/python_publisher/submodules
+[0.882s] copying python_publisher/submodules/__init__.py -> /home/kcg/copy/ROS2Sample/src/build/python_publisher/build/lib/python_publisher/submodules
+[0.882s] copying python_publisher/submodules/Pure_Pursuit.py -> /home/kcg/copy/ROS2Sample/src/build/python_publisher/build/lib/python_publisher/submodules
+[0.882s] running install
+[0.883s] running install_lib
+[0.884s] copying /home/kcg/copy/ROS2Sample/src/build/python_publisher/build/lib/python_publisher/adaptive_cruise_control.py -> /home/kcg/copy/ROS2Sample/src/install/python_publisher/lib/python3.8/site-packages/python_publisher
+[0.884s] creating /home/kcg/copy/ROS2Sample/src/install/python_publisher/lib/python3.8/site-packages/python_publisher/submodules
+[0.884s] copying /home/kcg/copy/ROS2Sample/src/build/python_publisher/build/lib/python_publisher/submodules/__init__.py -> /home/kcg/copy/ROS2Sample/src/install/python_publisher/lib/python3.8/site-packages/python_publisher/submodules
+[0.884s] copying /home/kcg/copy/ROS2Sample/src/build/python_publisher/build/lib/python_publisher/submodules/Pure_Pursuit.py -> /home/kcg/copy/ROS2Sample/src/install/python_publisher/lib/python3.8/site-packages/python_publisher/submodules
+[0.884s] copying /home/kcg/copy/ROS2Sample/src/build/python_publisher/build/lib/python_publisher/record_sub.py -> /home/kcg/copy/ROS2Sample/src/install/python_publisher/lib/python3.8/site-packages/python_publisher
+[0.885s] byte-compiling /home/kcg/copy/ROS2Sample/src/install/python_publisher/lib/python3.8/site-packages/python_publisher/adaptive_cruise_control.py to adaptive_cruise_control.cpython-38.pyc
+[0.887s] byte-compiling /home/kcg/copy/ROS2Sample/src/install/python_publisher/lib/python3.8/site-packages/python_publisher/submodules/__init__.py to __init__.cpython-38.pyc
+[0.887s] byte-compiling /home/kcg/copy/ROS2Sample/src/install/python_publisher/lib/python3.8/site-packages/python_publisher/submodules/Pure_Pursuit.py to Pure_Pursuit.cpython-38.pyc
+[0.888s] byte-compiling /home/kcg/copy/ROS2Sample/src/install/python_publisher/lib/python3.8/site-packages/python_publisher/record_sub.py to record_sub.cpython-38.pyc
+[0.888s] running install_data
+[0.889s] running install_egg_info
+[0.890s] removing '/home/kcg/copy/ROS2Sample/src/install/python_publisher/lib/python3.8/site-packages/python_publisher-0.0.0-py3.8.egg-info' (and everything under it)
+[0.890s] Copying ../build/python_publisher/python_publisher.egg-info to /home/kcg/copy/ROS2Sample/src/install/python_publisher/lib/python3.8/site-packages/python_publisher-0.0.0-py3.8.egg-info
+[0.891s] running install_scripts
+[0.902s] Installing acc script to /home/kcg/copy/ROS2Sample/src/install/python_publisher/lib/python_publisher
+[0.928s] Installing pid script to /home/kcg/copy/ROS2Sample/src/install/python_publisher/lib/python_publisher
+[0.928s] Installing publisher script to /home/kcg/copy/ROS2Sample/src/install/python_publisher/lib/python_publisher
+[0.929s] Installing rcc script to /home/kcg/copy/ROS2Sample/src/install/python_publisher/lib/python_publisher
+[0.929s] writing list of installed files to '/home/kcg/copy/ROS2Sample/src/build/python_publisher/install.log'
+[0.949s] Invoked command in '/home/kcg/copy/ROS2Sample/src/python_publisher' returned '0': AMENT_PREFIX_PATH=/home/kcg/copy/ROS2Sample/src/install/cognata_sdk_ros2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kcg/copy/ROS2Sample/src/install/cognata_sdk_ros2 LD_LIBRARY_PATH=/home/kcg/copy/ROS2Sample/src/install/cognata_sdk_ros2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kcg/copy/ROS2Sample/src/install/python_publisher/lib/python3.8/site-packages:/home/kcg/copy/ROS2Sample/src/install/cognata_sdk_ros2/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/python_publisher build --build-base /home/kcg/copy/ROS2Sample/src/build/python_publisher/build install --prefix /home/kcg/copy/ROS2Sample/src/install/python_publisher --record /home/kcg/copy/ROS2Sample/src/build/python_publisher/install.log --single-version-externally-managed

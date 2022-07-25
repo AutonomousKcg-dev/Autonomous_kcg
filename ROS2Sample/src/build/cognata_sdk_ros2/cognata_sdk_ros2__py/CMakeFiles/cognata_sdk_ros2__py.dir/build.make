@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/shovals/copy/ROS2Sample/src/cognata_sdk_ros2
+CMAKE_SOURCE_DIR = /home/kcg/copy/ROS2Sample/src/cognata_sdk_ros2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/shovals/copy/ROS2Sample/src/build/cognata_sdk_ros2
+CMAKE_BINARY_DIR = /home/kcg/copy/ROS2Sample/src/build/cognata_sdk_ros2
 
 # Utility rule file for cognata_sdk_ros2__py.
 
@@ -172,8 +172,8 @@ rosidl_generator_py/cognata_sdk_ros2/_cognata_sdk_ros2_s.ep.rosidl_typesupport_f
 rosidl_generator_py/cognata_sdk_ros2/_cognata_sdk_ros2_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/geometry_msgs/msg/Vector3Stamped.idl
 rosidl_generator_py/cognata_sdk_ros2/_cognata_sdk_ros2_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/geometry_msgs/msg/Wrench.idl
 rosidl_generator_py/cognata_sdk_ros2/_cognata_sdk_ros2_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/geometry_msgs/msg/WrenchStamped.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/shovals/copy/ROS2Sample/src/build/cognata_sdk_ros2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
-	cd /home/shovals/copy/ROS2Sample/src/build/cognata_sdk_ros2/cognata_sdk_ros2__py && /usr/bin/python3 /opt/ros/foxy/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/shovals/copy/ROS2Sample/src/build/cognata_sdk_ros2/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kcg/copy/ROS2Sample/src/build/cognata_sdk_ros2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
+	cd /home/kcg/copy/ROS2Sample/src/build/cognata_sdk_ros2/cognata_sdk_ros2__py && /usr/bin/python3 /opt/ros/foxy/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/kcg/copy/ROS2Sample/src/build/cognata_sdk_ros2/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
 rosidl_generator_py/cognata_sdk_ros2/_cognata_sdk_ros2_s.ep.rosidl_typesupport_introspection_c.c: rosidl_generator_py/cognata_sdk_ros2/_cognata_sdk_ros2_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/cognata_sdk_ros2/_cognata_sdk_ros2_s.ep.rosidl_typesupport_introspection_c.c
@@ -303,10 +303,10 @@ cognata_sdk_ros2__py/CMakeFiles/cognata_sdk_ros2__py.dir/build: cognata_sdk_ros2
 .PHONY : cognata_sdk_ros2__py/CMakeFiles/cognata_sdk_ros2__py.dir/build
 
 cognata_sdk_ros2__py/CMakeFiles/cognata_sdk_ros2__py.dir/clean:
-	cd /home/shovals/copy/ROS2Sample/src/build/cognata_sdk_ros2/cognata_sdk_ros2__py && $(CMAKE_COMMAND) -P CMakeFiles/cognata_sdk_ros2__py.dir/cmake_clean.cmake
+	cd /home/kcg/copy/ROS2Sample/src/build/cognata_sdk_ros2/cognata_sdk_ros2__py && $(CMAKE_COMMAND) -P CMakeFiles/cognata_sdk_ros2__py.dir/cmake_clean.cmake
 .PHONY : cognata_sdk_ros2__py/CMakeFiles/cognata_sdk_ros2__py.dir/clean
 
 cognata_sdk_ros2__py/CMakeFiles/cognata_sdk_ros2__py.dir/depend:
-	cd /home/shovals/copy/ROS2Sample/src/build/cognata_sdk_ros2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/shovals/copy/ROS2Sample/src/cognata_sdk_ros2 /home/shovals/copy/ROS2Sample/src/build/cognata_sdk_ros2/cognata_sdk_ros2__py /home/shovals/copy/ROS2Sample/src/build/cognata_sdk_ros2 /home/shovals/copy/ROS2Sample/src/build/cognata_sdk_ros2/cognata_sdk_ros2__py /home/shovals/copy/ROS2Sample/src/build/cognata_sdk_ros2/cognata_sdk_ros2__py/CMakeFiles/cognata_sdk_ros2__py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kcg/copy/ROS2Sample/src/build/cognata_sdk_ros2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kcg/copy/ROS2Sample/src/cognata_sdk_ros2 /home/kcg/copy/ROS2Sample/src/build/cognata_sdk_ros2/cognata_sdk_ros2__py /home/kcg/copy/ROS2Sample/src/build/cognata_sdk_ros2 /home/kcg/copy/ROS2Sample/src/build/cognata_sdk_ros2/cognata_sdk_ros2__py /home/kcg/copy/ROS2Sample/src/build/cognata_sdk_ros2/cognata_sdk_ros2__py/CMakeFiles/cognata_sdk_ros2__py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : cognata_sdk_ros2__py/CMakeFiles/cognata_sdk_ros2__py.dir/depend
 
