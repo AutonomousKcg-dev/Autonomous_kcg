@@ -1,0 +1,21 @@
+[0.012s] Invoking command in '/home/kcg/copy/idan_ros2_ws/src/idan_control_example/build/idan_control_example': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/kcg/copy/idan_ros2_ws/src/idan_control_example/build/idan_control_example -- -j8 -l8
+[0.033s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.051s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.195s] -- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.224s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.227s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.322s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.365s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.366s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.490s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.540s] CMake Error at /opt/ros/foxy/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:42 (message):
+[0.540s]   ament_target_dependencies() the first argument must be a valid target name
+[0.540s] Call Stack (most recent call first):
+[0.540s]   CMakeLists.txt:36 (ament_target_dependencies)
+[0.540s] 
+[0.540s] 
+[0.541s] -- Configuring incomplete, errors occurred!
+[0.541s] See also "/home/kcg/copy/idan_ros2_ws/src/idan_control_example/build/idan_control_example/CMakeFiles/CMakeOutput.log".
+[0.541s] See also "/home/kcg/copy/idan_ros2_ws/src/idan_control_example/build/idan_control_example/CMakeFiles/CMakeError.log".
+[0.546s] make: *** [Makefile:222: cmake_check_build_system] Error 1
+[0.547s] Invoked command in '/home/kcg/copy/idan_ros2_ws/src/idan_control_example/build/idan_control_example' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/kcg/copy/idan_ros2_ws/src/idan_control_example/build/idan_control_example -- -j8 -l8

@@ -1,0 +1,13 @@
+[0.008s] Invoking command in '/home/shovals/copy/idan_driver_ws/idan_driver/build/idan_driver': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/shovals/copy/idan_driver_ws/idan_driver -DCMAKE_INSTALL_PREFIX=/home/shovals/copy/idan_driver_ws/idan_driver/install/idan_driver
+[0.016s] CMake Error at CMakeLists.txt:13 (find_package):
+[0.016s]   find_package called with invalid argument "additional_msgs"
+[0.016s] 
+[0.016s] 
+[0.016s] CMake Error at CMakeLists.txt:15 (ament_auto_find_build_dependencies):
+[0.016s]   Unknown CMake command "ament_auto_find_build_dependencies".
+[0.016s] 
+[0.016s] 
+[0.016s] -- Configuring incomplete, errors occurred!
+[0.016s] See also "/home/shovals/copy/idan_driver_ws/idan_driver/build/idan_driver/CMakeFiles/CMakeOutput.log".
+[0.016s] See also "/home/shovals/copy/idan_driver_ws/idan_driver/build/idan_driver/CMakeFiles/CMakeError.log".
+[0.017s] Invoked command in '/home/shovals/copy/idan_driver_ws/idan_driver/build/idan_driver' returned '1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/shovals/copy/idan_driver_ws/idan_driver -DCMAKE_INSTALL_PREFIX=/home/shovals/copy/idan_driver_ws/idan_driver/install/idan_driver

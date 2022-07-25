@@ -6,5 +6,5 @@ C_FLAGS = -fPIC   -Wall -Wextra -std=gnu99
 
 C_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROS_PACKAGE_NAME=\"cognata_sdk_ros2\" -Dcognata_sdk_ros2__rosidl_typesupport_c__pyext_EXPORTS
 
-C_INCLUDES = -I/home/kcg/copy/ROS2Sample/src/build/cognata_sdk_ros2/rosidl_generator_c -I/home/kcg/copy/ROS2Sample/src/build/cognata_sdk_ros2/rosidl_generator_py -I/usr/include/python3.8 -I/home/kcg/copy/ROS2Sample/src/build/cognata_sdk_ros2/rosidl_typesupport_c -isystem /opt/ros/foxy/include 
+C_INCLUDES = -I/home/shovals/copy/ROS2Sample/src/build/cognata_sdk_ros2/rosidl_generator_c -I/home/shovals/copy/ROS2Sample/src/build/cognata_sdk_ros2/rosidl_generator_py -I/usr/include/python3.8 -I/home/shovals/copy/ROS2Sample/src/build/cognata_sdk_ros2/rosidl_typesupport_c -isystem /opt/ros/foxy/include 
 

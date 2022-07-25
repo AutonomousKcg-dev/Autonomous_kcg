@@ -1,5 +1,0 @@
-  File "/home/eyal/AutowareAuto/my_packages/py_pkg/install/py_pkg/lib/python3.8/site-packages/py_pkg/py_node.py", line 24
-    grid = np.reshape(grid, (1500 500))
-                                  ^
-SyntaxError: invalid syntax
-

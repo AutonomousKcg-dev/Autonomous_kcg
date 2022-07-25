@@ -1,0 +1,8 @@
+prefix=/home/omer/drive-by-wire-Code-Example/install
+
+Name: idan_control_example
+Description: Description of idan_control_example
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lros_idan_control_example
+Requires: roscpp can_msgs std_msgs rospy

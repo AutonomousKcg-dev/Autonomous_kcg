@@ -1,0 +1,58 @@
+running egg_info
+creating ../../build/python_publisher/python_publisher.egg-info
+writing ../../build/python_publisher/python_publisher.egg-info/PKG-INFO
+writing dependency_links to ../../build/python_publisher/python_publisher.egg-info/dependency_links.txt
+writing entry points to ../../build/python_publisher/python_publisher.egg-info/entry_points.txt
+writing requirements to ../../build/python_publisher/python_publisher.egg-info/requires.txt
+writing top-level names to ../../build/python_publisher/python_publisher.egg-info/top_level.txt
+writing manifest file '../../build/python_publisher/python_publisher.egg-info/SOURCES.txt'
+reading manifest file '../../build/python_publisher/python_publisher.egg-info/SOURCES.txt'
+writing manifest file '../../build/python_publisher/python_publisher.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/shovals/copy/ROS2Sample/build/python_publisher/build
+creating /home/shovals/copy/ROS2Sample/build/python_publisher/build/lib
+creating /home/shovals/copy/ROS2Sample/build/python_publisher/build/lib/python_publisher
+copying python_publisher/__init__.py -> /home/shovals/copy/ROS2Sample/build/python_publisher/build/lib/python_publisher
+copying python_publisher/controllerPID.py -> /home/shovals/copy/ROS2Sample/build/python_publisher/build/lib/python_publisher
+copying python_publisher/controllerPID_test.py -> /home/shovals/copy/ROS2Sample/build/python_publisher/build/lib/python_publisher
+copying python_publisher/adaptive_cruise_control.py -> /home/shovals/copy/ROS2Sample/build/python_publisher/build/lib/python_publisher
+copying python_publisher/steertry.py -> /home/shovals/copy/ROS2Sample/build/python_publisher/build/lib/python_publisher
+copying python_publisher/record_sub.py -> /home/shovals/copy/ROS2Sample/build/python_publisher/build/lib/python_publisher
+creating /home/shovals/copy/ROS2Sample/build/python_publisher/build/lib/python_publisher/submodules
+copying python_publisher/submodules/Pure_Pursuit.py -> /home/shovals/copy/ROS2Sample/build/python_publisher/build/lib/python_publisher/submodules
+copying python_publisher/submodules/__init__.py -> /home/shovals/copy/ROS2Sample/build/python_publisher/build/lib/python_publisher/submodules
+running install
+running install_lib
+creating /home/shovals/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher
+creating /home/shovals/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher/submodules
+copying /home/shovals/copy/ROS2Sample/build/python_publisher/build/lib/python_publisher/submodules/Pure_Pursuit.py -> /home/shovals/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher/submodules
+copying /home/shovals/copy/ROS2Sample/build/python_publisher/build/lib/python_publisher/submodules/__init__.py -> /home/shovals/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher/submodules
+copying /home/shovals/copy/ROS2Sample/build/python_publisher/build/lib/python_publisher/__init__.py -> /home/shovals/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher
+copying /home/shovals/copy/ROS2Sample/build/python_publisher/build/lib/python_publisher/controllerPID.py -> /home/shovals/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher
+copying /home/shovals/copy/ROS2Sample/build/python_publisher/build/lib/python_publisher/controllerPID_test.py -> /home/shovals/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher
+copying /home/shovals/copy/ROS2Sample/build/python_publisher/build/lib/python_publisher/adaptive_cruise_control.py -> /home/shovals/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher
+copying /home/shovals/copy/ROS2Sample/build/python_publisher/build/lib/python_publisher/steertry.py -> /home/shovals/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher
+copying /home/shovals/copy/ROS2Sample/build/python_publisher/build/lib/python_publisher/record_sub.py -> /home/shovals/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher
+byte-compiling /home/shovals/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher/submodules/Pure_Pursuit.py to Pure_Pursuit.cpython-38.pyc
+byte-compiling /home/shovals/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher/submodules/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/shovals/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/shovals/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher/controllerPID.py to controllerPID.cpython-38.pyc
+byte-compiling /home/shovals/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher/controllerPID_test.py to controllerPID_test.cpython-38.pyc
+byte-compiling /home/shovals/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher/adaptive_cruise_control.py to adaptive_cruise_control.cpython-38.pyc
+byte-compiling /home/shovals/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher/steertry.py to steertry.cpython-38.pyc
+byte-compiling /home/shovals/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher/record_sub.py to record_sub.cpython-38.pyc
+running install_data
+creating /home/shovals/copy/ROS2Sample/install/python_publisher/share/ament_index
+creating /home/shovals/copy/ROS2Sample/install/python_publisher/share/ament_index/resource_index
+creating /home/shovals/copy/ROS2Sample/install/python_publisher/share/ament_index/resource_index/packages
+copying resource/python_publisher -> /home/shovals/copy/ROS2Sample/install/python_publisher/share/ament_index/resource_index/packages
+copying package.xml -> /home/shovals/copy/ROS2Sample/install/python_publisher/share/python_publisher
+running install_egg_info
+Copying ../../build/python_publisher/python_publisher.egg-info to /home/shovals/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher-0.0.0-py3.8.egg-info
+running install_scripts
+Installing acc script to /home/shovals/copy/ROS2Sample/install/python_publisher/lib/python_publisher
+Installing pid script to /home/shovals/copy/ROS2Sample/install/python_publisher/lib/python_publisher
+Installing publisher script to /home/shovals/copy/ROS2Sample/install/python_publisher/lib/python_publisher
+Installing rcc script to /home/shovals/copy/ROS2Sample/install/python_publisher/lib/python_publisher
+writing list of installed files to '/home/shovals/copy/ROS2Sample/build/python_publisher/install.log'

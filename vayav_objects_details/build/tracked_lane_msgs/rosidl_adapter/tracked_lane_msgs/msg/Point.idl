@@ -1,0 +1,38 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tracked_lane_msgs/msg/Point.msg
+// generated code does not contain a copyright notice
+
+
+module tracked_lane_msgs {
+  module msg {
+    struct Point {
+      @verbatim (language="comment", text=
+        " original image coordinates")
+      float u;
+
+      @verbatim (language="comment", text=
+        " original image coordinates")
+      float v;
+
+      @verbatim (language="comment", text=
+        " vehicle coordinates according to AUTOSAR coordinate system")
+      float x;
+
+      @verbatim (language="comment", text=
+        " vehicle coordinates according to AUTOSAR coordinate system")
+      float y;
+
+      @verbatim (language="comment", text=
+        " vehicle coordinates according to AUTOSAR coordinate system")
+      float z;
+
+      @verbatim (language="comment", text=
+        " scaled 0..1")
+      float confidence;
+
+      @verbatim (language="comment", text=
+        " Is this point valid according to lane-semseg")
+      boolean valid;
+    };
+  };
+};

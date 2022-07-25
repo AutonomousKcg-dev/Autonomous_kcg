@@ -1,0 +1,14 @@
+from autoware_auto_planning_msgs.msg._approval import Approval  # noqa: F401
+from autoware_auto_planning_msgs.msg._had_map_route import HADMapRoute  # noqa: F401
+from autoware_auto_planning_msgs.msg._lateral_offset import LateralOffset  # noqa: F401
+from autoware_auto_planning_msgs.msg._order_movement import OrderMovement  # noqa: F401
+from autoware_auto_planning_msgs.msg._path import Path  # noqa: F401
+from autoware_auto_planning_msgs.msg._path_change_module import PathChangeModule  # noqa: F401
+from autoware_auto_planning_msgs.msg._path_change_module_array import PathChangeModuleArray  # noqa: F401
+from autoware_auto_planning_msgs.msg._path_change_module_id import PathChangeModuleId  # noqa: F401
+from autoware_auto_planning_msgs.msg._path_point import PathPoint  # noqa: F401
+from autoware_auto_planning_msgs.msg._path_point_with_lane_id import PathPointWithLaneId  # noqa: F401
+from autoware_auto_planning_msgs.msg._path_with_lane_id import PathWithLaneId  # noqa: F401
+from autoware_auto_planning_msgs.msg._route import Route  # noqa: F401
+from autoware_auto_planning_msgs.msg._trajectory import Trajectory  # noqa: F401
+from autoware_auto_planning_msgs.msg._trajectory_point import TrajectoryPoint  # noqa: F401

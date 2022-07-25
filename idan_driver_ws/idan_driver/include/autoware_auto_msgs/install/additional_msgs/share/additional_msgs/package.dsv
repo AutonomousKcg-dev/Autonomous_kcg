@@ -1,0 +1,5 @@
+source;share/additional_msgs/local_setup.bash
+source;share/additional_msgs/local_setup.dsv
+source;share/additional_msgs/local_setup.ps1
+source;share/additional_msgs/local_setup.sh
+source;share/additional_msgs/local_setup.zsh

@@ -1,0 +1,9 @@
+/home/kcg/copy/idan_ros2_ws/build/idan_control_example/CMakeFiles/install/strip.dir
+/home/kcg/copy/idan_ros2_ws/build/idan_control_example/CMakeFiles/install/local.dir
+/home/kcg/copy/idan_ros2_ws/build/idan_control_example/CMakeFiles/install.dir
+/home/kcg/copy/idan_ros2_ws/build/idan_control_example/CMakeFiles/list_install_components.dir
+/home/kcg/copy/idan_ros2_ws/build/idan_control_example/CMakeFiles/rebuild_cache.dir
+/home/kcg/copy/idan_ros2_ws/build/idan_control_example/CMakeFiles/edit_cache.dir
+/home/kcg/copy/idan_ros2_ws/build/idan_control_example/CMakeFiles/test.dir
+/home/kcg/copy/idan_ros2_ws/build/idan_control_example/CMakeFiles/idan_control_example_uninstall.dir
+/home/kcg/copy/idan_ros2_ws/build/idan_control_example/CMakeFiles/uninstall.dir

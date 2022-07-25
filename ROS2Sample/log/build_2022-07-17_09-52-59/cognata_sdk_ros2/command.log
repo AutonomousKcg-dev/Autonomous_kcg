@@ -1,6 +1,0 @@
-Invoking command in '/home/kcg/copy/ROS2Sample/build/cognata_sdk_ros2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/kcg/copy/ROS2Sample/src/cognata_sdk_ros2 -DCMAKE_INSTALL_PREFIX=/home/kcg/copy/ROS2Sample/install/cognata_sdk_ros2
-Invoked command in '/home/kcg/copy/ROS2Sample/build/cognata_sdk_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/kcg/copy/ROS2Sample/src/cognata_sdk_ros2 -DCMAKE_INSTALL_PREFIX=/home/kcg/copy/ROS2Sample/install/cognata_sdk_ros2
-Invoking command in '/home/kcg/copy/ROS2Sample/build/cognata_sdk_ros2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/kcg/copy/ROS2Sample/build/cognata_sdk_ros2 -- -j20 -l20
-Invoked command in '/home/kcg/copy/ROS2Sample/build/cognata_sdk_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/kcg/copy/ROS2Sample/build/cognata_sdk_ros2 -- -j20 -l20
-Invoking command in '/home/kcg/copy/ROS2Sample/build/cognata_sdk_ros2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/kcg/copy/ROS2Sample/build/cognata_sdk_ros2
-Invoked command in '/home/kcg/copy/ROS2Sample/build/cognata_sdk_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/kcg/copy/ROS2Sample/build/cognata_sdk_ros2

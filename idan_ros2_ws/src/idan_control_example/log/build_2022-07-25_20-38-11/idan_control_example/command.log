@@ -1,0 +1,2 @@
+Invoking command in '/home/kcg/copy/idan_ros2_ws/src/idan_control_example/build/idan_control_example': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/kcg/copy/idan_ros2_ws/src/idan_control_example/build/idan_control_example -- -j8 -l8
+Invoked command in '/home/kcg/copy/idan_ros2_ws/src/idan_control_example/build/idan_control_example' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/kcg/copy/idan_ros2_ws/src/idan_control_example/build/idan_control_example -- -j8 -l8

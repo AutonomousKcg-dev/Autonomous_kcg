@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kcg/copy/ROS2Sample/src/cognata_sdk_ros2
+CMAKE_SOURCE_DIR = /home/shovals/copy/ROS2Sample/src/cognata_sdk_ros2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kcg/copy/ROS2Sample/src/build/cognata_sdk_ros2
+CMAKE_BINARY_DIR = /home/shovals/copy/ROS2Sample/src/build/cognata_sdk_ros2
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/kcg/copy/ROS2Sample/src/build/cognata_sdk_ros2 && $(CMAKE_COMMAND) -E cmake_progress_start /home/kcg/copy/ROS2Sample/src/build/cognata_sdk_ros2/CMakeFiles /home/kcg/copy/ROS2Sample/src/build/cognata_sdk_ros2/cognata_sdk_ros2__py/CMakeFiles/progress.marks
-	cd /home/kcg/copy/ROS2Sample/src/build/cognata_sdk_ros2 && $(MAKE) -f CMakeFiles/Makefile2 cognata_sdk_ros2__py/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kcg/copy/ROS2Sample/src/build/cognata_sdk_ros2/CMakeFiles 0
+	cd /home/shovals/copy/ROS2Sample/src/build/cognata_sdk_ros2 && $(CMAKE_COMMAND) -E cmake_progress_start /home/shovals/copy/ROS2Sample/src/build/cognata_sdk_ros2/CMakeFiles /home/shovals/copy/ROS2Sample/src/build/cognata_sdk_ros2/cognata_sdk_ros2__py/CMakeFiles/progress.marks
+	cd /home/shovals/copy/ROS2Sample/src/build/cognata_sdk_ros2 && $(MAKE) -f CMakeFiles/Makefile2 cognata_sdk_ros2__py/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shovals/copy/ROS2Sample/src/build/cognata_sdk_ros2/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/kcg/copy/ROS2Sample/src/build/cognata_sdk_ros2 && $(MAKE) -f CMakeFiles/Makefile2 cognata_sdk_ros2__py/clean
+	cd /home/shovals/copy/ROS2Sample/src/build/cognata_sdk_ros2 && $(MAKE) -f CMakeFiles/Makefile2 cognata_sdk_ros2__py/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/kcg/copy/ROS2Sample/src/build/cognata_sdk_ros2 && $(MAKE) -f CMakeFiles/Makefile2 cognata_sdk_ros2__py/preinstall
+	cd /home/shovals/copy/ROS2Sample/src/build/cognata_sdk_ros2 && $(MAKE) -f CMakeFiles/Makefile2 cognata_sdk_ros2__py/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/kcg/copy/ROS2Sample/src/build/cognata_sdk_ros2 && $(MAKE) -f CMakeFiles/Makefile2 cognata_sdk_ros2__py/preinstall
+	cd /home/shovals/copy/ROS2Sample/src/build/cognata_sdk_ros2 && $(MAKE) -f CMakeFiles/Makefile2 cognata_sdk_ros2__py/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/kcg/copy/ROS2Sample/src/build/cognata_sdk_ros2 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/shovals/copy/ROS2Sample/src/build/cognata_sdk_ros2 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 cognata_sdk_ros2__py/CMakeFiles/cognata_sdk_ros2__py.dir/rule:
-	cd /home/kcg/copy/ROS2Sample/src/build/cognata_sdk_ros2 && $(MAKE) -f CMakeFiles/Makefile2 cognata_sdk_ros2__py/CMakeFiles/cognata_sdk_ros2__py.dir/rule
+	cd /home/shovals/copy/ROS2Sample/src/build/cognata_sdk_ros2 && $(MAKE) -f CMakeFiles/Makefile2 cognata_sdk_ros2__py/CMakeFiles/cognata_sdk_ros2__py.dir/rule
 .PHONY : cognata_sdk_ros2__py/CMakeFiles/cognata_sdk_ros2__py.dir/rule
 
 # Convenience name for target.
@@ -179,7 +179,7 @@ cognata_sdk_ros2__py: cognata_sdk_ros2__py/CMakeFiles/cognata_sdk_ros2__py.dir/r
 
 # fast build rule for target.
 cognata_sdk_ros2__py/fast:
-	cd /home/kcg/copy/ROS2Sample/src/build/cognata_sdk_ros2 && $(MAKE) -f cognata_sdk_ros2__py/CMakeFiles/cognata_sdk_ros2__py.dir/build.make cognata_sdk_ros2__py/CMakeFiles/cognata_sdk_ros2__py.dir/build
+	cd /home/shovals/copy/ROS2Sample/src/build/cognata_sdk_ros2 && $(MAKE) -f cognata_sdk_ros2__py/CMakeFiles/cognata_sdk_ros2__py.dir/build.make cognata_sdk_ros2__py/CMakeFiles/cognata_sdk_ros2__py.dir/build
 .PHONY : cognata_sdk_ros2__py/fast
 
 # Help Target
@@ -207,6 +207,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/kcg/copy/ROS2Sample/src/build/cognata_sdk_ros2 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/shovals/copy/ROS2Sample/src/build/cognata_sdk_ros2 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

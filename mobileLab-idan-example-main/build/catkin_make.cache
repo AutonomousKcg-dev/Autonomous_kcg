@@ -1,0 +1,2 @@
+idan_control_example:kvaser_interface-master
+-DCATKIN_DEVEL_PREFIX=/home/omer/drive-by-wire-Code-Example/devel -DCMAKE_INSTALL_PREFIX=/home/omer/drive-by-wire-Code-Example/install -G Unix Makefiles

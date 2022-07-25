@@ -1,0 +1,9 @@
+{
+  "package_name": "tracked_lane_msgs",
+  "non_idl_tuples": [
+    "/home/shovals/copy/switch_ws/Deliverables/colcon_workspace/src/tracked_lane_msgs:msg/LaneResults.msg",
+    "/home/shovals/copy/switch_ws/Deliverables/colcon_workspace/src/tracked_lane_msgs:msg/Lane.msg",
+    "/home/shovals/copy/switch_ws/Deliverables/colcon_workspace/src/tracked_lane_msgs:msg/Boundary.msg",
+    "/home/shovals/copy/switch_ws/Deliverables/colcon_workspace/src/tracked_lane_msgs:msg/Point.msg"
+  ]
+}

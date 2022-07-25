@@ -1,0 +1,12 @@
+<package>
+  <description brief="idan_control_example">
+
+     idan_control_example
+
+  </description>
+  <author>Raz</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/idan_control_example</url>
+
+</package>

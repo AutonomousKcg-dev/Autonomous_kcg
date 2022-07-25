@@ -1,0 +1,11 @@
+CMake Error at CMakeLists.txt:13 (find_package):
+  find_package called with invalid argument "additional_msgs"
+
+
+CMake Error at CMakeLists.txt:15 (ament_auto_find_build_dependencies):
+  Unknown CMake command "ament_auto_find_build_dependencies".
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/shovals/copy/idan_driver_ws/idan_driver/build/idan_driver/CMakeFiles/CMakeOutput.log".
+See also "/home/shovals/copy/idan_driver_ws/idan_driver/build/idan_driver/CMakeFiles/CMakeError.log".

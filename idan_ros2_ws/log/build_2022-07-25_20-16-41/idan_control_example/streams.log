@@ -1,0 +1,53 @@
+[0.011s] Invoking command in '/home/kcg/copy/idan_ros2_ws/build/idan_control_example': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/kcg/copy/idan_ros2_ws/src/idan_control_example -DCMAKE_INSTALL_PREFIX=/home/kcg/copy/idan_ros2_ws/install/idan_control_example
+[0.128s] -- The C compiler identification is GNU 9.4.0
+[0.202s] -- The CXX compiler identification is GNU 9.4.0
+[0.207s] -- Check for working C compiler: /usr/bin/cc
+[0.341s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.342s] -- Detecting C compiler ABI info
+[0.485s] -- Detecting C compiler ABI info - done
+[0.496s] -- Detecting C compile features
+[0.496s] -- Detecting C compile features - done
+[0.498s] -- Check for working CXX compiler: /usr/bin/c++
+[0.565s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.566s] -- Detecting CXX compiler ABI info
+[0.631s] -- Detecting CXX compiler ABI info - done
+[0.641s] -- Detecting CXX compile features
+[0.642s] -- Detecting CXX compile features - done
+[0.644s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.663s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.663s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.835s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.893s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.894s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.894s] -- Configured cppcheck include dirs: 
+[0.894s] -- Configured cppcheck exclude dirs and/or files: 
+[0.895s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.895s] -- Configured cpplint exclude dirs and/or files: 
+[0.896s] -- Added test 'lint_cmake' to check CMake code style
+[0.896s] -- Added test 'uncrustify' to check C / C++ code style
+[0.896s] -- Configured uncrustify additional arguments: 
+[0.897s] -- Added test 'xmllint' to check XML markup files
+[0.898s] -- Configuring done
+[0.900s] -- Generating done
+[0.900s] -- Build files have been written to: /home/kcg/copy/idan_ros2_ws/build/idan_control_example
+[0.903s] Invoked command in '/home/kcg/copy/idan_ros2_ws/build/idan_control_example' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/kcg/copy/idan_ros2_ws/src/idan_control_example -DCMAKE_INSTALL_PREFIX=/home/kcg/copy/idan_ros2_ws/install/idan_control_example
+[0.905s] Invoking command in '/home/kcg/copy/idan_ros2_ws/build/idan_control_example': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/kcg/copy/idan_ros2_ws/build/idan_control_example -- -j8 -l8
+[0.935s] Invoked command in '/home/kcg/copy/idan_ros2_ws/build/idan_control_example' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/kcg/copy/idan_ros2_ws/build/idan_control_example -- -j8 -l8
+[0.961s] Invoking command in '/home/kcg/copy/idan_ros2_ws/build/idan_control_example': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/kcg/copy/idan_ros2_ws/build/idan_control_example
+[0.968s] -- Install configuration: ""
+[0.968s] -- Installing: /home/kcg/copy/idan_ros2_ws/install/idan_control_example/share/ament_index/resource_index/package_run_dependencies/idan_control_example
+[0.968s] -- Installing: /home/kcg/copy/idan_ros2_ws/install/idan_control_example/share/ament_index/resource_index/parent_prefix_path/idan_control_example
+[0.968s] -- Installing: /home/kcg/copy/idan_ros2_ws/install/idan_control_example/share/idan_control_example/environment/ament_prefix_path.sh
+[0.968s] -- Installing: /home/kcg/copy/idan_ros2_ws/install/idan_control_example/share/idan_control_example/environment/ament_prefix_path.dsv
+[0.968s] -- Installing: /home/kcg/copy/idan_ros2_ws/install/idan_control_example/share/idan_control_example/environment/path.sh
+[0.969s] -- Installing: /home/kcg/copy/idan_ros2_ws/install/idan_control_example/share/idan_control_example/environment/path.dsv
+[0.969s] -- Installing: /home/kcg/copy/idan_ros2_ws/install/idan_control_example/share/idan_control_example/local_setup.bash
+[0.969s] -- Installing: /home/kcg/copy/idan_ros2_ws/install/idan_control_example/share/idan_control_example/local_setup.sh
+[0.969s] -- Installing: /home/kcg/copy/idan_ros2_ws/install/idan_control_example/share/idan_control_example/local_setup.zsh
+[0.969s] -- Installing: /home/kcg/copy/idan_ros2_ws/install/idan_control_example/share/idan_control_example/local_setup.dsv
+[0.969s] -- Installing: /home/kcg/copy/idan_ros2_ws/install/idan_control_example/share/idan_control_example/package.dsv
+[0.969s] -- Installing: /home/kcg/copy/idan_ros2_ws/install/idan_control_example/share/ament_index/resource_index/packages/idan_control_example
+[0.969s] -- Installing: /home/kcg/copy/idan_ros2_ws/install/idan_control_example/share/idan_control_example/cmake/idan_control_exampleConfig.cmake
+[0.969s] -- Installing: /home/kcg/copy/idan_ros2_ws/install/idan_control_example/share/idan_control_example/cmake/idan_control_exampleConfig-version.cmake
+[0.969s] -- Installing: /home/kcg/copy/idan_ros2_ws/install/idan_control_example/share/idan_control_example/package.xml
+[0.971s] Invoked command in '/home/kcg/copy/idan_ros2_ws/build/idan_control_example' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/kcg/copy/idan_ros2_ws/build/idan_control_example

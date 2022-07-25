@@ -1,0 +1,8 @@
+{
+  "package_name": "tracked_object_msgs",
+  "non_idl_tuples": [
+    "/home/shovals/copy/vayav_objects_details/src/tracked_object_msgs:msg/ObjectTypes.msg",
+    "/home/shovals/copy/vayav_objects_details/src/tracked_object_msgs:msg/TrackedObject.msg",
+    "/home/shovals/copy/vayav_objects_details/src/tracked_object_msgs:msg/TrackedObjectArray.msg"
+  ]
+}

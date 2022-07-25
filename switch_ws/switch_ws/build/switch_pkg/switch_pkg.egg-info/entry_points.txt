@@ -1,0 +1,3 @@
+[console_scripts]
+switch = switch_pkg.switch:main
+

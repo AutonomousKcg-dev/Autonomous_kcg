@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kcg/copy/ROS2Sample/src/cognata_sdk_ros2
+CMAKE_SOURCE_DIR = /home/shovals/copy/ROS2Sample/src/cognata_sdk_ros2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kcg/copy/ROS2Sample/src/build/cognata_sdk_ros2
+CMAKE_BINARY_DIR = /home/shovals/copy/ROS2Sample/src/build/cognata_sdk_ros2
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ROS2SDK.dir/depend.make
@@ -58,56 +58,56 @@ include CMakeFiles/ROS2SDK.dir/progress.make
 include CMakeFiles/ROS2SDK.dir/flags.make
 
 CMakeFiles/ROS2SDK.dir/src/ros_utility_funcs.cpp.o: CMakeFiles/ROS2SDK.dir/flags.make
-CMakeFiles/ROS2SDK.dir/src/ros_utility_funcs.cpp.o: /home/kcg/copy/ROS2Sample/src/cognata_sdk_ros2/src/ros_utility_funcs.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kcg/copy/ROS2Sample/src/build/cognata_sdk_ros2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ROS2SDK.dir/src/ros_utility_funcs.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ROS2SDK.dir/src/ros_utility_funcs.cpp.o -c /home/kcg/copy/ROS2Sample/src/cognata_sdk_ros2/src/ros_utility_funcs.cpp
+CMakeFiles/ROS2SDK.dir/src/ros_utility_funcs.cpp.o: /home/shovals/copy/ROS2Sample/src/cognata_sdk_ros2/src/ros_utility_funcs.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shovals/copy/ROS2Sample/src/build/cognata_sdk_ros2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ROS2SDK.dir/src/ros_utility_funcs.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ROS2SDK.dir/src/ros_utility_funcs.cpp.o -c /home/shovals/copy/ROS2Sample/src/cognata_sdk_ros2/src/ros_utility_funcs.cpp
 
 CMakeFiles/ROS2SDK.dir/src/ros_utility_funcs.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ROS2SDK.dir/src/ros_utility_funcs.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kcg/copy/ROS2Sample/src/cognata_sdk_ros2/src/ros_utility_funcs.cpp > CMakeFiles/ROS2SDK.dir/src/ros_utility_funcs.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shovals/copy/ROS2Sample/src/cognata_sdk_ros2/src/ros_utility_funcs.cpp > CMakeFiles/ROS2SDK.dir/src/ros_utility_funcs.cpp.i
 
 CMakeFiles/ROS2SDK.dir/src/ros_utility_funcs.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ROS2SDK.dir/src/ros_utility_funcs.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kcg/copy/ROS2Sample/src/cognata_sdk_ros2/src/ros_utility_funcs.cpp -o CMakeFiles/ROS2SDK.dir/src/ros_utility_funcs.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shovals/copy/ROS2Sample/src/cognata_sdk_ros2/src/ros_utility_funcs.cpp -o CMakeFiles/ROS2SDK.dir/src/ros_utility_funcs.cpp.s
 
 CMakeFiles/ROS2SDK.dir/src/ros2_sample.cpp.o: CMakeFiles/ROS2SDK.dir/flags.make
-CMakeFiles/ROS2SDK.dir/src/ros2_sample.cpp.o: /home/kcg/copy/ROS2Sample/src/cognata_sdk_ros2/src/ros2_sample.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kcg/copy/ROS2Sample/src/build/cognata_sdk_ros2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ROS2SDK.dir/src/ros2_sample.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ROS2SDK.dir/src/ros2_sample.cpp.o -c /home/kcg/copy/ROS2Sample/src/cognata_sdk_ros2/src/ros2_sample.cpp
+CMakeFiles/ROS2SDK.dir/src/ros2_sample.cpp.o: /home/shovals/copy/ROS2Sample/src/cognata_sdk_ros2/src/ros2_sample.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shovals/copy/ROS2Sample/src/build/cognata_sdk_ros2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ROS2SDK.dir/src/ros2_sample.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ROS2SDK.dir/src/ros2_sample.cpp.o -c /home/shovals/copy/ROS2Sample/src/cognata_sdk_ros2/src/ros2_sample.cpp
 
 CMakeFiles/ROS2SDK.dir/src/ros2_sample.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ROS2SDK.dir/src/ros2_sample.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kcg/copy/ROS2Sample/src/cognata_sdk_ros2/src/ros2_sample.cpp > CMakeFiles/ROS2SDK.dir/src/ros2_sample.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shovals/copy/ROS2Sample/src/cognata_sdk_ros2/src/ros2_sample.cpp > CMakeFiles/ROS2SDK.dir/src/ros2_sample.cpp.i
 
 CMakeFiles/ROS2SDK.dir/src/ros2_sample.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ROS2SDK.dir/src/ros2_sample.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kcg/copy/ROS2Sample/src/cognata_sdk_ros2/src/ros2_sample.cpp -o CMakeFiles/ROS2SDK.dir/src/ros2_sample.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shovals/copy/ROS2Sample/src/cognata_sdk_ros2/src/ros2_sample.cpp -o CMakeFiles/ROS2SDK.dir/src/ros2_sample.cpp.s
 
 CMakeFiles/ROS2SDK.dir/src/sensors.cpp.o: CMakeFiles/ROS2SDK.dir/flags.make
-CMakeFiles/ROS2SDK.dir/src/sensors.cpp.o: /home/kcg/copy/ROS2Sample/src/cognata_sdk_ros2/src/sensors.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kcg/copy/ROS2Sample/src/build/cognata_sdk_ros2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ROS2SDK.dir/src/sensors.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ROS2SDK.dir/src/sensors.cpp.o -c /home/kcg/copy/ROS2Sample/src/cognata_sdk_ros2/src/sensors.cpp
+CMakeFiles/ROS2SDK.dir/src/sensors.cpp.o: /home/shovals/copy/ROS2Sample/src/cognata_sdk_ros2/src/sensors.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shovals/copy/ROS2Sample/src/build/cognata_sdk_ros2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ROS2SDK.dir/src/sensors.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ROS2SDK.dir/src/sensors.cpp.o -c /home/shovals/copy/ROS2Sample/src/cognata_sdk_ros2/src/sensors.cpp
 
 CMakeFiles/ROS2SDK.dir/src/sensors.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ROS2SDK.dir/src/sensors.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kcg/copy/ROS2Sample/src/cognata_sdk_ros2/src/sensors.cpp > CMakeFiles/ROS2SDK.dir/src/sensors.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shovals/copy/ROS2Sample/src/cognata_sdk_ros2/src/sensors.cpp > CMakeFiles/ROS2SDK.dir/src/sensors.cpp.i
 
 CMakeFiles/ROS2SDK.dir/src/sensors.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ROS2SDK.dir/src/sensors.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kcg/copy/ROS2Sample/src/cognata_sdk_ros2/src/sensors.cpp -o CMakeFiles/ROS2SDK.dir/src/sensors.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shovals/copy/ROS2Sample/src/cognata_sdk_ros2/src/sensors.cpp -o CMakeFiles/ROS2SDK.dir/src/sensors.cpp.s
 
 CMakeFiles/ROS2SDK.dir/src/main.cpp.o: CMakeFiles/ROS2SDK.dir/flags.make
-CMakeFiles/ROS2SDK.dir/src/main.cpp.o: /home/kcg/copy/ROS2Sample/src/cognata_sdk_ros2/src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kcg/copy/ROS2Sample/src/build/cognata_sdk_ros2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ROS2SDK.dir/src/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ROS2SDK.dir/src/main.cpp.o -c /home/kcg/copy/ROS2Sample/src/cognata_sdk_ros2/src/main.cpp
+CMakeFiles/ROS2SDK.dir/src/main.cpp.o: /home/shovals/copy/ROS2Sample/src/cognata_sdk_ros2/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shovals/copy/ROS2Sample/src/build/cognata_sdk_ros2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ROS2SDK.dir/src/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ROS2SDK.dir/src/main.cpp.o -c /home/shovals/copy/ROS2Sample/src/cognata_sdk_ros2/src/main.cpp
 
 CMakeFiles/ROS2SDK.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ROS2SDK.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kcg/copy/ROS2Sample/src/cognata_sdk_ros2/src/main.cpp > CMakeFiles/ROS2SDK.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shovals/copy/ROS2Sample/src/cognata_sdk_ros2/src/main.cpp > CMakeFiles/ROS2SDK.dir/src/main.cpp.i
 
 CMakeFiles/ROS2SDK.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ROS2SDK.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kcg/copy/ROS2Sample/src/cognata_sdk_ros2/src/main.cpp -o CMakeFiles/ROS2SDK.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shovals/copy/ROS2Sample/src/cognata_sdk_ros2/src/main.cpp -o CMakeFiles/ROS2SDK.dir/src/main.cpp.s
 
 # Object files for target ROS2SDK
 ROS2SDK_OBJECTS = \
@@ -124,9 +124,9 @@ ROS2SDK: CMakeFiles/ROS2SDK.dir/src/ros2_sample.cpp.o
 ROS2SDK: CMakeFiles/ROS2SDK.dir/src/sensors.cpp.o
 ROS2SDK: CMakeFiles/ROS2SDK.dir/src/main.cpp.o
 ROS2SDK: CMakeFiles/ROS2SDK.dir/build.make
-ROS2SDK: /usr/lib/libCognataSDK.a
-ROS2SDK: /usr/lib/libCognataSDK_proto.a
-ROS2SDK: /home/kcg/copy/ROS2Sample/src/cognata_sdk_ros2/libs/cognataSDKLibs/libprotobuf.so
+ROS2SDK: /home/shovals/copy/ROS2Sample/src/cognata_sdk_ros2/libs/cognataSDKLibs/libCognataSDK.a
+ROS2SDK: /home/shovals/copy/ROS2Sample/src/cognata_sdk_ros2/libs/cognataSDKLibs/libCognataSDK_proto.a
+ROS2SDK: /home/shovals/copy/ROS2Sample/src/cognata_sdk_ros2/libs/cognataSDKLibs/libprotobuf.so
 ROS2SDK: /opt/ros/foxy/lib/librclcpp.so
 ROS2SDK: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
 ROS2SDK: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_c.so
@@ -186,7 +186,7 @@ ROS2SDK: /opt/ros/foxy/lib/librcpputils.so
 ROS2SDK: /opt/ros/foxy/lib/librosidl_runtime_c.so
 ROS2SDK: /opt/ros/foxy/lib/librcutils.so
 ROS2SDK: CMakeFiles/ROS2SDK.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kcg/copy/ROS2Sample/src/build/cognata_sdk_ros2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ROS2SDK"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/shovals/copy/ROS2Sample/src/build/cognata_sdk_ros2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ROS2SDK"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ROS2SDK.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -199,6 +199,6 @@ CMakeFiles/ROS2SDK.dir/clean:
 .PHONY : CMakeFiles/ROS2SDK.dir/clean
 
 CMakeFiles/ROS2SDK.dir/depend:
-	cd /home/kcg/copy/ROS2Sample/src/build/cognata_sdk_ros2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kcg/copy/ROS2Sample/src/cognata_sdk_ros2 /home/kcg/copy/ROS2Sample/src/cognata_sdk_ros2 /home/kcg/copy/ROS2Sample/src/build/cognata_sdk_ros2 /home/kcg/copy/ROS2Sample/src/build/cognata_sdk_ros2 /home/kcg/copy/ROS2Sample/src/build/cognata_sdk_ros2/CMakeFiles/ROS2SDK.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/shovals/copy/ROS2Sample/src/build/cognata_sdk_ros2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/shovals/copy/ROS2Sample/src/cognata_sdk_ros2 /home/shovals/copy/ROS2Sample/src/cognata_sdk_ros2 /home/shovals/copy/ROS2Sample/src/build/cognata_sdk_ros2 /home/shovals/copy/ROS2Sample/src/build/cognata_sdk_ros2 /home/shovals/copy/ROS2Sample/src/build/cognata_sdk_ros2/CMakeFiles/ROS2SDK.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ROS2SDK.dir/depend
 

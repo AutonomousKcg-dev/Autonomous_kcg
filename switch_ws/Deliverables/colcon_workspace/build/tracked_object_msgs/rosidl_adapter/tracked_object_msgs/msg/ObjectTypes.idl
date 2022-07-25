@@ -1,0 +1,70 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tracked_object_msgs/msg/ObjectTypes.msg
+// generated code does not contain a copyright notice
+
+
+module tracked_object_msgs {
+  module msg {
+    module ObjectTypes_Constants {
+      const uint32 UNKNOWN = 0;
+      const uint32 ANIMAL = 10000;
+      const uint32 HUMAN = 11000;
+      const uint32 STANDING = 11100;
+      const uint32 PRONE = 11200;
+      const uint32 CROUCHING = 11300;
+      const uint32 VEHICLE = 20000;
+      const uint32 AGRICULTURE = 21000;
+      const uint32 TRACTOR = 21100;
+      const uint32 CASE_MAGNUM_390 = 21110;
+      const uint32 SPRAYER = 21200;
+      const uint32 COMBINE = 21300;
+      const uint32 PLANTER = 21400;
+      const uint32 CONSTRUCTION = 22000;
+      const uint32 DOZER = 22100;
+      const uint32 EXCAVATOR = 22200;
+      const uint32 GRADER = 22300;
+      const uint32 SCRAPER = 22400;
+      const uint32 CRANE = 22500;
+      const uint32 COMPACTOR = 22600;
+      const uint32 FRONT_LOADER = 22700;
+      const uint32 BACKHOE = 22800;
+      const uint32 VEHICLE_ON_ROAD = 23000;
+      const uint32 CAR = 23100;
+      const uint32 BICYCLE = 23200;
+      const uint32 UTILITY = 24000;
+      const uint32 DUMPTRUCK = 24100;
+      const uint32 PICKUP = 24200;
+      const uint32 FORKLIFT = 24300;
+      const uint32 ENVIRONMENT = 30000;
+      const uint32 NATURAL_FEATURES = 31000;
+      const uint32 ROCK = 31100;
+      const uint32 TREE = 31200;
+      const uint32 WATER = 31300;
+      const uint32 URBAN_FEATURES = 32000;
+      const uint32 WALL = 32100;
+      const uint32 SIDEWALK = 32200;
+      const uint32 POLE = 32300;
+      const uint32 FENCE = 32400;
+      const uint32 JERSEY_BARRIER = 32500;
+      const uint32 CONE = 32600;
+      const uint32 RURAL_FEATURES = 33000;
+      const uint32 PUMP = 33100;
+      const uint32 PIPE = 33200;
+      const uint32 NEG_OBS = 40000;
+      const uint32 POTHOLE = 41000;
+      const uint32 CLIFF = 42000;
+      const uint32 POST_HOLE = 43000;
+      const uint32 SINKHOLE = 44000;
+      const uint32 PIT_HOLE = 45000;
+      const uint32 DITCH = 46000;
+      const uint32 MISC = 50000;
+      const uint32 ISO18497_OBJECT = 51000;
+    };
+    @verbatim (language="comment", text=
+      " This message defines a key to use for interpreting the value of TrimbleDetectedObject.type" "\n"
+      " When adding a new object type, set the value to the next largest integer that has not been used already.")
+    struct ObjectTypes {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};

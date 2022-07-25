@@ -1,0 +1,2 @@
+Invoking command in '/home/shovals/copy/idan_driver_ws/idan_driver/build/idan_driver': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/shovals/copy/idan_driver_ws/idan_driver -DCMAKE_INSTALL_PREFIX=/home/shovals/copy/idan_driver_ws/idan_driver/install/idan_driver
+Invoked command in '/home/shovals/copy/idan_driver_ws/idan_driver/build/idan_driver' returned '1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/shovals/copy/idan_driver_ws/idan_driver -DCMAKE_INSTALL_PREFIX=/home/shovals/copy/idan_driver_ws/idan_driver/install/idan_driver

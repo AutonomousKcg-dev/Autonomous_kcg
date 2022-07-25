@@ -75,8 +75,8 @@ class MinimalSubscriber(Node):
         cv2.waitKey(1)
     
     def ego_motion(self, msg):
-        # print(msg)
-        print("something")
+        print(msg)
+        # print("something")
     
     def tracked_objects(self, msg):
         print(msg)

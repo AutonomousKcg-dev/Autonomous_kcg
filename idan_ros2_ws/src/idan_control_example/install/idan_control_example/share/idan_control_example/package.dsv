@@ -1,0 +1,8 @@
+source;share/idan_control_example/hook/cmake_prefix_path.ps1
+source;share/idan_control_example/hook/cmake_prefix_path.dsv
+source;share/idan_control_example/hook/cmake_prefix_path.sh
+source;share/idan_control_example/local_setup.bash
+source;share/idan_control_example/local_setup.dsv
+source;share/idan_control_example/local_setup.ps1
+source;share/idan_control_example/local_setup.sh
+source;share/idan_control_example/local_setup.zsh
