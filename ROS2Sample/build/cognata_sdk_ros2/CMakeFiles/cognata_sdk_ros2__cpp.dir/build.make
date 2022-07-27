@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kcg/copy/ROS2Sample/src/cognata_sdk_ros2
+CMAKE_SOURCE_DIR = /home/kcg/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kcg/copy/ROS2Sample/build/cognata_sdk_ros2
+CMAKE_BINARY_DIR = /home/kcg/Autonomous_kcg/ROS2Sample/build/cognata_sdk_ros2
 
 # Utility rule file for cognata_sdk_ros2__cpp.
 
@@ -196,8 +196,8 @@ rosidl_generator_cpp/cognata_sdk_ros2/msg/annotation_msg.hpp: /opt/ros/foxy/shar
 rosidl_generator_cpp/cognata_sdk_ros2/msg/annotation_msg.hpp: /opt/ros/foxy/share/geometry_msgs/msg/Vector3Stamped.idl
 rosidl_generator_cpp/cognata_sdk_ros2/msg/annotation_msg.hpp: /opt/ros/foxy/share/geometry_msgs/msg/Wrench.idl
 rosidl_generator_cpp/cognata_sdk_ros2/msg/annotation_msg.hpp: /opt/ros/foxy/share/geometry_msgs/msg/WrenchStamped.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kcg/copy/ROS2Sample/build/cognata_sdk_ros2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/foxy/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/kcg/copy/ROS2Sample/build/cognata_sdk_ros2/rosidl_generator_cpp__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kcg/Autonomous_kcg/ROS2Sample/build/cognata_sdk_ros2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/foxy/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/kcg/Autonomous_kcg/ROS2Sample/build/cognata_sdk_ros2/rosidl_generator_cpp__arguments.json
 
 rosidl_generator_cpp/cognata_sdk_ros2/msg/detail/annotation_msg__builder.hpp: rosidl_generator_cpp/cognata_sdk_ros2/msg/annotation_msg.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cognata_sdk_ros2/msg/detail/annotation_msg__builder.hpp
@@ -419,6 +419,6 @@ CMakeFiles/cognata_sdk_ros2__cpp.dir/clean:
 .PHONY : CMakeFiles/cognata_sdk_ros2__cpp.dir/clean
 
 CMakeFiles/cognata_sdk_ros2__cpp.dir/depend:
-	cd /home/kcg/copy/ROS2Sample/build/cognata_sdk_ros2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kcg/copy/ROS2Sample/src/cognata_sdk_ros2 /home/kcg/copy/ROS2Sample/src/cognata_sdk_ros2 /home/kcg/copy/ROS2Sample/build/cognata_sdk_ros2 /home/kcg/copy/ROS2Sample/build/cognata_sdk_ros2 /home/kcg/copy/ROS2Sample/build/cognata_sdk_ros2/CMakeFiles/cognata_sdk_ros2__cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kcg/Autonomous_kcg/ROS2Sample/build/cognata_sdk_ros2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kcg/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2 /home/kcg/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2 /home/kcg/Autonomous_kcg/ROS2Sample/build/cognata_sdk_ros2 /home/kcg/Autonomous_kcg/ROS2Sample/build/cognata_sdk_ros2 /home/kcg/Autonomous_kcg/ROS2Sample/build/cognata_sdk_ros2/CMakeFiles/cognata_sdk_ros2__cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/cognata_sdk_ros2__cpp.dir/depend
 

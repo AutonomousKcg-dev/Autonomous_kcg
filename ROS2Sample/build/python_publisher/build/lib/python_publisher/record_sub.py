@@ -42,6 +42,7 @@ class record_sub(Node):
         if self.env_action == "PLAY":
             # play
             with open("path.txt", "r+") as gps_path:
+                # extract data from the path file
                 print("reading from the file")
                 lines = gps_path.readlines()
                 for line in lines:
@@ -54,15 +55,16 @@ class record_sub(Node):
     def GPScb_nav(self, msg: NavSatFix):
         if self.env_action == "RECORD":
             # RECORD SECTION
-            self.ego_car_pose_x_nav = msg.longitude
-            self.ego_car_pose_y_nav = msg.latitude
+            self.ego_car_pose_x_nav = msg.longitude     # X
+            self.ego_car_pose_y_nav = msg.latitude      # Y
             print("Longitude: " , self.ego_car_pose_x_nav)
             print("Latitude: " , self.ego_car_pose_y_nav)
             
             with open("path.txt", "a") as gps_path:
                 print("writing to the file")
+                # write the data into the path file
                 gps_path.write(str(self.ego_car_pose_x_nav) + "," + str(self.ego_car_pose_y_nav) +'\n')
-            
+            # plot the current gps path
             self.ax.clear()
             self.x_list.append(self.ego_car_pose_x_nav)
             self.y_list.append(self.ego_car_pose_y_nav)
@@ -72,6 +74,7 @@ class record_sub(Node):
         
         else:
             # PLAY SECTION
+            # plot the current location on the gps map
             self.ax.clear()
             self.ax.plot(self.x_list, self.y_list, "-r")
             self.ego_car_pose_x_nav = msg.longitude

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kcg/copy/ROS2Sample/src/cognata_sdk_ros2
+CMAKE_SOURCE_DIR = /home/kcg/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kcg/copy/ROS2Sample/build/cognata_sdk_ros2
+CMAKE_BINARY_DIR = /home/kcg/Autonomous_kcg/ROS2Sample/build/cognata_sdk_ros2
 
 # Utility rule file for cognata_sdk_ros2_uninstall.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/kcg/copy/ROS2Sample/build/cognata_sdk_ros2
 include CMakeFiles/cognata_sdk_ros2_uninstall.dir/progress.make
 
 CMakeFiles/cognata_sdk_ros2_uninstall:
-	/usr/bin/cmake -P /home/kcg/copy/ROS2Sample/build/cognata_sdk_ros2/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/kcg/Autonomous_kcg/ROS2Sample/build/cognata_sdk_ros2/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 cognata_sdk_ros2_uninstall: CMakeFiles/cognata_sdk_ros2_uninstall
 cognata_sdk_ros2_uninstall: CMakeFiles/cognata_sdk_ros2_uninstall.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/cognata_sdk_ros2_uninstall.dir/clean:
 .PHONY : CMakeFiles/cognata_sdk_ros2_uninstall.dir/clean
 
 CMakeFiles/cognata_sdk_ros2_uninstall.dir/depend:
-	cd /home/kcg/copy/ROS2Sample/build/cognata_sdk_ros2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kcg/copy/ROS2Sample/src/cognata_sdk_ros2 /home/kcg/copy/ROS2Sample/src/cognata_sdk_ros2 /home/kcg/copy/ROS2Sample/build/cognata_sdk_ros2 /home/kcg/copy/ROS2Sample/build/cognata_sdk_ros2 /home/kcg/copy/ROS2Sample/build/cognata_sdk_ros2/CMakeFiles/cognata_sdk_ros2_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kcg/Autonomous_kcg/ROS2Sample/build/cognata_sdk_ros2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kcg/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2 /home/kcg/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2 /home/kcg/Autonomous_kcg/ROS2Sample/build/cognata_sdk_ros2 /home/kcg/Autonomous_kcg/ROS2Sample/build/cognata_sdk_ros2 /home/kcg/Autonomous_kcg/ROS2Sample/build/cognata_sdk_ros2/CMakeFiles/cognata_sdk_ros2_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/cognata_sdk_ros2_uninstall.dir/depend
 

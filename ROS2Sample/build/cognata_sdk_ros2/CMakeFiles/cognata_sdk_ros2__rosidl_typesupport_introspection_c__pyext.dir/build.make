@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kcg/copy/ROS2Sample/src/cognata_sdk_ros2
+CMAKE_SOURCE_DIR = /home/kcg/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kcg/copy/ROS2Sample/build/cognata_sdk_ros2
+CMAKE_BINARY_DIR = /home/kcg/Autonomous_kcg/ROS2Sample/build/cognata_sdk_ros2
 
 # Include any dependencies generated for this target.
 include CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_c__pyext.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_c__pyext.d
 
 CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/cognata_sdk_ros2/_cognata_sdk_ros2_s.ep.rosidl_typesupport_introspection_c.c.o: CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_c__pyext.dir/flags.make
 CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/cognata_sdk_ros2/_cognata_sdk_ros2_s.ep.rosidl_typesupport_introspection_c.c.o: rosidl_generator_py/cognata_sdk_ros2/_cognata_sdk_ros2_s.ep.rosidl_typesupport_introspection_c.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kcg/copy/ROS2Sample/build/cognata_sdk_ros2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/cognata_sdk_ros2/_cognata_sdk_ros2_s.ep.rosidl_typesupport_introspection_c.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/cognata_sdk_ros2/_cognata_sdk_ros2_s.ep.rosidl_typesupport_introspection_c.c.o   -c /home/kcg/copy/ROS2Sample/build/cognata_sdk_ros2/rosidl_generator_py/cognata_sdk_ros2/_cognata_sdk_ros2_s.ep.rosidl_typesupport_introspection_c.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kcg/Autonomous_kcg/ROS2Sample/build/cognata_sdk_ros2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/cognata_sdk_ros2/_cognata_sdk_ros2_s.ep.rosidl_typesupport_introspection_c.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/cognata_sdk_ros2/_cognata_sdk_ros2_s.ep.rosidl_typesupport_introspection_c.c.o   -c /home/kcg/Autonomous_kcg/ROS2Sample/build/cognata_sdk_ros2/rosidl_generator_py/cognata_sdk_ros2/_cognata_sdk_ros2_s.ep.rosidl_typesupport_introspection_c.c
 
 CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/cognata_sdk_ros2/_cognata_sdk_ros2_s.ep.rosidl_typesupport_introspection_c.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/cognata_sdk_ros2/_cognata_sdk_ros2_s.ep.rosidl_typesupport_introspection_c.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kcg/copy/ROS2Sample/build/cognata_sdk_ros2/rosidl_generator_py/cognata_sdk_ros2/_cognata_sdk_ros2_s.ep.rosidl_typesupport_introspection_c.c > CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/cognata_sdk_ros2/_cognata_sdk_ros2_s.ep.rosidl_typesupport_introspection_c.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kcg/Autonomous_kcg/ROS2Sample/build/cognata_sdk_ros2/rosidl_generator_py/cognata_sdk_ros2/_cognata_sdk_ros2_s.ep.rosidl_typesupport_introspection_c.c > CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/cognata_sdk_ros2/_cognata_sdk_ros2_s.ep.rosidl_typesupport_introspection_c.c.i
 
 CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/cognata_sdk_ros2/_cognata_sdk_ros2_s.ep.rosidl_typesupport_introspection_c.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/cognata_sdk_ros2/_cognata_sdk_ros2_s.ep.rosidl_typesupport_introspection_c.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kcg/copy/ROS2Sample/build/cognata_sdk_ros2/rosidl_generator_py/cognata_sdk_ros2/_cognata_sdk_ros2_s.ep.rosidl_typesupport_introspection_c.c -o CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/cognata_sdk_ros2/_cognata_sdk_ros2_s.ep.rosidl_typesupport_introspection_c.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kcg/Autonomous_kcg/ROS2Sample/build/cognata_sdk_ros2/rosidl_generator_py/cognata_sdk_ros2/_cognata_sdk_ros2_s.ep.rosidl_typesupport_introspection_c.c -o CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/cognata_sdk_ros2/_cognata_sdk_ros2_s.ep.rosidl_typesupport_introspection_c.c.s
 
 # Object files for target cognata_sdk_ros2__rosidl_typesupport_introspection_c__pyext
 cognata_sdk_ros2__rosidl_typesupport_introspection_c__pyext_OBJECTS = \
@@ -112,7 +112,7 @@ rosidl_generator_py/cognata_sdk_ros2/cognata_sdk_ros2_s__rosidl_typesupport_intr
 rosidl_generator_py/cognata_sdk_ros2/cognata_sdk_ros2_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so: /opt/ros/foxy/lib/librcutils.so
 rosidl_generator_py/cognata_sdk_ros2/cognata_sdk_ros2_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so: /opt/ros/foxy/lib/librosidl_typesupport_introspection_c.so
 rosidl_generator_py/cognata_sdk_ros2/cognata_sdk_ros2_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so: CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_c__pyext.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kcg/copy/ROS2Sample/build/cognata_sdk_ros2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared library rosidl_generator_py/cognata_sdk_ros2/cognata_sdk_ros2_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kcg/Autonomous_kcg/ROS2Sample/build/cognata_sdk_ros2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared library rosidl_generator_py/cognata_sdk_ros2/cognata_sdk_ros2_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_c__pyext.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -125,6 +125,6 @@ CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_c__pyext.dir/clean
 .PHONY : CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_c__pyext.dir/clean
 
 CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_c__pyext.dir/depend:
-	cd /home/kcg/copy/ROS2Sample/build/cognata_sdk_ros2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kcg/copy/ROS2Sample/src/cognata_sdk_ros2 /home/kcg/copy/ROS2Sample/src/cognata_sdk_ros2 /home/kcg/copy/ROS2Sample/build/cognata_sdk_ros2 /home/kcg/copy/ROS2Sample/build/cognata_sdk_ros2 /home/kcg/copy/ROS2Sample/build/cognata_sdk_ros2/CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_c__pyext.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kcg/Autonomous_kcg/ROS2Sample/build/cognata_sdk_ros2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kcg/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2 /home/kcg/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2 /home/kcg/Autonomous_kcg/ROS2Sample/build/cognata_sdk_ros2 /home/kcg/Autonomous_kcg/ROS2Sample/build/cognata_sdk_ros2 /home/kcg/Autonomous_kcg/ROS2Sample/build/cognata_sdk_ros2/CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_c__pyext.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_c__pyext.dir/depend
 
