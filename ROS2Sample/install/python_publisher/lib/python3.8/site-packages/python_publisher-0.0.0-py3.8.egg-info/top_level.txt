@@ -1,2 +1,0 @@
-python_publisher
-python_publisher/submodules
