@@ -28,6 +28,8 @@ class record_sub(Node):
         self.ego_car_pose_y_nav = NavSatFix()
         self.ego_car_pose_x_nav = NavSatFix()
         self.sub = self.create_subscription(NavSatFix, "cognataSDK/GPS/navsat/CognataGPS0002", self.GPScb_nav, 30) # GPS Point listener
+        self.gps_listener = self.create_subscription(
+            GPSAdditionalData, "/cognataSDK/GPS/info/CognataGPS0002", self.GPScb, 10)  # GPS Listener
         self.x_list = []
         self.y_list = []
         self.fig, self.ax = plt.subplots()
@@ -52,6 +54,9 @@ class record_sub(Node):
         
     
 
+    # def GPScb(self, msg : GPSAdditionalData):
+
+
     def GPScb_nav(self, msg: NavSatFix):
         if self.env_action == "RECORD":
             # RECORD SECTION
@@ -70,7 +75,8 @@ class record_sub(Node):
             self.y_list.append(self.ego_car_pose_y_nav)
             self.ax.plot(self.x_list, self.y_list, "-r")
             self.ax.scatter(self.x_list, self.y_list)
-            plt.pause(0.001)
+            
+            #plt.pause(0.001)
         
         else:
             # PLAY SECTION

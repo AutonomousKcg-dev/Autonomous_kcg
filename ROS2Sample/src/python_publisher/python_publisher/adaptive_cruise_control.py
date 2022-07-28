@@ -8,6 +8,8 @@ import matplotlib.pyplot as plt
 import csv
 import keyboard  # Requires Super User (sudo -s)
 
+import haversine as hs
+
 # from cognata_sdk_ros2.msg import *
 from cognata_sdk_ros2.msg import ROIAndDOGTOutput, GPSAdditionalData, VehicleMsg
 from sensor_msgs.msg import NavSatFix
@@ -81,6 +83,7 @@ class adaptive_cruise_control(Node):
         self.acc_on = False  # ACC Flag
         self.lane_size = 3.7  # meters
         self.front_car = front_car()
+        self.dist_from_front_car : float = 0    # GPS distance from the closest car
         self.currentListIdx = 0
         self.maximum_front_car_distance = 100  # Initializing maximum front car distance
 
@@ -100,8 +103,7 @@ class adaptive_cruise_control(Node):
         # self.wheel_PID = PID(kp=0.05, ki=0, kd=0)
 
         # subscribers
-        # self.dogt_listener = self.create_subscription(
-        #     ROIAndDOGTOutput, "/cognataSDK/dogt/DynamicObjectGroundTruth", self.DOGTcb, 10)  # DOGT Listener
+        
         self.dogt_listener = self.create_subscription(
             ROIAndDOGTOutput, "/cognataSDK/dogt/GlobalSensors", self.DOGTcb, 10)  # DOGT Listener
         self.gps_listener = self.create_subscription(
@@ -120,10 +122,6 @@ class adaptive_cruise_control(Node):
         self.car_cmd_publisher_gas = self.create_publisher(
             Float32, '/cognataSDK/car_command/gas_cmd', 10)
 
-        # Wheel publisher -g29 force feedback -> will be replaced by Idan driver.
-        # self.wheel_publisher_g29 = self.create_publisher(
-        #     ForceFeedback, '/ff_target', 10)
-
         # pure pursuit algo
         cy, cx = get_path(
             "/home/kcg/copy/ROS2Sample/path.txt")
@@ -132,35 +130,33 @@ class adaptive_cruise_control(Node):
         # self.di = 0  # steer control
 
         # start putr pursuit
-        # self.pure_pursuit_thread = Thread(target=self.pure_sus)
-        # self.pure_pursuit_thread.start()
+        
 
         # timer
         time_period = 0.1
         self.create_timer(time_period, self.control)
 
         print(fonts.YELLOW + "waiting for all topics to be avalable...")
-        # saelf..wait_for_message("/cognataSDK/dogt", ROIAndDOGTOutput, 120)
-        # rospy2.wait_for_message("/cognataSDK/GPS/info/CognataGPS", GPSAdditionalData, 120)
         print(fonts.BLUE + "starting ACC application" + fonts.ENDC)
         self.number_of_agents = len(self.vehicleList)
         # print(fonts.BOLD + fonts.BLUE + "Vehicle List Size = " +str(len(self.vehicleList))) # Printing Number of Vehicle Agents
         self.rate = self.create_rate(8)  # 10 [Hz]
-        # while not rospy2.is_shutdown():
-        #     self.keyboard_listener()
-        #     if (self.acc_on):
-        #         self.get_front_car()
-        #         self.control()
-        #     # self.vehicle_cmd_publisher.publish(self.vehicle_cmd)
-        #     self.rate.sleep()
+        
 
-        # self.in_session = True
+    def dist(self, point1, point2):
+        # return distance betweeen point1 and point2 - 8 digit accuracy
+        print(point1)
+        print(point2)
+        dist = hs.haversine(point1, point2)
+        return round(dist, 8)
+
 
     #####################################################
     # DOGT message callback
     #####################################################
     def DOGTcb(self, msg: ROIAndDOGTOutput):
         self.vehicleList = msg.vehicle_list
+        
         # print("sus vehiclelist sususususuususususuusususus:", self.vehicleList)
 
     #####################################################
@@ -222,7 +218,10 @@ class adaptive_cruise_control(Node):
             self.ego_car_velocity._x / (self.ego_car_speed/3.6))
         self.ego_car_pose_y = msg.position._y
         self.ego_car_pose_x = msg.position._x
+        self.ego_car_v_x = msg.velocity_local_3d.x
+        self.ego_car_v_y = msg.velocity_local_3d.y
         self.ego_car_pose = msg.position
+        
 
         # self.pure_pursuit.state.v = self.ego_car_velocity._x
         # self.pure_pursuit.state.yaw = msg.yaw
@@ -265,14 +264,21 @@ class adaptive_cruise_control(Node):
                     self.front_car.velocity_x = car.description.motion.linear.x
                     self.front_car.velocity_y = car.description.motion.angular.z
                     self.front_car.id = idx
-                    # print(self.front_car.distance_x)
-                    # print(car.lane_id, " not ego car ")
-                    # print("[" + self.vehicleList[idx].description.objectId + "," + self.vehicleList[idx].description.ROISubtype + "," + str(self.dist_to_front_car) + "]")
-        # if (self.front_car.id >= 0):
-        #     print("front car No." + fonts.BOLD + fonts.BLUE + self.vehicleList[self.front_car.id].description.objectId + fonts.ENDC + " is : " + fonts.BOLD + fonts.BLUE + self.vehicleList[self.front_car.id].description.ROISubtype + fonts.ENDC + ", with distance : "+ fonts.BOLD + fonts.BLUE +str(self.vehicleList[self.front_car.id].description.bounding_box.transform.translation.x) + fonts.ENDC)
-        # else:
-        #     print(fonts.BOLD + fonts.BLUE + "Maximum Space" + fonts.ENDC)
-        # return 1
+
+                 
+        print(self.front_car.distance_x , self.front_car.distance_y)
+
+        # new_latitude  = latitude  + (dy / r_earth) * (180 / pi);
+        # new_longitude = longitude + (dx / r_earth) * (180 / pi) / cos(latitude * pi/180);   
+
+        point1 = (self.ego_car_pose_x_nav, self.ego_car_pose_y_nav)
+        new_latitude = point1[1] + (self.front_car.distance_y / 6378*1000) * (180/math.pi)
+        new_longitude = point1[0] + ((self.front_car.distance_x/ (6378*1000)) * (180/math.pi)) / math.cos(point1[1] * math.pi/180)
+        point2 = (new_longitude, new_latitude)
+
+        self.dist_from_front_car = self.dist(point1= point1, point2= point2)
+        print(self.dist_from_front_car)
+
 
     #####################################################
     # PID control for applying adaptive cruise
