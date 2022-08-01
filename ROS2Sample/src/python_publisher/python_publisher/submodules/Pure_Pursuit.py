@@ -22,7 +22,7 @@ class State:
 
 
 value_dist = 150
-sample = 200
+sample = 100
 
 
 class PurePursuit:
@@ -83,10 +83,12 @@ class PurePursuit:
 
         # current road direction vector
         actual_vector = np.array([self.car_state.x_coord - self.car_state.last_x_coord, self.car_state.y_coord - self.car_state.last_y_coord])
-
+        
         # get angle - we might need to change this 
-        angle = np.degrees(np.math.atan2(np.linalg.det(
-            [desired_vector, actual_vector]), np.dot(desired_vector, actual_vector)))
+        norm_desired = desired_vector / np.linalg.norm(desired_vector)
+        norm_actual = actual_vector / np.linalg.norm(actual_vector)
+        dot_product = np.dot(norm_desired, norm_actual)
+        angle = np.degrees(np.arccos(dot_product))
 
         # get distance
         last_point = (self.cx[self.curr_index], self.cy[self.curr_index])

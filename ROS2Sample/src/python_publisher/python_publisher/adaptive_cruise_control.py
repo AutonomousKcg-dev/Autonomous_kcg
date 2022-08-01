@@ -19,6 +19,12 @@ import numpy as np
 from .controllerPID import PID
 # from msg._ForceFeedback import ForceFeedback
 from .submodules.Pure_Pursuit import *
+
+# Google Earth 
+from simplekml import Kml
+from pydrive.auth import GoogleAuth
+from pydrive.drive import GoogleDrive
+
 # TODO 1 - closing loop with PID on the distance to front car as well as y axis for staying in the lane
 # TODO 2 - front car class
 
@@ -141,14 +147,24 @@ class adaptive_cruise_control(Node):
         self.number_of_agents = len(self.vehicleList)
         # print(fonts.BOLD + fonts.BLUE + "Vehicle List Size = " +str(len(self.vehicleList))) # Printing Number of Vehicle Agents
         self.rate = self.create_rate(8)  # 10 [Hz]
-        
+
+
+        # Google Earth Visualization    - DO NOT DELETE
+        # self.drive = GoogleDrive(GoogleAuth)
+        # self.upload_file_list = ['LinkLine.kml']
+        # self.file_drive = self.drive.CreateFile({'id': '1GNyVRxN3BvbHoYt5Bt8GqgJ9mpYoTu6P'})
+        # # coordinates list of (lon, lat) tuples
+        # self.coords = []
+        # # Kml template
+        # self.kml = Kml()
+
 
     def dist(self, point1, point2):
-        # return distance betweeen point1 and point2 - 8 digit accuracy
+        # return distance betweeen point1 and point2 - 8 digit accuracy - meters
         print(point1)
         print(point2)
         dist = hs.haversine(point1, point2)
-        return round(dist, 8)
+        return 1000*round(dist, 8)
 
 
     #####################################################
@@ -192,6 +208,20 @@ class adaptive_cruise_control(Node):
                    [self.pure_pursuit.car_state.y_coord]) # draw car
         plt.pause(0.001)
 
+        # Google Earth Visualization    - DO NOT DELETE!!
+        # lon = msg.longitude
+        # lat = msg.latitude
+        # self.coords.append((lon, lat))
+        # # update the kml on google drive -> update on google earth 
+        # docs = self.kml.newdocument(name= 'LinkLine')
+        # docs.newlinestring(name= 'PCBLine', coords = self.coords)
+        # self.kml.save('LinkLine.kml')
+        # for upload_file in self.upload_file_list:
+        #     # Read file and set it as the content of this instance.
+        #     self.file_drive.SetContentFile(upload_file)
+        #     self.file_drive.Upload()
+
+
         # self.pure_pursuit.state.update(self.ai, self.di)
         # self.pure_pursuit.state.y = self.ego_car_pose_y_nav * 10000000000000
         # self.pure_pursuit.state.x = self.ego_car_pose_x_nav
@@ -214,8 +244,7 @@ class adaptive_cruise_control(Node):
         self.ego_car_lane_offset = msg.lane_offset
         self.ego_car_velocity = msg._velocity_local_3d
         self.ego_car_speed = msg.speed * 3.6
-        self.ego_car_degree = np.arccos(
-            self.ego_car_velocity._x / (self.ego_car_speed/3.6))
+        self.ego_car_degree = np.arccos(self.ego_car_velocity._x / (self.ego_car_speed/3.6))
         self.ego_car_pose_y = msg.position._y
         self.ego_car_pose_x = msg.position._x
         self.ego_car_v_x = msg.velocity_local_3d.x

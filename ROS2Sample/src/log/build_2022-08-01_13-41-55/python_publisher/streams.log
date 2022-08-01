@@ -1,0 +1,28 @@
+[0.685s] Invoking command in '/home/kcg/copy/ROS2Sample/src/python_publisher': AMENT_PREFIX_PATH=/home/kcg/copy/ROS2Sample/src/install/cognata_sdk_ros2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kcg/copy/ROS2Sample/src/install/cognata_sdk_ros2:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/kcg/copy/ROS2Sample/src/install/cognata_sdk_ros2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kcg/copy/ROS2Sample/src/install/python_publisher/lib/python3.8/site-packages:/home/kcg/copy/ROS2Sample/src/install/cognata_sdk_ros2/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/python_publisher build --build-base /home/kcg/copy/ROS2Sample/src/build/python_publisher/build install --prefix /home/kcg/copy/ROS2Sample/src/install/python_publisher --record /home/kcg/copy/ROS2Sample/src/build/python_publisher/install.log --single-version-externally-managed
+[0.870s] running egg_info
+[0.871s] writing ../build/python_publisher/python_publisher.egg-info/PKG-INFO
+[0.873s] writing dependency_links to ../build/python_publisher/python_publisher.egg-info/dependency_links.txt
+[0.873s] writing entry points to ../build/python_publisher/python_publisher.egg-info/entry_points.txt
+[0.873s] writing requirements to ../build/python_publisher/python_publisher.egg-info/requires.txt
+[0.873s] writing top-level names to ../build/python_publisher/python_publisher.egg-info/top_level.txt
+[0.899s] reading manifest file '../build/python_publisher/python_publisher.egg-info/SOURCES.txt'
+[0.900s] writing manifest file '../build/python_publisher/python_publisher.egg-info/SOURCES.txt'
+[0.900s] running build
+[0.900s] running build_py
+[0.929s] copying python_publisher/google_earth_viz.py -> /home/kcg/copy/ROS2Sample/src/build/python_publisher/build/lib/python_publisher
+[0.930s] running install
+[0.931s] running install_lib
+[0.932s] copying /home/kcg/copy/ROS2Sample/src/build/python_publisher/build/lib/python_publisher/google_earth_viz.py -> /home/kcg/copy/ROS2Sample/src/install/python_publisher/lib/python3.8/site-packages/python_publisher
+[0.933s] byte-compiling /home/kcg/copy/ROS2Sample/src/install/python_publisher/lib/python3.8/site-packages/python_publisher/google_earth_viz.py to google_earth_viz.cpython-38.pyc
+[0.937s] running install_data
+[0.939s] running install_egg_info
+[0.940s] removing '/home/kcg/copy/ROS2Sample/src/install/python_publisher/lib/python3.8/site-packages/python_publisher-0.0.0-py3.8.egg-info' (and everything under it)
+[0.940s] Copying ../build/python_publisher/python_publisher.egg-info to /home/kcg/copy/ROS2Sample/src/install/python_publisher/lib/python3.8/site-packages/python_publisher-0.0.0-py3.8.egg-info
+[0.941s] running install_scripts
+[0.953s] Installing acc script to /home/kcg/copy/ROS2Sample/src/install/python_publisher/lib/python_publisher
+[0.954s] Installing gev script to /home/kcg/copy/ROS2Sample/src/install/python_publisher/lib/python_publisher
+[0.954s] Installing pid script to /home/kcg/copy/ROS2Sample/src/install/python_publisher/lib/python_publisher
+[0.954s] Installing publisher script to /home/kcg/copy/ROS2Sample/src/install/python_publisher/lib/python_publisher
+[0.954s] Installing rcc script to /home/kcg/copy/ROS2Sample/src/install/python_publisher/lib/python_publisher
+[0.955s] writing list of installed files to '/home/kcg/copy/ROS2Sample/src/build/python_publisher/install.log'
+[0.979s] Invoked command in '/home/kcg/copy/ROS2Sample/src/python_publisher' returned '0': AMENT_PREFIX_PATH=/home/kcg/copy/ROS2Sample/src/install/cognata_sdk_ros2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kcg/copy/ROS2Sample/src/install/cognata_sdk_ros2:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/kcg/copy/ROS2Sample/src/install/cognata_sdk_ros2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kcg/copy/ROS2Sample/src/install/python_publisher/lib/python3.8/site-packages:/home/kcg/copy/ROS2Sample/src/install/cognata_sdk_ros2/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/python_publisher build --build-base /home/kcg/copy/ROS2Sample/src/build/python_publisher/build install --prefix /home/kcg/copy/ROS2Sample/src/install/python_publisher --record /home/kcg/copy/ROS2Sample/src/build/python_publisher/install.log --single-version-externally-managed

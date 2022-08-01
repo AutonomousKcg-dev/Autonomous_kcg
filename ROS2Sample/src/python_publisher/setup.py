@@ -25,6 +25,7 @@ setup(
         "acc = python_publisher.adaptive_cruise_control:main",
         "pid = controllerPID.PID:output",
         "rcc = python_publisher.record_sub:main",
+        "gev = python_publisher.google_earth_viz:main",
         ],
     },
 )
