@@ -22,7 +22,8 @@ class State:
 
 
 value_dist = 150
-sample = 100
+# sample = 100
+sample = 75
 
 
 class PurePursuit:
@@ -66,7 +67,7 @@ class PurePursuit:
 
         x_target = self.cx[self.curr_index + sample + 1]
         y_target = self.linear_reg.predict(np.array([x_target]).reshape(-1, 1))
-        print(y_target)
+        # print(y_target)
         self.target_point = (x_target, y_target)
 
     def run(self):
@@ -77,28 +78,27 @@ class PurePursuit:
         self.closest_point()
 
         # get vector
-        # desired_vector = np.array([self.cx[self.curr_index + value_dist], self.cy[self.curr_index + value_dist]]) - np.array([self.car_state.x_coord, self.car_state.y_coord])
         desired_vector = np.array([self.target_point[0] - self.car_state.x_coord, self.target_point[1] -
-                                  self.car_state.y_coord]).astype(np.float64)  # vector to the target point
+                                  self.car_state.y_coord], dtype="object").astype("float32")  # vector to the target point
 
         # current road direction vector
-        actual_vector = np.array([self.car_state.x_coord - self.car_state.last_x_coord, self.car_state.y_coord - self.car_state.last_y_coord])
-        
-        # get angle - we might need to change this 
-        norm_desired = desired_vector / np.linalg.norm(desired_vector)
-        norm_actual = actual_vector / np.linalg.norm(actual_vector)
-        dot_product = np.dot(norm_desired, norm_actual)
-        angle = np.degrees(np.arccos(dot_product))
+        actual_vector = np.array([self.car_state.x_coord - self.car_state.last_x_coord,
+                                 self.car_state.y_coord - self.car_state.last_y_coord], dtype="object").astype("float32")
+
+        # get angle - we might need to change this
+        angle = np.degrees(np.math.atan2(np.linalg.det(
+            [desired_vector, actual_vector]), np.dot(desired_vector, actual_vector)))
 
         # get distance
         last_point = (self.cx[self.curr_index], self.cy[self.curr_index])
         curr_point = (self.car_state.x_coord, self.car_state.y_coord)
         dist = math.dist(last_point, curr_point)
 
-        print("Angle: ", angle)
+        # print("Angle: ", angle)
         # print("Dist: ", dist)
 
         return angle, dist
+        # FACTORY REBOT
 
 
 def main():

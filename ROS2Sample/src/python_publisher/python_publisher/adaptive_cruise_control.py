@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+from audioop import avg
 from dataclasses import dataclass
 import matplotlib as plt
 from threading import Thread
@@ -11,7 +12,7 @@ import keyboard  # Requires Super User (sudo -s)
 import haversine as hs
 
 # from cognata_sdk_ros2.msg import *
-from cognata_sdk_ros2.msg import ROIAndDOGTOutput, GPSAdditionalData, VehicleMsg
+from cognata_sdk_ros2.msg import ROIAndDOGTOutput, GPSAdditionalData, VehicleMsg, PedestrianMsg
 from sensor_msgs.msg import NavSatFix
 from geometry_msgs.msg import Twist
 from std_msgs.msg import Float32
@@ -20,13 +21,11 @@ from .controllerPID import PID
 # from msg._ForceFeedback import ForceFeedback
 from .submodules.Pure_Pursuit import *
 
-# Google Earth 
+# Google Earth
 from simplekml import Kml
 from pydrive.auth import GoogleAuth
 from pydrive.drive import GoogleDrive
 
-# TODO 1 - closing loop with PID on the distance to front car as well as y axis for staying in the lane
-# TODO 2 - front car class
 
 fig, ax = plt.subplots()
 
@@ -44,15 +43,6 @@ def get_path(file_name):
 
         return Y, X
 
-# plt.plot(Y, X)
-# plt.title('Line Graph using CSV')
-# plt.xlabel('X')
-# plt.ylabel('Y')
-# plt.show()
-
-
-fig, ax = plt.subplots()
-
 
 class fonts:  # works only for print() function
     CYAN = '\033[96m'
@@ -62,6 +52,14 @@ class fonts:  # works only for print() function
     BLUE = '\033[94m'
     ENDC = '\033[0m'
     BOLD = '\033[1m'
+
+
+class front_padastrian:
+    id = -1
+    distance_x = 100
+    distance_y = 0
+    velocity_x = 0
+    velocity_y = 0
 
 
 class front_car:
@@ -85,13 +83,17 @@ class adaptive_cruise_control(Node):
         # self.in_session = False  # for running and shutting down purposes
 
         # acc :
+        self.padesterianList: PedestrianMsg = []
         self.vehicleList: VehicleMsg = []
         self.acc_on = False  # ACC Flag
         self.lane_size = 3.7  # meters
         self.front_car = front_car()
-        self.dist_from_front_car : float = 0    # GPS distance from the closest car
+        self.front_padasterian = front_padastrian()
+        self.dist_from_front_car: float = 0    # GPS distance from the closest car
         self.currentListIdx = 0
         self.maximum_front_car_distance = 100  # Initializing maximum front car distance
+        self.ego_car_pose_y_nav = 0.0
+        self.ego_car_pose_x_nav = 0.0
 
         self.reference_distance = 25  # Desired keeping distance
         self.keyboard_increment_factor = 0.1
@@ -103,13 +105,11 @@ class adaptive_cruise_control(Node):
         self.ego_car_speed = 0.0
 
         # PID
-        self.velocity_PID = PID(kp=0.75, ki=0, kd=0.3)
+        self.velocity_PID = PID(kp=0.8, ki=0, kd=0.13)
 
         self.wheel_PID = PID(kp=0.05, ki=0, kd=0.002)
-        # self.wheel_PID = PID(kp=0.05, ki=0, kd=0)
 
         # subscribers
-        
         self.dogt_listener = self.create_subscription(
             ROIAndDOGTOutput, "/cognataSDK/dogt/GlobalSensors", self.DOGTcb, 10)  # DOGT Listener
         self.gps_listener = self.create_subscription(
@@ -118,7 +118,6 @@ class adaptive_cruise_control(Node):
             NavSatFix, "cognataSDK/GPS/navsat/CognataGPS0002", self.GPScb_nav, 10)  # GPS Point listener
 
         # publishers
-        # self.vehicle_cmd_publisher = rospy2.Publisher('/cognataSDK/vehicle_cmd', Twist, queue_size=10) # Publisher
         self.car_cmd_publisher_steer = self.create_publisher(
             Float32, '/cognataSDK/car_command/steer_cmd', 10)
         self.car_cmd_publisher_accel = self.create_publisher(
@@ -136,7 +135,6 @@ class adaptive_cruise_control(Node):
         # self.di = 0  # steer control
 
         # start putr pursuit
-        
 
         # timer
         time_period = 0.1
@@ -148,7 +146,6 @@ class adaptive_cruise_control(Node):
         # print(fonts.BOLD + fonts.BLUE + "Vehicle List Size = " +str(len(self.vehicleList))) # Printing Number of Vehicle Agents
         self.rate = self.create_rate(8)  # 10 [Hz]
 
-
         # Google Earth Visualization    - DO NOT DELETE
         # self.drive = GoogleDrive(GoogleAuth)
         # self.upload_file_list = ['LinkLine.kml']
@@ -158,21 +155,21 @@ class adaptive_cruise_control(Node):
         # # Kml template
         # self.kml = Kml()
 
-
     def dist(self, point1, point2):
         # return distance betweeen point1 and point2 - 8 digit accuracy - meters
-        print(point1)
-        print(point2)
+        # print(point1)
+        # print(point2)
         dist = hs.haversine(point1, point2)
         return 1000*round(dist, 8)
-
 
     #####################################################
     # DOGT message callback
     #####################################################
+
     def DOGTcb(self, msg: ROIAndDOGTOutput):
         self.vehicleList = msg.vehicle_list
-        
+        self.padesterianList = msg.pedestrian_list
+
         # print("sus vehiclelist sususususuususususuusususus:", self.vehicleList)
 
     #####################################################
@@ -193,26 +190,26 @@ class adaptive_cruise_control(Node):
 
         # plot
         ax.clear()
-        ax.plot(self.pure_pursuit.cx, self.pure_pursuit.cy, "-r") # plot course
+        ax.plot(self.pure_pursuit.cx, self.pure_pursuit.cy, "-r")  # plot course
 
         ax.plot([self.pure_pursuit.car_state.x_coord, self.pure_pursuit.target_point[0]],
-                [self.pure_pursuit.car_state.y_coord, self.pure_pursuit.target_point[1]], "-g") # pot target point
+                [self.pure_pursuit.car_state.y_coord, self.pure_pursuit.target_point[1]], "-g")  # pot target point
 
         abline(self.pure_pursuit.linear_reg.coef_, self.pure_pursuit.linear_reg.intercept_, ax,
-               self.pure_pursuit.cx[self.pure_pursuit.curr_index], self.pure_pursuit.cx[self.pure_pursuit.curr_index + sample]) # draw linear regression
+               self.pure_pursuit.cx[self.pure_pursuit.curr_index], self.pure_pursuit.cx[self.pure_pursuit.curr_index + sample])  # draw linear regression
 
-        ax.scatter([self.pure_pursuit.target_point[0]], 
-                   [self.pure_pursuit.target_point[1]], marker="+") # mark target point
+        ax.scatter([self.pure_pursuit.target_point[0]],
+                   [self.pure_pursuit.target_point[1]], marker="+")  # mark target point
 
         ax.scatter([self.pure_pursuit.car_state.x_coord],
-                   [self.pure_pursuit.car_state.y_coord]) # draw car
+                   [self.pure_pursuit.car_state.y_coord])  # draw car
         plt.pause(0.001)
 
         # Google Earth Visualization    - DO NOT DELETE!!
         # lon = msg.longitude
         # lat = msg.latitude
         # self.coords.append((lon, lat))
-        # # update the kml on google drive -> update on google earth 
+        # # update the kml on google drive -> update on google earth
         # docs = self.kml.newdocument(name= 'LinkLine')
         # docs.newlinestring(name= 'PCBLine', coords = self.coords)
         # self.kml.save('LinkLine.kml')
@@ -220,7 +217,6 @@ class adaptive_cruise_control(Node):
         #     # Read file and set it as the content of this instance.
         #     self.file_drive.SetContentFile(upload_file)
         #     self.file_drive.Upload()
-
 
         # self.pure_pursuit.state.update(self.ai, self.di)
         # self.pure_pursuit.state.y = self.ego_car_pose_y_nav * 10000000000000
@@ -244,13 +240,13 @@ class adaptive_cruise_control(Node):
         self.ego_car_lane_offset = msg.lane_offset
         self.ego_car_velocity = msg._velocity_local_3d
         self.ego_car_speed = msg.speed * 3.6
-        self.ego_car_degree = np.arccos(self.ego_car_velocity._x / (self.ego_car_speed/3.6))
+        # self.ego_car_degree = np.arccos(
+        #     self.ego_car_velocity._x / (self.ego_car_speed/3.6))
         self.ego_car_pose_y = msg.position._y
         self.ego_car_pose_x = msg.position._x
         self.ego_car_v_x = msg.velocity_local_3d.x
         self.ego_car_v_y = msg.velocity_local_3d.y
         self.ego_car_pose = msg.position
-        
 
         # self.pure_pursuit.state.v = self.ego_car_velocity._x
         # self.pure_pursuit.state.yaw = msg.yaw
@@ -274,7 +270,46 @@ class adaptive_cruise_control(Node):
         # if self.in_session:
         print(fonts.BOLD + fonts.CYAN + "Quitting Adaptive Cruise Control")
 
+    def get_front_padasterian(self):
+        # radius
+        radius = 3.5
+
+        # Initializing front car
+        self.front_padasterian.id = -1
+        self.front_padasterian.distance_y = 0
+        self.front_padasterian.distance_x = self.maximum_front_car_distance
+        self.front_padasterian.velocity = 0
+
+        for idx, padestrian in enumerate(self.padesterianList):
+            if -radius < int(padestrian.description.bounding_box.transform.translation.y) < radius and padestrian.description.bounding_box.transform.translation.x > 0:
+                # print("Distance =" + str(car.description.bounding_box.transform.translation.x) +" to Car#"+ str(idx) +" in vehicle list ")
+                if (padestrian.description.bounding_box.transform.translation.x < self.front_car.distance_x):
+                    # print("Detected Front Car")
+                    self.front_padasterian.distance_x = padestrian.description.bounding_box.transform.translation.x
+                    self.front_padasterian.distance_y = padestrian.description.bounding_box.transform.translation.y
+                    self.front_padasterian.velocity_x = padestrian.description.motion.linear.x
+                    self.front_padasterian.velocity_y = padestrian.description.motion.angular.z
+                    self.front_padasterian.id = idx
+
+        # print("distance to closest padestrian in lane: ", self.front_padasterian.distance_x)
+            #   self.front_padasterian.distance_y)
+
+        # new_latitude  = latitude  + (dy / r_earth) * (180 / pi);
+        # new_longitude = longitude + (dx / r_earth) * (180 / pi) / cos(latitude * pi/180);
+
+        # point1 = (self.ego_car_pose_x_nav, self.ego_car_pose_y_nav)
+        # new_latitude = point1[1] + \
+        #     (self.front_padasterian.distance_y / 6378*1000) * (180/math.pi)
+        # new_longitude = point1[0] + ((self.front_padasterian.distance_x / (
+        #     6378*1000)) * (180/math.pi)) / math.cos(point1[1] * math.pi/180)
+        # point2 = (new_longitude, new_latitude)
+
+        # self.dist_from_front_padasterian = self.dist(
+        #     point1=point1, point2=point2)
+        # print(self.dist_from_front_padasterian)
+
     # Pull Front Car
+
     def get_front_car(self):
 
         # Initializing front car
@@ -282,9 +317,8 @@ class adaptive_cruise_control(Node):
         self.front_car.distance_y = 0
         self.front_car.distance_x = self.maximum_front_car_distance
         self.front_car.velocity = 0
-
         for idx, car in enumerate(self.vehicleList):
-            if(int(car.lane_id) == self.ego_car_lane and car.description.bounding_box.transform.translation.x > 0 and abs(car.description.bounding_box.transform.translation.y) < self.lane_size):
+            if(car.lane_id != "" and int(car.lane_id) == self.ego_car_lane and car.description.bounding_box.transform.translation.x > 0 and abs(car.description.bounding_box.transform.translation.y) < self.lane_size):
                 # print("Distance =" + str(car.description.bounding_box.transform.translation.x) +" to Car#"+ str(idx) +" in vehicle list ")
                 if (car.description.bounding_box.transform.translation.x < self.front_car.distance_x):
                     # print("Detected Front Car")
@@ -294,25 +328,27 @@ class adaptive_cruise_control(Node):
                     self.front_car.velocity_y = car.description.motion.angular.z
                     self.front_car.id = idx
 
-                 
-        print(self.front_car.distance_x , self.front_car.distance_y)
+        # print(self.front_car.distance_x)
 
         # new_latitude  = latitude  + (dy / r_earth) * (180 / pi);
-        # new_longitude = longitude + (dx / r_earth) * (180 / pi) / cos(latitude * pi/180);   
+        # new_longitude = longitude + (dx / r_earth) * (180 / pi) / cos(latitude * pi/180);
 
-        point1 = (self.ego_car_pose_x_nav, self.ego_car_pose_y_nav)
-        new_latitude = point1[1] + (self.front_car.distance_y / 6378*1000) * (180/math.pi)
-        new_longitude = point1[0] + ((self.front_car.distance_x/ (6378*1000)) * (180/math.pi)) / math.cos(point1[1] * math.pi/180)
-        point2 = (new_longitude, new_latitude)
+        # point1 = (self.ego_car_pose_x_nav, self.ego_car_pose_y_nav)
+        # new_latitude = point1[1] + \
+        #     (self.front_car.distance_y / 6378*1000) * (180/math.pi)
+        # new_longitude = point1[0] + ((self.front_car.distance_x / (6378*1000)) * (
+        #     180/math.pi)) / math.cos(point1[1] * math.pi/180)
+        # point2 = (new_longitude, new_latitude)
 
-        self.dist_from_front_car = self.dist(point1= point1, point2= point2)
-        print(self.dist_from_front_car)
-
+        # self.dist_from_front_car = self.dist(point1=point1, point2=point2)
+        # print(self.dist_from_front_car)
 
     #####################################################
     # PID control for applying adaptive cruise
     #####################################################
+
     def control(self):
+        self.get_front_padasterian()
         self.get_front_car()
 
         #####################################################
@@ -328,8 +364,16 @@ class adaptive_cruise_control(Node):
         #####################################################
 
         # gas and barke Control
-        error = self.front_car.distance_x - self.reference_distance
+        errorCar = self.front_car.distance_x - self.reference_distance
+        errorPad = self.front_padasterian.distance_x - self.reference_distance
+        # error = 0.0
+        if(self.front_car.distance_x > self.front_padasterian.distance_x):
+            error = errorPad
+
+        else:
+            error = errorCar
         output = self.velocity_PID.output(error)
+
         # print("sus error: ", error)
         # print("self sus distanse: ", self.front_car.distance_x,
         #       "i am the sus of the sus not change")
@@ -338,11 +382,18 @@ class adaptive_cruise_control(Node):
         #####################################################
         # wheel control
         #####################################################
-        error_yaw, error_dist = self.pure_pursuit.run()
-        # error_w = error_dist + error_yaw
-        error_w = error_yaw
+        error_yaw, _ = self.pure_pursuit.run()
+        idx = self.pure_pursuit.curr_index
+        dist_error = math.dist((self.pure_pursuit.cx[idx], self.pure_pursuit.cy[idx]), (
+            self.ego_car_pose_x_nav, self.ego_car_pose_y_nav)) * math.exp(7)
+
+        # error_w = (error_yaw + dist_error) / 2
+        # error_w = error_yaw + math.sqrt(dist_error)
+        error_w = error_yaw + \
+            math.sqrt(dist_error) if error_yaw > 0 else error_yaw + \
+            math.sqrt(dist_error )
         output_w = self.wheel_PID.output(error_w)
-        print("steer: ", output_w)
+        print("distance error: ", dist_error)
 
         #####################################################
         # gas & brake Control
@@ -354,35 +405,48 @@ class adaptive_cruise_control(Node):
         #     print("Error = " + fonts.GREEN + str(error) +
         #           fonts.ENDC + " Output = " + str(output))
 
+        # if (output > 0):
+        #     if (self.ego_car_speed > 30):
+        #         msg.data = 0.3
+        #         self.car_cmd_publisher_brake.publish(msg)
+        #         msg.data = 0.0
+        #     elif (20 < self.ego_car_speed < 30):
+        #         msg.data = output * 0.7
+        #     else:
+        #         msg.data = output
+        #     self.car_cmd_publisher_gas.publish(msg)
+        # elif (output < 0):
+        #     msg = Float32()
+        #     msg.data = -(output)
+        #     self.car_cmd_publisher_brake.publish(msg)
+        # else:
+        #     msg = Float32()
+        #     msg.data = 0.0
+        #     self.car_cmd_publisher_gas.publish(msg)
+        #     self.car_cmd_publisher_brake.publish(msg)
+
+        # gas and brake parameters
+        gas_msg = Float32()
+        brake_msg = Float32()
+        max_speed = 30.0
+
+        # need to drive up to a certain speed
         if (output > 0):
-            # print("output > 0")
-            # self.vehicle_cmd.linear.x = output
-            # self.vehicle_cmd.linear.y = 0
-            msg = Float32()
-            if (self.ego_car_speed > 30):
-                msg.data = 0.3
-                self.car_cmd_publisher_brake.publish(msg)
-                msg.data = 0.0
-            elif (20 < self.ego_car_speed < 30):
-                msg.data = output * 0.7
+            if self.ego_car_speed > max_speed:
+                gas_msg.data = 0.0
+                brake_msg.data = 0.3
+            elif max_speed - 10 < self.ego_car_speed < max_speed:
+                gas_msg.data = output * 0.7
+                brake_msg.data = 0.0
             else:
-                msg.data = output
-                # print("output important :", output)
-            self.car_cmd_publisher_gas.publish(msg)
-        elif (output < 0):
-            # print("output < 0")
-            # self.vehicle_cmd.linear.x = 0
-            # self.vehicle_cmd.linear.y = -output
-            msg = Float32()
-            msg.data = -(output)
-            self.car_cmd_publisher_brake.publish(msg)
+                gas_msg.data = output
+                brake_msg.data = 0.0
         else:
-            # self.vehicle_cmd.linear.x = 0
-            # self.vehicle_cmd.linear.y = 0
-            msg = Float32()
-            msg.data = 0.0
-            self.car_cmd_publisher_gas.publish(msg)
-            self.car_cmd_publisher_brake.publish(msg)
+            gas_msg.data = 0.0
+            brake_msg.data = -(output)
+
+        self.car_cmd_publisher_gas.publish(gas_msg)
+        self.car_cmd_publisher_brake.publish(brake_msg)
 
         #####################################################
         # wheel Control
@@ -393,42 +457,43 @@ class adaptive_cruise_control(Node):
         #     output_w = -output_w
         # ~~~~~~~~~~~~~~~~ #
 
-        if (0 < output_w < 1):
-            # self.vehicle_cmd.linear.x = output
-            # self.vehicle_cmd.linear.y = 0
-            msg = Float32()
-            msg.data = output_w
-            self.car_cmd_publisher_steer.publish(msg)
-            # g29 wheel
-            # msg29 = ForceFeedback()
-            # msg29.position = output_w
-            # msg29.torque = 0.2
-            # print("g29")
-            # self.wheel_publisher_g29.publish(msg29)
+        # if (0 < output_w < 1):
+        #     # self.vehicle_cmd.linear.x = output
+        #     # self.vehicle_cmd.linear.y = 0
+        #     msg = Float32()
+        #     msg.data = output_w
+        #     self.car_cmd_publisher_steer.publish(msg)
+        #     # g29 wheel
+        #     # msg29 = ForceFeedback()
+        #     # msg29.position = output_w
+        #     # msg29.torque = 0.2
+        #     # print("g29")
+        #     # self.wheel_publisher_g29.publish(msg29)
 
-        elif (-1 < output_w < 0):
-            # self.vehicle_cmd.linear.x = 0
-            # self.vehicle_cmd.linear.y = -output
-            msg = Float32()
-            msg.data = output_w
-            self.car_cmd_publisher_steer.publish(msg)
-            # g29 wheel
-            # msg29 = ForceFeedback()
-            # msg29.position = output_w
-            # msg29.torque = 0.2
-            # print("g29")
-            # self.wheel_publisher_g29.publish(msg29)
+        # elif (-1 < output_w < 0):
+        #     # self.vehicle_cmd.linear.x = 0
+        #     # self.vehicle_cmd.linear.y = -output
+        #     msg = Float32()
+        #     msg.data = output_w / 2.0
+        #     self.car_cmd_publisher_steer.publish(msg)
+        #     # g29 wheel
+        #     # msg29 = ForceFeedback()
+        #     # msg29.position = output_w
+        #     # msg29.torque = 0.2
+        #     # print("g29")
+        #     # self.wheel_publisher_g29.publish(msg29)
 
-        else:
-            msg = Float32()
-            msg.data = output_w
-            self.car_cmd_publisher_steer.publish(msg)
-            # g29 wheel
-            # msg29 = ForceFeedback()
-            # msg29.position = output_w
-            # msg29.torque = 0.2
-            # print("g29")
-            # self.wheel_publisher_g29.publish(msg29)
+        # else:
+        msg = Float32()
+        msg.data = output_w
+        self.car_cmd_publisher_steer.publish(msg)
+
+        # g29 wheel
+        # msg29 = ForceFeedback()
+        # msg29.position = output_w
+        # msg29.torque = 0.2
+        # print("g29")
+        # self.wheel_publisher_g29.publish(msg29)
 
     #####################################################
     # keyboard listener

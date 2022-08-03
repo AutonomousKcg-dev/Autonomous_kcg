@@ -11,6 +11,7 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
 endif()
 
 find_package(ament_cmake_auto additional_msgs REQUIRED)
+find_package(rclcpp REQUIRED)
 
 ament_auto_find_build_dependencies()
 
