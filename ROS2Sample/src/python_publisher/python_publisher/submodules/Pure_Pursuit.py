@@ -42,6 +42,7 @@ class PurePursuit:
         self.target_point = None
         self.car_state = State(cx[0], cy[0], cx[0], cy[0])
         self.linear_reg = None
+        np.seterr(all='ignore')
 
     def closest_point(self):
         # find closest point
@@ -69,7 +70,7 @@ class PurePursuit:
         y_target = self.linear_reg.predict(np.array([x_target]).reshape(-1, 1))
         # print(y_target)
         self.target_point = (x_target, y_target)
-
+    
     def run(self):
         """
         process current state and get the degree in which we want to steer
