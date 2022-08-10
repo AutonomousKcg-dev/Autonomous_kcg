@@ -28,8 +28,8 @@ class record_sub(Node):
         self.ego_car_pose_y_nav = NavSatFix()
         self.ego_car_pose_x_nav = NavSatFix()
         self.sub = self.create_subscription(NavSatFix, "cognataSDK/GPS/navsat/CognataGPS0002", self.GPScb_nav, 30) # GPS Point listener
-        self.gps_listener = self.create_subscription(
-            GPSAdditionalData, "/cognataSDK/GPS/info/CognataGPS0002", self.GPScb, 10)  # GPS Listener
+        # self.gps_listener = self.create_subscription(
+        #     GPSAdditionalData, "/cognataSDK/GPS/info/CognataGPS0002", self.GPScb, 10)  # GPS Listener
         self.x_list = []
         self.y_list = []
         self.fig, self.ax = plt.subplots()

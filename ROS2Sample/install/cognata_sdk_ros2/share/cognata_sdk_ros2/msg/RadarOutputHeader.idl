@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from cognata_sdk_ros2/msg/RadarOutputHeader.msg
+// generated code does not contain a copyright notice
+
+#include "cognata_sdk_ros2/msg/RadarOutputTarget.idl"
+#include "geometry_msgs/msg/Twist.idl"
+#include "std_msgs/msg/Header.idl"
+
+module cognata_sdk_ros2 {
+  module msg {
+    struct RadarOutputHeader {
+      std_msgs::msg::Header header;
+
+      string radar_id;
+
+      geometry_msgs::msg::Twist radar_placement;
+
+      float h_fov;
+
+      float v_fov;
+
+      sequence<cognata_sdk_ros2::msg::RadarOutputTarget> targets;
+    };
+  };
+};
