@@ -1,8 +1,8 @@
-# Install script for directory: /home/shovals/copy/ROS2Sample/build/cognata_sdk_ros2/cognata_sdk_ros2__py
+# Install script for directory: /home/kcg/copy/ROS2Sample/build/cognata_sdk_ros2/cognata_sdk_ros2__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/shovals/copy/ROS2Sample/install/cognata_sdk_ros2")
+  set(CMAKE_INSTALL_PREFIX "/home/kcg/copy/ROS2Sample/install/cognata_sdk_ros2")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

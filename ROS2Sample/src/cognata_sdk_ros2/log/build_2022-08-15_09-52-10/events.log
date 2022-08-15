@@ -1,0 +1,736 @@
+[0.000000] (-) TimerEvent: {}
+[0.001099] (cognata_sdk_ros2) JobQueued: {'identifier': 'cognata_sdk_ros2', 'dependencies': OrderedDict()}
+[0.001121] (cognata_sdk_ros2) JobStarted: {'identifier': 'cognata_sdk_ros2'}
+[0.007326] (cognata_sdk_ros2) JobProgress: {'identifier': 'cognata_sdk_ros2', 'progress': 'cmake'}
+[0.007368] (cognata_sdk_ros2) Command: {'cmd': ['/usr/bin/cmake', '/home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2', '-DCMAKE_INSTALL_PREFIX=/home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2'], 'cwd': '/home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/build/cognata_sdk_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IL:en'), ('USER', 'kcg'), ('SSH_AGENT_PID', '1738'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/kcg'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1555'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=76b883d242f09347c82c917762f505c5'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'kcg'), ('JOURNAL_STREAM', '8:51359'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'kcg'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/kcg-ROG-Strix:@/tmp/.ICE-unix/1773,unix/kcg-ROG-Strix:/tmp/.ICE-unix/1773'), ('INVOCATION_ID', '4185df5df27c4351b542c7c786ea9ca0'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4e255e68_312d_4273_a74e_39304aa5dab5'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_IL'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.268'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/build/cognata_sdk_ros2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=76b883d242f09347c82c917762f505c5'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.056661] (cognata_sdk_ros2) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.099987] (-) TimerEvent: {}
+[0.200307] (-) TimerEvent: {}
+[0.289566] (cognata_sdk_ros2) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.292323] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.300399] (-) TimerEvent: {}
+[0.329565] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.329995] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.369856] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.378478] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.378773] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.380626] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.400508] (-) TimerEvent: {}
+[0.431649] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.432469] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.487090] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.497237] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.497697] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.499141] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.500606] (-) TimerEvent: {}
+[0.515337] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.515414] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.600686] (-) TimerEvent: {}
+[0.631931] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[0.657071] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.660581] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.698892] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[0.700742] (-) TimerEvent: {}
+[0.715289] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[0.761639] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.796487] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[0.797374] (cognata_sdk_ros2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.797995] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.800911] (-) TimerEvent: {}
+[0.883102] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.883222] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.901022] (-) TimerEvent: {}
+[0.924112] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[0.924349] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[0.956604] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[0.956795] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[0.995525] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[0.996271] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.001144] (-) TimerEvent: {}
+[1.094015] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[1.101376] (-) TimerEvent: {}
+[1.166543] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Found common_interfaces: 2.0.5 (/opt/ros/foxy/share/common_interfaces/cmake)\n'}
+[1.167113] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)\n'}
+[1.201606] (-) TimerEvent: {}
+[1.211784] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[1.233649] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[1.301720] (-) TimerEvent: {}
+[1.383530] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[1.401971] (-) TimerEvent: {}
+[1.502226] (-) TimerEvent: {}
+[1.530625] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.601760] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.602282] (-) TimerEvent: {}
+[1.617041] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[1.617782] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[1.632941] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[1.633012] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.633059] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[1.633104] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so\n'}
+[1.645137] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.700342] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.702348] (-) TimerEvent: {}
+[1.753123] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Generating done\n'}
+[1.755077] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Build files have been written to: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/build/cognata_sdk_ros2\n'}
+[1.761828] (cognata_sdk_ros2) CommandEnded: {'returncode': 0}
+[1.762267] (cognata_sdk_ros2) JobProgress: {'identifier': 'cognata_sdk_ros2', 'progress': 'build'}
+[1.762300] (cognata_sdk_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/build/cognata_sdk_ros2', '--', '-j20', '-l20'], 'cwd': '/home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/build/cognata_sdk_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IL:en'), ('USER', 'kcg'), ('SSH_AGENT_PID', '1738'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/kcg'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1555'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=76b883d242f09347c82c917762f505c5'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'kcg'), ('JOURNAL_STREAM', '8:51359'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'kcg'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/kcg-ROG-Strix:@/tmp/.ICE-unix/1773,unix/kcg-ROG-Strix:/tmp/.ICE-unix/1773'), ('INVOCATION_ID', '4185df5df27c4351b542c7c786ea9ca0'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4e255e68_312d_4273_a74e_39304aa5dab5'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_IL'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.268'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/build/cognata_sdk_ros2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=76b883d242f09347c82c917762f505c5'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[1.786786] (cognata_sdk_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target cognata_sdk_ros2__cpp\x1b[0m\n'}
+[1.787274] (cognata_sdk_ros2) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.793079] (cognata_sdk_ros2) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.802416] (-) TimerEvent: {}
+[1.902639] (-) TimerEvent: {}
+[2.002843] (-) TimerEvent: {}
+[2.103041] (-) TimerEvent: {}
+[2.203231] (-) TimerEvent: {}
+[2.288991] (cognata_sdk_ros2) StdoutLine: {'line': b'[  2%] Built target cognata_sdk_ros2__cpp\n'}
+[2.299002] (cognata_sdk_ros2) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.300801] (cognata_sdk_ros2) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.301044] (cognata_sdk_ros2) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.303320] (-) TimerEvent: {}
+[2.312302] (cognata_sdk_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target cognata_sdk_ros2__rosidl_generator_c\x1b[0m\n'}
+[2.323988] (cognata_sdk_ros2) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/cognata_sdk_ros2__rosidl_generator_c.dir/rosidl_generator_c/cognata_sdk_ros2/msg/detail/car_telemetries_msg__functions.c.o\x1b[0m\n'}
+[2.324214] (cognata_sdk_ros2) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/cognata_sdk_ros2__rosidl_generator_c.dir/rosidl_generator_c/cognata_sdk_ros2/msg/detail/bounding_box_msg__functions.c.o\x1b[0m\n'}
+[2.324495] (cognata_sdk_ros2) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/cognata_sdk_ros2__rosidl_generator_c.dir/rosidl_generator_c/cognata_sdk_ros2/msg/detail/traffic_light_msg__functions.c.o\x1b[0m\n'}
+[2.324918] (cognata_sdk_ros2) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/cognata_sdk_ros2__rosidl_generator_c.dir/rosidl_generator_c/cognata_sdk_ros2/msg/detail/annotation_msg__functions.c.o\x1b[0m\n'}
+[2.325235] (cognata_sdk_ros2) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/cognata_sdk_ros2__rosidl_generator_c.dir/rosidl_generator_c/cognata_sdk_ros2/msg/detail/gps_additional_data__functions.c.o\x1b[0m\n'}
+[2.325534] (cognata_sdk_ros2) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/cognata_sdk_ros2__rosidl_generator_c.dir/rosidl_generator_c/cognata_sdk_ros2/msg/detail/object_description__functions.c.o\x1b[0m\n'}
+[2.325707] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/cognata_sdk_ros2__rosidl_generator_c.dir/rosidl_generator_c/cognata_sdk_ros2/msg/detail/pedestrian_msg__functions.c.o\x1b[0m\n'}
+[2.325832] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/cognata_sdk_ros2__rosidl_generator_c.dir/rosidl_generator_c/cognata_sdk_ros2/msg/detail/radar_output_header__functions.c.o\x1b[0m\n'}
+[2.325982] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/cognata_sdk_ros2__rosidl_generator_c.dir/rosidl_generator_c/cognata_sdk_ros2/msg/detail/radar_output_target__functions.c.o\x1b[0m\n'}
+[2.326190] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/cognata_sdk_ros2__rosidl_generator_c.dir/rosidl_generator_c/cognata_sdk_ros2/msg/detail/roi_and_dogt_output__functions.c.o\x1b[0m\n'}
+[2.326459] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/cognata_sdk_ros2__rosidl_generator_c.dir/rosidl_generator_c/cognata_sdk_ros2/msg/detail/wheel_msg__functions.c.o\x1b[0m\n'}
+[2.326602] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/cognata_sdk_ros2__rosidl_generator_c.dir/rosidl_generator_c/cognata_sdk_ros2/msg/detail/vehicle_msg__functions.c.o\x1b[0m\n'}
+[2.326745] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/cognata_sdk_ros2__rosidl_generator_c.dir/rosidl_generator_c/cognata_sdk_ros2/msg/detail/wheel_telemetries__functions.c.o\x1b[0m\n'}
+[2.367473] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 15%] \x1b[32m\x1b[1mLinking C shared library libcognata_sdk_ros2__rosidl_generator_c.so\x1b[0m\n'}
+[2.392948] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 15%] Built target cognata_sdk_ros2__rosidl_generator_c\n'}
+[2.399398] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.399508] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.403423] (-) TimerEvent: {}
+[2.503626] (-) TimerEvent: {}
+[2.603852] (-) TimerEvent: {}
+[2.646375] (cognata_sdk_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target cognata_sdk_ros2__rosidl_typesupport_cpp\x1b[0m\n'}
+[2.657523] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cognata_sdk_ros2/msg/bounding_box_msg__type_support.cpp.o\x1b[0m\n'}
+[2.658314] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cognata_sdk_ros2/msg/wheel_telemetries__type_support.cpp.o\x1b[0m\n'}
+[2.658698] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cognata_sdk_ros2/msg/annotation_msg__type_support.cpp.o\x1b[0m\n'}
+[2.658836] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cognata_sdk_ros2/msg/car_telemetries_msg__type_support.cpp.o\x1b[0m\n'}
+[2.658948] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cognata_sdk_ros2/msg/gps_additional_data__type_support.cpp.o\x1b[0m\n'}
+[2.659153] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cognata_sdk_ros2/msg/object_description__type_support.cpp.o\x1b[0m\n'}
+[2.659314] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cognata_sdk_ros2/msg/pedestrian_msg__type_support.cpp.o\x1b[0m\n'}
+[2.659491] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cognata_sdk_ros2/msg/radar_output_header__type_support.cpp.o\x1b[0m\n'}
+[2.659632] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cognata_sdk_ros2/msg/radar_output_target__type_support.cpp.o\x1b[0m\n'}
+[2.659713] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cognata_sdk_ros2/msg/roi_and_dogt_output__type_support.cpp.o\x1b[0m\n'}
+[2.659809] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cognata_sdk_ros2/msg/traffic_light_msg__type_support.cpp.o\x1b[0m\n'}
+[2.659947] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cognata_sdk_ros2/msg/vehicle_msg__type_support.cpp.o\x1b[0m\n'}
+[2.660090] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cognata_sdk_ros2/msg/wheel_msg__type_support.cpp.o\x1b[0m\n'}
+[2.703945] (-) TimerEvent: {}
+[2.771091] (cognata_sdk_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target cognata_sdk_ros2__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[2.787359] (cognata_sdk_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target cognata_sdk_ros2__rosidl_typesupport_c\x1b[0m\n'}
+[2.790075] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cognata_sdk_ros2/msg/detail/bounding_box_msg__type_support.cpp.o\x1b[0m\n'}
+[2.790294] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cognata_sdk_ros2/msg/detail/car_telemetries_msg__type_support.cpp.o\x1b[0m\n'}
+[2.790407] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cognata_sdk_ros2/msg/detail/annotation_msg__type_support.cpp.o\x1b[0m\n'}
+[2.790500] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cognata_sdk_ros2/msg/detail/gps_additional_data__type_support.cpp.o\x1b[0m\n'}
+[2.804040] (-) TimerEvent: {}
+[2.809271] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_c.dir/rosidl_typesupport_c/cognata_sdk_ros2/msg/annotation_msg__type_support.cpp.o\x1b[0m\n'}
+[2.854640] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_c.dir/rosidl_typesupport_c/cognata_sdk_ros2/msg/bounding_box_msg__type_support.cpp.o\x1b[0m\n'}
+[2.884712] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_c.dir/rosidl_typesupport_c/cognata_sdk_ros2/msg/car_telemetries_msg__type_support.cpp.o\x1b[0m\n'}
+[2.904149] (-) TimerEvent: {}
+[2.916173] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_c.dir/rosidl_typesupport_c/cognata_sdk_ros2/msg/gps_additional_data__type_support.cpp.o\x1b[0m\n'}
+[2.947683] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_c.dir/rosidl_typesupport_c/cognata_sdk_ros2/msg/object_description__type_support.cpp.o\x1b[0m\n'}
+[2.977237] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_c.dir/rosidl_typesupport_c/cognata_sdk_ros2/msg/pedestrian_msg__type_support.cpp.o\x1b[0m\n'}
+[2.996652] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_c.dir/rosidl_typesupport_c/cognata_sdk_ros2/msg/radar_output_header__type_support.cpp.o\x1b[0m\n'}
+[3.004261] (-) TimerEvent: {}
+[3.005413] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_c.dir/rosidl_typesupport_c/cognata_sdk_ros2/msg/radar_output_target__type_support.cpp.o\x1b[0m\n'}
+[3.006209] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_c.dir/rosidl_typesupport_c/cognata_sdk_ros2/msg/roi_and_dogt_output__type_support.cpp.o\x1b[0m\n'}
+[3.021144] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cognata_sdk_ros2/msg/detail/object_description__type_support.cpp.o\x1b[0m\n'}
+[3.021419] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_c.dir/rosidl_typesupport_c/cognata_sdk_ros2/msg/traffic_light_msg__type_support.cpp.o\x1b[0m\n'}
+[3.021854] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cognata_sdk_ros2/msg/detail/pedestrian_msg__type_support.cpp.o\x1b[0m\n'}
+[3.027285] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cognata_sdk_ros2/msg/detail/radar_output_target__type_support.cpp.o\x1b[0m\n'}
+[3.027590] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cognata_sdk_ros2/msg/detail/radar_output_header__type_support.cpp.o\x1b[0m\n'}
+[3.028798] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_c.dir/rosidl_typesupport_c/cognata_sdk_ros2/msg/vehicle_msg__type_support.cpp.o\x1b[0m\n'}
+[3.030104] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 42%] \x1b[32m\x1b[1mLinking CXX shared library libcognata_sdk_ros2__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[3.034207] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_c.dir/rosidl_typesupport_c/cognata_sdk_ros2/msg/wheel_msg__type_support.cpp.o\x1b[0m\n'}
+[3.035331] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cognata_sdk_ros2/msg/detail/roi_and_dogt_output__type_support.cpp.o\x1b[0m\n'}
+[3.035553] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cognata_sdk_ros2/msg/detail/traffic_light_msg__type_support.cpp.o\x1b[0m\n'}
+[3.036019] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_c.dir/rosidl_typesupport_c/cognata_sdk_ros2/msg/wheel_telemetries__type_support.cpp.o\x1b[0m\n'}
+[3.049366] (cognata_sdk_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target cognata_sdk_ros2__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[3.057921] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cognata_sdk_ros2/msg/detail/vehicle_msg__type_support.cpp.o\x1b[0m\n'}
+[3.058235] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cognata_sdk_ros2/msg/detail/wheel_msg__type_support.cpp.o\x1b[0m\n'}
+[3.058372] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cognata_sdk_ros2/msg/detail/wheel_telemetries__type_support.cpp.o\x1b[0m\n'}
+[3.058839] (cognata_sdk_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target cognata_sdk_ros2__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[3.062357] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library libcognata_sdk_ros2__rosidl_typesupport_c.so\x1b[0m\n'}
+[3.070938] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cognata_sdk_ros2/msg/detail/dds_fastrtps/bounding_box_msg__type_support.cpp.o\x1b[0m\n'}
+[3.071222] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cognata_sdk_ros2/msg/detail/dds_fastrtps/annotation_msg__type_support.cpp.o\x1b[0m\n'}
+[3.071334] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cognata_sdk_ros2/msg/detail/dds_fastrtps/car_telemetries_msg__type_support.cpp.o\x1b[0m\n'}
+[3.071427] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cognata_sdk_ros2/msg/detail/dds_fastrtps/gps_additional_data__type_support.cpp.o\x1b[0m\n'}
+[3.072054] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 51%] Built target cognata_sdk_ros2__rosidl_typesupport_cpp\n'}
+[3.080449] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cognata_sdk_ros2/msg/detail/dds_fastrtps/object_description__type_support.cpp.o\x1b[0m\n'}
+[3.082084] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding C object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cognata_sdk_ros2/msg/detail/annotation_msg__type_support.c.o\x1b[0m\n'}
+[3.104380] (-) TimerEvent: {}
+[3.108411] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 52%] Built target cognata_sdk_ros2__rosidl_typesupport_c\n'}
+[3.116964] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cognata_sdk_ros2/msg/detail/dds_fastrtps/radar_output_header__type_support.cpp.o\x1b[0m\n'}
+[3.117200] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding C object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cognata_sdk_ros2/msg/detail/bounding_box_msg__type_support.c.o\x1b[0m\n'}
+[3.117293] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cognata_sdk_ros2/msg/detail/dds_fastrtps/pedestrian_msg__type_support.cpp.o\x1b[0m\n'}
+[3.129779] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding C object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cognata_sdk_ros2/msg/detail/car_telemetries_msg__type_support.c.o\x1b[0m\n'}
+[3.141754] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding C object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cognata_sdk_ros2/msg/detail/gps_additional_data__type_support.c.o\x1b[0m\n'}
+[3.149464] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding C object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cognata_sdk_ros2/msg/detail/object_description__type_support.c.o\x1b[0m\n'}
+[3.166495] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding C object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cognata_sdk_ros2/msg/detail/pedestrian_msg__type_support.c.o\x1b[0m\n'}
+[3.175538] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding C object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cognata_sdk_ros2/msg/detail/radar_output_header__type_support.c.o\x1b[0m\n'}
+[3.186281] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cognata_sdk_ros2/msg/detail/dds_fastrtps/radar_output_target__type_support.cpp.o\x1b[0m\n'}
+[3.186485] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding C object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cognata_sdk_ros2/msg/detail/radar_output_target__type_support.c.o\x1b[0m\n'}
+[3.202195] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cognata_sdk_ros2/msg/detail/dds_fastrtps/roi_and_dogt_output__type_support.cpp.o\x1b[0m\n'}
+[3.204467] (-) TimerEvent: {}
+[3.211625] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cognata_sdk_ros2/msg/detail/roi_and_dogt_output__type_support.c.o\x1b[0m\n'}
+[3.222011] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding C object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cognata_sdk_ros2/msg/detail/traffic_light_msg__type_support.c.o\x1b[0m\n'}
+[3.256159] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding C object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cognata_sdk_ros2/msg/detail/vehicle_msg__type_support.c.o\x1b[0m\n'}
+[3.259255] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding C object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cognata_sdk_ros2/msg/detail/wheel_msg__type_support.c.o\x1b[0m\n'}
+[3.294133] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding C object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cognata_sdk_ros2/msg/detail/wheel_telemetries__type_support.c.o\x1b[0m\n'}
+[3.294351] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cognata_sdk_ros2/msg/detail/dds_fastrtps/traffic_light_msg__type_support.cpp.o\x1b[0m\n'}
+[3.304585] (-) TimerEvent: {}
+[3.330564] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking C shared library libcognata_sdk_ros2__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[3.362748] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cognata_sdk_ros2/msg/detail/dds_fastrtps/vehicle_msg__type_support.cpp.o\x1b[0m\n'}
+[3.368732] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 67%] Built target cognata_sdk_ros2__rosidl_typesupport_introspection_c\n'}
+[3.376636] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cognata_sdk_ros2/msg/detail/dds_fastrtps/wheel_msg__type_support.cpp.o\x1b[0m\n'}
+[3.382384] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cognata_sdk_ros2/msg/detail/dds_fastrtps/wheel_telemetries__type_support.cpp.o\x1b[0m\n'}
+[3.404697] (-) TimerEvent: {}
+[3.505029] (-) TimerEvent: {}
+[3.572166] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libcognata_sdk_ros2__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[3.605128] (-) TimerEvent: {}
+[3.634530] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 70%] Built target cognata_sdk_ros2__rosidl_typesupport_introspection_cpp\n'}
+[3.705250] (-) TimerEvent: {}
+[3.805516] (-) TimerEvent: {}
+[3.821188] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libcognata_sdk_ros2__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[3.882507] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 70%] Built target cognata_sdk_ros2__rosidl_typesupport_fastrtps_cpp\n'}
+[3.888417] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 71%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.905577] (-) TimerEvent: {}
+[4.005775] (-) TimerEvent: {}
+[4.105971] (-) TimerEvent: {}
+[4.206097] (-) TimerEvent: {}
+[4.306266] (-) TimerEvent: {}
+[4.352852] (cognata_sdk_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target cognata_sdk_ros2__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[4.369812] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cognata_sdk_ros2/msg/detail/pedestrian_msg__type_support_c.cpp.o\x1b[0m\n'}
+[4.370020] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cognata_sdk_ros2/msg/detail/bounding_box_msg__type_support_c.cpp.o\x1b[0m\n'}
+[4.370083] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cognata_sdk_ros2/msg/detail/car_telemetries_msg__type_support_c.cpp.o\x1b[0m\n'}
+[4.370146] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cognata_sdk_ros2/msg/detail/gps_additional_data__type_support_c.cpp.o\x1b[0m\n'}
+[4.370196] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cognata_sdk_ros2/msg/detail/object_description__type_support_c.cpp.o\x1b[0m\n'}
+[4.370851] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cognata_sdk_ros2/msg/detail/annotation_msg__type_support_c.cpp.o\x1b[0m\n'}
+[4.371627] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cognata_sdk_ros2/msg/detail/radar_output_header__type_support_c.cpp.o\x1b[0m\n'}
+[4.371807] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cognata_sdk_ros2/msg/detail/traffic_light_msg__type_support_c.cpp.o\x1b[0m\n'}
+[4.371923] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cognata_sdk_ros2/msg/detail/radar_output_target__type_support_c.cpp.o\x1b[0m\n'}
+[4.372006] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cognata_sdk_ros2/msg/detail/roi_and_dogt_output__type_support_c.cpp.o\x1b[0m\n'}
+[4.372126] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cognata_sdk_ros2/msg/detail/vehicle_msg__type_support_c.cpp.o\x1b[0m\n'}
+[4.372289] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cognata_sdk_ros2/msg/detail/wheel_msg__type_support_c.cpp.o\x1b[0m\n'}
+[4.372419] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cognata_sdk_ros2/msg/detail/wheel_telemetries__type_support_c.cpp.o\x1b[0m\n'}
+[4.406376] (-) TimerEvent: {}
+[4.506671] (-) TimerEvent: {}
+[4.607002] (-) TimerEvent: {}
+[4.707263] (-) TimerEvent: {}
+[4.735561] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX shared library libcognata_sdk_ros2__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[4.787670] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 81%] Built target cognata_sdk_ros2__rosidl_typesupport_fastrtps_c\n'}
+[4.793065] (cognata_sdk_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target cognata_sdk_ros2\x1b[0m\n'}
+[4.798776] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 81%] Built target cognata_sdk_ros2\n'}
+[4.804266] (cognata_sdk_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ROS2SDK\x1b[0m\n'}
+[4.804413] (cognata_sdk_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target cognata_sdk_ros2__py\x1b[0m\n'}
+[4.807361] (-) TimerEvent: {}
+[4.810384] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 82%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[4.856524] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding CXX object CMakeFiles/ROS2SDK.dir/src/ros_utility_funcs.cpp.o\x1b[0m\n'}
+[4.859858] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/ROS2SDK.dir/src/ros2_sample.cpp.o\x1b[0m\n'}
+[4.860044] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding CXX object CMakeFiles/ROS2SDK.dir/src/sensors.cpp.o\x1b[0m\n'}
+[4.860402] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object CMakeFiles/ROS2SDK.dir/src/main.cpp.o\x1b[0m\n'}
+[4.907474] (-) TimerEvent: {}
+[5.007699] (-) TimerEvent: {}
+[5.107939] (-) TimerEvent: {}
+[5.208176] (-) TimerEvent: {}
+[5.308407] (-) TimerEvent: {}
+[5.408627] (-) TimerEvent: {}
+[5.508843] (-) TimerEvent: {}
+[5.609074] (-) TimerEvent: {}
+[5.709296] (-) TimerEvent: {}
+[5.809536] (-) TimerEvent: {}
+[5.909398] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 85%] Built target cognata_sdk_ros2__py\n'}
+[5.909535] (-) TimerEvent: {}
+[5.915768] (cognata_sdk_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target cognata_sdk_ros2__python\x1b[0m\n'}
+[5.942272] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/cognata_sdk_ros2__python.dir/rosidl_generator_py/cognata_sdk_ros2/msg/_car_telemetries_msg_s.c.o\x1b[0m\n'}
+[5.942543] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/cognata_sdk_ros2__python.dir/rosidl_generator_py/cognata_sdk_ros2/msg/_gps_additional_data_s.c.o\x1b[0m\n'}
+[5.942661] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/cognata_sdk_ros2__python.dir/rosidl_generator_py/cognata_sdk_ros2/msg/_annotation_msg_s.c.o\x1b[0m\n'}
+[5.942753] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/cognata_sdk_ros2__python.dir/rosidl_generator_py/cognata_sdk_ros2/msg/_bounding_box_msg_s.c.o\x1b[0m\n'}
+[5.942885] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/cognata_sdk_ros2__python.dir/rosidl_generator_py/cognata_sdk_ros2/msg/_radar_output_header_s.c.o\x1b[0m\n'}
+[5.942978] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/cognata_sdk_ros2__python.dir/rosidl_generator_py/cognata_sdk_ros2/msg/_object_description_s.c.o\x1b[0m\n'}
+[5.943091] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/cognata_sdk_ros2__python.dir/rosidl_generator_py/cognata_sdk_ros2/msg/_pedestrian_msg_s.c.o\x1b[0m\n'}
+[5.943174] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/cognata_sdk_ros2__python.dir/rosidl_generator_py/cognata_sdk_ros2/msg/_radar_output_target_s.c.o\x1b[0m\n'}
+[5.943289] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/cognata_sdk_ros2__python.dir/rosidl_generator_py/cognata_sdk_ros2/msg/_roi_and_dogt_output_s.c.o\x1b[0m\n'}
+[5.943375] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/cognata_sdk_ros2__python.dir/rosidl_generator_py/cognata_sdk_ros2/msg/_traffic_light_msg_s.c.o\x1b[0m\n'}
+[5.943458] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/cognata_sdk_ros2__python.dir/rosidl_generator_py/cognata_sdk_ros2/msg/_vehicle_msg_s.c.o\x1b[0m\n'}
+[5.943574] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/cognata_sdk_ros2__python.dir/rosidl_generator_py/cognata_sdk_ros2/msg/_wheel_telemetries_s.c.o\x1b[0m\n'}
+[5.943692] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/cognata_sdk_ros2__python.dir/rosidl_generator_py/cognata_sdk_ros2/msg/_wheel_msg_s.c.o\x1b[0m\n'}
+[6.009659] (-) TimerEvent: {}
+[6.053026] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/cognata_sdk_ros2/libcognata_sdk_ros2__python.so\x1b[0m\n'}
+[6.082728] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 95%] Built target cognata_sdk_ros2__python\n'}
+[6.089423] (cognata_sdk_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target cognata_sdk_ros2__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[6.089555] (cognata_sdk_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target cognata_sdk_ros2__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[6.089610] (cognata_sdk_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target cognata_sdk_ros2__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[6.101987] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding C object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/cognata_sdk_ros2/_cognata_sdk_ros2_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[6.102139] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding C object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/cognata_sdk_ros2/_cognata_sdk_ros2_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[6.102196] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding C object CMakeFiles/cognata_sdk_ros2__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/cognata_sdk_ros2/_cognata_sdk_ros2_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[6.109784] (-) TimerEvent: {}
+[6.176037] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 99%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/cognata_sdk_ros2/cognata_sdk_ros2_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[6.176181] (cognata_sdk_ros2) StdoutLine: {'line': b'[ 99%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/cognata_sdk_ros2/cognata_sdk_ros2_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[6.176665] (cognata_sdk_ros2) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/cognata_sdk_ros2/cognata_sdk_ros2_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[6.200550] (cognata_sdk_ros2) StdoutLine: {'line': b'[100%] Built target cognata_sdk_ros2__rosidl_typesupport_introspection_c__pyext\n'}
+[6.200735] (cognata_sdk_ros2) StdoutLine: {'line': b'[100%] Built target cognata_sdk_ros2__rosidl_typesupport_c__pyext\n'}
+[6.209998] (-) TimerEvent: {}
+[6.219530] (cognata_sdk_ros2) StdoutLine: {'line': b'[100%] Built target cognata_sdk_ros2__rosidl_typesupport_fastrtps_c__pyext\n'}
+[6.310087] (-) TimerEvent: {}
+[6.410322] (-) TimerEvent: {}
+[6.510554] (-) TimerEvent: {}
+[6.610791] (-) TimerEvent: {}
+[6.711033] (-) TimerEvent: {}
+[6.811270] (-) TimerEvent: {}
+[6.911504] (-) TimerEvent: {}
+[6.967274] (cognata_sdk_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/src/ros2_sample.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid SampleCode::initSimEngineCarDriver()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.967423] (cognata_sdk_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/src/ros2_sample.cpp:1095:88:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCognata::SDK::CognataErr Cognata::SDK::CognataSim::sendCarControlAccelerationCmd(uint32_t, float)\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n'}
+[6.967479] (cognata_sdk_ros2) StderrLine: {'line': b' 1095 |         m_Err = m_Sim->sendCarControlAccelerationCmd(EgoCarNumber,m_SrvGas - m_SrvBrake\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[6.967525] (cognata_sdk_ros2) StderrLine: {'line': b'      |                                                                                        \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[6.967568] (cognata_sdk_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/src/ros2_sample.cpp:12\x1b[m\x1b[K:\n'}
+[6.967610] (cognata_sdk_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/include/SDKIncludes/CognataSim.h:1612:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[6.967652] (cognata_sdk_ros2) StderrLine: {'line': b' 1612 |     CognataErr \x1b[01;36m\x1b[KsendCarControlAccelerationCmd\x1b[m\x1b[K(uint32_t carID, float accelerationValue);\n'}
+[6.967693] (cognata_sdk_ros2) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.988145] (cognata_sdk_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/src/ros2_sample.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid SampleCode::carAccelerationCMDCallback(std_msgs::msg::Float32_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.988281] (cognata_sdk_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/src/ros2_sample.cpp:1521:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCognata::SDK::CognataErr Cognata::SDK::CognataSim::sendCarControlAccelerationCmd(uint32_t, float)\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n'}
+[6.988338] (cognata_sdk_ros2) StderrLine: {'line': b' 1521 |     m_Err = m_Sim->sendCarControlAccelerationCmd(EgoCarNumber,m_SrvAcceleration\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[6.988385] (cognata_sdk_ros2) StderrLine: {'line': b'      |                                                                                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[6.988428] (cognata_sdk_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/src/ros2_sample.cpp:12\x1b[m\x1b[K:\n'}
+[6.988470] (cognata_sdk_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/include/SDKIncludes/CognataSim.h:1612:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[6.988512] (cognata_sdk_ros2) StderrLine: {'line': b' 1612 |     CognataErr \x1b[01;36m\x1b[KsendCarControlAccelerationCmd\x1b[m\x1b[K(uint32_t carID, float accelerationValue);\n'}
+[6.988553] (cognata_sdk_ros2) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.011618] (-) TimerEvent: {}
+[7.111857] (-) TimerEvent: {}
+[7.212093] (-) TimerEvent: {}
+[7.312330] (-) TimerEvent: {}
+[7.412564] (-) TimerEvent: {}
+[7.512827] (-) TimerEvent: {}
+[7.613064] (-) TimerEvent: {}
+[7.713311] (-) TimerEvent: {}
+[7.813559] (-) TimerEvent: {}
+[7.913797] (-) TimerEvent: {}
+[8.014041] (-) TimerEvent: {}
+[8.114289] (-) TimerEvent: {}
+[8.214525] (-) TimerEvent: {}
+[8.314761] (-) TimerEvent: {}
+[8.414978] (-) TimerEvent: {}
+[8.515210] (-) TimerEvent: {}
+[8.615440] (-) TimerEvent: {}
+[8.715672] (-) TimerEvent: {}
+[8.815916] (-) TimerEvent: {}
+[8.916180] (-) TimerEvent: {}
+[9.016439] (-) TimerEvent: {}
+[9.116682] (-) TimerEvent: {}
+[9.216929] (-) TimerEvent: {}
+[9.317177] (-) TimerEvent: {}
+[9.417427] (-) TimerEvent: {}
+[9.517699] (-) TimerEvent: {}
+[9.617971] (-) TimerEvent: {}
+[9.718248] (-) TimerEvent: {}
+[9.818503] (-) TimerEvent: {}
+[9.918753] (-) TimerEvent: {}
+[10.019000] (-) TimerEvent: {}
+[10.119244] (-) TimerEvent: {}
+[10.219491] (-) TimerEvent: {}
+[10.319749] (-) TimerEvent: {}
+[10.420006] (-) TimerEvent: {}
+[10.520209] (-) TimerEvent: {}
+[10.620439] (-) TimerEvent: {}
+[10.720677] (-) TimerEvent: {}
+[10.820915] (-) TimerEvent: {}
+[10.921149] (-) TimerEvent: {}
+[11.021383] (-) TimerEvent: {}
+[11.121618] (-) TimerEvent: {}
+[11.221878] (-) TimerEvent: {}
+[11.322147] (-) TimerEvent: {}
+[11.422378] (-) TimerEvent: {}
+[11.522611] (-) TimerEvent: {}
+[11.622848] (-) TimerEvent: {}
+[11.723078] (-) TimerEvent: {}
+[11.823310] (-) TimerEvent: {}
+[11.923540] (-) TimerEvent: {}
+[12.023797] (-) TimerEvent: {}
+[12.124025] (-) TimerEvent: {}
+[12.224255] (-) TimerEvent: {}
+[12.324485] (-) TimerEvent: {}
+[12.424719] (-) TimerEvent: {}
+[12.524955] (-) TimerEvent: {}
+[12.625197] (-) TimerEvent: {}
+[12.725428] (-) TimerEvent: {}
+[12.825665] (-) TimerEvent: {}
+[12.925900] (-) TimerEvent: {}
+[13.026135] (-) TimerEvent: {}
+[13.126371] (-) TimerEvent: {}
+[13.226606] (-) TimerEvent: {}
+[13.326797] (-) TimerEvent: {}
+[13.427077] (-) TimerEvent: {}
+[13.527312] (-) TimerEvent: {}
+[13.627544] (-) TimerEvent: {}
+[13.727784] (-) TimerEvent: {}
+[13.828044] (-) TimerEvent: {}
+[13.928280] (-) TimerEvent: {}
+[14.028514] (-) TimerEvent: {}
+[14.128923] (-) TimerEvent: {}
+[14.229181] (-) TimerEvent: {}
+[14.329431] (-) TimerEvent: {}
+[14.429638] (-) TimerEvent: {}
+[14.529907] (-) TimerEvent: {}
+[14.630166] (-) TimerEvent: {}
+[14.730435] (-) TimerEvent: {}
+[14.757675] (cognata_sdk_ros2) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable ROS2SDK\x1b[0m\n'}
+[14.830574] (-) TimerEvent: {}
+[14.930834] (-) TimerEvent: {}
+[15.031087] (-) TimerEvent: {}
+[15.131344] (-) TimerEvent: {}
+[15.231593] (-) TimerEvent: {}
+[15.327166] (cognata_sdk_ros2) StdoutLine: {'line': b'[100%] Built target ROS2SDK\n'}
+[15.331695] (-) TimerEvent: {}
+[15.339243] (cognata_sdk_ros2) CommandEnded: {'returncode': 0}
+[15.431806] (-) TimerEvent: {}
+[15.434347] (cognata_sdk_ros2) JobProgress: {'identifier': 'cognata_sdk_ros2', 'progress': 'install'}
+[15.440252] (cognata_sdk_ros2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/build/cognata_sdk_ros2'], 'cwd': '/home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/build/cognata_sdk_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IL:en'), ('USER', 'kcg'), ('SSH_AGENT_PID', '1738'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/kcg'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1555'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=76b883d242f09347c82c917762f505c5'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'kcg'), ('JOURNAL_STREAM', '8:51359'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'kcg'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/kcg-ROG-Strix:@/tmp/.ICE-unix/1773,unix/kcg-ROG-Strix:/tmp/.ICE-unix/1773'), ('INVOCATION_ID', '4185df5df27c4351b542c7c786ea9ca0'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4e255e68_312d_4273_a74e_39304aa5dab5'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_IL'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.268'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/build/cognata_sdk_ros2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=76b883d242f09347c82c917762f505c5'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[15.445369] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[15.445521] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/ament_index/resource_index/rosidl_interfaces/cognata_sdk_ros2\n'}
+[15.445710] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2\n'}
+[15.445878] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg\n'}
+[15.445978] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/vehicle_msg.h\n'}
+[15.446030] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/annotation_msg.h\n'}
+[15.446097] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/rosidl_generator_c__visibility_control.h\n'}
+[15.446162] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/radar_output_target.h\n'}
+[15.446209] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/wheel_telemetries.h\n'}
+[15.446267] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/bounding_box_msg.h\n'}
+[15.446323] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail\n'}
+[15.446386] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/pedestrian_msg__type_support.h\n'}
+[15.446441] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/traffic_light_msg__functions.c\n'}
+[15.446498] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/vehicle_msg__struct.h\n'}
+[15.446551] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/bounding_box_msg__type_support.h\n'}
+[15.446606] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/annotation_msg__type_support.h\n'}
+[15.446668] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/radar_output_header__struct.h\n'}
+[15.446718] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/radar_output_target__type_support.h\n'}
+[15.446777] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/annotation_msg__struct.h\n'}
+[15.446828] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/roi_and_dogt_output__type_support.h\n'}
+[15.446877] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/wheel_telemetries__struct.h\n'}
+[15.446935] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/gps_additional_data__struct.h\n'}
+[15.446993] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/wheel_msg__struct.h\n'}
+[15.447057] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/vehicle_msg__type_support.h\n'}
+[15.447113] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/object_description__functions.h\n'}
+[15.447166] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/pedestrian_msg__functions.c\n'}
+[15.447220] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/car_telemetries_msg__functions.h\n'}
+[15.447274] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/car_telemetries_msg__struct.h\n'}
+[15.447322] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/traffic_light_msg__functions.h\n'}
+[15.447388] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/traffic_light_msg__struct.h\n'}
+[15.447439] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/gps_additional_data__functions.c\n'}
+[15.447484] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/traffic_light_msg__type_support.h\n'}
+[15.447540] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/vehicle_msg__functions.c\n'}
+[15.447604] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/wheel_telemetries__functions.c\n'}
+[15.447655] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/radar_output_target__functions.c\n'}
+[15.447709] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/radar_output_header__functions.c\n'}
+[15.447767] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/gps_additional_data__type_support.h\n'}
+[15.447828] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/wheel_msg__type_support.h\n'}
+[15.447875] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/radar_output_target__struct.h\n'}
+[15.447938] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/object_description__struct.h\n'}
+[15.447989] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/vehicle_msg__functions.h\n'}
+[15.448036] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/bounding_box_msg__functions.h\n'}
+[15.448093] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/roi_and_dogt_output__struct.h\n'}
+[15.448146] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/pedestrian_msg__functions.h\n'}
+[15.448201] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/bounding_box_msg__struct.h\n'}
+[15.448262] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/wheel_msg__functions.c\n'}
+[15.448318] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/wheel_msg__functions.h\n'}
+[15.448374] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/radar_output_header__functions.h\n'}
+[15.448429] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/wheel_telemetries__functions.h\n'}
+[15.448476] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/object_description__type_support.h\n'}
+[15.448535] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/radar_output_header__type_support.h\n'}
+[15.448596] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/gps_additional_data__functions.h\n'}
+[15.448647] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/roi_and_dogt_output__functions.h\n'}
+[15.448696] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/annotation_msg__functions.c\n'}
+[15.448754] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/bounding_box_msg__functions.c\n'}
+[15.448807] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/wheel_telemetries__type_support.h\n'}
+[15.448862] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/car_telemetries_msg__type_support.h\n'}
+[15.448918] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/roi_and_dogt_output__functions.c\n'}
+[15.448971] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/object_description__functions.c\n'}
+[15.449012] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/pedestrian_msg__struct.h\n'}
+[15.449068] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/radar_output_target__functions.h\n'}
+[15.449115] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/car_telemetries_msg__functions.c\n'}
+[15.449168] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/annotation_msg__functions.h\n'}
+[15.449209] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/object_description.h\n'}
+[15.449257] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/traffic_light_msg.h\n'}
+[15.449309] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/wheel_msg.h\n'}
+[15.449350] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/gps_additional_data.h\n'}
+[15.449391] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/roi_and_dogt_output.h\n'}
+[15.449443] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/pedestrian_msg.h\n'}
+[15.449489] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/car_telemetries_msg.h\n'}
+[15.449562] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/radar_output_header.h\n'}
+[15.449620] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/environment/library_path.sh\n'}
+[15.449675] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/environment/library_path.dsv\n'}
+[15.449730] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/libcognata_sdk_ros2__rosidl_generator_c.so\n'}
+[15.449791] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/libcognata_sdk_ros2__rosidl_generator_c.so" to ""\n'}
+[15.449874] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2\n'}
+[15.449946] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg\n'}
+[15.449993] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail\n'}
+[15.450051] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/wheel_msg__rosidl_typesupport_fastrtps_c.h\n'}
+[15.450103] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/wheel_telemetries__rosidl_typesupport_fastrtps_c.h\n'}
+[15.450154] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/car_telemetries_msg__rosidl_typesupport_fastrtps_c.h\n'}
+[15.450209] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/vehicle_msg__rosidl_typesupport_fastrtps_c.h\n'}
+[15.450262] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/bounding_box_msg__rosidl_typesupport_fastrtps_c.h\n'}
+[15.450304] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/roi_and_dogt_output__rosidl_typesupport_fastrtps_c.h\n'}
+[15.450349] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/radar_output_target__rosidl_typesupport_fastrtps_c.h\n'}
+[15.450402] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/gps_additional_data__rosidl_typesupport_fastrtps_c.h\n'}
+[15.450446] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/traffic_light_msg__rosidl_typesupport_fastrtps_c.h\n'}
+[15.450487] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/pedestrian_msg__rosidl_typesupport_fastrtps_c.h\n'}
+[15.450528] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/annotation_msg__rosidl_typesupport_fastrtps_c.h\n'}
+[15.450576] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/radar_output_header__rosidl_typesupport_fastrtps_c.h\n'}
+[15.450624] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/object_description__rosidl_typesupport_fastrtps_c.h\n'}
+[15.450698] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[15.450746] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/libcognata_sdk_ros2__rosidl_typesupport_fastrtps_c.so\n'}
+[15.450814] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/libcognata_sdk_ros2__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[15.450861] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2\n'}
+[15.450922] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg\n'}
+[15.450969] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[15.451016] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail\n'}
+[15.451083] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/radar_output_target__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.451129] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/object_description__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.451176] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/bounding_box_msg__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.451237] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/pedestrian_msg__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.451291] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/roi_and_dogt_output__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.451346] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/dds_fastrtps\n'}
+[15.451399] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/annotation_msg__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.451440] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/vehicle_msg__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.451486] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/radar_output_header__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.451540] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/wheel_msg__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.451582] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/wheel_telemetries__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.451626] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/gps_additional_data__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.451666] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/traffic_light_msg__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.451707] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/car_telemetries_msg__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.451747] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/libcognata_sdk_ros2__rosidl_typesupport_fastrtps_cpp.so\n'}
+[15.451827] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/libcognata_sdk_ros2__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[15.451881] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2\n'}
+[15.451949] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg\n'}
+[15.451999] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail\n'}
+[15.452042] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/roi_and_dogt_output__type_support.c\n'}
+[15.452098] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/radar_output_target__type_support.c\n'}
+[15.452155] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/traffic_light_msg__rosidl_typesupport_introspection_c.h\n'}
+[15.452210] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/object_description__type_support.c\n'}
+[15.452265] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/vehicle_msg__type_support.c\n'}
+[15.452320] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/bounding_box_msg__rosidl_typesupport_introspection_c.h\n'}
+[15.452383] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/radar_output_header__type_support.c\n'}
+[15.452429] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/annotation_msg__type_support.c\n'}
+[15.452485] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/radar_output_target__rosidl_typesupport_introspection_c.h\n'}
+[15.452546] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/car_telemetries_msg__rosidl_typesupport_introspection_c.h\n'}
+[15.452600] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/pedestrian_msg__rosidl_typesupport_introspection_c.h\n'}
+[15.452648] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/vehicle_msg__rosidl_typesupport_introspection_c.h\n'}
+[15.452711] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/pedestrian_msg__type_support.c\n'}
+[15.452757] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/bounding_box_msg__type_support.c\n'}
+[15.452821] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/gps_additional_data__type_support.c\n'}
+[15.452877] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/gps_additional_data__rosidl_typesupport_introspection_c.h\n'}
+[15.452934] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/annotation_msg__rosidl_typesupport_introspection_c.h\n'}
+[15.452989] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/object_description__rosidl_typesupport_introspection_c.h\n'}
+[15.453044] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/radar_output_header__rosidl_typesupport_introspection_c.h\n'}
+[15.453106] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/car_telemetries_msg__type_support.c\n'}
+[15.453154] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/roi_and_dogt_output__rosidl_typesupport_introspection_c.h\n'}
+[15.453217] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/wheel_telemetries__type_support.c\n'}
+[15.453263] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/wheel_telemetries__rosidl_typesupport_introspection_c.h\n'}
+[15.453326] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/traffic_light_msg__type_support.c\n'}
+[15.453371] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/wheel_msg__type_support.c\n'}
+[15.453415] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/wheel_msg__rosidl_typesupport_introspection_c.h\n'}
+[15.453468] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[15.453508] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/libcognata_sdk_ros2__rosidl_typesupport_introspection_c.so\n'}
+[15.453629] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/libcognata_sdk_ros2__rosidl_typesupport_introspection_c.so" to ""\n'}
+[15.453701] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/libcognata_sdk_ros2__rosidl_typesupport_c.so\n'}
+[15.453951] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/libcognata_sdk_ros2__rosidl_typesupport_c.so" to ""\n'}
+[15.454005] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2\n'}
+[15.454069] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg\n'}
+[15.454116] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/traffic_light_msg.hpp\n'}
+[15.454174] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/bounding_box_msg.hpp\n'}
+[15.454220] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/gps_additional_data.hpp\n'}
+[15.454278] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/object_description.hpp\n'}
+[15.454325] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/radar_output_target.hpp\n'}
+[15.454390] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/car_telemetries_msg.hpp\n'}
+[15.454447] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/roi_and_dogt_output.hpp\n'}
+[15.454503] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail\n'}
+[15.454566] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/gps_additional_data__traits.hpp\n'}
+[15.454613] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/bounding_box_msg__traits.hpp\n'}
+[15.454679] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/object_description__traits.hpp\n'}
+[15.454734] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/wheel_msg__struct.hpp\n'}
+[15.454787] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/roi_and_dogt_output__struct.hpp\n'}
+[15.454846] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/annotation_msg__traits.hpp\n'}
+[15.454889] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/object_description__struct.hpp\n'}
+[15.454942] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/wheel_msg__builder.hpp\n'}
+[15.454999] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/gps_additional_data__struct.hpp\n'}
+[15.455054] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/object_description__builder.hpp\n'}
+[15.455108] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/traffic_light_msg__builder.hpp\n'}
+[15.455162] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/pedestrian_msg__struct.hpp\n'}
+[15.455219] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/radar_output_target__struct.hpp\n'}
+[15.455282] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/traffic_light_msg__struct.hpp\n'}
+[15.455336] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/car_telemetries_msg__struct.hpp\n'}
+[15.455390] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/gps_additional_data__builder.hpp\n'}
+[15.455442] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/car_telemetries_msg__traits.hpp\n'}
+[15.455494] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/bounding_box_msg__builder.hpp\n'}
+[15.455547] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/radar_output_target__traits.hpp\n'}
+[15.455599] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/radar_output_header__traits.hpp\n'}
+[15.455653] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/wheel_telemetries__struct.hpp\n'}
+[15.455706] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/roi_and_dogt_output__builder.hpp\n'}
+[15.455767] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/wheel_telemetries__builder.hpp\n'}
+[15.455813] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/radar_output_header__struct.hpp\n'}
+[15.455867] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/traffic_light_msg__traits.hpp\n'}
+[15.455932] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/pedestrian_msg__traits.hpp\n'}
+[15.455981] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/roi_and_dogt_output__traits.hpp\n'}
+[15.456044] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/vehicle_msg__struct.hpp\n'}
+[15.456091] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/bounding_box_msg__struct.hpp\n'}
+[15.456148] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/radar_output_header__builder.hpp\n'}
+[15.456197] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/annotation_msg__builder.hpp\n'}
+[15.456244] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/car_telemetries_msg__builder.hpp\n'}
+[15.456301] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/radar_output_target__builder.hpp\n'}
+[15.456357] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/pedestrian_msg__builder.hpp\n'}
+[15.456410] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/wheel_msg__traits.hpp\n'}
+[15.456472] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/wheel_telemetries__traits.hpp\n'}
+[15.456518] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/annotation_msg__struct.hpp\n'}
+[15.456580] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/vehicle_msg__traits.hpp\n'}
+[15.456627] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/vehicle_msg__builder.hpp\n'}
+[15.456681] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/wheel_msg.hpp\n'}
+[15.456749] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/vehicle_msg.hpp\n'}
+[15.456801] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/pedestrian_msg.hpp\n'}
+[15.456860] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/annotation_msg.hpp\n'}
+[15.456910] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/wheel_telemetries.hpp\n'}
+[15.456952] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/radar_output_header.hpp\n'}
+[15.457006] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2\n'}
+[15.457061] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg\n'}
+[15.457116] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail\n'}
+[15.457180] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/radar_output_target__rosidl_typesupport_introspection_cpp.hpp\n'}
+[15.457252] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/wheel_msg__rosidl_typesupport_introspection_cpp.hpp\n'}
+[15.457341] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/object_description__rosidl_typesupport_introspection_cpp.hpp\n'}
+[15.457423] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/radar_output_header__rosidl_typesupport_introspection_cpp.hpp\n'}
+[15.457484] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/radar_output_header__type_support.cpp\n'}
+[15.457533] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/pedestrian_msg__rosidl_typesupport_introspection_cpp.hpp\n'}
+[15.457603] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/annotation_msg__rosidl_typesupport_introspection_cpp.hpp\n'}
+[15.457650] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/gps_additional_data__type_support.cpp\n'}
+[15.457697] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/bounding_box_msg__rosidl_typesupport_introspection_cpp.hpp\n'}
+[15.457768] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/annotation_msg__type_support.cpp\n'}
+[15.457813] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/wheel_telemetries__rosidl_typesupport_introspection_cpp.hpp\n'}
+[15.457922] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/bounding_box_msg__type_support.cpp\n'}
+[15.457966] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/pedestrian_msg__type_support.cpp\n'}
+[15.458046] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/traffic_light_msg__rosidl_typesupport_introspection_cpp.hpp\n'}
+[15.458101] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/vehicle_msg__rosidl_typesupport_introspection_cpp.hpp\n'}
+[15.458172] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/object_description__type_support.cpp\n'}
+[15.458227] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/vehicle_msg__type_support.cpp\n'}
+[15.458269] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/roi_and_dogt_output__rosidl_typesupport_introspection_cpp.hpp\n'}
+[15.458317] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/radar_output_target__type_support.cpp\n'}
+[15.458385] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/car_telemetries_msg__rosidl_typesupport_introspection_cpp.hpp\n'}
+[15.458428] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/car_telemetries_msg__type_support.cpp\n'}
+[15.458470] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/wheel_telemetries__type_support.cpp\n'}
+[15.458517] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/roi_and_dogt_output__type_support.cpp\n'}
+[15.458559] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/wheel_msg__type_support.cpp\n'}
+[15.458600] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/gps_additional_data__rosidl_typesupport_introspection_cpp.hpp\n'}
+[15.458642] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/include/cognata_sdk_ros2/msg/detail/traffic_light_msg__type_support.cpp\n'}
+[15.458685] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/libcognata_sdk_ros2__rosidl_typesupport_introspection_cpp.so\n'}
+[15.458739] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/libcognata_sdk_ros2__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[15.458794] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/libcognata_sdk_ros2__rosidl_typesupport_cpp.so\n'}
+[15.458958] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/libcognata_sdk_ros2__rosidl_typesupport_cpp.so" to ""\n'}
+[15.459017] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/environment/pythonpath.sh\n'}
+[15.459090] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/environment/pythonpath.dsv\n'}
+[15.459211] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/python3.8/site-packages/cognata_sdk_ros2/__init__.py\n'}
+[15.477626] (cognata_sdk_ros2) StdoutLine: {'line': b"Compiling '/home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/python3.8/site-packages/cognata_sdk_ros2/__init__.py'...\n"}
+[15.479816] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/python3.8/site-packages/cognata_sdk_ros2/msg\n'}
+[15.479917] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/python3.8/site-packages/cognata_sdk_ros2/msg/_radar_output_target.py\n'}
+[15.479974] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/python3.8/site-packages/cognata_sdk_ros2/msg/_vehicle_msg.py\n'}
+[15.480111] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/python3.8/site-packages/cognata_sdk_ros2/msg/_wheel_msg_s.c\n'}
+[15.480161] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/python3.8/site-packages/cognata_sdk_ros2/msg/_wheel_telemetries_s.c\n'}
+[15.480223] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/python3.8/site-packages/cognata_sdk_ros2/msg/_roi_and_dogt_output_s.c\n'}
+[15.480281] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/python3.8/site-packages/cognata_sdk_ros2/msg/_car_telemetries_msg_s.c\n'}
+[15.480336] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/python3.8/site-packages/cognata_sdk_ros2/msg/_annotation_msg.py\n'}
+[15.480399] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/python3.8/site-packages/cognata_sdk_ros2/msg/_gps_additional_data.py\n'}
+[15.480450] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/python3.8/site-packages/cognata_sdk_ros2/msg/_radar_output_target_s.c\n'}
+[15.480508] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/python3.8/site-packages/cognata_sdk_ros2/msg/__init__.py\n'}
+[15.480564] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/python3.8/site-packages/cognata_sdk_ros2/msg/_object_description.py\n'}
+[15.480618] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/python3.8/site-packages/cognata_sdk_ros2/msg/_vehicle_msg_s.c\n'}
+[15.480673] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/python3.8/site-packages/cognata_sdk_ros2/msg/_bounding_box_msg.py\n'}
+[15.480728] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/python3.8/site-packages/cognata_sdk_ros2/msg/_pedestrian_msg.py\n'}
+[15.480781] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/python3.8/site-packages/cognata_sdk_ros2/msg/_annotation_msg_s.c\n'}
+[15.480836] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/python3.8/site-packages/cognata_sdk_ros2/msg/_car_telemetries_msg.py\n'}
+[15.480898] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/python3.8/site-packages/cognata_sdk_ros2/msg/_radar_output_header_s.c\n'}
+[15.480944] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/python3.8/site-packages/cognata_sdk_ros2/msg/_gps_additional_data_s.c\n'}
+[15.481007] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/python3.8/site-packages/cognata_sdk_ros2/msg/_object_description_s.c\n'}
+[15.481053] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/python3.8/site-packages/cognata_sdk_ros2/msg/_wheel_msg.py\n'}
+[15.481115] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/python3.8/site-packages/cognata_sdk_ros2/msg/_pedestrian_msg_s.c\n'}
+[15.481168] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/python3.8/site-packages/cognata_sdk_ros2/msg/_traffic_light_msg_s.c\n'}
+[15.481213] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/python3.8/site-packages/cognata_sdk_ros2/msg/_traffic_light_msg.py\n'}
+[15.481254] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/python3.8/site-packages/cognata_sdk_ros2/msg/_wheel_telemetries.py\n'}
+[15.481295] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/python3.8/site-packages/cognata_sdk_ros2/msg/_roi_and_dogt_output.py\n'}
+[15.481337] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/python3.8/site-packages/cognata_sdk_ros2/msg/_radar_output_header.py\n'}
+[15.481390] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/python3.8/site-packages/cognata_sdk_ros2/msg/_bounding_box_msg_s.c\n'}
+[15.481434] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/python3.8/site-packages/cognata_sdk_ros2/cognata_sdk_ros2_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[15.481638] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/python3.8/site-packages/cognata_sdk_ros2/cognata_sdk_ros2_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[15.481790] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/python3.8/site-packages/cognata_sdk_ros2/cognata_sdk_ros2_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[15.482203] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/python3.8/site-packages/cognata_sdk_ros2/cognata_sdk_ros2_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[15.482337] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/python3.8/site-packages/cognata_sdk_ros2/cognata_sdk_ros2_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[15.482619] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/python3.8/site-packages/cognata_sdk_ros2/cognata_sdk_ros2_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[15.482687] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/libcognata_sdk_ros2__python.so\n'}
+[15.482909] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/libcognata_sdk_ros2__python.so" to ""\n'}
+[15.482978] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/msg/AnnotationMsg.idl\n'}
+[15.483060] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/msg/BoundingBoxMsg.idl\n'}
+[15.483144] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/msg/CarTelemetriesMsg.idl\n'}
+[15.483227] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/msg/GPSAdditionalData.idl\n'}
+[15.483309] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/msg/ObjectDescription.idl\n'}
+[15.483385] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/msg/PedestrianMsg.idl\n'}
+[15.483465] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/msg/RadarOutputHeader.idl\n'}
+[15.483547] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/msg/RadarOutputTarget.idl\n'}
+[15.483630] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/msg/ROIAndDOGTOutput.idl\n'}
+[15.483708] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/msg/TrafficLightMsg.idl\n'}
+[15.483792] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/msg/VehicleMsg.idl\n'}
+[15.483873] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/msg/WheelMsg.idl\n'}
+[15.483956] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/msg/WheelTelemetries.idl\n'}
+[15.484033] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/msg/AnnotationMsg.msg\n'}
+[15.484112] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/msg/BoundingBoxMsg.msg\n'}
+[15.484193] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/msg/CarTelemetriesMsg.msg\n'}
+[15.484273] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/msg/GPSAdditionalData.msg\n'}
+[15.484349] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/msg/ObjectDescription.msg\n'}
+[15.484429] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/msg/PedestrianMsg.msg\n'}
+[15.484509] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/msg/RadarOutputHeader.msg\n'}
+[15.484590] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/msg/RadarOutputTarget.msg\n'}
+[15.484665] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/msg/ROIAndDOGTOutput.msg\n'}
+[15.484746] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/msg/TrafficLightMsg.msg\n'}
+[15.484827] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/msg/VehicleMsg.msg\n'}
+[15.484908] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/msg/WheelMsg.msg\n'}
+[15.484984] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/msg/WheelTelemetries.msg\n'}
+[15.485106] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/cognata_sdk_ros2/ROS2SDK\n'}
+[15.489434] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/lib/cognata_sdk_ros2/ROS2SDK" to ""\n'}
+[15.489502] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/ament_index/resource_index/package_run_dependencies/cognata_sdk_ros2\n'}
+[15.489618] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/ament_index/resource_index/parent_prefix_path/cognata_sdk_ros2\n'}
+[15.489703] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/environment/ament_prefix_path.sh\n'}
+[15.489790] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/environment/ament_prefix_path.dsv\n'}
+[15.489922] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/environment/path.sh\n'}
+[15.490014] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/environment/path.dsv\n'}
+[15.490094] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/local_setup.bash\n'}
+[15.490177] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/local_setup.sh\n'}
+[15.490265] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/local_setup.zsh\n'}
+[15.490349] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/local_setup.dsv\n'}
+[15.490427] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/package.dsv\n'}
+[15.490533] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/ament_index/resource_index/packages/cognata_sdk_ros2\n'}
+[15.490665] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/cmake/cognata_sdk_ros2__rosidl_generator_cExport.cmake\n'}
+[15.490760] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/cmake/cognata_sdk_ros2__rosidl_generator_cExport-noconfig.cmake\n'}
+[15.490879] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/cmake/cognata_sdk_ros2__rosidl_typesupport_introspection_cExport.cmake\n'}
+[15.490971] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/cmake/cognata_sdk_ros2__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[15.491090] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/cmake/cognata_sdk_ros2__rosidl_typesupport_cExport.cmake\n'}
+[15.491183] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/cmake/cognata_sdk_ros2__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[15.491297] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/cmake/cognata_sdk_ros2__rosidl_generator_cppExport.cmake\n'}
+[15.491425] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/cmake/cognata_sdk_ros2__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[15.491523] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/cmake/cognata_sdk_ros2__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[15.491643] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/cmake/cognata_sdk_ros2__rosidl_typesupport_cppExport.cmake\n'}
+[15.491728] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/cmake/cognata_sdk_ros2__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[15.491817] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/cmake/rosidl_cmake-extras.cmake\n'}
+[15.491908] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[15.491997] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[15.492082] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[15.492168] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[15.492257] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[15.492342] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[15.492421] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/cmake/cognata_sdk_ros2Config.cmake\n'}
+[15.492479] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/cmake/cognata_sdk_ros2Config-version.cmake\n'}
+[15.492552] (cognata_sdk_ros2) StdoutLine: {'line': b'-- Installing: /home/kcg/copy/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2/install/cognata_sdk_ros2/share/cognata_sdk_ros2/package.xml\n'}
+[15.493959] (cognata_sdk_ros2) CommandEnded: {'returncode': 0}
+[15.531928] (-) TimerEvent: {}
+[15.613986] (cognata_sdk_ros2) JobEnded: {'identifier': 'cognata_sdk_ros2', 'rc': 0}
+[15.614516] (-) EventReactorShutdown: {}

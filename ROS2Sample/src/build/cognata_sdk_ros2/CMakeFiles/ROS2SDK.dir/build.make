@@ -124,8 +124,8 @@ ROS2SDK: CMakeFiles/ROS2SDK.dir/src/ros2_sample.cpp.o
 ROS2SDK: CMakeFiles/ROS2SDK.dir/src/sensors.cpp.o
 ROS2SDK: CMakeFiles/ROS2SDK.dir/src/main.cpp.o
 ROS2SDK: CMakeFiles/ROS2SDK.dir/build.make
-ROS2SDK: /usr/lib/libCognataSDK.a
-ROS2SDK: /usr/lib/libCognataSDK_proto.a
+ROS2SDK: /home/kcg/copy/ROS2Sample/src/cognata_sdk_ros2/libs/cognataSDKLibs/libCognataSDK.a
+ROS2SDK: /home/kcg/copy/ROS2Sample/src/cognata_sdk_ros2/libs/cognataSDKLibs/libCognataSDK_proto.a
 ROS2SDK: /home/kcg/copy/ROS2Sample/src/cognata_sdk_ros2/libs/cognataSDKLibs/libprotobuf.so
 ROS2SDK: /opt/ros/foxy/lib/librclcpp.so
 ROS2SDK: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so

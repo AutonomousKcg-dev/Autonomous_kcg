@@ -1,0 +1,48 @@
+[0.374s] Invoking command in '/home/kcg/copy/python_publisher_ws/python_publisher': PYTHONPATH=/home/kcg/copy/python_publisher_ws/python_publisher/install/python_publisher/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/python_publisher build --build-base /home/kcg/copy/python_publisher_ws/python_publisher/build/python_publisher/build install --prefix /home/kcg/copy/python_publisher_ws/python_publisher/install/python_publisher --record /home/kcg/copy/python_publisher_ws/python_publisher/build/python_publisher/install.log --single-version-externally-managed
+[0.497s] running egg_info
+[0.497s] creating build/python_publisher/python_publisher.egg-info
+[0.497s] writing build/python_publisher/python_publisher.egg-info/PKG-INFO
+[0.497s] writing dependency_links to build/python_publisher/python_publisher.egg-info/dependency_links.txt
+[0.498s] writing entry points to build/python_publisher/python_publisher.egg-info/entry_points.txt
+[0.498s] writing requirements to build/python_publisher/python_publisher.egg-info/requires.txt
+[0.498s] writing top-level names to build/python_publisher/python_publisher.egg-info/top_level.txt
+[0.498s] writing manifest file 'build/python_publisher/python_publisher.egg-info/SOURCES.txt'
+[0.519s] reading manifest file 'build/python_publisher/python_publisher.egg-info/SOURCES.txt'
+[0.519s] writing manifest file 'build/python_publisher/python_publisher.egg-info/SOURCES.txt'
+[0.519s] running build
+[0.520s] running build_py
+[0.520s] creating /home/kcg/copy/python_publisher_ws/python_publisher/build/python_publisher/build
+[0.520s] creating /home/kcg/copy/python_publisher_ws/python_publisher/build/python_publisher/build/lib
+[0.520s] creating /home/kcg/copy/python_publisher_ws/python_publisher/build/python_publisher/build/lib/python_publisher
+[0.520s] copying python_publisher/steertry.py -> /home/kcg/copy/python_publisher_ws/python_publisher/build/python_publisher/build/lib/python_publisher
+[0.520s] copying python_publisher/controllerPID.py -> /home/kcg/copy/python_publisher_ws/python_publisher/build/python_publisher/build/lib/python_publisher
+[0.520s] copying python_publisher/__init__.py -> /home/kcg/copy/python_publisher_ws/python_publisher/build/python_publisher/build/lib/python_publisher
+[0.520s] copying python_publisher/adaptive_cruise_control.py -> /home/kcg/copy/python_publisher_ws/python_publisher/build/python_publisher/build/lib/python_publisher
+[0.520s] copying python_publisher/controllerPID_test.py -> /home/kcg/copy/python_publisher_ws/python_publisher/build/python_publisher/build/lib/python_publisher
+[0.520s] running install
+[0.520s] running install_lib
+[0.521s] creating /home/kcg/copy/python_publisher_ws/python_publisher/install/python_publisher/lib/python3.8/site-packages/python_publisher
+[0.521s] copying /home/kcg/copy/python_publisher_ws/python_publisher/build/python_publisher/build/lib/python_publisher/steertry.py -> /home/kcg/copy/python_publisher_ws/python_publisher/install/python_publisher/lib/python3.8/site-packages/python_publisher
+[0.521s] copying /home/kcg/copy/python_publisher_ws/python_publisher/build/python_publisher/build/lib/python_publisher/controllerPID.py -> /home/kcg/copy/python_publisher_ws/python_publisher/install/python_publisher/lib/python3.8/site-packages/python_publisher
+[0.521s] copying /home/kcg/copy/python_publisher_ws/python_publisher/build/python_publisher/build/lib/python_publisher/__init__.py -> /home/kcg/copy/python_publisher_ws/python_publisher/install/python_publisher/lib/python3.8/site-packages/python_publisher
+[0.521s] copying /home/kcg/copy/python_publisher_ws/python_publisher/build/python_publisher/build/lib/python_publisher/adaptive_cruise_control.py -> /home/kcg/copy/python_publisher_ws/python_publisher/install/python_publisher/lib/python3.8/site-packages/python_publisher
+[0.521s] copying /home/kcg/copy/python_publisher_ws/python_publisher/build/python_publisher/build/lib/python_publisher/controllerPID_test.py -> /home/kcg/copy/python_publisher_ws/python_publisher/install/python_publisher/lib/python3.8/site-packages/python_publisher
+[0.521s] byte-compiling /home/kcg/copy/python_publisher_ws/python_publisher/install/python_publisher/lib/python3.8/site-packages/python_publisher/steertry.py to steertry.cpython-38.pyc
+[0.522s] byte-compiling /home/kcg/copy/python_publisher_ws/python_publisher/install/python_publisher/lib/python3.8/site-packages/python_publisher/controllerPID.py to controllerPID.cpython-38.pyc
+[0.523s] byte-compiling /home/kcg/copy/python_publisher_ws/python_publisher/install/python_publisher/lib/python3.8/site-packages/python_publisher/__init__.py to __init__.cpython-38.pyc
+[0.523s] byte-compiling /home/kcg/copy/python_publisher_ws/python_publisher/install/python_publisher/lib/python3.8/site-packages/python_publisher/adaptive_cruise_control.py to adaptive_cruise_control.cpython-38.pyc
+[0.524s] byte-compiling /home/kcg/copy/python_publisher_ws/python_publisher/install/python_publisher/lib/python3.8/site-packages/python_publisher/controllerPID_test.py to controllerPID_test.cpython-38.pyc
+[0.524s] running install_data
+[0.524s] creating /home/kcg/copy/python_publisher_ws/python_publisher/install/python_publisher/share/ament_index
+[0.524s] creating /home/kcg/copy/python_publisher_ws/python_publisher/install/python_publisher/share/ament_index/resource_index
+[0.524s] creating /home/kcg/copy/python_publisher_ws/python_publisher/install/python_publisher/share/ament_index/resource_index/packages
+[0.524s] copying resource/python_publisher -> /home/kcg/copy/python_publisher_ws/python_publisher/install/python_publisher/share/ament_index/resource_index/packages
+[0.524s] copying package.xml -> /home/kcg/copy/python_publisher_ws/python_publisher/install/python_publisher/share/python_publisher
+[0.524s] running install_egg_info
+[0.525s] Copying build/python_publisher/python_publisher.egg-info to /home/kcg/copy/python_publisher_ws/python_publisher/install/python_publisher/lib/python3.8/site-packages/python_publisher-0.0.0-py3.8.egg-info
+[0.526s] running install_scripts
+[0.536s] Installing acc script to /home/kcg/copy/python_publisher_ws/python_publisher/install/python_publisher/lib/python_publisher
+[0.536s] Installing pid script to /home/kcg/copy/python_publisher_ws/python_publisher/install/python_publisher/lib/python_publisher
+[0.536s] Installing publisher script to /home/kcg/copy/python_publisher_ws/python_publisher/install/python_publisher/lib/python_publisher
+[0.536s] writing list of installed files to '/home/kcg/copy/python_publisher_ws/python_publisher/build/python_publisher/install.log'
+[0.546s] Invoked command in '/home/kcg/copy/python_publisher_ws/python_publisher' returned '0': PYTHONPATH=/home/kcg/copy/python_publisher_ws/python_publisher/install/python_publisher/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/python_publisher build --build-base /home/kcg/copy/python_publisher_ws/python_publisher/build/python_publisher/build install --prefix /home/kcg/copy/python_publisher_ws/python_publisher/install/python_publisher --record /home/kcg/copy/python_publisher_ws/python_publisher/build/python_publisher/install.log --single-version-externally-managed

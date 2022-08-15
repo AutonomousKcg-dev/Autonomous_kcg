@@ -292,18 +292,18 @@ class adaptive_cruise_control(Node):
         errorCar = self.front_car.distance_x - self.reference_distance
         errorPad = self.front_padasterian.distance_x - self.reference_distance
         error = 0.0
-        if(self.front_car.distance_x > self.front_padasterian.distance_x):
+        if self.front_car.distance_x > self.front_padasterian.distance_x:
             error = errorPad
-
         else:
             error = errorCar
+
         output = self.velocity_PID.output(error)
 
         #####################################################
         # wheel control
         #####################################################
         if self._switching_lane:
-            self.pure_pursuit.sample = 250
+            self.pure_pursuit.sample = 100
         else:
             self.pure_pursuit.sample = 75
 
@@ -315,10 +315,14 @@ class adaptive_cruise_control(Node):
         error_w = error_yaw + math.sqrt(dist_error)
 
         output_w = self.wheel_PID.output(error_w)
-        
-        epsilon = 0.0008
-        if self._switching_lane and -epsilon < output_w < epsilon:
+
+        dist_from_front_car = abs(self.front_car.distance_x - self.ego_car_pose_x_nav)
+        print(dist_from_front_car)
+        if self.switch.changing_lane and (dist_from_front_car < 0.5 or dist_from_front_car > 15):
             self._switching_lane = False
+            self.switch.changing_lane = False
+            print("changed lane")
+        
 
         #####################################################
         # gas & brake Control
@@ -340,8 +344,12 @@ class adaptive_cruise_control(Node):
                 gas_msg.data = output
                 brake_msg.data = 0.0
         else:
-            gas_msg.data = 0.0
-            brake_msg.data = -(output)
+            if self.switch.changing_lane:
+                gas_msg.data = 0.05
+                brake_msg.data = 0.0
+            else:
+                gas_msg.data = 0.0
+                brake_msg.data = -(output)
 
         self.car_cmd_publisher_gas.publish(gas_msg)
         self.car_cmd_publisher_brake.publish(brake_msg)
@@ -351,7 +359,10 @@ class adaptive_cruise_control(Node):
         #####################################################
         # else:
         msg = Float32()
-        msg.data = output_w * 0.7       # making the steer softer
+        if self.switch.changing_lane:
+            msg.data = output_w / 2.0
+        else:
+            msg.data = output_w * 0.7       # making the steer softer
         self.car_cmd_publisher_steer.publish(msg)
 
     def change_lane(self):
@@ -362,7 +373,7 @@ class adaptive_cruise_control(Node):
         current_lane = abs(self.ego_car_lane + 1)
 
         if direction == Direction.LEFT:
-            if current_lane < 0:
+            if current_lane > 0:
                 self.lane_reader.change_lane(current_lane - 1)
 
         elif direction == Direction.RIGHT:
@@ -379,7 +390,9 @@ class adaptive_cruise_control(Node):
         self._switching_lane = True
 
         # stop change lane state
+        # should check if really changed lane !!!
         self.switch.changed_lane = True
+        self.switch.changing_lane = True
 
     def stop_car(self):
         print("STOP_CAR")

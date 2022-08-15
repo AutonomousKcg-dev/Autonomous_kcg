@@ -280,7 +280,7 @@ PYTHON_LIBRARY_DEBUG:FILEPATH=PYTHON_LIBRARY_DEBUG-NOTFOUND
 PYTHON_VERSION:STRING=
 
 //Name of the computer/site where compile is being run
-SITE:STRING=kcg-ROG-Strix-G35CZ-G35CZ
+SITE:STRING=kcg-ROG-Strix
 
 //The directory containing a CMake configuration file for TinyXML2.
 TinyXML2_DIR:PATH=TinyXML2_DIR-NOTFOUND

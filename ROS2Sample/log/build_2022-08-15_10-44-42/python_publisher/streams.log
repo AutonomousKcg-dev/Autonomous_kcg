@@ -1,0 +1,70 @@
+[0.367s] Invoking command in '/home/kcg/copy/ROS2Sample/src/python_publisher': PYTHONPATH=/home/kcg/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages:/home/kcg/copy/ROS2Sample/install/cognata_sdk_ros2/lib/python3.8/site-packages:/home/kcg/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/python_publisher build --build-base /home/kcg/copy/ROS2Sample/build/python_publisher/build install --prefix /home/kcg/copy/ROS2Sample/install/python_publisher --record /home/kcg/copy/ROS2Sample/build/python_publisher/install.log --single-version-externally-managed
+[0.490s] running egg_info
+[0.490s] creating ../../build/python_publisher/python_publisher.egg-info
+[0.490s] writing ../../build/python_publisher/python_publisher.egg-info/PKG-INFO
+[0.491s] writing dependency_links to ../../build/python_publisher/python_publisher.egg-info/dependency_links.txt
+[0.491s] writing entry points to ../../build/python_publisher/python_publisher.egg-info/entry_points.txt
+[0.491s] writing requirements to ../../build/python_publisher/python_publisher.egg-info/requires.txt
+[0.491s] writing top-level names to ../../build/python_publisher/python_publisher.egg-info/top_level.txt
+[0.491s] writing manifest file '../../build/python_publisher/python_publisher.egg-info/SOURCES.txt'
+[0.511s] reading manifest file '../../build/python_publisher/python_publisher.egg-info/SOURCES.txt'
+[0.511s] writing manifest file '../../build/python_publisher/python_publisher.egg-info/SOURCES.txt'
+[0.512s] running build
+[0.512s] running build_py
+[0.512s] creating /home/kcg/copy/ROS2Sample/build/python_publisher/build
+[0.512s] creating /home/kcg/copy/ROS2Sample/build/python_publisher/build/lib
+[0.512s] creating /home/kcg/copy/ROS2Sample/build/python_publisher/build/lib/python_publisher
+[0.512s] copying python_publisher/record_sub.py -> /home/kcg/copy/ROS2Sample/build/python_publisher/build/lib/python_publisher
+[0.512s] copying python_publisher/steertry.py -> /home/kcg/copy/ROS2Sample/build/python_publisher/build/lib/python_publisher
+[0.512s] copying python_publisher/controllerPID.py -> /home/kcg/copy/ROS2Sample/build/python_publisher/build/lib/python_publisher
+[0.512s] copying python_publisher/__init__.py -> /home/kcg/copy/ROS2Sample/build/python_publisher/build/lib/python_publisher
+[0.512s] copying python_publisher/google_earth_viz.py -> /home/kcg/copy/ROS2Sample/build/python_publisher/build/lib/python_publisher
+[0.512s] copying python_publisher/adaptive_cruise_control.py -> /home/kcg/copy/ROS2Sample/build/python_publisher/build/lib/python_publisher
+[0.513s] copying python_publisher/controllerPID_test.py -> /home/kcg/copy/ROS2Sample/build/python_publisher/build/lib/python_publisher
+[0.513s] creating /home/kcg/copy/ROS2Sample/build/python_publisher/build/lib/python_publisher/submodules
+[0.514s] copying python_publisher/submodules/__init__.py -> /home/kcg/copy/ROS2Sample/build/python_publisher/build/lib/python_publisher/submodules
+[0.514s] copying python_publisher/submodules/Pure_Pursuit.py -> /home/kcg/copy/ROS2Sample/build/python_publisher/build/lib/python_publisher/submodules
+[0.514s] copying python_publisher/submodules/lane_reader.py -> /home/kcg/copy/ROS2Sample/build/python_publisher/build/lib/python_publisher/submodules
+[0.514s] copying python_publisher/submodules/switch_cognata.py -> /home/kcg/copy/ROS2Sample/build/python_publisher/build/lib/python_publisher/submodules
+[0.514s] running install
+[0.514s] running install_lib
+[0.514s] creating /home/kcg/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher
+[0.514s] creating /home/kcg/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher/submodules
+[0.514s] copying /home/kcg/copy/ROS2Sample/build/python_publisher/build/lib/python_publisher/submodules/__init__.py -> /home/kcg/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher/submodules
+[0.514s] copying /home/kcg/copy/ROS2Sample/build/python_publisher/build/lib/python_publisher/submodules/Pure_Pursuit.py -> /home/kcg/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher/submodules
+[0.515s] copying /home/kcg/copy/ROS2Sample/build/python_publisher/build/lib/python_publisher/submodules/lane_reader.py -> /home/kcg/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher/submodules
+[0.515s] copying /home/kcg/copy/ROS2Sample/build/python_publisher/build/lib/python_publisher/submodules/switch_cognata.py -> /home/kcg/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher/submodules
+[0.515s] copying /home/kcg/copy/ROS2Sample/build/python_publisher/build/lib/python_publisher/record_sub.py -> /home/kcg/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher
+[0.515s] copying /home/kcg/copy/ROS2Sample/build/python_publisher/build/lib/python_publisher/steertry.py -> /home/kcg/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher
+[0.515s] copying /home/kcg/copy/ROS2Sample/build/python_publisher/build/lib/python_publisher/controllerPID.py -> /home/kcg/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher
+[0.515s] copying /home/kcg/copy/ROS2Sample/build/python_publisher/build/lib/python_publisher/__init__.py -> /home/kcg/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher
+[0.515s] copying /home/kcg/copy/ROS2Sample/build/python_publisher/build/lib/python_publisher/google_earth_viz.py -> /home/kcg/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher
+[0.515s] copying /home/kcg/copy/ROS2Sample/build/python_publisher/build/lib/python_publisher/adaptive_cruise_control.py -> /home/kcg/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher
+[0.515s] copying /home/kcg/copy/ROS2Sample/build/python_publisher/build/lib/python_publisher/controllerPID_test.py -> /home/kcg/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher
+[0.515s] byte-compiling /home/kcg/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher/submodules/__init__.py to __init__.cpython-38.pyc
+[0.515s] byte-compiling /home/kcg/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher/submodules/Pure_Pursuit.py to Pure_Pursuit.cpython-38.pyc
+[0.516s] byte-compiling /home/kcg/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher/submodules/lane_reader.py to lane_reader.cpython-38.pyc
+[0.516s] byte-compiling /home/kcg/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher/submodules/switch_cognata.py to switch_cognata.cpython-38.pyc
+[0.517s] byte-compiling /home/kcg/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher/record_sub.py to record_sub.cpython-38.pyc
+[0.517s] byte-compiling /home/kcg/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher/steertry.py to steertry.cpython-38.pyc
+[0.518s] byte-compiling /home/kcg/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher/controllerPID.py to controllerPID.cpython-38.pyc
+[0.518s] byte-compiling /home/kcg/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher/__init__.py to __init__.cpython-38.pyc
+[0.518s] byte-compiling /home/kcg/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher/google_earth_viz.py to google_earth_viz.cpython-38.pyc
+[0.518s] byte-compiling /home/kcg/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher/adaptive_cruise_control.py to adaptive_cruise_control.cpython-38.pyc
+[0.519s] byte-compiling /home/kcg/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher/controllerPID_test.py to controllerPID_test.cpython-38.pyc
+[0.520s] running install_data
+[0.520s] creating /home/kcg/copy/ROS2Sample/install/python_publisher/share/ament_index
+[0.520s] creating /home/kcg/copy/ROS2Sample/install/python_publisher/share/ament_index/resource_index
+[0.520s] creating /home/kcg/copy/ROS2Sample/install/python_publisher/share/ament_index/resource_index/packages
+[0.520s] copying resource/python_publisher -> /home/kcg/copy/ROS2Sample/install/python_publisher/share/ament_index/resource_index/packages
+[0.520s] copying package.xml -> /home/kcg/copy/ROS2Sample/install/python_publisher/share/python_publisher
+[0.520s] running install_egg_info
+[0.521s] Copying ../../build/python_publisher/python_publisher.egg-info to /home/kcg/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher-0.0.0-py3.8.egg-info
+[0.522s] running install_scripts
+[0.531s] Installing acc script to /home/kcg/copy/ROS2Sample/install/python_publisher/lib/python_publisher
+[0.532s] Installing gev script to /home/kcg/copy/ROS2Sample/install/python_publisher/lib/python_publisher
+[0.532s] Installing pid script to /home/kcg/copy/ROS2Sample/install/python_publisher/lib/python_publisher
+[0.532s] Installing publisher script to /home/kcg/copy/ROS2Sample/install/python_publisher/lib/python_publisher
+[0.532s] Installing rcc script to /home/kcg/copy/ROS2Sample/install/python_publisher/lib/python_publisher
+[0.532s] writing list of installed files to '/home/kcg/copy/ROS2Sample/build/python_publisher/install.log'
+[0.544s] Invoked command in '/home/kcg/copy/ROS2Sample/src/python_publisher' returned '0': PYTHONPATH=/home/kcg/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages:/home/kcg/copy/ROS2Sample/install/cognata_sdk_ros2/lib/python3.8/site-packages:/home/kcg/copy/ROS2Sample/install/python_publisher/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/python_publisher build --build-base /home/kcg/copy/ROS2Sample/build/python_publisher/build install --prefix /home/kcg/copy/ROS2Sample/install/python_publisher --record /home/kcg/copy/ROS2Sample/build/python_publisher/install.log --single-version-externally-managed

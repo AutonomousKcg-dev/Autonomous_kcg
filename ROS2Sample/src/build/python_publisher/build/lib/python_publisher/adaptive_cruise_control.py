@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 from audioop import avg
 from dataclasses import dataclass
+from os import stat
 import matplotlib as plt
 from threading import Thread
 import rclpy
@@ -17,9 +18,12 @@ from sensor_msgs.msg import NavSatFix
 from geometry_msgs.msg import Twist
 from std_msgs.msg import Float32
 import numpy as np
+
+from .submodules.lane_reader import LaneReader
 from .controllerPID import PID
 # from msg._ForceFeedback import ForceFeedback
 from .submodules.Pure_Pursuit import *
+from .submodules.switch_cognata import *
 
 # Google Earth
 from simplekml import Kml
@@ -28,6 +32,7 @@ from pydrive.drive import GoogleDrive
 
 
 fig, ax = plt.subplots()
+LANE_DIR = "src/python_publisher/python_publisher/submodules/lanes"
 
 
 def get_path(file_name):
@@ -106,8 +111,11 @@ class adaptive_cruise_control(Node):
 
         # PID
         self.velocity_PID = PID(kp=0.8, ki=0, kd=0.13)
-
         self.wheel_PID = PID(kp=0.05, ki=0, kd=0.002)
+        self._switching_lane = False
+
+        # Switch
+        self.switch = switch_cognata(self.reference_distance)
 
         # subscribers
         self.dogt_listener = self.create_subscription(
@@ -128,13 +136,11 @@ class adaptive_cruise_control(Node):
             Float32, '/cognataSDK/car_command/gas_cmd', 10)
 
         # pure pursuit algo
-        cy, cx = get_path(
-            "/home/kcg/copy/ROS2Sample/path.txt")
+        # cy, cx = get_path(
+        #     "/home/kcg/copy/ROS2Sample/path.txt")
+        self.lane_reader = LaneReader(LANE_DIR, 1)
+        cy, cx = self.lane_reader.get_lane()
         self.pure_pursuit = PurePursuit(cy, cx, 0.0)
-        # self.ai = 0  # speed proportion control
-        # self.di = 0  # steer control
-
-        # start putr pursuit
 
         # timer
         time_period = 0.1
@@ -146,19 +152,8 @@ class adaptive_cruise_control(Node):
         # print(fonts.BOLD + fonts.BLUE + "Vehicle List Size = " +str(len(self.vehicleList))) # Printing Number of Vehicle Agents
         self.rate = self.create_rate(8)  # 10 [Hz]
 
-        # Google Earth Visualization    - DO NOT DELETE
-        # self.drive = GoogleDrive(GoogleAuth)
-        # self.upload_file_list = ['LinkLine.kml']
-        # self.file_drive = self.drive.CreateFile({'id': '1GNyVRxN3BvbHoYt5Bt8GqgJ9mpYoTu6P'})
-        # # coordinates list of (lon, lat) tuples
-        # self.coords = []
-        # # Kml template
-        # self.kml = Kml()
-
     def dist(self, point1, point2):
         # return distance betweeen point1 and point2 - 8 digit accuracy - meters
-        # print(point1)
-        # print(point2)
         dist = hs.haversine(point1, point2)
         return 1000*round(dist, 8)
 
@@ -170,7 +165,8 @@ class adaptive_cruise_control(Node):
         self.vehicleList = msg.vehicle_list
         self.padesterianList = msg.pedestrian_list
 
-        # print("sus vehiclelist sususususuususususuusususus:", self.vehicleList)
+        # update the data on the switch
+        self.switch.update_objects(msg=msg)
 
     #####################################################
     # GPS message callback
@@ -196,7 +192,7 @@ class adaptive_cruise_control(Node):
                 [self.pure_pursuit.car_state.y_coord, self.pure_pursuit.target_point[1]], "-g")  # pot target point
 
         abline(self.pure_pursuit.linear_reg.coef_, self.pure_pursuit.linear_reg.intercept_, ax,
-               self.pure_pursuit.cx[self.pure_pursuit.curr_index], self.pure_pursuit.cx[self.pure_pursuit.curr_index + sample])  # draw linear regression
+               self.pure_pursuit.cx[self.pure_pursuit.curr_index], self.pure_pursuit.cx[self.pure_pursuit.curr_index + self.pure_pursuit.sample])  # draw linear regression
 
         ax.scatter([self.pure_pursuit.target_point[0]],
                    [self.pure_pursuit.target_point[1]], marker="+")  # mark target point
@@ -204,32 +200,6 @@ class adaptive_cruise_control(Node):
         ax.scatter([self.pure_pursuit.car_state.x_coord],
                    [self.pure_pursuit.car_state.y_coord])  # draw car
         plt.pause(0.001)
-
-        # Google Earth Visualization    - DO NOT DELETE!!
-        # lon = msg.longitude
-        # lat = msg.latitude
-        # self.coords.append((lon, lat))
-        # # update the kml on google drive -> update on google earth
-        # docs = self.kml.newdocument(name= 'LinkLine')
-        # docs.newlinestring(name= 'PCBLine', coords = self.coords)
-        # self.kml.save('LinkLine.kml')
-        # for upload_file in self.upload_file_list:
-        #     # Read file and set it as the content of this instance.
-        #     self.file_drive.SetContentFile(upload_file)
-        #     self.file_drive.Upload()
-
-        # self.pure_pursuit.state.update(self.ai, self.di)
-        # self.pure_pursuit.state.y = self.ego_car_pose_y_nav * 10000000000000
-        # self.pure_pursuit.state.x = self.ego_car_pose_x_nav
-
-        # ax.clear()
-        # ax.plot(self.pure_pursuit.target_course.cy,
-        #         self.pure_pursuit.target_course.cx, "-r")
-        # # ax.scatter([self.pure_pursuit.state.y], [self.pure_pursuit.state.x])
-        # plt.pause(0.033)
-
-        # print("i am sus nav: ", self.ego_car_pose_y_nav)
-        # print(" i am sus target: ", max(self.pure_pursuit.target_course.cy))
 
     #####################################################
     # GPS message callback
@@ -247,24 +217,8 @@ class adaptive_cruise_control(Node):
         self.ego_car_v_x = msg.velocity_local_3d.x
         self.ego_car_v_y = msg.velocity_local_3d.y
         self.ego_car_pose = msg.position
-
-        # self.pure_pursuit.state.v = self.ego_car_velocity._x
-        # self.pure_pursuit.state.yaw = msg.yaw
-        #print(fonts.GREEN + "Ego car lane ID = " + str(self.ego_car_lane))
-
-    # def pure_sus(self):
-    #     # for plotting
-    #     ax.clear()
-    #     ax.plot(self.pure_pursuit.target_course.cx,
-    #             self.pure_pursuit.target_course.cy, "-r")
-    #     plt.plot(self.pure_pursuit.sus_states.x,
-    #              self.pure_pursuit.sus_states.y, "-b", label="trajectory")
-
-    #     # for plotting
-    #     print("Degree: ", self.di)
-    #     plot_arrow(self.pure_pursuit.state.x,
-    #                self.pure_pursuit.state.y, self.pure_pursuit.state.yaw)
-    #     plt.pause(0.001)
+        # update the data on the switch
+        self.switch.update_lane_info(msg)
 
     def shutdown_handler(self):
         # if self.in_session:
@@ -276,7 +230,7 @@ class adaptive_cruise_control(Node):
 
         # Initializing front car
         self.front_padasterian.id = -1
-        self.front_padasterian.distance_y = 0
+        self.front_padasterian.distance_y = 100
         self.front_padasterian.distance_x = self.maximum_front_car_distance
         self.front_padasterian.velocity = 0
 
@@ -290,23 +244,6 @@ class adaptive_cruise_control(Node):
                     self.front_padasterian.velocity_x = padestrian.description.motion.linear.x
                     self.front_padasterian.velocity_y = padestrian.description.motion.angular.z
                     self.front_padasterian.id = idx
-
-        # print("distance to closest padestrian in lane: ", self.front_padasterian.distance_x)
-            #   self.front_padasterian.distance_y)
-
-        # new_latitude  = latitude  + (dy / r_earth) * (180 / pi);
-        # new_longitude = longitude + (dx / r_earth) * (180 / pi) / cos(latitude * pi/180);
-
-        # point1 = (self.ego_car_pose_x_nav, self.ego_car_pose_y_nav)
-        # new_latitude = point1[1] + \
-        #     (self.front_padasterian.distance_y / 6378*1000) * (180/math.pi)
-        # new_longitude = point1[0] + ((self.front_padasterian.distance_x / (
-        #     6378*1000)) * (180/math.pi)) / math.cos(point1[1] * math.pi/180)
-        # point2 = (new_longitude, new_latitude)
-
-        # self.dist_from_front_padasterian = self.dist(
-        #     point1=point1, point2=point2)
-        # print(self.dist_from_front_padasterian)
 
     # Pull Front Car
 
@@ -347,26 +284,14 @@ class adaptive_cruise_control(Node):
     # PID control for applying adaptive cruise
     #####################################################
 
-    def control(self):
-        self.get_front_padasterian()
-        self.get_front_car()
-
-        #####################################################
-        # printing
-        # print("ego lane id :", self.ego_car_lane)
-        # print("ego car lane offset dis :", self.ego_car_lane_offset)
-        # print("speed Km/h:", self.ego_car_speed)
-        # print("ego car deg :", self.ego_car_degree)
-        # print("ego car pose x",  self.ego_car_pose_x)
-        # print("ego car pose y",  self.ego_car_pose_y)
-        # print("ego car pose",  self.ego_car_pose)
-        # print("ego car v",  self.ego_car_velocity)
-        #####################################################
-
+    def acc(self):
+        """
+            this method is responsible for the ACC control
+        """
         # gas and barke Control
         errorCar = self.front_car.distance_x - self.reference_distance
         errorPad = self.front_padasterian.distance_x - self.reference_distance
-        # error = 0.0
+        error = 0.0
         if(self.front_car.distance_x > self.front_padasterian.distance_x):
             error = errorPad
 
@@ -374,67 +299,43 @@ class adaptive_cruise_control(Node):
             error = errorCar
         output = self.velocity_PID.output(error)
 
-        # print("sus error: ", error)
-        # print("self sus distanse: ", self.front_car.distance_x,
-        #       "i am the sus of the sus not change")
-        # print("speed pid: ", output)
-
         #####################################################
         # wheel control
         #####################################################
+        if self._switching_lane:
+            self.pure_pursuit.sample = 250
+        else:
+            self.pure_pursuit.sample = 75
+
         error_yaw, _ = self.pure_pursuit.run()
         idx = self.pure_pursuit.curr_index
         dist_error = math.dist((self.pure_pursuit.cx[idx], self.pure_pursuit.cy[idx]), (
             self.ego_car_pose_x_nav, self.ego_car_pose_y_nav)) * math.exp(7)
 
-        # error_w = (error_yaw + dist_error) / 2
-        # error_w = error_yaw + math.sqrt(dist_error)
-        error_w = error_yaw + \
-            math.sqrt(dist_error) if error_yaw > 0 else error_yaw + \
-            math.sqrt(dist_error )
+        error_w = error_yaw + math.sqrt(dist_error)
+
         output_w = self.wheel_PID.output(error_w)
-        print("distance error: ", dist_error)
+        
+        epsilon = 0.0008
+        if self._switching_lane and -epsilon < output_w < epsilon:
+            self._switching_lane = False
+            self.switch.changing_lane = False
+            # self.switch.changed_lane = True
+            print("changed lane")
 
         #####################################################
         # gas & brake Control
         #####################################################
-        # if (error > 1 or error < -1):
-        #     print("Error = " + fonts.RED + str(error) +
-        #           fonts.ENDC + " Output = " + str(output))
-        # else:
-        #     print("Error = " + fonts.GREEN + str(error) +
-        #           fonts.ENDC + " Output = " + str(output))
-
-        # if (output > 0):
-        #     if (self.ego_car_speed > 30):
-        #         msg.data = 0.3
-        #         self.car_cmd_publisher_brake.publish(msg)
-        #         msg.data = 0.0
-        #     elif (20 < self.ego_car_speed < 30):
-        #         msg.data = output * 0.7
-        #     else:
-        #         msg.data = output
-        #     self.car_cmd_publisher_gas.publish(msg)
-        # elif (output < 0):
-        #     msg = Float32()
-        #     msg.data = -(output)
-        #     self.car_cmd_publisher_brake.publish(msg)
-        # else:
-        #     msg = Float32()
-        #     msg.data = 0.0
-        #     self.car_cmd_publisher_gas.publish(msg)
-        #     self.car_cmd_publisher_brake.publish(msg)
-
-        # gas and brake parameters
         gas_msg = Float32()
         brake_msg = Float32()
+
         max_speed = 30.0
 
         # need to drive up to a certain speed
         if (output > 0):
             if self.ego_car_speed > max_speed:
                 gas_msg.data = 0.0
-                brake_msg.data = 0.3
+                brake_msg.data = 0.0
             elif max_speed - 10 < self.ego_car_speed < max_speed:
                 gas_msg.data = output * 0.7
                 brake_msg.data = 0.0
@@ -451,120 +352,81 @@ class adaptive_cruise_control(Node):
         #####################################################
         # wheel Control
         #####################################################
-        # print("output w : ", output_w)
-        # ~~~~~~~~~~~~~~~~ #
-        # if self.ego_car_lane != self.desired_lane:
-        #     output_w = -output_w
-        # ~~~~~~~~~~~~~~~~ #
-
-        # if (0 < output_w < 1):
-        #     # self.vehicle_cmd.linear.x = output
-        #     # self.vehicle_cmd.linear.y = 0
-        #     msg = Float32()
-        #     msg.data = output_w
-        #     self.car_cmd_publisher_steer.publish(msg)
-        #     # g29 wheel
-        #     # msg29 = ForceFeedback()
-        #     # msg29.position = output_w
-        #     # msg29.torque = 0.2
-        #     # print("g29")
-        #     # self.wheel_publisher_g29.publish(msg29)
-
-        # elif (-1 < output_w < 0):
-        #     # self.vehicle_cmd.linear.x = 0
-        #     # self.vehicle_cmd.linear.y = -output
-        #     msg = Float32()
-        #     msg.data = output_w / 2.0
-        #     self.car_cmd_publisher_steer.publish(msg)
-        #     # g29 wheel
-        #     # msg29 = ForceFeedback()
-        #     # msg29.position = output_w
-        #     # msg29.torque = 0.2
-        #     # print("g29")
-        #     # self.wheel_publisher_g29.publish(msg29)
-
         # else:
         msg = Float32()
-        msg.data = output_w * 0.7       # CHANGE
+        msg.data = output_w * 0.7       # making the steer softer
         self.car_cmd_publisher_steer.publish(msg)
 
+    def change_lane(self):
+        print("CHANGING_LANE")
 
-    #####################################################
-    # keyboard listener
-    #####################################################
+        # get direction from the switch and change the lane we are tracking
+        direction = self.switch.switch_lane_direction
+        current_lane = abs(self.ego_car_lane + 1)
 
-    def keyboard_listener(self):
-        # TODO - write it in switch-case format
-        if keyboard.is_pressed('escape'):
-            quit()
+        if direction == Direction.LEFT:
+            if current_lane < 0:
+                self.lane_reader.change_lane(current_lane - 1)
 
-        if keyboard.is_pressed('w'):
-            if self.acc_on:
-                self.acc_on = False
-                print(fonts.BOLD + fonts.RED + "ACC Disengage" + fonts.ENDC)
-            if self.vehicle_cmd.linear.y == 0:
-                self.vehicle_cmd.linear.x += self.keyboard_increment_factor
-            else:
-                self.vehicle_cmd.linear.y -= self.keyboard_increment_factor
+        elif direction == Direction.RIGHT:
+            if current_lane < self.switch.num_of_lanes - 1:
+                self.lane_reader.change_lane(current_lane + 1)
 
-        if keyboard.is_pressed('s'):
-            if self.acc_on:
-                self.acc_on = False
-                print(fonts.BOLD + fonts.RED + "ACC Disengage" + fonts.ENDC)
-            if self.vehicle_cmd.linear.x > 0:
-                self.vehicle_cmd.linear.x -= self.keyboard_increment_factor
-            else:
-                self.vehicle_cmd.linear.y += self.keyboard_increment_factor
+        # get lane data
+        cx, cy = self.lane_reader.get_lane()
 
-        if keyboard.is_pressed('a'):
-            # if self.acc_on:
-            #     self.acc_on = False
-            #     print(fonts.BOLD + fonts.RED + "ACC Disengage" + fonts.ENDC)
-            self.vehicle_cmd.angular.z -= self.keyboard_increment_factor/2
+        # update pure pursuit path
+        self.pure_pursuit.update_path(cx, cy)
+
+        # set for the PID
+        self._switching_lane = True
+
+        # stop change lane state
+        # should check if really changed lane !!!
+        self.switch.changed_lane = True
+        self.switch.changing_lane = True
+
+    def stop_car(self):
+        print("STOP_CAR")
+        msg_gas = Float32()
+        msg_brake = Float32()
+        msg_gas.data = 0.0
+        msg_brake.data = 1.0
+        self.car_cmd_publisher_brake.publish(msg_brake)
+        self.car_cmd_publisher_gas.publish(msg_gas)
+
+    def stop_pedestrian(self):
+        print("STOP_PED")
+        msg_gas = Float32()
+        msg_brake = Float32()
+        msg_gas.data = 0.0
+        msg_brake.data = 1.0
+        self.car_cmd_publisher_brake.publish(msg_brake)
+        self.car_cmd_publisher_gas.publish(msg_gas)
+
+    def control(self):
+        """
+            this is the main method, responsible for the movment of the car
+        """
+        self.get_front_padasterian()
+        self.get_front_car()
+        # run the switch decision maker
+        self.switch.run(self.front_car, self.front_padasterian)
+
+        state = self.switch.state
+
+        if state == State.ACC:
+            # the state of the car is in adaptive cruise control
+            self.acc()
+        elif state == State.CHANGE_LANE:
+            # the car is switching lane
+            self.change_lane()
+        elif state == State.STOP_PED:
+            # the car needs to stop, pedestrian detected
+            self.stop_pedestrian()
         else:
-            if keyboard.is_pressed('d'):
-                # if self.acc_on:
-                #     self.acc_on = False
-                #     print(fonts.BOLD + fonts.RED + "ACC Disengage" + fonts.ENDC)
-                self.vehicle_cmd.angular.z += self.keyboard_increment_factor/2
-            else:
-                self.vehicle_cmd.angular.z = 0
-
-        if keyboard.is_pressed('space'):
-            if not self.acc_on:
-                print(fonts.BOLD + fonts.GREEN + "ACC Activated" + fonts.ENDC)
-                self.acc_on = True
-            else:
-                print(fonts.BOLD + fonts.RED + "ACC Disengage" + fonts.ENDC)
-                self.acc_on = False
-
-        # Clamp
-        if self.vehicle_cmd.linear.x > 1:
-            self.vehicle_cmd.linear.x = 1
-        elif self.vehicle_cmd.linear.x < 0:
-            self.vehicle_cmd.linear.x = 0
-
-        if self.vehicle_cmd.linear.y > 1:
-            self.vehicle_cmd.linear.y = 1
-        elif self.vehicle_cmd.linear.y < 0:
-            self.vehicle_cmd.linear.y = 0
-
-        if self.vehicle_cmd.angular.z > 1:
-            self.vehicle_cmd.angular.z = 1
-
-        if self.vehicle_cmd.angular.z < -1:
-            self.vehicle_cmd.angular.z = -1
-
-    # def on_key_release(self):
-    #     # TODO - write it in switch-case format
-    #     if keyboard.is_released('w'):
-    #         print(fonts.BOLD + fonts.CYAN + "W key released")
-    #     if keyboard.is_released('s'):
-    #         print(fonts.BOLD + fonts.CYAN + "S key released")
-    #     if keyboard.is_released('a'):
-    #         print(fonts.BOLD + fonts.CYAN + "A key released")
-    #     if keyboard.is_released('d'):
-    #         print(fonts.BOLD + fonts.CYAN + "D key released")
+            # the car needs to stop, vehicle detected
+            self.stop_car()
 
 
 def main(args=None):

@@ -63,10 +63,11 @@ class switch_cognata():
         self.radius = 3.7
         self.state = State.ACC   # ACC as default
         self.changed_lane = False   # will became True if done changing lane
+        self.changing_lane = False  # true if the car is currently switching lane
 
         self.refernce_distance: float = ref_dist
         self.side_lane_look_ahead = (-30, 30)  # meters
-        self.min_speed = 10     # front car should be atleast that speed
+        self.min_speed = 5     # front car should be atleast that speed
         self.switch_lane_direction = Direction.LEFT     # default
 
     def update_objects(self, msg: ROIAndDOGTOutput):
@@ -205,15 +206,17 @@ class switch_cognata():
                     # STOP!!!!
                     self.state = State.STOP_PED
             else:
+                if self.changing_lane:
+                    self.state = State.ACC
                 # car is closer
                 if self.front_car.distance_x < self.refernce_distance:
                     # car is damn close
                     # Debug
                     print("Front Car Speed: ", front_car_speed)
-                    if front_car_speed < self.min_speed:
+                    if front_car_speed < self.min_speed and not self.changing_lane:
                         # the car infornt of us is slow af
                         self.state = State.STOP_CAR
-                    elif front_car_speed < self.speed:
+                    elif front_car_speed < self.speed and not self.changing_lane:
                         # we want tp switch lane
                         if self.switch_lane_is_possible():
                             # we want and can switch lane
@@ -237,5 +240,6 @@ class switch_cognata():
             if self.changed_lane:
                 self.state = State.ACC
                 self.changed_lane = False
+            
         # DEBUG
         self.print_debug()

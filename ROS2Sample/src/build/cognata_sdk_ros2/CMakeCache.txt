@@ -238,10 +238,10 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Path to a library.
-COGNATA:FILEPATH=/usr/lib/libCognataSDK.a
+COGNATA:FILEPATH=/home/kcg/copy/ROS2Sample/src/cognata_sdk_ros2/libs/cognataSDKLibs/libCognataSDK.a
 
 //Path to a library.
-COGNATA_PROTO:FILEPATH=/usr/lib/libCognataSDK_proto.a
+COGNATA_PROTO:FILEPATH=/home/kcg/copy/ROS2Sample/src/cognata_sdk_ros2/libs/cognataSDKLibs/libCognataSDK_proto.a
 
 //Path to a library.
 FastCDR_LIBRARY_DEBUG:FILEPATH=FastCDR_LIBRARY_DEBUG-NOTFOUND
@@ -289,7 +289,7 @@ PYTHON_LIBRARY_DEBUG:FILEPATH=PYTHON_LIBRARY_DEBUG-NOTFOUND
 PYTHON_VERSION:STRING=
 
 //Name of the computer/site where compile is being run
-SITE:STRING=kcg-ROG-Strix-G35CZ-G35CZ
+SITE:STRING=kcg-ROG-Strix
 
 //The directory containing a CMake configuration file for TinyXML2.
 TinyXML2_DIR:PATH=TinyXML2_DIR-NOTFOUND

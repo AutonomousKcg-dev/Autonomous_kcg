@@ -21,11 +21,6 @@ class State:
     velocity: float = 50.0
 
 
-value_dist = 150
-# sample = 100
-sample = 75
-
-
 class PurePursuit:
     """
     a class for pure pursuit 
@@ -42,6 +37,8 @@ class PurePursuit:
         self.target_point = None
         self.car_state = State(cx[0], cy[0], cx[0], cy[0])
         self.linear_reg = None
+        self.sample = 75
+        np.seterr(all='ignore')
 
     def closest_point(self):
         # find closest point
@@ -59,15 +56,14 @@ class PurePursuit:
 
         # estimate road direction
         x = np.array(
-            self.cx[self.curr_index:self.curr_index + sample]).reshape((-1, 1))
+            self.cx[self.curr_index:self.curr_index + self.sample]).reshape((-1, 1))
         y = np.array(
-            self.cy[self.curr_index:self.curr_index + sample]).reshape((-1, 1))
+            self.cy[self.curr_index:self.curr_index + self.sample]).reshape((-1, 1))
         self.linear_reg = LinearRegression()
         self.linear_reg.fit(x, y)
 
-        x_target = self.cx[self.curr_index + sample + 1]
+        x_target = self.cx[self.curr_index + self.sample + 1]
         y_target = self.linear_reg.predict(np.array([x_target]).reshape(-1, 1))
-        # print(y_target)
         self.target_point = (x_target, y_target)
 
     def run(self):
@@ -79,11 +75,11 @@ class PurePursuit:
 
         # get vector
         desired_vector = np.array([self.target_point[0] - self.car_state.x_coord, self.target_point[1] -
-                                  self.car_state.y_coord], dtype="object").astype("float32")  # vector to the target point
+                                  self.car_state.y_coord], dtype="float64")  # vector to the target point
 
         # current road direction vector
         actual_vector = np.array([self.car_state.x_coord - self.car_state.last_x_coord,
-                                 self.car_state.y_coord - self.car_state.last_y_coord], dtype="object").astype("float32")
+                                 self.car_state.y_coord - self.car_state.last_y_coord], dtype="float64")
 
         # get angle - we might need to change this
         angle = np.degrees(np.math.atan2(np.linalg.det(
@@ -99,6 +95,10 @@ class PurePursuit:
 
         return angle, dist
         # FACTORY REBOT
+
+    def update_path(self, cx, cy):
+        self.cx = cx
+        self.cy = cy
 
 
 def main():

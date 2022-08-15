@@ -18,6 +18,8 @@ python_publisher/record_sub.py
 python_publisher/steertry.py
 python_publisher/submodules/Pure_Pursuit.py
 python_publisher/submodules/__init__.py
+python_publisher/submodules/lane_reader.py
+python_publisher/submodules/switch_cognata.py
 resource/python_publisher
 test/test_copyright.py
 test/test_flake8.py
