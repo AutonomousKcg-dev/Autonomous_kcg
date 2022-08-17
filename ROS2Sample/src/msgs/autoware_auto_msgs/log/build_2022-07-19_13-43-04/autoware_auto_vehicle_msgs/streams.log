@@ -1,0 +1,17 @@
+[0.015s] Invoking command in '/home/kcg/copy/idan_driver_ws/idan_driver/autoware_auto_msgs/autoware_auto_vehicle_msgs/build/autoware_auto_vehicle_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/kcg/copy/idan_driver_ws/idan_driver/autoware_auto_msgs/autoware_auto_vehicle_msgs -DCMAKE_INSTALL_PREFIX=/home/kcg/copy/idan_driver_ws/idan_driver/autoware_auto_msgs/autoware_auto_vehicle_msgs/install/autoware_auto_vehicle_msgs
+[0.025s] -- Found ament_cmake_auto: 0.9.9 (/opt/ros/foxy/share/ament_cmake_auto/cmake)
+[0.040s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.229s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.231s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.318s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.361s] CMake Error at /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:162 (message):
+[0.361s]   rosidl_generate_interfaces() the passed dependency
+[0.361s]   'autoware_auto_planning_msgs' has not been found before using
+[0.361s]   find_package()
+[0.361s] Call Stack (most recent call first):
+[0.361s]   CMakeLists.txt:11 (rosidl_generate_interfaces)
+[0.361s] 
+[0.361s] 
+[0.361s] -- Configuring incomplete, errors occurred!
+[0.361s] See also "/home/kcg/copy/idan_driver_ws/idan_driver/autoware_auto_msgs/autoware_auto_vehicle_msgs/build/autoware_auto_vehicle_msgs/CMakeFiles/CMakeOutput.log".
+[0.366s] Invoked command in '/home/kcg/copy/idan_driver_ws/idan_driver/autoware_auto_msgs/autoware_auto_vehicle_msgs/build/autoware_auto_vehicle_msgs' returned '1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/kcg/copy/idan_driver_ws/idan_driver/autoware_auto_msgs/autoware_auto_vehicle_msgs -DCMAKE_INSTALL_PREFIX=/home/kcg/copy/idan_driver_ws/idan_driver/autoware_auto_msgs/autoware_auto_vehicle_msgs/install/autoware_auto_vehicle_msgs

@@ -1,0 +1,224 @@
+[0.013s] Invoking command in '/home/kcg/copy/ROS2Sample/build/autoware_auto_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/kcg/copy/ROS2Sample/src/msgs/autoware_auto_msgs -DCMAKE_INSTALL_PREFIX=/home/kcg/copy/ROS2Sample/install/autoware_auto_msgs
+[0.044s] -- The C compiler identification is GNU 9.4.0
+[0.077s] -- The CXX compiler identification is GNU 9.4.0
+[0.081s] -- Check for working C compiler: /usr/bin/cc
+[0.119s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.120s] -- Detecting C compiler ABI info
+[0.158s] -- Detecting C compiler ABI info - done
+[0.165s] -- Detecting C compile features
+[0.165s] -- Detecting C compile features - done
+[0.167s] -- Check for working CXX compiler: /usr/bin/c++
+[0.211s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.212s] -- Detecting CXX compiler ABI info
+[0.256s] -- Detecting CXX compiler ABI info - done
+[0.263s] -- Detecting CXX compile features
+[0.264s] -- Detecting CXX compile features - done
+[0.265s] -- Found ament_cmake_auto: 0.9.9 (/opt/ros/foxy/share/ament_cmake_auto/cmake)
+[0.280s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.280s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.448s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.452s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.508s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.526s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.573s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.636s] -- Found ament_cmake_cppcheck: 0.9.6 (/opt/ros/foxy/share/ament_cmake_cppcheck/cmake)
+[0.637s] -- Found ament_cmake_cpplint: 0.9.6 (/opt/ros/foxy/share/ament_cmake_cpplint/cmake)
+[0.638s] -- Found ament_cmake_uncrustify: 0.9.6 (/opt/ros/foxy/share/ament_cmake_uncrustify/cmake)
+[0.639s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[0.753s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.796s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.812s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[0.813s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[0.830s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[0.830s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.830s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[0.830s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[0.843s] -- Found PythonExtra: .so  
+[0.882s] -- Found ament_cmake_flake8: 0.9.6 (/opt/ros/foxy/share/ament_cmake_flake8/cmake)
+[0.883s] -- Found ament_cmake_pep257: 0.9.6 (/opt/ros/foxy/share/ament_cmake_pep257/cmake)
+[0.885s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.908s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.909s] -- Configured cppcheck include dirs: 
+[0.909s] -- Configured cppcheck exclude dirs and/or files: 
+[0.925s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.925s] -- Configured cpplint exclude dirs and/or files: 
+[0.941s] -- Added test 'uncrustify' to check C / C++ code style
+[0.941s] -- Configured uncrustify additional arguments: 
+[0.943s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.945s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[0.945s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.949s] -- Added test 'lint_cmake' to check CMake code style
+[0.951s] -- Added test 'xmllint' to check XML markup files
+[0.954s] -- Configuring done
+[0.981s] -- Generating done
+[0.983s] -- Build files have been written to: /home/kcg/copy/ROS2Sample/build/autoware_auto_msgs
+[0.988s] Invoked command in '/home/kcg/copy/ROS2Sample/build/autoware_auto_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/kcg/copy/ROS2Sample/src/msgs/autoware_auto_msgs -DCMAKE_INSTALL_PREFIX=/home/kcg/copy/ROS2Sample/install/autoware_auto_msgs
+[0.990s] Invoking command in '/home/kcg/copy/ROS2Sample/build/autoware_auto_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/kcg/copy/ROS2Sample/build/autoware_auto_msgs -- -j20 -l20
+[1.014s] [35m[1mScanning dependencies of target autoware_auto_msgs__cpp[0m
+[1.014s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.020s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.191s] [35m[1mScanning dependencies of target autoware_auto_msgs__rosidl_generator_c[0m
+[1.197s] [  6%] Built target autoware_auto_msgs__cpp
+[1.198s] [  9%] [32mBuilding C object CMakeFiles/autoware_auto_msgs__rosidl_generator_c.dir/rosidl_generator_c/autoware_auto_msgs/msg/detail/vehicle_control_command__functions.c.o[0m
+[1.203s] [ 19%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.203s] [ 19%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.203s] [ 19%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.221s] [ 22%] [32m[1mLinking C shared library libautoware_auto_msgs__rosidl_generator_c.so[0m
+[1.244s] [ 22%] Built target autoware_auto_msgs__rosidl_generator_c
+[1.251s] [ 25%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.254s] [ 29%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.367s] [35m[1mScanning dependencies of target autoware_auto_msgs__rosidl_typesupport_cpp[0m
+[1.375s] [ 32%] [32mBuilding CXX object CMakeFiles/autoware_auto_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_auto_msgs/msg/vehicle_control_command__type_support.cpp.o[0m
+[1.383s] [35m[1mScanning dependencies of target autoware_auto_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[1.391s] [ 35%] [32mBuilding CXX object CMakeFiles/autoware_auto_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_auto_msgs/msg/detail/dds_fastrtps/vehicle_control_command__type_support.cpp.o[0m
+[1.416s] [35m[1mScanning dependencies of target autoware_auto_msgs__rosidl_typesupport_c[0m
+[1.423s] [ 38%] [32mBuilding CXX object CMakeFiles/autoware_auto_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/autoware_auto_msgs/msg/vehicle_control_command__type_support.cpp.o[0m
+[1.428s] [35m[1mScanning dependencies of target autoware_auto_msgs__rosidl_typesupport_introspection_c[0m
+[1.435s] [ 41%] [32mBuilding C object CMakeFiles/autoware_auto_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autoware_auto_msgs/msg/detail/vehicle_control_command__type_support.c.o[0m
+[1.442s] [ 45%] [32m[1mLinking CXX shared library libautoware_auto_msgs__rosidl_typesupport_c.so[0m
+[1.456s] [ 48%] [32m[1mLinking C shared library libautoware_auto_msgs__rosidl_typesupport_introspection_c.so[0m
+[1.456s] [35m[1mScanning dependencies of target autoware_auto_msgs__rosidl_typesupport_introspection_cpp[0m
+[1.463s] [ 51%] [32mBuilding CXX object CMakeFiles/autoware_auto_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_auto_msgs/msg/detail/vehicle_control_command__type_support.cpp.o[0m
+[1.468s] [ 51%] Built target autoware_auto_msgs__rosidl_typesupport_c
+[1.475s] [ 51%] Built target autoware_auto_msgs__rosidl_typesupport_introspection_c
+[1.559s] [ 54%] [32m[1mLinking CXX shared library libautoware_auto_msgs__rosidl_typesupport_cpp.so[0m
+[1.584s] [ 54%] Built target autoware_auto_msgs__rosidl_typesupport_cpp
+[1.646s] [ 58%] [32m[1mLinking CXX shared library libautoware_auto_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[1.657s] [ 61%] [32m[1mLinking CXX shared library libautoware_auto_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[1.682s] [ 61%] Built target autoware_auto_msgs__rosidl_typesupport_introspection_cpp
+[1.706s] [ 61%] Built target autoware_auto_msgs__rosidl_typesupport_fastrtps_cpp
+[1.711s] [ 64%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.882s] [35m[1mScanning dependencies of target autoware_auto_msgs__rosidl_typesupport_fastrtps_c[0m
+[1.890s] [ 67%] [32mBuilding CXX object CMakeFiles/autoware_auto_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_auto_msgs/msg/detail/vehicle_control_command__type_support_c.cpp.o[0m
+[2.116s] [ 70%] [32m[1mLinking CXX shared library libautoware_auto_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[2.165s] [ 70%] Built target autoware_auto_msgs__rosidl_typesupport_fastrtps_c
+[2.170s] [35m[1mScanning dependencies of target autoware_auto_msgs[0m
+[2.176s] [ 70%] Built target autoware_auto_msgs
+[2.181s] [35m[1mScanning dependencies of target autoware_auto_msgs__py[0m
+[2.187s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[2.491s] [ 74%] Built target autoware_auto_msgs__py
+[2.497s] [35m[1mScanning dependencies of target autoware_auto_msgs__python[0m
+[2.508s] [ 77%] [32mBuilding C object CMakeFiles/autoware_auto_msgs__python.dir/rosidl_generator_py/autoware_auto_msgs/msg/_vehicle_control_command_s.c.o[0m
+[2.562s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/autoware_auto_msgs/libautoware_auto_msgs__python.so[0m
+[2.586s] [ 80%] Built target autoware_auto_msgs__python
+[2.593s] [35m[1mScanning dependencies of target autoware_auto_msgs__rosidl_typesupport_c__pyext[0m
+[2.593s] [35m[1mScanning dependencies of target autoware_auto_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[2.593s] [35m[1mScanning dependencies of target autoware_auto_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[2.602s] [ 90%] [32mBuilding C object CMakeFiles/autoware_auto_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/autoware_auto_msgs/_autoware_auto_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[2.602s] [ 90%] [32mBuilding C object CMakeFiles/autoware_auto_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/autoware_auto_msgs/_autoware_auto_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[2.602s] [ 90%] [32mBuilding C object CMakeFiles/autoware_auto_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/autoware_auto_msgs/_autoware_auto_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[2.649s] [100%] [32m[1mLinking C shared library rosidl_generator_py/autoware_auto_msgs/autoware_auto_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[2.649s] [100%] [32m[1mLinking C shared library rosidl_generator_py/autoware_auto_msgs/autoware_auto_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[2.649s] [100%] [32m[1mLinking CXX shared library rosidl_generator_py/autoware_auto_msgs/autoware_auto_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
+[2.671s] [100%] Built target autoware_auto_msgs__rosidl_typesupport_introspection_c__pyext
+[2.671s] [100%] Built target autoware_auto_msgs__rosidl_typesupport_c__pyext
+[2.688s] [100%] Built target autoware_auto_msgs__rosidl_typesupport_fastrtps_c__pyext
+[2.696s] Invoked command in '/home/kcg/copy/ROS2Sample/build/autoware_auto_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/kcg/copy/ROS2Sample/build/autoware_auto_msgs -- -j20 -l20
+[2.722s] Invoking command in '/home/kcg/copy/ROS2Sample/build/autoware_auto_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/kcg/copy/ROS2Sample/build/autoware_auto_msgs
+[2.726s] -- Install configuration: ""
+[2.727s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/share/ament_index/resource_index/rosidl_interfaces/autoware_auto_msgs
+[2.727s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs
+[2.727s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg
+[2.727s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/vehicle_control_command.h
+[2.727s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/rosidl_generator_c__visibility_control.h
+[2.727s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail
+[2.727s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__type_support.h
+[2.727s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__functions.c
+[2.727s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__struct.h
+[2.727s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__functions.h
+[2.727s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/environment/library_path.sh
+[2.727s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/environment/library_path.dsv
+[2.727s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_generator_c.so
+[2.727s] -- Set runtime path of "/home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_generator_c.so" to ""
+[2.728s] -- Up-to-date: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs
+[2.728s] -- Up-to-date: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg
+[2.728s] -- Up-to-date: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail
+[2.728s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__rosidl_typesupport_fastrtps_c.h
+[2.728s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.728s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_fastrtps_c.so
+[2.728s] -- Set runtime path of "/home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[2.728s] -- Up-to-date: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs
+[2.728s] -- Up-to-date: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg
+[2.728s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.728s] -- Up-to-date: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail
+[2.728s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__rosidl_typesupport_fastrtps_cpp.hpp
+[2.728s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/dds_fastrtps
+[2.728s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_fastrtps_cpp.so
+[2.728s] -- Set runtime path of "/home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[2.729s] -- Up-to-date: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs
+[2.729s] -- Up-to-date: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg
+[2.729s] -- Up-to-date: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail
+[2.729s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__type_support.c
+[2.729s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__rosidl_typesupport_introspection_c.h
+[2.729s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.729s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_introspection_c.so
+[2.729s] -- Set runtime path of "/home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_introspection_c.so" to ""
+[2.729s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_c.so
+[2.729s] -- Set runtime path of "/home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_c.so" to ""
+[2.729s] -- Up-to-date: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs
+[2.729s] -- Up-to-date: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg
+[2.729s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/vehicle_control_command.hpp
+[2.729s] -- Up-to-date: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail
+[2.730s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__builder.hpp
+[2.730s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__struct.hpp
+[2.730s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__traits.hpp
+[2.730s] -- Up-to-date: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs
+[2.730s] -- Up-to-date: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg
+[2.730s] -- Up-to-date: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail
+[2.730s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__rosidl_typesupport_introspection_cpp.hpp
+[2.730s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__type_support.cpp
+[2.730s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_introspection_cpp.so
+[2.730s] -- Set runtime path of "/home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[2.730s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_cpp.so
+[2.730s] -- Set runtime path of "/home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_cpp.so" to ""
+[2.730s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/environment/pythonpath.sh
+[2.730s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/environment/pythonpath.dsv
+[2.731s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/__init__.py
+[2.750s] Compiling '/home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/__init__.py'...
+[2.752s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/msg
+[2.752s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/msg/__init__.py
+[2.752s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/msg/_vehicle_control_command_s.c
+[2.752s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/msg/_vehicle_control_command.py
+[2.752s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/autoware_auto_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[2.752s] -- Set runtime path of "/home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/autoware_auto_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""
+[2.753s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/autoware_auto_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[2.753s] -- Set runtime path of "/home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/autoware_auto_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""
+[2.753s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/autoware_auto_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[2.753s] -- Set runtime path of "/home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/autoware_auto_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""
+[2.753s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/lib/libautoware_auto_msgs__python.so
+[2.753s] -- Set runtime path of "/home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/lib/libautoware_auto_msgs__python.so" to ""
+[2.753s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/msg/VehicleControlCommand.idl
+[2.754s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/share/ament_index/resource_index/package_run_dependencies/autoware_auto_msgs
+[2.754s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/share/ament_index/resource_index/parent_prefix_path/autoware_auto_msgs
+[2.754s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/environment/ament_prefix_path.sh
+[2.754s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/environment/ament_prefix_path.dsv
+[2.754s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/environment/path.sh
+[2.754s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/environment/path.dsv
+[2.754s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/local_setup.bash
+[2.754s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/local_setup.sh
+[2.754s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/local_setup.zsh
+[2.754s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/local_setup.dsv
+[2.754s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/package.dsv
+[2.754s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/share/ament_index/resource_index/packages/autoware_auto_msgs
+[2.754s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_generator_cExport.cmake
+[2.755s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_generator_cExport-noconfig.cmake
+[2.755s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_typesupport_introspection_cExport.cmake
+[2.755s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.755s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_typesupport_cExport.cmake
+[2.755s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[2.755s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_generator_cppExport.cmake
+[2.755s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[2.755s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.755s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_typesupport_cppExport.cmake
+[2.755s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[2.756s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/rosidl_cmake-extras.cmake
+[2.756s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.756s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[2.756s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[2.756s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.756s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.756s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.756s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgsConfig.cmake
+[2.756s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgsConfig-version.cmake
+[2.756s] -- Installing: /home/kcg/copy/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/package.xml
+[2.759s] Invoked command in '/home/kcg/copy/ROS2Sample/build/autoware_auto_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/kcg/copy/ROS2Sample/build/autoware_auto_msgs

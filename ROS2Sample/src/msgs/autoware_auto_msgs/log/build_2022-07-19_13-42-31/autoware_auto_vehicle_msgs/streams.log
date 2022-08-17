@@ -1,0 +1,34 @@
+[0.017s] Invoking command in '/home/kcg/copy/idan_driver_ws/idan_driver/autoware_auto_msgs/autoware_auto_vehicle_msgs/build/autoware_auto_vehicle_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/kcg/copy/idan_driver_ws/idan_driver/autoware_auto_msgs/autoware_auto_vehicle_msgs -DCMAKE_INSTALL_PREFIX=/home/kcg/copy/idan_driver_ws/idan_driver/autoware_auto_msgs/autoware_auto_vehicle_msgs/install/autoware_auto_vehicle_msgs
+[0.050s] -- The C compiler identification is GNU 9.4.0
+[0.083s] -- The CXX compiler identification is GNU 9.4.0
+[0.086s] -- Check for working C compiler: /usr/bin/cc
+[0.133s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.134s] -- Detecting C compiler ABI info
+[0.179s] -- Detecting C compiler ABI info - done
+[0.190s] -- Detecting C compile features
+[0.190s] -- Detecting C compile features - done
+[0.192s] -- Check for working CXX compiler: /usr/bin/c++
+[0.258s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.259s] -- Detecting CXX compiler ABI info
+[0.327s] -- Detecting CXX compiler ABI info - done
+[0.335s] -- Detecting CXX compile features
+[0.336s] -- Detecting CXX compile features - done
+[0.337s] -- Found ament_cmake_auto: 0.9.9 (/opt/ros/foxy/share/ament_cmake_auto/cmake)
+[0.354s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.354s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.552s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.555s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.611s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.630s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.679s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.726s] CMake Error at /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:162 (message):
+[0.726s]   rosidl_generate_interfaces() the passed dependency
+[0.726s]   'autoware_auto_planning_msgs' has not been found before using
+[0.726s]   find_package()
+[0.726s] Call Stack (most recent call first):
+[0.726s]   CMakeLists.txt:11 (rosidl_generate_interfaces)
+[0.726s] 
+[0.726s] 
+[0.727s] -- Configuring incomplete, errors occurred!
+[0.727s] See also "/home/kcg/copy/idan_driver_ws/idan_driver/autoware_auto_msgs/autoware_auto_vehicle_msgs/build/autoware_auto_vehicle_msgs/CMakeFiles/CMakeOutput.log".
+[0.731s] Invoked command in '/home/kcg/copy/idan_driver_ws/idan_driver/autoware_auto_msgs/autoware_auto_vehicle_msgs/build/autoware_auto_vehicle_msgs' returned '1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/kcg/copy/idan_driver_ws/idan_driver/autoware_auto_msgs/autoware_auto_vehicle_msgs -DCMAKE_INSTALL_PREFIX=/home/kcg/copy/idan_driver_ws/idan_driver/autoware_auto_msgs/autoware_auto_vehicle_msgs/install/autoware_auto_vehicle_msgs

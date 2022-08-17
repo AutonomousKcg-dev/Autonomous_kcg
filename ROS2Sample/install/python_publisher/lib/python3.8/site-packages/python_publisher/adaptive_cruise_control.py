@@ -25,6 +25,9 @@ from .controllerPID import PID
 from .submodules.Pure_Pursuit import *
 from .submodules.switch_cognata import *
 
+from autoware_auto_msgs.msg import VehicleControlCommand
+from additional_msgs.msg import CanPacket
+
 # Google Earth
 from simplekml import Kml
 from pydrive.auth import GoogleAuth
@@ -124,6 +127,8 @@ class adaptive_cruise_control(Node):
             GPSAdditionalData, "/cognataSDK/GPS/info/CognataGPS0002", self.GPScb, 10)  # GPS Listener
         self.GPSnavPoint = self.create_subscription(
             NavSatFix, "cognataSDK/GPS/navsat/CognataGPS0002", self.GPScb_nav, 10)  # GPS Point listener
+        self.Idan_driver_listener = self.create_subscription(
+            VehicleControlCommand, "/vehicle_command_feedback", self.idan_vehicle_cb, 10)   # Idan driver - listener 
 
         # publishers
         self.car_cmd_publisher_steer = self.create_publisher(
@@ -134,6 +139,8 @@ class adaptive_cruise_control(Node):
             Float32, '/cognataSDK/car_command/brake_cmd', 10)
         self.car_cmd_publisher_gas = self.create_publisher(
             Float32, '/cognataSDK/car_command/gas_cmd', 10)
+        self.Idan_driver_sender = self.create_publisher(
+            VehicleControlCommand, "raw_command", 10)       # idan driver - sender
 
         # pure pursuit algo
         # cy, cx = get_path(
@@ -245,6 +252,19 @@ class adaptive_cruise_control(Node):
                     self.front_padasterian.velocity_y = padestrian.description.motion.angular.z
                     self.front_padasterian.id = idx
 
+
+    #####################################
+    ## Idan driver listener call back ###
+    #####################################
+
+    def idan_vehicle_cb(self, msg : VehicleControlCommand):
+        """
+            this method receive information about the state of the vehicle 
+            after the last command has been sent
+        """
+        print(msg)
+    
+
     # Pull Front Car
 
     def get_front_car(self):
@@ -329,6 +349,7 @@ class adaptive_cruise_control(Node):
         #####################################################
         gas_msg = Float32()
         brake_msg = Float32()
+        idan_msg = VehicleControlCommand()
 
         max_speed = 30.0
 
@@ -337,22 +358,28 @@ class adaptive_cruise_control(Node):
             if self.ego_car_speed > max_speed:
                 gas_msg.data = 0.0
                 brake_msg.data = 0.0
+                idan_msg.long_accel_mps2 = 0.0
             elif max_speed - 10 < self.ego_car_speed < max_speed:
                 gas_msg.data = output * 0.7
                 brake_msg.data = 0.0
+                idan_msg.long_accel_mps2 = output * 0.7
             else:
                 gas_msg.data = output
                 brake_msg.data = 0.0
+                idan_msg.long_accel_mps2 = output
         else:
             if self.switch.changing_lane:
                 gas_msg.data = 0.05
                 brake_msg.data = 0.0
+                idan_msg.long_accel_mps2 = 0.05
             else:
                 gas_msg.data = 0.0
                 brake_msg.data = -(output)
+                idan_msg.long_accel_mps2 = -(output)
 
         self.car_cmd_publisher_gas.publish(gas_msg)
         self.car_cmd_publisher_brake.publish(brake_msg)
+        
 
         #####################################################
         # wheel Control
@@ -363,7 +390,10 @@ class adaptive_cruise_control(Node):
             msg.data = output_w / 2.0
         else:
             msg.data = output_w * 0.7       # making the steer softer
+        idan_msg.front_wheel_angle_rad = (msg.data * 450) * (math.pi/180)
         self.car_cmd_publisher_steer.publish(msg)
+        print(idan_msg)
+        self.Idan_driver_sender.publish(idan_msg)
 
     def change_lane(self):
         print("CHANGING_LANE")
@@ -400,8 +430,10 @@ class adaptive_cruise_control(Node):
         msg_brake = Float32()
         msg_gas.data = 0.0
         msg_brake.data = 1.0
+        idan_msg = CanPacket
         self.car_cmd_publisher_brake.publish(msg_brake)
         self.car_cmd_publisher_gas.publish(msg_gas)
+        
 
     def stop_pedestrian(self):
         print("STOP_PED")

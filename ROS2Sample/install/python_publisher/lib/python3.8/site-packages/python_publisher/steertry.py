@@ -19,6 +19,8 @@ import datetime
 from sensor_msgs.msg import Joy
 from std_msgs.msg import Float32
 from python_publisher.adaptive_cruise_control import adaptive_cruise_control
+from additional_msgs.msg import CanPacket
+from autoware_auto_msgs.msg import VehicleControlCommand
 
 
 ########################################################################################################
@@ -43,6 +45,8 @@ class MinimalPublisher(Node):
             Float32, '/cognataSDK/car_command/brake_cmd', 10)
         self.car_cmd_publisher_gas = self.create_publisher(
             Float32, '/cognataSDK/car_command/gas_cmd', 10)
+        self.idan_driver_pub = self.create_publisher(
+            VehicleControlCommand, '/raw_command', 10)
 
         # timer
         timer_period = 0.1  # seconds
@@ -53,6 +57,7 @@ class MinimalPublisher(Node):
         self.car_cmd_steer = Float32()
         self.car_cmd_gas = Float32()
         self.car_cmd_brake = Float32()
+        self.idan_msg = VehicleControlCommand()
         self.pub = False
 
     def timer_callback(self):
@@ -61,6 +66,8 @@ class MinimalPublisher(Node):
             self.car_cmd_publisher_brake.publish(self.car_cmd_brake)
             self.car_cmd_publisher_steer.publish(self.car_cmd_steer)
             self.car_cmd_publisher_gas.publish(self.car_cmd_gas)
+            self.idan_driver_pub.publish(self.idan_msg)
+            
 
     def joy_callback(self, message: Joy):
         # recieve
@@ -69,7 +76,11 @@ class MinimalPublisher(Node):
         self.car_cmd_steer.data = -1 * message.axes[0]
         self.car_cmd_gas.data = (1 + message.axes[2]) / 2
         self.car_cmd_brake.data = (1 + message.axes[3]) / 2
-
+        self.idan_msg.front_wheel_angle_rad = self.car_cmd_steer.data* (450/180)
+        if self.car_cmd_gas.data > self.car_cmd_brake.data:
+            self.idan_msg.long_accel_mps2 = self.car_cmd_gas.data
+        else:
+            self.idan_msg.long_accel_mps2 = self.car_cmd_brake.data
 
 def main(args=None):
     rclpy.init(args=args)

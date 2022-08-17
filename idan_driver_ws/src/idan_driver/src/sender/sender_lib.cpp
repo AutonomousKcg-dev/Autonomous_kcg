@@ -49,12 +49,12 @@ void convertIdanData::convert_to_idan(sendingData * sData, unsigned char idan_sD
 	if (i_acc > acc_max)
 	{
 		std::cout << "i_acc > acc_max\n";
-		i_acc = steer_max;
+		i_acc = acc_max;
 	}	
 	if (i_acc < acc_min)
 	{
 		std::cout << "i_acc < acc_min\n";
-		i_steer = steer_min;
+		i_steer = acc_min;
 	}
 	//std::cout << "send - acc: " << sData->acc << " raw: " << i_acc << '\n';
 	//i_acc = 400;
@@ -64,9 +64,9 @@ void convertIdanData::convert_to_idan(sendingData * sData, unsigned char idan_sD
 		idan_sData[7] = 0x5A;
      
 	 
-	/*for (int i = 0; i < 8; i++)
+	for (int i = 0; i < 8; i++)
 		printf("%X,", idan_sData[i]);
-	printf("\n");*/
+	printf("\n");
 	return;
 
 }
