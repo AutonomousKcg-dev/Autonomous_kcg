@@ -1,4 +1,0 @@
-msg/HADMapBin.idl
-msg/HADMapSegment.idl
-msg/MapPrimitive.idl
-srv/HADMapService.idl

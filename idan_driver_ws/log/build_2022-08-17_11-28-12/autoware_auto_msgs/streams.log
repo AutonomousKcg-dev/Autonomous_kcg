@@ -1,0 +1,203 @@
+[0.009s] Invoking command in '/home/kcg/copy/idan_driver_ws/build/autoware_auto_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/kcg/copy/idan_driver_ws/build/autoware_auto_msgs -- -j20 -l20
+[0.024s] -- Found ament_cmake_auto: 0.9.9 (/opt/ros/foxy/share/ament_cmake_auto/cmake)
+[0.039s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.039s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.198s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.201s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.280s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.339s] -- Found ament_cmake_cppcheck: 0.9.6 (/opt/ros/foxy/share/ament_cmake_cppcheck/cmake)
+[0.339s] -- Found ament_cmake_cpplint: 0.9.6 (/opt/ros/foxy/share/ament_cmake_cpplint/cmake)
+[0.339s] -- Found ament_cmake_uncrustify: 0.9.6 (/opt/ros/foxy/share/ament_cmake_uncrustify/cmake)
+[0.340s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[0.443s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.484s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.500s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[0.500s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[0.514s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.514s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[0.514s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[0.536s] -- Found ament_cmake_flake8: 0.9.6 (/opt/ros/foxy/share/ament_cmake_flake8/cmake)
+[0.536s] -- Found ament_cmake_pep257: 0.9.6 (/opt/ros/foxy/share/ament_cmake_pep257/cmake)
+[0.537s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.556s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.557s] -- Configured cppcheck include dirs: 
+[0.557s] -- Configured cppcheck exclude dirs and/or files: 
+[0.571s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.571s] -- Configured cpplint exclude dirs and/or files: 
+[0.585s] -- Added test 'uncrustify' to check C / C++ code style
+[0.585s] -- Configured uncrustify additional arguments: 
+[0.587s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.589s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[0.589s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.593s] -- Added test 'lint_cmake' to check CMake code style
+[0.595s] -- Added test 'xmllint' to check XML markup files
+[0.597s] -- Configuring done
+[0.621s] -- Generating done
+[0.625s] -- Build files have been written to: /home/kcg/copy/idan_driver_ws/build/autoware_auto_msgs
+[0.639s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[0.645s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[0.806s] [35m[1mScanning dependencies of target autoware_auto_msgs__rosidl_generator_c[0m
+[0.810s] [  6%] Built target autoware_auto_msgs__cpp
+[0.812s] [  9%] [32mBuilding C object CMakeFiles/autoware_auto_msgs__rosidl_generator_c.dir/rosidl_generator_c/autoware_auto_msgs/msg/detail/vehicle_control_command__functions.c.o[0m
+[0.817s] [ 12%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[0.817s] [ 16%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[0.817s] [ 19%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[0.835s] [ 22%] [32m[1mLinking C shared library libautoware_auto_msgs__rosidl_generator_c.so[0m
+[0.858s] [ 22%] Built target autoware_auto_msgs__rosidl_generator_c
+[0.864s] [ 29%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[0.864s] [ 29%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[0.971s] [35m[1mScanning dependencies of target autoware_auto_msgs__rosidl_typesupport_cpp[0m
+[0.978s] [ 32%] [32mBuilding CXX object CMakeFiles/autoware_auto_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_auto_msgs/msg/vehicle_control_command__type_support.cpp.o[0m
+[0.982s] [35m[1mScanning dependencies of target autoware_auto_msgs__rosidl_typesupport_introspection_cpp[0m
+[0.987s] [35m[1mScanning dependencies of target autoware_auto_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[0.989s] [ 35%] [32mBuilding CXX object CMakeFiles/autoware_auto_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_auto_msgs/msg/detail/vehicle_control_command__type_support.cpp.o[0m
+[0.994s] [ 38%] [32mBuilding CXX object CMakeFiles/autoware_auto_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_auto_msgs/msg/detail/dds_fastrtps/vehicle_control_command__type_support.cpp.o[0m
+[1.022s] [35m[1mScanning dependencies of target autoware_auto_msgs__rosidl_typesupport_c[0m
+[1.028s] [ 41%] [32mBuilding CXX object CMakeFiles/autoware_auto_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/autoware_auto_msgs/msg/vehicle_control_command__type_support.cpp.o[0m
+[1.032s] [35m[1mScanning dependencies of target autoware_auto_msgs__rosidl_typesupport_introspection_c[0m
+[1.040s] [ 45%] [32mBuilding C object CMakeFiles/autoware_auto_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autoware_auto_msgs/msg/detail/vehicle_control_command__type_support.c.o[0m
+[1.046s] [ 48%] [32m[1mLinking CXX shared library libautoware_auto_msgs__rosidl_typesupport_c.so[0m
+[1.060s] [ 51%] [32m[1mLinking C shared library libautoware_auto_msgs__rosidl_typesupport_introspection_c.so[0m
+[1.071s] [ 51%] Built target autoware_auto_msgs__rosidl_typesupport_c
+[1.078s] [ 51%] Built target autoware_auto_msgs__rosidl_typesupport_introspection_c
+[1.157s] [ 54%] [32m[1mLinking CXX shared library libautoware_auto_msgs__rosidl_typesupport_cpp.so[0m
+[1.171s] [ 58%] [32m[1mLinking CXX shared library libautoware_auto_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[1.181s] [ 58%] Built target autoware_auto_msgs__rosidl_typesupport_cpp
+[1.206s] [ 58%] Built target autoware_auto_msgs__rosidl_typesupport_introspection_cpp
+[1.255s] [ 61%] [32m[1mLinking CXX shared library libautoware_auto_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[1.304s] [ 61%] Built target autoware_auto_msgs__rosidl_typesupport_fastrtps_cpp
+[1.310s] [ 64%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.470s] [35m[1mScanning dependencies of target autoware_auto_msgs__rosidl_typesupport_fastrtps_c[0m
+[1.477s] [ 67%] [32mBuilding CXX object CMakeFiles/autoware_auto_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_auto_msgs/msg/detail/vehicle_control_command__type_support_c.cpp.o[0m
+[1.685s] [ 70%] [32m[1mLinking CXX shared library libautoware_auto_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[1.733s] [ 70%] Built target autoware_auto_msgs__rosidl_typesupport_fastrtps_c
+[1.738s] [35m[1mScanning dependencies of target autoware_auto_msgs[0m
+[1.744s] [ 70%] Built target autoware_auto_msgs
+[1.749s] [35m[1mScanning dependencies of target autoware_auto_msgs__py[0m
+[1.755s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[2.044s] [ 74%] Built target autoware_auto_msgs__py
+[2.050s] [35m[1mScanning dependencies of target autoware_auto_msgs__python[0m
+[2.059s] [ 77%] [32mBuilding C object CMakeFiles/autoware_auto_msgs__python.dir/rosidl_generator_py/autoware_auto_msgs/msg/_vehicle_control_command_s.c.o[0m
+[2.111s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/autoware_auto_msgs/libautoware_auto_msgs__python.so[0m
+[2.135s] [ 80%] Built target autoware_auto_msgs__python
+[2.141s] [35m[1mScanning dependencies of target autoware_auto_msgs__rosidl_typesupport_c__pyext[0m
+[2.141s] [35m[1mScanning dependencies of target autoware_auto_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[2.141s] [35m[1mScanning dependencies of target autoware_auto_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[2.151s] [ 83%] [32mBuilding C object CMakeFiles/autoware_auto_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/autoware_auto_msgs/_autoware_auto_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[2.151s] [ 87%] [32mBuilding C object CMakeFiles/autoware_auto_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/autoware_auto_msgs/_autoware_auto_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[2.151s] [ 90%] [32mBuilding C object CMakeFiles/autoware_auto_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/autoware_auto_msgs/_autoware_auto_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[2.201s] [100%] [32m[1mLinking C shared library rosidl_generator_py/autoware_auto_msgs/autoware_auto_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[2.202s] [100%] [32m[1mLinking C shared library rosidl_generator_py/autoware_auto_msgs/autoware_auto_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[2.202s] [100%] [32m[1mLinking CXX shared library rosidl_generator_py/autoware_auto_msgs/autoware_auto_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
+[2.223s] [100%] Built target autoware_auto_msgs__rosidl_typesupport_introspection_c__pyext
+[2.223s] [100%] Built target autoware_auto_msgs__rosidl_typesupport_c__pyext
+[2.241s] [100%] Built target autoware_auto_msgs__rosidl_typesupport_fastrtps_c__pyext
+[2.249s] Invoked command in '/home/kcg/copy/idan_driver_ws/build/autoware_auto_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/kcg/copy/idan_driver_ws/build/autoware_auto_msgs -- -j20 -l20
+[2.274s] Invoking command in '/home/kcg/copy/idan_driver_ws/build/autoware_auto_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/kcg/copy/idan_driver_ws/build/autoware_auto_msgs
+[2.278s] -- Install configuration: ""
+[2.278s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/share/ament_index/resource_index/rosidl_interfaces/autoware_auto_msgs
+[2.279s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs
+[2.279s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg
+[2.279s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/vehicle_control_command.h
+[2.279s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/rosidl_generator_c__visibility_control.h
+[2.279s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail
+[2.279s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__type_support.h
+[2.279s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__functions.c
+[2.279s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__struct.h
+[2.279s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__functions.h
+[2.279s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/environment/library_path.sh
+[2.279s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/environment/library_path.dsv
+[2.279s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_generator_c.so
+[2.279s] -- Set runtime path of "/home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_generator_c.so" to ""
+[2.279s] -- Up-to-date: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs
+[2.280s] -- Up-to-date: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg
+[2.280s] -- Up-to-date: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail
+[2.280s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__rosidl_typesupport_fastrtps_c.h
+[2.280s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.280s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_fastrtps_c.so
+[2.280s] -- Set runtime path of "/home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[2.280s] -- Up-to-date: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs
+[2.280s] -- Up-to-date: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg
+[2.280s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.280s] -- Up-to-date: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail
+[2.280s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__rosidl_typesupport_fastrtps_cpp.hpp
+[2.280s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/dds_fastrtps
+[2.280s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_fastrtps_cpp.so
+[2.280s] -- Set runtime path of "/home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[2.281s] -- Up-to-date: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs
+[2.281s] -- Up-to-date: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg
+[2.281s] -- Up-to-date: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail
+[2.281s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__type_support.c
+[2.281s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__rosidl_typesupport_introspection_c.h
+[2.281s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.281s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_introspection_c.so
+[2.281s] -- Set runtime path of "/home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_introspection_c.so" to ""
+[2.281s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_c.so
+[2.281s] -- Set runtime path of "/home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_c.so" to ""
+[2.281s] -- Up-to-date: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs
+[2.281s] -- Up-to-date: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg
+[2.281s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/vehicle_control_command.hpp
+[2.281s] -- Up-to-date: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail
+[2.281s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__builder.hpp
+[2.282s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__struct.hpp
+[2.282s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__traits.hpp
+[2.282s] -- Up-to-date: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs
+[2.282s] -- Up-to-date: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg
+[2.282s] -- Up-to-date: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail
+[2.282s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__rosidl_typesupport_introspection_cpp.hpp
+[2.282s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__type_support.cpp
+[2.282s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_introspection_cpp.so
+[2.282s] -- Set runtime path of "/home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[2.282s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_cpp.so
+[2.282s] -- Set runtime path of "/home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_cpp.so" to ""
+[2.282s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/environment/pythonpath.sh
+[2.282s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/environment/pythonpath.dsv
+[2.282s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/__init__.py
+[2.301s] Compiling '/home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/__init__.py'...
+[2.304s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/msg
+[2.304s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/msg/__init__.py
+[2.304s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/msg/_vehicle_control_command_s.c
+[2.304s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/msg/_vehicle_control_command.py
+[2.304s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/autoware_auto_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[2.304s] -- Set runtime path of "/home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/autoware_auto_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""
+[2.304s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/autoware_auto_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[2.305s] -- Set runtime path of "/home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/autoware_auto_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""
+[2.305s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/autoware_auto_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[2.305s] -- Set runtime path of "/home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/autoware_auto_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""
+[2.305s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/lib/libautoware_auto_msgs__python.so
+[2.305s] -- Set runtime path of "/home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/lib/libautoware_auto_msgs__python.so" to ""
+[2.305s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/msg/VehicleControlCommand.idl
+[2.305s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/share/ament_index/resource_index/package_run_dependencies/autoware_auto_msgs
+[2.305s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/share/ament_index/resource_index/parent_prefix_path/autoware_auto_msgs
+[2.305s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/environment/ament_prefix_path.sh
+[2.306s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/environment/ament_prefix_path.dsv
+[2.306s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/environment/path.sh
+[2.306s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/environment/path.dsv
+[2.306s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/local_setup.bash
+[2.306s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/local_setup.sh
+[2.306s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/local_setup.zsh
+[2.306s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/local_setup.dsv
+[2.306s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/package.dsv
+[2.306s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/share/ament_index/resource_index/packages/autoware_auto_msgs
+[2.306s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_generator_cExport.cmake
+[2.306s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_generator_cExport-noconfig.cmake
+[2.306s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_typesupport_introspection_cExport.cmake
+[2.307s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.307s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_typesupport_cExport.cmake
+[2.307s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[2.307s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_generator_cppExport.cmake
+[2.307s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[2.307s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.307s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_typesupport_cppExport.cmake
+[2.307s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[2.307s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/rosidl_cmake-extras.cmake
+[2.307s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.308s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[2.308s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[2.308s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.308s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.308s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.308s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgsConfig.cmake
+[2.308s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgsConfig-version.cmake
+[2.308s] -- Installing: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/package.xml
+[2.311s] Invoked command in '/home/kcg/copy/idan_driver_ws/build/autoware_auto_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/kcg/copy/idan_driver_ws/build/autoware_auto_msgs
