@@ -20,12 +20,12 @@ ros2 run ros_g29_force_feedback g29_force_feedback
 ```
 
 4. open a new terminal
-5. cd to AlonBarak-dev/ros_ws
+5. cd AlonBarak-dev/ros_ws
 6. run the next command:
 ```ruby
 source install/setup.bash
 ```
-7. cd to src/ros-g29-force-feedback/script
+7. cd src/ros-g29-force-feedback/script
 8. run the next command:
 ```ruby
 python3 talker_shovalsus.py
@@ -81,7 +81,7 @@ ros2 run cognata_sdk_ros2 ROS2SDK 10.2.2.57 3056
 make sure the pkg -pyhton_publisher- is built
 #### Note: if usage is at the lab CPU - $ cd copy/
 
-1. cd to ROS2Sample/src
+1. cd ROS2Sample/src
 2. open a new terminal
 3. run the next command:
 ```ruby
@@ -103,9 +103,15 @@ ros2 run python_publisher acc
 3. source install/setup.bash
 - For recording a scenario:
   create an enviorment variable Named ACTION
- ```ruby
+  choose the lane to record
+```ruby
+ export LANE_ID=<lane_id>
+```
+ 
+```ruby
   export ACTION=RECORD
-  ```
+```
+
 - For playing a scenario:
   create an enviorment variable named ACTION
 ```ruby
@@ -119,23 +125,20 @@ ros2 run python_publisher rcc
 
 
 
-
-
-
 ### How to run the Idan driver
 
 1. cd copy/idan_driver_ws
 2. colcon build
 3. source install/setup.bash
-4. 
+4. run the next command: 
 ```ruby
 ros2 run idan_driver sender_exe
 ```
-5. 
+5. run the next command: 
 ```ruby
 ros2 run idan_driver listener_exe
 ```
-6. 
+6. run the next command: 
 ```ruby
 ros2 run idan_driver can_communication_titan_exe
 ```
