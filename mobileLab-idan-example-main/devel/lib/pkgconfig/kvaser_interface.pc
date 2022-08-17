@@ -1,8 +1,0 @@
-prefix=/home/omer/drive-by-wire-Code-Example/devel
-
-Name: kvaser_interface
-Description: Description of kvaser_interface
-Version: 4.1.0
-Cflags: -I/home/omer/drive-by-wire-Code-Example/src/kvaser_interface-master/include
-Libs: -L${prefix}/lib -lros_kvaser_interface
-Requires: roscpp can_msgs rospy

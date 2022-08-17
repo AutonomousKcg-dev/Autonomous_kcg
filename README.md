@@ -117,5 +117,41 @@ ros2 run python_publisher acc
 ros2 run python_publisher rcc
 ```
 
+
+
+
+
+
+### How to run the Idan driver
+
+1. cd copy/idan_driver_ws
+2. colcon build
+3. source install/setup.bash
+4. 
+```ruby
+ros2 run idan_driver sender_exe
+```
+5. 
+```ruby
+ros2 run idan_driver listener_exe
+```
+6. 
+```ruby
+ros2 run idan_driver can_communication_titan_exe
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Note: the path info is located into a file named - path.txt 
 
