@@ -1,9 +1,9 @@
 {
   "package_name": "autoware_auto_msgs",
-  "output_dir": "/home/kcg/copy/idan_driver_ws/build/autoware_auto_msgs/rosidl_generator_c/autoware_auto_msgs",
+  "output_dir": "/home/kcg/Autonomous_kcg/idan_driver_ws/build/autoware_auto_msgs/rosidl_generator_c/autoware_auto_msgs",
   "template_dir": "/opt/ros/foxy/share/rosidl_generator_c/cmake/../resource",
   "idl_tuples": [
-    "/home/kcg/copy/idan_driver_ws/src/msgs/autoware_auto_msgs:msg/VehicleControlCommand.idl"
+    "/home/kcg/Autonomous_kcg/idan_driver_ws/src/msgs/autoware_auto_msgs:msg/VehicleControlCommand.idl"
   ],
   "ros_interface_dependencies": [
     "builtin_interfaces:/opt/ros/foxy/share/builtin_interfaces/msg/Duration.idl",
@@ -53,7 +53,7 @@
     "/opt/ros/foxy/share/rosidl_generator_c/cmake/../resource/msg__struct.h.em",
     "/opt/ros/foxy/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
     "/opt/ros/foxy/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
-    "/home/kcg/copy/idan_driver_ws/src/msgs/autoware_auto_msgs/msg/VehicleControlCommand.idl",
+    "/home/kcg/Autonomous_kcg/idan_driver_ws/src/msgs/autoware_auto_msgs/msg/VehicleControlCommand.idl",
     "/opt/ros/foxy/share/builtin_interfaces/msg/Duration.idl",
     "/opt/ros/foxy/share/builtin_interfaces/msg/Time.idl",
     "/opt/ros/foxy/share/std_msgs/msg/Bool.idl",

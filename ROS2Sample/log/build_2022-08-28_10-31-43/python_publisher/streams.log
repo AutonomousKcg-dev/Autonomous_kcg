@@ -1,0 +1,29 @@
+[0.583s] Invoking command in '/home/kcg/Autonomous_kcg/ROS2Sample/src/python_publisher': PYTHONPATH=/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher/lib/python3.8/site-packages:/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/lib/python3.8/site-packages:/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/lib/python3.8/site-packages:/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/lib/python3.8/site-packages:/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher/lib/python3.8/site-packages:/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/lib/python3.8/site-packages:/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/lib/python3.8/site-packages:/home/kcg/Deliverables/colcon_workspace/install/tracked_object_msgs/lib/python3.8/site-packages:/home/kcg/Deliverables/colcon_workspace/install/tracked_lane_msgs/lib/python3.8/site-packages:/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs/lib/python3.8/site-packages:/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/python_publisher build --build-base /home/kcg/Autonomous_kcg/ROS2Sample/build/python_publisher/build install --prefix /home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher --record /home/kcg/Autonomous_kcg/ROS2Sample/build/python_publisher/install.log --single-version-externally-managed
+[0.772s] running egg_info
+[0.772s] writing ../../build/python_publisher/python_publisher.egg-info/PKG-INFO
+[0.773s] writing dependency_links to ../../build/python_publisher/python_publisher.egg-info/dependency_links.txt
+[0.773s] writing entry points to ../../build/python_publisher/python_publisher.egg-info/entry_points.txt
+[0.773s] writing requirements to ../../build/python_publisher/python_publisher.egg-info/requires.txt
+[0.773s] writing top-level names to ../../build/python_publisher/python_publisher.egg-info/top_level.txt
+[0.802s] reading manifest file '../../build/python_publisher/python_publisher.egg-info/SOURCES.txt'
+[0.803s] writing manifest file '../../build/python_publisher/python_publisher.egg-info/SOURCES.txt'
+[0.803s] running build
+[0.803s] running build_py
+[0.803s] copying python_publisher/adaptive_cruise_control_vaya.py -> /home/kcg/Autonomous_kcg/ROS2Sample/build/python_publisher/build/lib/python_publisher
+[0.804s] running install
+[0.805s] running install_lib
+[0.806s] copying /home/kcg/Autonomous_kcg/ROS2Sample/build/python_publisher/build/lib/python_publisher/adaptive_cruise_control_vaya.py -> /home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher
+[0.807s] byte-compiling /home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher/adaptive_cruise_control_vaya.py to adaptive_cruise_control_vaya.cpython-38.pyc
+[0.810s] running install_data
+[0.810s] running install_egg_info
+[0.812s] removing '/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher-0.0.0-py3.8.egg-info' (and everything under it)
+[0.812s] Copying ../../build/python_publisher/python_publisher.egg-info to /home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher/lib/python3.8/site-packages/python_publisher-0.0.0-py3.8.egg-info
+[0.813s] running install_scripts
+[0.827s] Installing acc script to /home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher/lib/python_publisher
+[0.827s] Installing acc_vaya script to /home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher/lib/python_publisher
+[0.828s] Installing gev script to /home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher/lib/python_publisher
+[0.828s] Installing pid script to /home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher/lib/python_publisher
+[0.828s] Installing publisher script to /home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher/lib/python_publisher
+[0.828s] Installing rcc script to /home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher/lib/python_publisher
+[0.829s] writing list of installed files to '/home/kcg/Autonomous_kcg/ROS2Sample/build/python_publisher/install.log'
+[0.851s] Invoked command in '/home/kcg/Autonomous_kcg/ROS2Sample/src/python_publisher' returned '0': PYTHONPATH=/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher/lib/python3.8/site-packages:/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/lib/python3.8/site-packages:/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/lib/python3.8/site-packages:/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/lib/python3.8/site-packages:/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher/lib/python3.8/site-packages:/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/lib/python3.8/site-packages:/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/lib/python3.8/site-packages:/home/kcg/Deliverables/colcon_workspace/install/tracked_object_msgs/lib/python3.8/site-packages:/home/kcg/Deliverables/colcon_workspace/install/tracked_lane_msgs/lib/python3.8/site-packages:/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs/lib/python3.8/site-packages:/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/python_publisher build --build-base /home/kcg/Autonomous_kcg/ROS2Sample/build/python_publisher/build install --prefix /home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher --record /home/kcg/Autonomous_kcg/ROS2Sample/build/python_publisher/install.log --single-version-externally-managed

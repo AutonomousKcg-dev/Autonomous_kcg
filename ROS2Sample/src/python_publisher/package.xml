@@ -18,6 +18,8 @@
   <exec_depend>geometry_msgs</exec_depend>
   <exec_depend>cognata_sdk_ros2</exec_depend>
   <exec_depend>pydrive</exec_depend>
+  <exec_depend>tracked_lane_msgs</exec_depend>
+  <exec_depend>tracked_object_msgs</exec_depend>
 
   <export>
     <build_type>ament_python</build_type>

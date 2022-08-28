@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/kcg/copy/ROS2Sample/build/additional_msgs/rosidl_generator_py/additional_msgs/_additional_msgs_s.ep.rosidl_typesupport_introspection_c.c
+/home/kcg/Autonomous_kcg/ROS2Sample/build/additional_msgs/rosidl_generator_py/additional_msgs/_additional_msgs_s.ep.rosidl_typesupport_introspection_c.c
 Python.h
 -
 stdbool.h
@@ -14,19 +14,19 @@ stdbool.h
 stdint.h
 -
 rosidl_runtime_c/visibility_control.h
-/home/kcg/copy/ROS2Sample/build/additional_msgs/rosidl_generator_py/additional_msgs/rosidl_runtime_c/visibility_control.h
+/home/kcg/Autonomous_kcg/ROS2Sample/build/additional_msgs/rosidl_generator_py/additional_msgs/rosidl_runtime_c/visibility_control.h
 rosidl_runtime_c/message_type_support_struct.h
-/home/kcg/copy/ROS2Sample/build/additional_msgs/rosidl_generator_py/additional_msgs/rosidl_runtime_c/message_type_support_struct.h
+/home/kcg/Autonomous_kcg/ROS2Sample/build/additional_msgs/rosidl_generator_py/additional_msgs/rosidl_runtime_c/message_type_support_struct.h
 rosidl_runtime_c/service_type_support_struct.h
-/home/kcg/copy/ROS2Sample/build/additional_msgs/rosidl_generator_py/additional_msgs/rosidl_runtime_c/service_type_support_struct.h
+/home/kcg/Autonomous_kcg/ROS2Sample/build/additional_msgs/rosidl_generator_py/additional_msgs/rosidl_runtime_c/service_type_support_struct.h
 rosidl_runtime_c/action_type_support_struct.h
-/home/kcg/copy/ROS2Sample/build/additional_msgs/rosidl_generator_py/additional_msgs/rosidl_runtime_c/action_type_support_struct.h
+/home/kcg/Autonomous_kcg/ROS2Sample/build/additional_msgs/rosidl_generator_py/additional_msgs/rosidl_runtime_c/action_type_support_struct.h
 additional_msgs/msg/detail/can_packet__type_support.h
-/home/kcg/copy/ROS2Sample/build/additional_msgs/rosidl_generator_py/additional_msgs/additional_msgs/msg/detail/can_packet__type_support.h
+/home/kcg/Autonomous_kcg/ROS2Sample/build/additional_msgs/rosidl_generator_py/additional_msgs/additional_msgs/msg/detail/can_packet__type_support.h
 additional_msgs/msg/detail/can_packet__struct.h
-/home/kcg/copy/ROS2Sample/build/additional_msgs/rosidl_generator_py/additional_msgs/additional_msgs/msg/detail/can_packet__struct.h
+/home/kcg/Autonomous_kcg/ROS2Sample/build/additional_msgs/rosidl_generator_py/additional_msgs/additional_msgs/msg/detail/can_packet__struct.h
 additional_msgs/msg/detail/can_packet__functions.h
-/home/kcg/copy/ROS2Sample/build/additional_msgs/rosidl_generator_py/additional_msgs/additional_msgs/msg/detail/can_packet__functions.h
+/home/kcg/Autonomous_kcg/ROS2Sample/build/additional_msgs/rosidl_generator_py/additional_msgs/additional_msgs/msg/detail/can_packet__functions.h
 
 /opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.h
 stdbool.h

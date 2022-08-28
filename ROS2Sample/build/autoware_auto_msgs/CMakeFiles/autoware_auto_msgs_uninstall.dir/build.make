@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kcg/copy/ROS2Sample/src/msgs/autoware_auto_msgs
+CMAKE_SOURCE_DIR = /home/kcg/Autonomous_kcg/ROS2Sample/src/msgs/autoware_auto_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kcg/copy/ROS2Sample/build/autoware_auto_msgs
+CMAKE_BINARY_DIR = /home/kcg/Autonomous_kcg/ROS2Sample/build/autoware_auto_msgs
 
 # Utility rule file for autoware_auto_msgs_uninstall.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/kcg/copy/ROS2Sample/build/autoware_auto_msgs
 include CMakeFiles/autoware_auto_msgs_uninstall.dir/progress.make
 
 CMakeFiles/autoware_auto_msgs_uninstall:
-	/usr/bin/cmake -P /home/kcg/copy/ROS2Sample/build/autoware_auto_msgs/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/kcg/Autonomous_kcg/ROS2Sample/build/autoware_auto_msgs/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 autoware_auto_msgs_uninstall: CMakeFiles/autoware_auto_msgs_uninstall
 autoware_auto_msgs_uninstall: CMakeFiles/autoware_auto_msgs_uninstall.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/autoware_auto_msgs_uninstall.dir/clean:
 .PHONY : CMakeFiles/autoware_auto_msgs_uninstall.dir/clean
 
 CMakeFiles/autoware_auto_msgs_uninstall.dir/depend:
-	cd /home/kcg/copy/ROS2Sample/build/autoware_auto_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kcg/copy/ROS2Sample/src/msgs/autoware_auto_msgs /home/kcg/copy/ROS2Sample/src/msgs/autoware_auto_msgs /home/kcg/copy/ROS2Sample/build/autoware_auto_msgs /home/kcg/copy/ROS2Sample/build/autoware_auto_msgs /home/kcg/copy/ROS2Sample/build/autoware_auto_msgs/CMakeFiles/autoware_auto_msgs_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kcg/Autonomous_kcg/ROS2Sample/build/autoware_auto_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kcg/Autonomous_kcg/ROS2Sample/src/msgs/autoware_auto_msgs /home/kcg/Autonomous_kcg/ROS2Sample/src/msgs/autoware_auto_msgs /home/kcg/Autonomous_kcg/ROS2Sample/build/autoware_auto_msgs /home/kcg/Autonomous_kcg/ROS2Sample/build/autoware_auto_msgs /home/kcg/Autonomous_kcg/ROS2Sample/build/autoware_auto_msgs/CMakeFiles/autoware_auto_msgs_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/autoware_auto_msgs_uninstall.dir/depend
 

@@ -6,5 +6,5 @@ C_FLAGS = -fPIC   -Wall -std=gnu11
 
 C_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROS_PACKAGE_NAME=\"cognata_sdk_ros2\" -Dcognata_sdk_ros2__rosidl_generator_c_EXPORTS
 
-C_INCLUDES = -I/home/kcg/copy/ROS2Sample/build/cognata_sdk_ros2/rosidl_generator_c -isystem /opt/ros/foxy/include 
+C_INCLUDES = -I/home/kcg/Autonomous_kcg/ROS2Sample/build/cognata_sdk_ros2/rosidl_generator_c -isystem /opt/ros/foxy/include 
 

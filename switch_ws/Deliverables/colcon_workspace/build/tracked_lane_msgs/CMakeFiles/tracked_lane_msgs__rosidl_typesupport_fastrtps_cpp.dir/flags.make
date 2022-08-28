@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC   -Wall -Wextra -Wpedantic -std=gnu++14
 
 CXX_DEFINES = -DFOONATHAN_MEMORY=1 -DFOONATHAN_MEMORY_VERSION_MAJOR=0 -DFOONATHAN_MEMORY_VERSION_MINOR=7 -DFOONATHAN_MEMORY_VERSION_PATCH=1 -DRCUTILS_ENABLE_FAULT_INJECTION -DROS_PACKAGE_NAME=\"tracked_lane_msgs\" -Dtracked_lane_msgs__rosidl_typesupport_fastrtps_cpp_EXPORTS
 
-CXX_INCLUDES = -I/home/shovals/copy/switch_ws/Deliverables/colcon_workspace/build/tracked_lane_msgs/rosidl_generator_cpp -I/home/shovals/copy/switch_ws/Deliverables/colcon_workspace/build/tracked_lane_msgs/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/foxy/include -isystem /opt/ros/foxy/include/foonathan_memory 
+CXX_INCLUDES = -I/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/build/tracked_lane_msgs/rosidl_generator_cpp -I/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/build/tracked_lane_msgs/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/foxy/include -isystem /opt/ros/foxy/include/foonathan_memory 
 

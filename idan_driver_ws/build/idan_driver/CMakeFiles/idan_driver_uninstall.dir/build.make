@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kcg/copy/idan_driver_ws/src/idan_driver
+CMAKE_SOURCE_DIR = /home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kcg/copy/idan_driver_ws/build/idan_driver
+CMAKE_BINARY_DIR = /home/kcg/Autonomous_kcg/idan_driver_ws/build/idan_driver
 
 # Utility rule file for idan_driver_uninstall.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/kcg/copy/idan_driver_ws/build/idan_driver
 include CMakeFiles/idan_driver_uninstall.dir/progress.make
 
 CMakeFiles/idan_driver_uninstall:
-	/usr/bin/cmake -P /home/kcg/copy/idan_driver_ws/build/idan_driver/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/kcg/Autonomous_kcg/idan_driver_ws/build/idan_driver/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 idan_driver_uninstall: CMakeFiles/idan_driver_uninstall
 idan_driver_uninstall: CMakeFiles/idan_driver_uninstall.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/idan_driver_uninstall.dir/clean:
 .PHONY : CMakeFiles/idan_driver_uninstall.dir/clean
 
 CMakeFiles/idan_driver_uninstall.dir/depend:
-	cd /home/kcg/copy/idan_driver_ws/build/idan_driver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kcg/copy/idan_driver_ws/src/idan_driver /home/kcg/copy/idan_driver_ws/src/idan_driver /home/kcg/copy/idan_driver_ws/build/idan_driver /home/kcg/copy/idan_driver_ws/build/idan_driver /home/kcg/copy/idan_driver_ws/build/idan_driver/CMakeFiles/idan_driver_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kcg/Autonomous_kcg/idan_driver_ws/build/idan_driver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver /home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver /home/kcg/Autonomous_kcg/idan_driver_ws/build/idan_driver /home/kcg/Autonomous_kcg/idan_driver_ws/build/idan_driver /home/kcg/Autonomous_kcg/idan_driver_ws/build/idan_driver/CMakeFiles/idan_driver_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/idan_driver_uninstall.dir/depend
 

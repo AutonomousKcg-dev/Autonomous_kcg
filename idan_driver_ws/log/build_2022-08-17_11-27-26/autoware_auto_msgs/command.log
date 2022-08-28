@@ -1,2 +1,0 @@
-Invoking command in '/home/kcg/copy/idan_driver_ws/build/autoware_auto_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/kcg/copy/idan_driver_ws/build/autoware_auto_msgs -- -j20 -l20
-Invoked command in '/home/kcg/copy/idan_driver_ws/build/autoware_auto_msgs' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/kcg/copy/idan_driver_ws/build/autoware_auto_msgs -- -j20 -l20

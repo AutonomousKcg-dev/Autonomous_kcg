@@ -6,5 +6,5 @@ C_FLAGS = -fPIC   -Wall -Wextra
 
 C_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROS_PACKAGE_NAME=\"autoware_auto_msgs\" -Dautoware_auto_msgs__python_EXPORTS
 
-C_INCLUDES = -I/home/kcg/copy/idan_driver_ws/build/autoware_auto_msgs/rosidl_generator_c -I/home/kcg/copy/idan_driver_ws/build/autoware_auto_msgs/rosidl_generator_py -I/usr/include/python3.8 -I/home/kcg/copy/idan_driver_ws/build/autoware_auto_msgs/rosidl_typesupport_c -isystem /opt/ros/foxy/include 
+C_INCLUDES = -I/home/kcg/Autonomous_kcg/idan_driver_ws/build/autoware_auto_msgs/rosidl_generator_c -I/home/kcg/Autonomous_kcg/idan_driver_ws/build/autoware_auto_msgs/rosidl_generator_py -I/usr/include/python3.8 -I/home/kcg/Autonomous_kcg/idan_driver_ws/build/autoware_auto_msgs/rosidl_typesupport_c -isystem /opt/ros/foxy/include 
 

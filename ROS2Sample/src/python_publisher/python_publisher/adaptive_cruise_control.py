@@ -29,9 +29,9 @@ from autoware_auto_msgs.msg import VehicleControlCommand
 from additional_msgs.msg import CanPacket
 
 # Google Earth
-from simplekml import Kml
-from pydrive.auth import GoogleAuth
-from pydrive.drive import GoogleDrive
+# from simplekml import Kml
+# from pydrive.auth import GoogleAuth
+# from pydrive.drive import GoogleDrive
 
 
 fig, ax = plt.subplots()
@@ -343,6 +343,15 @@ class adaptive_cruise_control(Node):
             self.switch.changing_lane = False
             print("changed lane")
         
+        msg = Float32()
+        if self.switch.changing_lane:
+            msg.data = output_w / 2.0
+        else:
+            msg.data = output_w * 0.7       # making the steer softer
+        idan_msg.front_wheel_angle_rad = (msg.data * 450) * (math.pi/180)
+        self.car_cmd_publisher_steer.publish(msg)
+        print(idan_msg)
+        self.Idan_driver_sender.publish(idan_msg)
 
         #####################################################
         # gas & brake Control
@@ -381,19 +390,7 @@ class adaptive_cruise_control(Node):
         self.car_cmd_publisher_brake.publish(brake_msg)
         
 
-        #####################################################
-        # wheel Control
-        #####################################################
-        # else:
-        msg = Float32()
-        if self.switch.changing_lane:
-            msg.data = output_w / 2.0
-        else:
-            msg.data = output_w * 0.7       # making the steer softer
-        idan_msg.front_wheel_angle_rad = (msg.data * 450) * (math.pi/180)
-        self.car_cmd_publisher_steer.publish(msg)
-        print(idan_msg)
-        self.Idan_driver_sender.publish(idan_msg)
+        
 
     def change_lane(self):
         print("CHANGING_LANE")

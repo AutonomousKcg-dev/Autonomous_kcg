@@ -1,0 +1,13 @@
+[01m[K/home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver/src/can_communication_titan/titan_can.cpp:[m[K In member function ‘[01m[Kbool TitanComm::connect()[m[K’:
+[01m[K/home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver/src/can_communication_titan/titan_can.cpp:19:18:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KCHAR*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+   19 |  CHAR *ComPort = [01;35m[K"/dev/ttyUSB0"[m[K;
+      |                  [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver/src/can_communication_titan/titan_can.cpp:20:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KCHAR*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+   20 |  CHAR *szBitrate = [01;35m[K"500"[m[K;
+      |                    [01;35m[K^~~~~[m[K
+[01m[K/home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver/src/can_communication_titan/titan_can.cpp:21:26:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KCHAR*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+   21 |  CHAR *acceptance_code = [01;35m[K"1FFFFFFF"[m[K;
+      |                          [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver/src/can_communication_titan/titan_can.cpp:22:26:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KCHAR*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+   22 |  CHAR *acceptance_mask = [01;35m[K"00000039"[m[K; //"00000039";
+      |                          [01;35m[K^~~~~~~~~~[m[K

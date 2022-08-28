@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC   -Wall -std=gnu++14
 
 CXX_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROS_PACKAGE_NAME=\"tracked_lane_msgs\" -Dtracked_lane_msgs__rosidl_typesupport_c_EXPORTS
 
-CXX_INCLUDES = -I/home/shovals/copy/vayav_objects_details/build/tracked_lane_msgs/rosidl_generator_c -I/home/shovals/copy/vayav_objects_details/build/tracked_lane_msgs/rosidl_typesupport_c -isystem /opt/ros/foxy/include 
+CXX_INCLUDES = -I/home/kcg/Autonomous_kcg/vayav_objects_details/build/tracked_lane_msgs/rosidl_generator_c -I/home/kcg/Autonomous_kcg/vayav_objects_details/build/tracked_lane_msgs/rosidl_typesupport_c -isystem /opt/ros/foxy/include 
 

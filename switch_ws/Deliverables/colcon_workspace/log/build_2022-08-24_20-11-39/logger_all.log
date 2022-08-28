@@ -1,0 +1,240 @@
+[0.124s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.124s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f7a2ebb5760>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=8, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f7a2ebb5760>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f7a2ebb5cd0>)
+[0.145s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.145s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.145s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.145s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.145s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.145s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.145s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/tracked_lane_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/tracked_lane_msgs) by extension 'ignore'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/tracked_lane_msgs) by extension 'ignore_ament_install'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/tracked_lane_msgs) by extensions ['colcon_pkg']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/tracked_lane_msgs) by extension 'colcon_pkg'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/tracked_lane_msgs) by extensions ['colcon_meta']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/tracked_lane_msgs) by extension 'colcon_meta'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/tracked_lane_msgs) by extensions ['ros']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/tracked_lane_msgs) by extension 'ros'
+[0.160s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tracked_lane_msgs' with type 'ros.ament_cmake' and name 'tracked_lane_msgs'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/tracked_object_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/tracked_object_msgs) by extension 'ignore'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/tracked_object_msgs) by extension 'ignore_ament_install'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/tracked_object_msgs) by extensions ['colcon_pkg']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/tracked_object_msgs) by extension 'colcon_pkg'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/tracked_object_msgs) by extensions ['colcon_meta']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/tracked_object_msgs) by extension 'colcon_meta'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/tracked_object_msgs) by extensions ['ros']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/tracked_object_msgs) by extension 'ros'
+[0.164s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tracked_object_msgs' with type 'ros.ament_cmake' and name 'tracked_object_msgs'
+[0.164s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.164s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.164s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.164s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.164s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.189s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.189s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.192s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 256 installed packages in /opt/ros/foxy
+[0.193s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.253s] Level 5:colcon.colcon_core.verb:set package 'tracked_lane_msgs' build argument 'cmake_args' from command line to 'None'
+[0.253s] Level 5:colcon.colcon_core.verb:set package 'tracked_lane_msgs' build argument 'cmake_target' from command line to 'None'
+[0.253s] Level 5:colcon.colcon_core.verb:set package 'tracked_lane_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.253s] Level 5:colcon.colcon_core.verb:set package 'tracked_lane_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.253s] Level 5:colcon.colcon_core.verb:set package 'tracked_lane_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.253s] Level 5:colcon.colcon_core.verb:set package 'tracked_lane_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.253s] Level 5:colcon.colcon_core.verb:set package 'tracked_lane_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.253s] Level 5:colcon.colcon_core.verb:set package 'tracked_lane_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.253s] Level 5:colcon.colcon_core.verb:set package 'tracked_lane_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.253s] DEBUG:colcon.colcon_core.verb:Building package 'tracked_lane_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/build/tracked_lane_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs', 'merge_install': False, 'path': '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/src/tracked_lane_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.254s] Level 5:colcon.colcon_core.verb:set package 'tracked_object_msgs' build argument 'cmake_args' from command line to 'None'
+[0.254s] Level 5:colcon.colcon_core.verb:set package 'tracked_object_msgs' build argument 'cmake_target' from command line to 'None'
+[0.254s] Level 5:colcon.colcon_core.verb:set package 'tracked_object_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.254s] Level 5:colcon.colcon_core.verb:set package 'tracked_object_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.254s] Level 5:colcon.colcon_core.verb:set package 'tracked_object_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.254s] Level 5:colcon.colcon_core.verb:set package 'tracked_object_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.254s] Level 5:colcon.colcon_core.verb:set package 'tracked_object_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.254s] Level 5:colcon.colcon_core.verb:set package 'tracked_object_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.254s] Level 5:colcon.colcon_core.verb:set package 'tracked_object_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.254s] DEBUG:colcon.colcon_core.verb:Building package 'tracked_object_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/build/tracked_object_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs', 'merge_install': False, 'path': '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/src/tracked_object_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.255s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.258s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.258s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/src/tracked_lane_msgs' with build type 'ament_cmake'
+[0.258s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/src/tracked_lane_msgs'
+[0.262s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.262s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.262s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.266s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/src/tracked_object_msgs' with build type 'ament_cmake'
+[0.267s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/src/tracked_object_msgs'
+[0.268s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.268s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.276s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/build/tracked_lane_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/src/tracked_lane_msgs -DCMAKE_INSTALL_PREFIX=/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs
+[0.284s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/build/tracked_object_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/src/tracked_object_msgs -DCMAKE_INSTALL_PREFIX=/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs
+[1.797s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/build/tracked_lane_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/src/tracked_lane_msgs -DCMAKE_INSTALL_PREFIX=/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs
+[1.801s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/build/tracked_lane_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/build/tracked_lane_msgs -- -j8 -l8
+[2.058s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/build/tracked_object_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/src/tracked_object_msgs -DCMAKE_INSTALL_PREFIX=/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs
+[2.061s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/build/tracked_object_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/build/tracked_object_msgs -- -j8 -l8
+[7.508s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/build/tracked_lane_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/build/tracked_lane_msgs -- -j8 -l8
+[7.660s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/build/tracked_lane_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/build/tracked_lane_msgs
+[7.736s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tracked_lane_msgs)
+[7.737s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/build/tracked_lane_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/build/tracked_lane_msgs
+[7.741s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs' for CMake module files
+[7.742s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs' for CMake config files
+[7.742s] Level 1:colcon.colcon_core.shell:create_environment_hook('tracked_lane_msgs', 'cmake_prefix_path')
+[7.743s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs/share/tracked_lane_msgs/hook/cmake_prefix_path.ps1'
+[7.744s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs/share/tracked_lane_msgs/hook/cmake_prefix_path.dsv'
+[7.744s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs/share/tracked_lane_msgs/hook/cmake_prefix_path.sh'
+[7.745s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs/lib'
+[7.745s] Level 1:colcon.colcon_core.shell:create_environment_hook('tracked_lane_msgs', 'ld_library_path_lib')
+[7.746s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs/share/tracked_lane_msgs/hook/ld_library_path_lib.ps1'
+[7.746s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs/share/tracked_lane_msgs/hook/ld_library_path_lib.dsv'
+[7.747s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs/share/tracked_lane_msgs/hook/ld_library_path_lib.sh'
+[7.747s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs/bin'
+[7.747s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs/lib/pkgconfig/tracked_lane_msgs.pc'
+[7.747s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs/lib/python3.8/site-packages'
+[7.747s] Level 1:colcon.colcon_core.shell:create_environment_hook('tracked_lane_msgs', 'pythonpath')
+[7.748s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs/share/tracked_lane_msgs/hook/pythonpath.ps1'
+[7.749s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs/share/tracked_lane_msgs/hook/pythonpath.dsv'
+[7.749s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs/share/tracked_lane_msgs/hook/pythonpath.sh'
+[7.749s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs/bin'
+[7.750s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs/share/tracked_lane_msgs/package.ps1'
+[7.751s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs/share/tracked_lane_msgs/package.dsv'
+[7.752s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs/share/tracked_lane_msgs/package.sh'
+[7.752s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs/share/tracked_lane_msgs/package.bash'
+[7.753s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs/share/tracked_lane_msgs/package.zsh'
+[7.753s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs/share/colcon-core/packages/tracked_lane_msgs)
+[7.840s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tracked_lane_msgs)
+[7.843s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs' for CMake module files
+[7.844s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs' for CMake config files
+[7.845s] Level 1:colcon.colcon_core.shell:create_environment_hook('tracked_lane_msgs', 'cmake_prefix_path')
+[7.847s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs/share/tracked_lane_msgs/hook/cmake_prefix_path.ps1'
+[7.847s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs/share/tracked_lane_msgs/hook/cmake_prefix_path.dsv'
+[7.848s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs/share/tracked_lane_msgs/hook/cmake_prefix_path.sh'
+[7.848s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs/lib'
+[7.848s] Level 1:colcon.colcon_core.shell:create_environment_hook('tracked_lane_msgs', 'ld_library_path_lib')
+[7.850s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs/share/tracked_lane_msgs/hook/ld_library_path_lib.ps1'
+[7.851s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs/share/tracked_lane_msgs/hook/ld_library_path_lib.dsv'
+[7.851s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs/share/tracked_lane_msgs/hook/ld_library_path_lib.sh'
+[7.851s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs/bin'
+[7.851s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs/lib/pkgconfig/tracked_lane_msgs.pc'
+[7.852s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs/lib/python3.8/site-packages'
+[7.852s] Level 1:colcon.colcon_core.shell:create_environment_hook('tracked_lane_msgs', 'pythonpath')
+[7.854s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs/share/tracked_lane_msgs/hook/pythonpath.ps1'
+[7.854s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs/share/tracked_lane_msgs/hook/pythonpath.dsv'
+[7.854s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs/share/tracked_lane_msgs/hook/pythonpath.sh'
+[7.855s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs/bin'
+[7.857s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs/share/tracked_lane_msgs/package.ps1'
+[7.857s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs/share/tracked_lane_msgs/package.dsv'
+[7.858s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs/share/tracked_lane_msgs/package.sh'
+[7.858s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs/share/tracked_lane_msgs/package.bash'
+[7.858s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs/share/tracked_lane_msgs/package.zsh'
+[7.859s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_lane_msgs/share/colcon-core/packages/tracked_lane_msgs)
+[8.819s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/build/tracked_object_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/build/tracked_object_msgs -- -j8 -l8
+[8.898s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/build/tracked_object_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/build/tracked_object_msgs
+[8.963s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tracked_object_msgs)
+[8.965s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs' for CMake module files
+[8.966s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/build/tracked_object_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/build/tracked_object_msgs
+[8.966s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs' for CMake config files
+[8.967s] Level 1:colcon.colcon_core.shell:create_environment_hook('tracked_object_msgs', 'cmake_prefix_path')
+[8.968s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs/share/tracked_object_msgs/hook/cmake_prefix_path.ps1'
+[8.968s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs/share/tracked_object_msgs/hook/cmake_prefix_path.dsv'
+[8.969s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs/share/tracked_object_msgs/hook/cmake_prefix_path.sh'
+[8.969s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs/lib'
+[8.969s] Level 1:colcon.colcon_core.shell:create_environment_hook('tracked_object_msgs', 'ld_library_path_lib')
+[8.970s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs/share/tracked_object_msgs/hook/ld_library_path_lib.ps1'
+[8.970s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs/share/tracked_object_msgs/hook/ld_library_path_lib.dsv'
+[8.971s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs/share/tracked_object_msgs/hook/ld_library_path_lib.sh'
+[8.971s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs/bin'
+[8.971s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs/lib/pkgconfig/tracked_object_msgs.pc'
+[8.971s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs/lib/python3.8/site-packages'
+[8.971s] Level 1:colcon.colcon_core.shell:create_environment_hook('tracked_object_msgs', 'pythonpath')
+[8.972s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs/share/tracked_object_msgs/hook/pythonpath.ps1'
+[8.973s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs/share/tracked_object_msgs/hook/pythonpath.dsv'
+[8.973s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs/share/tracked_object_msgs/hook/pythonpath.sh'
+[8.973s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs/bin'
+[8.975s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs/share/tracked_object_msgs/package.ps1'
+[8.975s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs/share/tracked_object_msgs/package.dsv'
+[8.975s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs/share/tracked_object_msgs/package.sh'
+[8.976s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs/share/tracked_object_msgs/package.bash'
+[8.976s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs/share/tracked_object_msgs/package.zsh'
+[8.976s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs/share/colcon-core/packages/tracked_object_msgs)
+[9.051s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tracked_object_msgs)
+[9.052s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs' for CMake module files
+[9.053s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs' for CMake config files
+[9.053s] Level 1:colcon.colcon_core.shell:create_environment_hook('tracked_object_msgs', 'cmake_prefix_path')
+[9.054s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs/share/tracked_object_msgs/hook/cmake_prefix_path.ps1'
+[9.055s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs/share/tracked_object_msgs/hook/cmake_prefix_path.dsv'
+[9.055s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs/share/tracked_object_msgs/hook/cmake_prefix_path.sh'
+[9.056s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs/lib'
+[9.056s] Level 1:colcon.colcon_core.shell:create_environment_hook('tracked_object_msgs', 'ld_library_path_lib')
+[9.057s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs/share/tracked_object_msgs/hook/ld_library_path_lib.ps1'
+[9.057s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs/share/tracked_object_msgs/hook/ld_library_path_lib.dsv'
+[9.057s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs/share/tracked_object_msgs/hook/ld_library_path_lib.sh'
+[9.058s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs/bin'
+[9.058s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs/lib/pkgconfig/tracked_object_msgs.pc'
+[9.058s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs/lib/python3.8/site-packages'
+[9.058s] Level 1:colcon.colcon_core.shell:create_environment_hook('tracked_object_msgs', 'pythonpath')
+[9.059s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs/share/tracked_object_msgs/hook/pythonpath.ps1'
+[9.059s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs/share/tracked_object_msgs/hook/pythonpath.dsv'
+[9.060s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs/share/tracked_object_msgs/hook/pythonpath.sh'
+[9.060s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs/bin'
+[9.061s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs/share/tracked_object_msgs/package.ps1'
+[9.062s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs/share/tracked_object_msgs/package.dsv'
+[9.062s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs/share/tracked_object_msgs/package.sh'
+[9.062s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs/share/tracked_object_msgs/package.bash'
+[9.063s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs/share/tracked_object_msgs/package.zsh'
+[9.063s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/tracked_object_msgs/share/colcon-core/packages/tracked_object_msgs)
+[9.063s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[9.064s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[9.064s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[9.064s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[9.069s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[9.069s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[9.069s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[9.084s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[9.085s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/local_setup.ps1'
+[9.086s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/_local_setup_util_ps1.py'
+[9.088s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/setup.ps1'
+[9.090s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/local_setup.sh'
+[9.091s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/_local_setup_util_sh.py'
+[9.091s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/setup.sh'
+[9.092s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/local_setup.bash'
+[9.093s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/setup.bash'
+[9.094s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/local_setup.zsh'
+[9.094s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/install/setup.zsh'

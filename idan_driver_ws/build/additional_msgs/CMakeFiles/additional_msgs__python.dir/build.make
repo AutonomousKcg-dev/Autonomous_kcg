@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kcg/copy/idan_driver_ws/src/msgs/additional_msgs
+CMAKE_SOURCE_DIR = /home/kcg/Autonomous_kcg/idan_driver_ws/src/msgs/additional_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kcg/copy/idan_driver_ws/build/additional_msgs
+CMAKE_BINARY_DIR = /home/kcg/Autonomous_kcg/idan_driver_ws/build/additional_msgs
 
 # Include any dependencies generated for this target.
 include CMakeFiles/additional_msgs__python.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/additional_msgs__python.dir/flags.make
 
 CMakeFiles/additional_msgs__python.dir/rosidl_generator_py/additional_msgs/msg/_can_packet_s.c.o: CMakeFiles/additional_msgs__python.dir/flags.make
 CMakeFiles/additional_msgs__python.dir/rosidl_generator_py/additional_msgs/msg/_can_packet_s.c.o: rosidl_generator_py/additional_msgs/msg/_can_packet_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kcg/copy/idan_driver_ws/build/additional_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/additional_msgs__python.dir/rosidl_generator_py/additional_msgs/msg/_can_packet_s.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/additional_msgs__python.dir/rosidl_generator_py/additional_msgs/msg/_can_packet_s.c.o   -c /home/kcg/copy/idan_driver_ws/build/additional_msgs/rosidl_generator_py/additional_msgs/msg/_can_packet_s.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kcg/Autonomous_kcg/idan_driver_ws/build/additional_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/additional_msgs__python.dir/rosidl_generator_py/additional_msgs/msg/_can_packet_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/additional_msgs__python.dir/rosidl_generator_py/additional_msgs/msg/_can_packet_s.c.o   -c /home/kcg/Autonomous_kcg/idan_driver_ws/build/additional_msgs/rosidl_generator_py/additional_msgs/msg/_can_packet_s.c
 
 CMakeFiles/additional_msgs__python.dir/rosidl_generator_py/additional_msgs/msg/_can_packet_s.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/additional_msgs__python.dir/rosidl_generator_py/additional_msgs/msg/_can_packet_s.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kcg/copy/idan_driver_ws/build/additional_msgs/rosidl_generator_py/additional_msgs/msg/_can_packet_s.c > CMakeFiles/additional_msgs__python.dir/rosidl_generator_py/additional_msgs/msg/_can_packet_s.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kcg/Autonomous_kcg/idan_driver_ws/build/additional_msgs/rosidl_generator_py/additional_msgs/msg/_can_packet_s.c > CMakeFiles/additional_msgs__python.dir/rosidl_generator_py/additional_msgs/msg/_can_packet_s.c.i
 
 CMakeFiles/additional_msgs__python.dir/rosidl_generator_py/additional_msgs/msg/_can_packet_s.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/additional_msgs__python.dir/rosidl_generator_py/additional_msgs/msg/_can_packet_s.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kcg/copy/idan_driver_ws/build/additional_msgs/rosidl_generator_py/additional_msgs/msg/_can_packet_s.c -o CMakeFiles/additional_msgs__python.dir/rosidl_generator_py/additional_msgs/msg/_can_packet_s.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kcg/Autonomous_kcg/idan_driver_ws/build/additional_msgs/rosidl_generator_py/additional_msgs/msg/_can_packet_s.c -o CMakeFiles/additional_msgs__python.dir/rosidl_generator_py/additional_msgs/msg/_can_packet_s.c.s
 
 # Object files for target additional_msgs__python
 additional_msgs__python_OBJECTS = \
@@ -102,7 +102,7 @@ rosidl_generator_py/additional_msgs/libadditional_msgs__python.so: /opt/ros/foxy
 rosidl_generator_py/additional_msgs/libadditional_msgs__python.so: /opt/ros/foxy/lib/librcpputils.so
 rosidl_generator_py/additional_msgs/libadditional_msgs__python.so: /opt/ros/foxy/lib/librcutils.so
 rosidl_generator_py/additional_msgs/libadditional_msgs__python.so: CMakeFiles/additional_msgs__python.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kcg/copy/idan_driver_ws/build/additional_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared library rosidl_generator_py/additional_msgs/libadditional_msgs__python.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kcg/Autonomous_kcg/idan_driver_ws/build/additional_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared library rosidl_generator_py/additional_msgs/libadditional_msgs__python.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/additional_msgs__python.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -115,6 +115,6 @@ CMakeFiles/additional_msgs__python.dir/clean:
 .PHONY : CMakeFiles/additional_msgs__python.dir/clean
 
 CMakeFiles/additional_msgs__python.dir/depend:
-	cd /home/kcg/copy/idan_driver_ws/build/additional_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kcg/copy/idan_driver_ws/src/msgs/additional_msgs /home/kcg/copy/idan_driver_ws/src/msgs/additional_msgs /home/kcg/copy/idan_driver_ws/build/additional_msgs /home/kcg/copy/idan_driver_ws/build/additional_msgs /home/kcg/copy/idan_driver_ws/build/additional_msgs/CMakeFiles/additional_msgs__python.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kcg/Autonomous_kcg/idan_driver_ws/build/additional_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kcg/Autonomous_kcg/idan_driver_ws/src/msgs/additional_msgs /home/kcg/Autonomous_kcg/idan_driver_ws/src/msgs/additional_msgs /home/kcg/Autonomous_kcg/idan_driver_ws/build/additional_msgs /home/kcg/Autonomous_kcg/idan_driver_ws/build/additional_msgs /home/kcg/Autonomous_kcg/idan_driver_ws/build/additional_msgs/CMakeFiles/additional_msgs__python.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/additional_msgs__python.dir/depend
 

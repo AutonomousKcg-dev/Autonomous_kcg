@@ -1,0 +1,215 @@
+[0.023s] Invoking command in '/home/kcg/Autonomous_kcg/idan_driver_ws/build/additional_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/kcg/Autonomous_kcg/idan_driver_ws/src/msgs/additional_msgs -DCMAKE_INSTALL_PREFIX=/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs
+[0.081s] -- The C compiler identification is GNU 9.4.0
+[0.138s] -- The CXX compiler identification is GNU 9.4.0
+[0.143s] -- Check for working C compiler: /usr/bin/cc
+[0.213s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.214s] -- Detecting C compiler ABI info
+[0.280s] -- Detecting C compiler ABI info - done
+[0.291s] -- Detecting C compile features
+[0.291s] -- Detecting C compile features - done
+[0.293s] -- Check for working CXX compiler: /usr/bin/c++
+[0.370s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.371s] -- Detecting CXX compiler ABI info
+[0.448s] -- Detecting CXX compiler ABI info - done
+[0.459s] -- Detecting CXX compile features
+[0.459s] -- Detecting CXX compile features - done
+[0.461s] -- Found ament_cmake_auto: 0.9.9 (/opt/ros/foxy/share/ament_cmake_auto/cmake)
+[0.483s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.483s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.707s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.712s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.802s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.829s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.900s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.991s] -- Found ament_cmake_cppcheck: 0.9.6 (/opt/ros/foxy/share/ament_cmake_cppcheck/cmake)
+[0.992s] -- Found ament_cmake_cpplint: 0.9.6 (/opt/ros/foxy/share/ament_cmake_cpplint/cmake)
+[0.994s] -- Found ament_cmake_uncrustify: 0.9.6 (/opt/ros/foxy/share/ament_cmake_uncrustify/cmake)
+[0.996s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[1.159s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.219s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.242s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[1.243s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[1.268s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[1.268s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.268s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[1.268s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[1.288s] -- Found PythonExtra: .so  
+[1.344s] -- Found ament_cmake_flake8: 0.9.6 (/opt/ros/foxy/share/ament_cmake_flake8/cmake)
+[1.346s] -- Found ament_cmake_pep257: 0.9.6 (/opt/ros/foxy/share/ament_cmake_pep257/cmake)
+[1.348s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.360s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.361s] -- Added test 'lint_cmake' to check CMake code style
+[1.361s] -- Added test 'xmllint' to check XML markup files
+[1.367s] -- Configuring done
+[1.414s] -- Generating done
+[1.417s] -- Build files have been written to: /home/kcg/Autonomous_kcg/idan_driver_ws/build/additional_msgs
+[1.425s] Invoked command in '/home/kcg/Autonomous_kcg/idan_driver_ws/build/additional_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/kcg/Autonomous_kcg/idan_driver_ws/src/msgs/additional_msgs -DCMAKE_INSTALL_PREFIX=/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs
+[1.428s] Invoking command in '/home/kcg/Autonomous_kcg/idan_driver_ws/build/additional_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/kcg/Autonomous_kcg/idan_driver_ws/build/additional_msgs -- -j8 -l8
+[1.469s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.469s] [35m[1mScanning dependencies of target additional_msgs__cpp[0m
+[1.480s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.699s] [35m[1mScanning dependencies of target additional_msgs__rosidl_generator_c[0m
+[1.703s] [  6%] Built target additional_msgs__cpp
+[1.714s] [  9%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.715s] [ 12%] [32mBuilding C object CMakeFiles/additional_msgs__rosidl_generator_c.dir/rosidl_generator_c/additional_msgs/msg/detail/can_packet__functions.c.o[0m
+[1.716s] [ 16%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.717s] [ 19%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.767s] [ 22%] [32m[1mLinking C shared library libadditional_msgs__rosidl_generator_c.so[0m
+[1.807s] [ 22%] Built target additional_msgs__rosidl_generator_c
+[1.818s] [ 25%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.820s] [ 29%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.029s] [35m[1mScanning dependencies of target additional_msgs__rosidl_typesupport_cpp[0m
+[2.050s] [ 32%] [32mBuilding CXX object CMakeFiles/additional_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/additional_msgs/msg/can_packet__type_support.cpp.o[0m
+[2.091s] [35m[1mScanning dependencies of target additional_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[2.101s] [35m[1mScanning dependencies of target additional_msgs__rosidl_typesupport_introspection_cpp[0m
+[2.119s] [ 35%] [32mBuilding CXX object CMakeFiles/additional_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/additional_msgs/msg/detail/dds_fastrtps/can_packet__type_support.cpp.o[0m
+[2.120s] [ 38%] [32mBuilding CXX object CMakeFiles/additional_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/additional_msgs/msg/detail/can_packet__type_support.cpp.o[0m
+[2.162s] [35m[1mScanning dependencies of target additional_msgs__rosidl_typesupport_c[0m
+[2.199s] [ 41%] [32mBuilding CXX object CMakeFiles/additional_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/additional_msgs/msg/can_packet__type_support.cpp.o[0m
+[2.249s] [35m[1mScanning dependencies of target additional_msgs__rosidl_typesupport_introspection_c[0m
+[2.301s] [ 45%] [32m[1mLinking CXX shared library libadditional_msgs__rosidl_typesupport_c.so[0m
+[2.321s] [ 48%] [32mBuilding C object CMakeFiles/additional_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/additional_msgs/msg/detail/can_packet__type_support.c.o[0m
+[2.466s] [ 51%] [32m[1mLinking C shared library libadditional_msgs__rosidl_typesupport_introspection_c.so[0m
+[2.500s] [ 51%] Built target additional_msgs__rosidl_typesupport_c
+[2.532s] [ 54%] [32m[1mLinking CXX shared library libadditional_msgs__rosidl_typesupport_cpp.so[0m
+[2.545s] [ 54%] Built target additional_msgs__rosidl_typesupport_introspection_c
+[2.577s] [ 58%] [32m[1mLinking CXX shared library libadditional_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[2.614s] [ 58%] Built target additional_msgs__rosidl_typesupport_cpp
+[2.731s] [ 58%] Built target additional_msgs__rosidl_typesupport_introspection_cpp
+[2.796s] [ 61%] [32m[1mLinking CXX shared library libadditional_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.902s] [ 61%] Built target additional_msgs__rosidl_typesupport_fastrtps_cpp
+[2.912s] [ 64%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.124s] [35m[1mScanning dependencies of target additional_msgs__rosidl_typesupport_fastrtps_c[0m
+[3.139s] [ 67%] [32mBuilding CXX object CMakeFiles/additional_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/additional_msgs/msg/detail/can_packet__type_support_c.cpp.o[0m
+[3.452s] [ 70%] [32m[1mLinking CXX shared library libadditional_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[3.543s] [ 70%] Built target additional_msgs__rosidl_typesupport_fastrtps_c
+[3.553s] [35m[1mScanning dependencies of target additional_msgs[0m
+[3.564s] [ 70%] Built target additional_msgs
+[3.575s] [35m[1mScanning dependencies of target additional_msgs__py[0m
+[3.586s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[4.051s] [ 74%] Built target additional_msgs__py
+[4.062s] [35m[1mScanning dependencies of target additional_msgs__python[0m
+[4.081s] [ 77%] [32mBuilding C object CMakeFiles/additional_msgs__python.dir/rosidl_generator_py/additional_msgs/msg/_can_packet_s.c.o[0m
+[4.171s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/additional_msgs/libadditional_msgs__python.so[0m
+[4.236s] [ 80%] Built target additional_msgs__python
+[4.257s] [35m[1mScanning dependencies of target additional_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[4.264s] [35m[1mScanning dependencies of target additional_msgs__rosidl_typesupport_c__pyext[0m
+[4.269s] [35m[1mScanning dependencies of target additional_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[4.312s] [ 83%] [32mBuilding C object CMakeFiles/additional_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/additional_msgs/_additional_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[4.326s] [ 87%] [32mBuilding C object CMakeFiles/additional_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/additional_msgs/_additional_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[4.327s] [ 90%] [32mBuilding C object CMakeFiles/additional_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/additional_msgs/_additional_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[4.405s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/additional_msgs/additional_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[4.409s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/additional_msgs/additional_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[4.410s] [100%] [32m[1mLinking CXX shared library rosidl_generator_py/additional_msgs/additional_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
+[4.449s] [100%] Built target additional_msgs__rosidl_typesupport_introspection_c__pyext
+[4.449s] [100%] Built target additional_msgs__rosidl_typesupport_c__pyext
+[4.484s] [100%] Built target additional_msgs__rosidl_typesupport_fastrtps_c__pyext
+[4.499s] Invoked command in '/home/kcg/Autonomous_kcg/idan_driver_ws/build/additional_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/kcg/Autonomous_kcg/idan_driver_ws/build/additional_msgs -- -j8 -l8
+[4.561s] Invoking command in '/home/kcg/Autonomous_kcg/idan_driver_ws/build/additional_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/kcg/Autonomous_kcg/idan_driver_ws/build/additional_msgs
+[4.569s] -- Install configuration: ""
+[4.569s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/ament_index/resource_index/rosidl_interfaces/additional_msgs
+[4.570s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs
+[4.570s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg
+[4.570s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/rosidl_generator_c__visibility_control.h
+[4.570s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/can_packet.h
+[4.570s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail
+[4.570s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__functions.h
+[4.570s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__struct.h
+[4.570s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__type_support.h
+[4.570s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__functions.c
+[4.571s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/environment/library_path.sh
+[4.571s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/environment/library_path.dsv
+[4.571s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_generator_c.so
+[4.571s] -- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_generator_c.so" to ""
+[4.571s] -- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs
+[4.571s] -- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg
+[4.571s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[4.572s] -- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail
+[4.572s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__rosidl_typesupport_fastrtps_c.h
+[4.572s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_typesupport_fastrtps_c.so
+[4.572s] -- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[4.572s] -- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs
+[4.572s] -- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg
+[4.573s] -- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail
+[4.573s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail/dds_fastrtps
+[4.573s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__rosidl_typesupport_fastrtps_cpp.hpp
+[4.573s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[4.573s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_typesupport_fastrtps_cpp.so
+[4.573s] -- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[4.573s] -- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs
+[4.573s] -- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg
+[4.574s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[4.574s] -- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail
+[4.574s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__rosidl_typesupport_introspection_c.h
+[4.574s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__type_support.c
+[4.574s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_typesupport_introspection_c.so
+[4.574s] -- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_typesupport_introspection_c.so" to ""
+[4.574s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_typesupport_c.so
+[4.575s] -- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_typesupport_c.so" to ""
+[4.575s] -- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs
+[4.575s] -- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg
+[4.575s] -- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail
+[4.575s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__traits.hpp
+[4.576s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__builder.hpp
+[4.576s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__struct.hpp
+[4.576s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/can_packet.hpp
+[4.576s] -- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs
+[4.576s] -- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg
+[4.576s] -- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail
+[4.576s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__type_support.cpp
+[4.576s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__rosidl_typesupport_introspection_cpp.hpp
+[4.576s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_typesupport_introspection_cpp.so
+[4.577s] -- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[4.577s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_typesupport_cpp.so
+[4.577s] -- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_typesupport_cpp.so" to ""
+[4.577s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/environment/pythonpath.sh
+[4.577s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/environment/pythonpath.dsv
+[4.578s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/python3.8/site-packages/additional_msgs/__init__.py
+[4.605s] Compiling '/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/python3.8/site-packages/additional_msgs/__init__.py'...
+[4.608s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/python3.8/site-packages/additional_msgs/msg
+[4.608s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/python3.8/site-packages/additional_msgs/msg/_can_packet_s.c
+[4.609s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/python3.8/site-packages/additional_msgs/msg/_can_packet.py
+[4.609s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/python3.8/site-packages/additional_msgs/msg/__init__.py
+[4.609s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/python3.8/site-packages/additional_msgs/additional_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[4.609s] -- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/python3.8/site-packages/additional_msgs/additional_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""
+[4.610s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/python3.8/site-packages/additional_msgs/additional_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[4.610s] -- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/python3.8/site-packages/additional_msgs/additional_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""
+[4.610s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/python3.8/site-packages/additional_msgs/additional_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[4.611s] -- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/python3.8/site-packages/additional_msgs/additional_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""
+[4.611s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/libadditional_msgs__python.so
+[4.611s] -- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/libadditional_msgs__python.so" to ""
+[4.612s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/msg/CanPacket.idl
+[4.612s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/ament_index/resource_index/package_run_dependencies/additional_msgs
+[4.612s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/ament_index/resource_index/parent_prefix_path/additional_msgs
+[4.612s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/environment/ament_prefix_path.sh
+[4.612s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/environment/ament_prefix_path.dsv
+[4.613s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/environment/path.sh
+[4.613s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/environment/path.dsv
+[4.613s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/local_setup.bash
+[4.613s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/local_setup.sh
+[4.613s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/local_setup.zsh
+[4.613s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/local_setup.dsv
+[4.613s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/package.dsv
+[4.613s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/ament_index/resource_index/packages/additional_msgs
+[4.614s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/cmake/additional_msgs__rosidl_generator_cExport.cmake
+[4.614s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/cmake/additional_msgs__rosidl_generator_cExport-noconfig.cmake
+[4.614s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/cmake/additional_msgs__rosidl_typesupport_introspection_cExport.cmake
+[4.614s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/cmake/additional_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[4.614s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/cmake/additional_msgs__rosidl_typesupport_cExport.cmake
+[4.614s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/cmake/additional_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[4.615s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/cmake/additional_msgs__rosidl_generator_cppExport.cmake
+[4.615s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/cmake/additional_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[4.615s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/cmake/additional_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[4.615s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/cmake/additional_msgs__rosidl_typesupport_cppExport.cmake
+[4.615s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/cmake/additional_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[4.615s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/cmake/rosidl_cmake-extras.cmake
+[4.616s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.616s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[4.616s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[4.616s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.616s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[4.616s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[4.616s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/cmake/additional_msgsConfig.cmake
+[4.617s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/cmake/additional_msgsConfig-version.cmake
+[4.617s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/package.xml
+[4.620s] Invoked command in '/home/kcg/Autonomous_kcg/idan_driver_ws/build/additional_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/kcg/Autonomous_kcg/idan_driver_ws/build/additional_msgs

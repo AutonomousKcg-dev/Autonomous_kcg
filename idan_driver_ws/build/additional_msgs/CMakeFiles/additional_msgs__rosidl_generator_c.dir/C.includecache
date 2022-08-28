@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/kcg/copy/idan_driver_ws/build/additional_msgs/rosidl_generator_c/additional_msgs/msg/detail/can_packet__functions.c
+/home/kcg/Autonomous_kcg/idan_driver_ws/build/additional_msgs/rosidl_generator_c/additional_msgs/msg/detail/can_packet__functions.c
 additional_msgs/msg/detail/can_packet__functions.h
-/home/kcg/copy/idan_driver_ws/build/additional_msgs/rosidl_generator_c/additional_msgs/msg/detail/additional_msgs/msg/detail/can_packet__functions.h
+/home/kcg/Autonomous_kcg/idan_driver_ws/build/additional_msgs/rosidl_generator_c/additional_msgs/msg/detail/additional_msgs/msg/detail/can_packet__functions.h
 assert.h
 -
 stdbool.h
@@ -18,7 +18,7 @@ stdlib.h
 string.h
 -
 std_msgs/msg/detail/header__functions.h
-/home/kcg/copy/idan_driver_ws/build/additional_msgs/rosidl_generator_c/additional_msgs/msg/detail/std_msgs/msg/detail/header__functions.h
+/home/kcg/Autonomous_kcg/idan_driver_ws/build/additional_msgs/rosidl_generator_c/additional_msgs/msg/detail/std_msgs/msg/detail/header__functions.h
 
 /opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.h
 stdbool.h

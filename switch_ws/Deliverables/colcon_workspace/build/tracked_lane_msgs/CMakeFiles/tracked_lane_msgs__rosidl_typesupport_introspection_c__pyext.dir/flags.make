@@ -6,5 +6,5 @@ C_FLAGS = -fPIC   -Wall -Wextra
 
 C_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROS_PACKAGE_NAME=\"tracked_lane_msgs\" -Dtracked_lane_msgs__rosidl_typesupport_introspection_c__pyext_EXPORTS
 
-C_INCLUDES = -I/home/shovals/copy/switch_ws/Deliverables/colcon_workspace/build/tracked_lane_msgs/rosidl_generator_c -I/home/shovals/copy/switch_ws/Deliverables/colcon_workspace/build/tracked_lane_msgs/rosidl_generator_py -I/usr/include/python3.8 -I/home/shovals/copy/switch_ws/Deliverables/colcon_workspace/build/tracked_lane_msgs/rosidl_typesupport_c -I/home/shovals/copy/switch_ws/Deliverables/colcon_workspace/build/tracked_lane_msgs/rosidl_typesupport_introspection_c -isystem /opt/ros/foxy/include 
+C_INCLUDES = -I/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/build/tracked_lane_msgs/rosidl_generator_c -I/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/build/tracked_lane_msgs/rosidl_generator_py -I/usr/include/python3.8 -I/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/build/tracked_lane_msgs/rosidl_typesupport_c -I/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/build/tracked_lane_msgs/rosidl_typesupport_introspection_c -isystem /opt/ros/foxy/include 
 

@@ -1,0 +1,750 @@
+[0.000000] (-) TimerEvent: {}
+[0.000334] (additional_msgs) JobQueued: {'identifier': 'additional_msgs', 'dependencies': OrderedDict()}
+[0.000372] (autoware_auto_msgs) JobQueued: {'identifier': 'autoware_auto_msgs', 'dependencies': OrderedDict()}
+[0.000394] (idan_driver) JobQueued: {'identifier': 'idan_driver', 'dependencies': OrderedDict([('additional_msgs', '/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs'), ('autoware_auto_msgs', '/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs')])}
+[0.000772] (additional_msgs) JobStarted: {'identifier': 'additional_msgs'}
+[0.011926] (autoware_auto_msgs) JobStarted: {'identifier': 'autoware_auto_msgs'}
+[0.019964] (additional_msgs) JobProgress: {'identifier': 'additional_msgs', 'progress': 'cmake'}
+[0.020491] (additional_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/kcg/Autonomous_kcg/idan_driver_ws/src/msgs/additional_msgs', '-DCMAKE_INSTALL_PREFIX=/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs'], 'cwd': '/home/kcg/Autonomous_kcg/idan_driver_ws/build/additional_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IL:en'), ('USER', 'kcg'), ('SSH_AGENT_PID', '2036'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/kcg'), ('OLDPWD', '/home/kcg/Autonomous_kcg'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1822'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=0b1dd3347aa8647f8ecd79166306593d'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'kcg'), ('JOURNAL_STREAM', '8:42967'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'kcg'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/kcg-Alon:@/tmp/.ICE-unix/2074,unix/kcg-Alon:/tmp/.ICE-unix/2074'), ('INVOCATION_ID', 'bfa58d62f8bc4b2ca1e0cf93b8339dc0'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/13707c3f_93c9_48a0_b81a_7ac6ddc279ff'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.92'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kcg/Autonomous_kcg/idan_driver_ws/build/additional_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=0b1dd3347aa8647f8ecd79166306593d'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.026462] (autoware_auto_msgs) JobProgress: {'identifier': 'autoware_auto_msgs', 'progress': 'cmake'}
+[0.026910] (autoware_auto_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/kcg/Autonomous_kcg/idan_driver_ws/src/msgs/autoware_auto_msgs', '-DCMAKE_INSTALL_PREFIX=/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs'], 'cwd': '/home/kcg/Autonomous_kcg/idan_driver_ws/build/autoware_auto_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IL:en'), ('USER', 'kcg'), ('SSH_AGENT_PID', '2036'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/kcg'), ('OLDPWD', '/home/kcg/Autonomous_kcg'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1822'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=0b1dd3347aa8647f8ecd79166306593d'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'kcg'), ('JOURNAL_STREAM', '8:42967'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'kcg'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/kcg-Alon:@/tmp/.ICE-unix/2074,unix/kcg-Alon:/tmp/.ICE-unix/2074'), ('INVOCATION_ID', 'bfa58d62f8bc4b2ca1e0cf93b8339dc0'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/13707c3f_93c9_48a0_b81a_7ac6ddc279ff'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.92'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kcg/Autonomous_kcg/idan_driver_ws/build/autoware_auto_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=0b1dd3347aa8647f8ecd79166306593d'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.081679] (additional_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.087900] (autoware_auto_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.100032] (-) TimerEvent: {}
+[0.138804] (additional_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.143597] (autoware_auto_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.144144] (additional_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.147840] (autoware_auto_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.200148] (-) TimerEvent: {}
+[0.213611] (additional_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.213861] (autoware_auto_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.214521] (autoware_auto_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.214838] (additional_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.281235] (additional_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.281383] (autoware_auto_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.291488] (additional_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.291675] (autoware_auto_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.291859] (additional_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.292043] (autoware_auto_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.293990] (additional_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.294148] (autoware_auto_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.300252] (-) TimerEvent: {}
+[0.370885] (additional_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.371117] (autoware_auto_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.371885] (additional_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.372083] (autoware_auto_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.400362] (-) TimerEvent: {}
+[0.448765] (additional_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.449020] (autoware_auto_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.459450] (additional_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.459816] (autoware_auto_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.459971] (additional_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.460377] (autoware_auto_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.461425] (additional_msgs) StdoutLine: {'line': b'-- Found ament_cmake_auto: 0.9.9 (/opt/ros/foxy/share/ament_cmake_auto/cmake)\n'}
+[0.461939] (autoware_auto_msgs) StdoutLine: {'line': b'-- Found ament_cmake_auto: 0.9.9 (/opt/ros/foxy/share/ament_cmake_auto/cmake)\n'}
+[0.484076] (additional_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.484227] (additional_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.484497] (autoware_auto_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.484668] (autoware_auto_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.500465] (-) TimerEvent: {}
+[0.600703] (-) TimerEvent: {}
+[0.700953] (-) TimerEvent: {}
+[0.706922] (autoware_auto_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.707628] (additional_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.712665] (autoware_auto_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.713258] (additional_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.801070] (-) TimerEvent: {}
+[0.802514] (additional_msgs) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[0.802740] (autoware_auto_msgs) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[0.829319] (additional_msgs) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[0.830145] (autoware_auto_msgs) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[0.900577] (additional_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.901155] (-) TimerEvent: {}
+[0.901435] (autoware_auto_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.990808] (autoware_auto_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cppcheck: 0.9.6 (/opt/ros/foxy/share/ament_cmake_cppcheck/cmake)\n'}
+[0.991506] (additional_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cppcheck: 0.9.6 (/opt/ros/foxy/share/ament_cmake_cppcheck/cmake)\n'}
+[0.992339] (autoware_auto_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cpplint: 0.9.6 (/opt/ros/foxy/share/ament_cmake_cpplint/cmake)\n'}
+[0.993057] (additional_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cpplint: 0.9.6 (/opt/ros/foxy/share/ament_cmake_cpplint/cmake)\n'}
+[0.993921] (autoware_auto_msgs) StdoutLine: {'line': b'-- Found ament_cmake_uncrustify: 0.9.6 (/opt/ros/foxy/share/ament_cmake_uncrustify/cmake)\n'}
+[0.994638] (additional_msgs) StdoutLine: {'line': b'-- Found ament_cmake_uncrustify: 0.9.6 (/opt/ros/foxy/share/ament_cmake_uncrustify/cmake)\n'}
+[0.995692] (autoware_auto_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[0.996400] (additional_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[1.001250] (-) TimerEvent: {}
+[1.101460] (-) TimerEvent: {}
+[1.157852] (autoware_auto_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.159547] (additional_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.201529] (-) TimerEvent: {}
+[1.217255] (autoware_auto_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.219488] (additional_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.240296] (autoware_auto_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[1.241448] (autoware_auto_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[1.242674] (additional_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[1.243931] (additional_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[1.266669] (autoware_auto_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[1.266892] (autoware_auto_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.266987] (autoware_auto_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[1.267086] (autoware_auto_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so\n'}
+[1.268731] (additional_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[1.268935] (additional_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.269064] (additional_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[1.269188] (additional_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so\n'}
+[1.286441] (autoware_auto_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.288785] (additional_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.301601] (-) TimerEvent: {}
+[1.342591] (autoware_auto_msgs) StdoutLine: {'line': b'-- Found ament_cmake_flake8: 0.9.6 (/opt/ros/foxy/share/ament_cmake_flake8/cmake)\n'}
+[1.344130] (autoware_auto_msgs) StdoutLine: {'line': b'-- Found ament_cmake_pep257: 0.9.6 (/opt/ros/foxy/share/ament_cmake_pep257/cmake)\n'}
+[1.344663] (additional_msgs) StdoutLine: {'line': b'-- Found ament_cmake_flake8: 0.9.6 (/opt/ros/foxy/share/ament_cmake_flake8/cmake)\n'}
+[1.346322] (autoware_auto_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[1.346510] (additional_msgs) StdoutLine: {'line': b'-- Found ament_cmake_pep257: 0.9.6 (/opt/ros/foxy/share/ament_cmake_pep257/cmake)\n'}
+[1.348680] (additional_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[1.361232] (additional_msgs) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.361748] (additional_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.362211] (additional_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.367580] (additional_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.397549] (autoware_auto_msgs) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.398519] (autoware_auto_msgs) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.398692] (autoware_auto_msgs) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.401674] (-) TimerEvent: {}
+[1.415123] (additional_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[1.417791] (additional_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/kcg/Autonomous_kcg/idan_driver_ws/build/additional_msgs\n'}
+[1.425937] (additional_msgs) CommandEnded: {'returncode': 0}
+[1.426645] (additional_msgs) JobProgress: {'identifier': 'additional_msgs', 'progress': 'build'}
+[1.427525] (additional_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/kcg/Autonomous_kcg/idan_driver_ws/build/additional_msgs', '--', '-j8', '-l8'], 'cwd': '/home/kcg/Autonomous_kcg/idan_driver_ws/build/additional_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IL:en'), ('USER', 'kcg'), ('SSH_AGENT_PID', '2036'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/kcg'), ('OLDPWD', '/home/kcg/Autonomous_kcg'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1822'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=0b1dd3347aa8647f8ecd79166306593d'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'kcg'), ('JOURNAL_STREAM', '8:42967'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'kcg'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/kcg-Alon:@/tmp/.ICE-unix/2074,unix/kcg-Alon:/tmp/.ICE-unix/2074'), ('INVOCATION_ID', 'bfa58d62f8bc4b2ca1e0cf93b8339dc0'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/13707c3f_93c9_48a0_b81a_7ac6ddc279ff'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.92'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kcg/Autonomous_kcg/idan_driver_ws/build/additional_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=0b1dd3347aa8647f8ecd79166306593d'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[1.440609] (autoware_auto_msgs) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[1.440925] (autoware_auto_msgs) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[1.469930] (additional_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.470193] (additional_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target additional_msgs__cpp\x1b[0m\n'}
+[1.480408] (additional_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.482771] (autoware_auto_msgs) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.482966] (autoware_auto_msgs) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.488338] (autoware_auto_msgs) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.493823] (autoware_auto_msgs) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[1.494099] (autoware_auto_msgs) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.501777] (-) TimerEvent: {}
+[1.504973] (autoware_auto_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.510616] (autoware_auto_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.516502] (autoware_auto_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.565609] (autoware_auto_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[1.568205] (autoware_auto_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/kcg/Autonomous_kcg/idan_driver_ws/build/autoware_auto_msgs\n'}
+[1.575855] (autoware_auto_msgs) CommandEnded: {'returncode': 0}
+[1.576709] (autoware_auto_msgs) JobProgress: {'identifier': 'autoware_auto_msgs', 'progress': 'build'}
+[1.577114] (autoware_auto_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/kcg/Autonomous_kcg/idan_driver_ws/build/autoware_auto_msgs', '--', '-j8', '-l8'], 'cwd': '/home/kcg/Autonomous_kcg/idan_driver_ws/build/autoware_auto_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IL:en'), ('USER', 'kcg'), ('SSH_AGENT_PID', '2036'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/kcg'), ('OLDPWD', '/home/kcg/Autonomous_kcg'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1822'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=0b1dd3347aa8647f8ecd79166306593d'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'kcg'), ('JOURNAL_STREAM', '8:42967'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'kcg'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/kcg-Alon:@/tmp/.ICE-unix/2074,unix/kcg-Alon:/tmp/.ICE-unix/2074'), ('INVOCATION_ID', 'bfa58d62f8bc4b2ca1e0cf93b8339dc0'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/13707c3f_93c9_48a0_b81a_7ac6ddc279ff'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.92'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kcg/Autonomous_kcg/idan_driver_ws/build/autoware_auto_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=0b1dd3347aa8647f8ecd79166306593d'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[1.601900] (-) TimerEvent: {}
+[1.619356] (autoware_auto_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.619681] (autoware_auto_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target autoware_auto_msgs__cpp\x1b[0m\n'}
+[1.630317] (autoware_auto_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.700223] (additional_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target additional_msgs__rosidl_generator_c\x1b[0m\n'}
+[1.701977] (-) TimerEvent: {}
+[1.703792] (additional_msgs) StdoutLine: {'line': b'[  6%] Built target additional_msgs__cpp\n'}
+[1.714925] (additional_msgs) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.715840] (additional_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/additional_msgs__rosidl_generator_c.dir/rosidl_generator_c/additional_msgs/msg/detail/can_packet__functions.c.o\x1b[0m\n'}
+[1.716870] (additional_msgs) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.718184] (additional_msgs) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[1.768111] (additional_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libadditional_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[1.802077] (-) TimerEvent: {}
+[1.807622] (additional_msgs) StdoutLine: {'line': b'[ 22%] Built target additional_msgs__rosidl_generator_c\n'}
+[1.819189] (additional_msgs) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.820756] (additional_msgs) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[1.902170] (-) TimerEvent: {}
+[1.951043] (autoware_auto_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target autoware_auto_msgs__rosidl_generator_c\x1b[0m\n'}
+[1.967725] (autoware_auto_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/autoware_auto_msgs__rosidl_generator_c.dir/rosidl_generator_c/autoware_auto_msgs/msg/detail/vehicle_control_command__functions.c.o\x1b[0m\n'}
+[2.002284] (-) TimerEvent: {}
+[2.028153] (autoware_auto_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32m\x1b[1mLinking C shared library libautoware_auto_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[2.029861] (additional_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target additional_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[2.050538] (additional_msgs) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/additional_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/additional_msgs/msg/can_packet__type_support.cpp.o\x1b[0m\n'}
+[2.057235] (autoware_auto_msgs) StdoutLine: {'line': b'[ 12%] Built target autoware_auto_msgs__cpp\n'}
+[2.079280] (autoware_auto_msgs) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.085266] (autoware_auto_msgs) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.091827] (autoware_auto_msgs) StdoutLine: {'line': b'[ 22%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.092125] (additional_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target additional_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[2.101917] (additional_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target additional_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[2.107573] (-) TimerEvent: {}
+[2.119341] (additional_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/additional_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/additional_msgs/msg/detail/dds_fastrtps/can_packet__type_support.cpp.o\x1b[0m\n'}
+[2.120849] (additional_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/additional_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/additional_msgs/msg/detail/can_packet__type_support.cpp.o\x1b[0m\n'}
+[2.121441] (autoware_auto_msgs) StdoutLine: {'line': b'[ 22%] Built target autoware_auto_msgs__rosidl_generator_c\n'}
+[2.162724] (additional_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target additional_msgs__rosidl_typesupport_c\x1b[0m\n'}
+[2.185005] (autoware_auto_msgs) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.185230] (autoware_auto_msgs) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.199436] (additional_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/additional_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/additional_msgs/msg/can_packet__type_support.cpp.o\x1b[0m\n'}
+[2.207673] (-) TimerEvent: {}
+[2.250109] (additional_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target additional_msgs__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[2.301889] (additional_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking CXX shared library libadditional_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.307765] (-) TimerEvent: {}
+[2.322060] (additional_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding C object CMakeFiles/additional_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/additional_msgs/msg/detail/can_packet__type_support.c.o\x1b[0m\n'}
+[2.407861] (-) TimerEvent: {}
+[2.466628] (additional_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking C shared library libadditional_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[2.501095] (additional_msgs) StdoutLine: {'line': b'[ 51%] Built target additional_msgs__rosidl_typesupport_c\n'}
+[2.507971] (-) TimerEvent: {}
+[2.514034] (autoware_auto_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target autoware_auto_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[2.532848] (additional_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libadditional_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[2.545098] (autoware_auto_msgs) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/autoware_auto_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_auto_msgs/msg/vehicle_control_command__type_support.cpp.o\x1b[0m\n'}
+[2.545405] (additional_msgs) StdoutLine: {'line': b'[ 54%] Built target additional_msgs__rosidl_typesupport_introspection_c\n'}
+[2.562439] (autoware_auto_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target autoware_auto_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[2.577612] (additional_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX shared library libadditional_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[2.589711] (autoware_auto_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/autoware_auto_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_auto_msgs/msg/detail/dds_fastrtps/vehicle_control_command__type_support.cpp.o\x1b[0m\n'}
+[2.608075] (-) TimerEvent: {}
+[2.614374] (additional_msgs) StdoutLine: {'line': b'[ 58%] Built target additional_msgs__rosidl_typesupport_cpp\n'}
+[2.661879] (autoware_auto_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target autoware_auto_msgs__rosidl_typesupport_c\x1b[0m\n'}
+[2.679848] (autoware_auto_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target autoware_auto_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[2.680602] (autoware_auto_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target autoware_auto_msgs__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[2.686460] (autoware_auto_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/autoware_auto_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/autoware_auto_msgs/msg/vehicle_control_command__type_support.cpp.o\x1b[0m\n'}
+[2.699179] (autoware_auto_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/autoware_auto_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_auto_msgs/msg/detail/vehicle_control_command__type_support.cpp.o\x1b[0m\n'}
+[2.701351] (autoware_auto_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding C object CMakeFiles/autoware_auto_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autoware_auto_msgs/msg/detail/vehicle_control_command__type_support.c.o\x1b[0m\n'}
+[2.708203] (-) TimerEvent: {}
+[2.731876] (additional_msgs) StdoutLine: {'line': b'[ 58%] Built target additional_msgs__rosidl_typesupport_introspection_cpp\n'}
+[2.737905] (autoware_auto_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library libautoware_auto_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.750329] (autoware_auto_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking C shared library libautoware_auto_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[2.786734] (autoware_auto_msgs) StdoutLine: {'line': b'[ 51%] Built target autoware_auto_msgs__rosidl_typesupport_introspection_c\n'}
+[2.796806] (additional_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libadditional_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[2.797827] (autoware_auto_msgs) StdoutLine: {'line': b'[ 51%] Built target autoware_auto_msgs__rosidl_typesupport_c\n'}
+[2.808297] (-) TimerEvent: {}
+[2.902457] (additional_msgs) StdoutLine: {'line': b'[ 61%] Built target additional_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[2.908403] (-) TimerEvent: {}
+[2.913162] (additional_msgs) StdoutLine: {'line': b'[ 64%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.980679] (autoware_auto_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libautoware_auto_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[2.995338] (autoware_auto_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX shared library libautoware_auto_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[3.008511] (-) TimerEvent: {}
+[3.025882] (autoware_auto_msgs) StdoutLine: {'line': b'[ 58%] Built target autoware_auto_msgs__rosidl_typesupport_cpp\n'}
+[3.064584] (autoware_auto_msgs) StdoutLine: {'line': b'[ 58%] Built target autoware_auto_msgs__rosidl_typesupport_introspection_cpp\n'}
+[3.108666] (-) TimerEvent: {}
+[3.125149] (additional_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target additional_msgs__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[3.127369] (autoware_auto_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libautoware_auto_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[3.139604] (additional_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/additional_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/additional_msgs/msg/detail/can_packet__type_support_c.cpp.o\x1b[0m\n'}
+[3.208774] (-) TimerEvent: {}
+[3.217744] (autoware_auto_msgs) StdoutLine: {'line': b'[ 61%] Built target autoware_auto_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[3.228573] (autoware_auto_msgs) StdoutLine: {'line': b'[ 64%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.308866] (-) TimerEvent: {}
+[3.409145] (-) TimerEvent: {}
+[3.453069] (additional_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libadditional_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[3.458006] (autoware_auto_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target autoware_auto_msgs__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[3.472706] (autoware_auto_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/autoware_auto_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_auto_msgs/msg/detail/vehicle_control_command__type_support_c.cpp.o\x1b[0m\n'}
+[3.509269] (-) TimerEvent: {}
+[3.544147] (additional_msgs) StdoutLine: {'line': b'[ 70%] Built target additional_msgs__rosidl_typesupport_fastrtps_c\n'}
+[3.554194] (additional_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target additional_msgs\x1b[0m\n'}
+[3.565016] (additional_msgs) StdoutLine: {'line': b'[ 70%] Built target additional_msgs\n'}
+[3.575585] (additional_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target additional_msgs__py\x1b[0m\n'}
+[3.586489] (additional_msgs) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[3.609376] (-) TimerEvent: {}
+[3.709626] (-) TimerEvent: {}
+[3.809893] (-) TimerEvent: {}
+[3.827128] (autoware_auto_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libautoware_auto_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[3.910014] (-) TimerEvent: {}
+[3.951360] (autoware_auto_msgs) StdoutLine: {'line': b'[ 70%] Built target autoware_auto_msgs__rosidl_typesupport_fastrtps_c\n'}
+[3.961644] (autoware_auto_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target autoware_auto_msgs\x1b[0m\n'}
+[3.972352] (autoware_auto_msgs) StdoutLine: {'line': b'[ 70%] Built target autoware_auto_msgs\n'}
+[3.982588] (autoware_auto_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target autoware_auto_msgs__py\x1b[0m\n'}
+[3.993428] (autoware_auto_msgs) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[4.010139] (-) TimerEvent: {}
+[4.051991] (additional_msgs) StdoutLine: {'line': b'[ 74%] Built target additional_msgs__py\n'}
+[4.062337] (additional_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target additional_msgs__python\x1b[0m\n'}
+[4.082159] (additional_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/additional_msgs__python.dir/rosidl_generator_py/additional_msgs/msg/_can_packet_s.c.o\x1b[0m\n'}
+[4.110251] (-) TimerEvent: {}
+[4.171918] (additional_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/additional_msgs/libadditional_msgs__python.so\x1b[0m\n'}
+[4.210361] (-) TimerEvent: {}
+[4.236405] (additional_msgs) StdoutLine: {'line': b'[ 80%] Built target additional_msgs__python\n'}
+[4.257505] (additional_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target additional_msgs__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[4.264812] (additional_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target additional_msgs__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[4.269736] (additional_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target additional_msgs__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[4.310459] (-) TimerEvent: {}
+[4.312265] (additional_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/additional_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/additional_msgs/_additional_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[4.327131] (additional_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/additional_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/additional_msgs/_additional_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[4.327841] (additional_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/additional_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/additional_msgs/_additional_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[4.405268] (additional_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/additional_msgs/additional_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.409420] (additional_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/additional_msgs/additional_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.410540] (-) TimerEvent: {}
+[4.411151] (additional_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/additional_msgs/additional_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.449761] (additional_msgs) StdoutLine: {'line': b'[100%] Built target additional_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[4.449961] (additional_msgs) StdoutLine: {'line': b'[100%] Built target additional_msgs__rosidl_typesupport_c__pyext\n'}
+[4.484744] (additional_msgs) StdoutLine: {'line': b'[100%] Built target additional_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[4.498962] (additional_msgs) CommandEnded: {'returncode': 0}
+[4.510639] (-) TimerEvent: {}
+[4.535636] (autoware_auto_msgs) StdoutLine: {'line': b'[ 74%] Built target autoware_auto_msgs__py\n'}
+[4.545783] (autoware_auto_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target autoware_auto_msgs__python\x1b[0m\n'}
+[4.548198] (additional_msgs) JobProgress: {'identifier': 'additional_msgs', 'progress': 'install'}
+[4.560714] (additional_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/kcg/Autonomous_kcg/idan_driver_ws/build/additional_msgs'], 'cwd': '/home/kcg/Autonomous_kcg/idan_driver_ws/build/additional_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IL:en'), ('USER', 'kcg'), ('SSH_AGENT_PID', '2036'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/kcg'), ('OLDPWD', '/home/kcg/Autonomous_kcg'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1822'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=0b1dd3347aa8647f8ecd79166306593d'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'kcg'), ('JOURNAL_STREAM', '8:42967'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'kcg'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/kcg-Alon:@/tmp/.ICE-unix/2074,unix/kcg-Alon:/tmp/.ICE-unix/2074'), ('INVOCATION_ID', 'bfa58d62f8bc4b2ca1e0cf93b8339dc0'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/13707c3f_93c9_48a0_b81a_7ac6ddc279ff'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.92'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kcg/Autonomous_kcg/idan_driver_ws/build/additional_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=0b1dd3347aa8647f8ecd79166306593d'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[4.564946] (autoware_auto_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/autoware_auto_msgs__python.dir/rosidl_generator_py/autoware_auto_msgs/msg/_vehicle_control_command_s.c.o\x1b[0m\n'}
+[4.569734] (additional_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.570000] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/ament_index/resource_index/rosidl_interfaces/additional_msgs\n'}
+[4.570373] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs\n'}
+[4.570568] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg\n'}
+[4.570693] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[4.570834] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/can_packet.h\n'}
+[4.570930] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail\n'}
+[4.571055] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__functions.h\n'}
+[4.571116] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__struct.h\n'}
+[4.571212] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__type_support.h\n'}
+[4.571269] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__functions.c\n'}
+[4.571329] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/environment/library_path.sh\n'}
+[4.571418] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/environment/library_path.dsv\n'}
+[4.571475] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_generator_c.so\n'}
+[4.571905] (additional_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_generator_c.so" to ""\n'}
+[4.572013] (additional_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs\n'}
+[4.572122] (additional_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg\n'}
+[4.572263] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[4.572359] (additional_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail\n'}
+[4.572447] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__rosidl_typesupport_fastrtps_c.h\n'}
+[4.572504] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[4.572913] (additional_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[4.573016] (additional_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs\n'}
+[4.573182] (additional_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg\n'}
+[4.573319] (additional_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail\n'}
+[4.573417] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail/dds_fastrtps\n'}
+[4.573567] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.573661] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[4.573755] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[4.574009] (additional_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[4.574156] (additional_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs\n'}
+[4.574216] (additional_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg\n'}
+[4.574356] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[4.574491] (additional_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail\n'}
+[4.574585] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__rosidl_typesupport_introspection_c.h\n'}
+[4.574706] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__type_support.c\n'}
+[4.574801] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_typesupport_introspection_c.so\n'}
+[4.575158] (additional_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[4.575290] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_typesupport_c.so\n'}
+[4.575731] (additional_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_typesupport_c.so" to ""\n'}
+[4.575902] (additional_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs\n'}
+[4.576001] (additional_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg\n'}
+[4.576141] (additional_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail\n'}
+[4.576253] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__traits.hpp\n'}
+[4.576380] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__builder.hpp\n'}
+[4.576504] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__struct.hpp\n'}
+[4.576620] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/can_packet.hpp\n'}
+[4.576715] (additional_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs\n'}
+[4.576824] (additional_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg\n'}
+[4.576917] (additional_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail\n'}
+[4.577010] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__type_support.cpp\n'}
+[4.577103] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.577197] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[4.577306] (additional_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[4.577418] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_typesupport_cpp.so\n'}
+[4.577837] (additional_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[4.577953] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/environment/pythonpath.sh\n'}
+[4.578135] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/environment/pythonpath.dsv\n'}
+[4.578348] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/python3.8/site-packages/additional_msgs/__init__.py\n'}
+[4.605525] (additional_msgs) StdoutLine: {'line': b"Compiling '/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/python3.8/site-packages/additional_msgs/__init__.py'...\n"}
+[4.608969] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/python3.8/site-packages/additional_msgs/msg\n'}
+[4.609243] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/python3.8/site-packages/additional_msgs/msg/_can_packet_s.c\n'}
+[4.609401] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/python3.8/site-packages/additional_msgs/msg/_can_packet.py\n'}
+[4.609481] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/python3.8/site-packages/additional_msgs/msg/__init__.py\n'}
+[4.609572] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/python3.8/site-packages/additional_msgs/additional_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[4.610154] (additional_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/python3.8/site-packages/additional_msgs/additional_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[4.610350] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/python3.8/site-packages/additional_msgs/additional_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[4.610697] (-) TimerEvent: {}
+[4.610932] (additional_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/python3.8/site-packages/additional_msgs/additional_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[4.611120] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/python3.8/site-packages/additional_msgs/additional_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[4.611697] (additional_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/python3.8/site-packages/additional_msgs/additional_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[4.611807] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/libadditional_msgs__python.so\n'}
+[4.612269] (additional_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/libadditional_msgs__python.so" to ""\n'}
+[4.612380] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/msg/CanPacket.idl\n'}
+[4.612565] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/ament_index/resource_index/package_run_dependencies/additional_msgs\n'}
+[4.612765] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/ament_index/resource_index/parent_prefix_path/additional_msgs\n'}
+[4.612965] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/environment/ament_prefix_path.sh\n'}
+[4.613132] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/environment/ament_prefix_path.dsv\n'}
+[4.613288] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/environment/path.sh\n'}
+[4.613417] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/environment/path.dsv\n'}
+[4.613539] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/local_setup.bash\n'}
+[4.613660] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/local_setup.sh\n'}
+[4.613803] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/local_setup.zsh\n'}
+[4.613926] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/local_setup.dsv\n'}
+[4.614045] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/package.dsv\n'}
+[4.614192] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/ament_index/resource_index/packages/additional_msgs\n'}
+[4.614402] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/cmake/additional_msgs__rosidl_generator_cExport.cmake\n'}
+[4.614562] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/cmake/additional_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[4.614759] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/cmake/additional_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[4.614909] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/cmake/additional_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[4.615163] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/cmake/additional_msgs__rosidl_typesupport_cExport.cmake\n'}
+[4.615312] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/cmake/additional_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[4.615500] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/cmake/additional_msgs__rosidl_generator_cppExport.cmake\n'}
+[4.615671] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/cmake/additional_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[4.615810] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/cmake/additional_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[4.615982] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/cmake/additional_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[4.616133] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/cmake/additional_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[4.616278] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[4.616417] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[4.616565] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[4.616713] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[4.616854] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[4.616995] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[4.617134] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[4.617276] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/cmake/additional_msgsConfig.cmake\n'}
+[4.617409] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/cmake/additional_msgsConfig-version.cmake\n'}
+[4.617545] (additional_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/share/additional_msgs/package.xml\n'}
+[4.619755] (additional_msgs) CommandEnded: {'returncode': 0}
+[4.655855] (autoware_auto_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/autoware_auto_msgs/libautoware_auto_msgs__python.so\x1b[0m\n'}
+[4.702655] (autoware_auto_msgs) StdoutLine: {'line': b'[ 80%] Built target autoware_auto_msgs__python\n'}
+[4.703582] (additional_msgs) JobEnded: {'identifier': 'additional_msgs', 'rc': 0}
+[4.710823] (-) TimerEvent: {}
+[4.712669] (autoware_auto_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target autoware_auto_msgs__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[4.712858] (autoware_auto_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target autoware_auto_msgs__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[4.712973] (autoware_auto_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target autoware_auto_msgs__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[4.731993] (autoware_auto_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/autoware_auto_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/autoware_auto_msgs/_autoware_auto_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[4.733887] (autoware_auto_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/autoware_auto_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/autoware_auto_msgs/_autoware_auto_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[4.734926] (autoware_auto_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/autoware_auto_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/autoware_auto_msgs/_autoware_auto_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[4.809261] (autoware_auto_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/autoware_auto_msgs/autoware_auto_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.810897] (-) TimerEvent: {}
+[4.812842] (autoware_auto_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/autoware_auto_msgs/autoware_auto_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.814790] (autoware_auto_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/autoware_auto_msgs/autoware_auto_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.850850] (autoware_auto_msgs) StdoutLine: {'line': b'[100%] Built target autoware_auto_msgs__rosidl_typesupport_c__pyext\n'}
+[4.855355] (autoware_auto_msgs) StdoutLine: {'line': b'[100%] Built target autoware_auto_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[4.883316] (autoware_auto_msgs) StdoutLine: {'line': b'[100%] Built target autoware_auto_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[4.894631] (autoware_auto_msgs) CommandEnded: {'returncode': 0}
+[4.911041] (-) TimerEvent: {}
+[4.940678] (autoware_auto_msgs) JobProgress: {'identifier': 'autoware_auto_msgs', 'progress': 'install'}
+[4.943121] (autoware_auto_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/kcg/Autonomous_kcg/idan_driver_ws/build/autoware_auto_msgs'], 'cwd': '/home/kcg/Autonomous_kcg/idan_driver_ws/build/autoware_auto_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IL:en'), ('USER', 'kcg'), ('SSH_AGENT_PID', '2036'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/kcg'), ('OLDPWD', '/home/kcg/Autonomous_kcg'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1822'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=0b1dd3347aa8647f8ecd79166306593d'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'kcg'), ('JOURNAL_STREAM', '8:42967'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'kcg'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/kcg-Alon:@/tmp/.ICE-unix/2074,unix/kcg-Alon:/tmp/.ICE-unix/2074'), ('INVOCATION_ID', 'bfa58d62f8bc4b2ca1e0cf93b8339dc0'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/13707c3f_93c9_48a0_b81a_7ac6ddc279ff'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.92'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kcg/Autonomous_kcg/idan_driver_ws/build/autoware_auto_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=0b1dd3347aa8647f8ecd79166306593d'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[4.951824] (autoware_auto_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.952082] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/share/ament_index/resource_index/rosidl_interfaces/autoware_auto_msgs\n'}
+[4.952229] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs\n'}
+[4.952325] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg\n'}
+[4.952479] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[4.952661] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/vehicle_control_command.h\n'}
+[4.952736] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail\n'}
+[4.952823] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__struct.h\n'}
+[4.952905] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__functions.h\n'}
+[4.952963] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__functions.c\n'}
+[4.953019] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__type_support.h\n'}
+[4.953099] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/environment/library_path.sh\n'}
+[4.953214] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/environment/library_path.dsv\n'}
+[4.953453] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_generator_c.so\n'}
+[4.953955] (autoware_auto_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_generator_c.so" to ""\n'}
+[4.954034] (autoware_auto_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs\n'}
+[4.954178] (autoware_auto_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg\n'}
+[4.954322] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[4.954389] (autoware_auto_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail\n'}
+[4.954529] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__rosidl_typesupport_fastrtps_c.h\n'}
+[4.954605] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[4.954957] (autoware_auto_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[4.955139] (autoware_auto_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs\n'}
+[4.955238] (autoware_auto_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg\n'}
+[4.955319] (autoware_auto_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail\n'}
+[4.955378] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/dds_fastrtps\n'}
+[4.955441] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.955514] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[4.955571] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[4.956024] (autoware_auto_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[4.956127] (autoware_auto_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs\n'}
+[4.956207] (autoware_auto_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg\n'}
+[4.956263] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[4.956355] (autoware_auto_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail\n'}
+[4.956410] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__type_support.c\n'}
+[4.956485] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__rosidl_typesupport_introspection_c.h\n'}
+[4.956615] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_introspection_c.so\n'}
+[4.957121] (autoware_auto_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[4.957233] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_c.so\n'}
+[4.957654] (autoware_auto_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_c.so" to ""\n'}
+[4.957763] (autoware_auto_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs\n'}
+[4.957871] (autoware_auto_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg\n'}
+[4.957928] (autoware_auto_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail\n'}
+[4.957983] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__builder.hpp\n'}
+[4.958058] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__struct.hpp\n'}
+[4.958130] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__traits.hpp\n'}
+[4.958212] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/vehicle_control_command.hpp\n'}
+[4.958352] (autoware_auto_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs\n'}
+[4.958440] (autoware_auto_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg\n'}
+[4.958497] (autoware_auto_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail\n'}
+[4.958570] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.958628] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__type_support.cpp\n'}
+[4.958738] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[4.959306] (autoware_auto_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[4.959449] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_cpp.so\n'}
+[4.959900] (autoware_auto_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[4.960009] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/environment/pythonpath.sh\n'}
+[4.960119] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/environment/pythonpath.dsv\n'}
+[4.960297] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/__init__.py\n'}
+[4.987191] (autoware_auto_msgs) StdoutLine: {'line': b"Compiling '/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/__init__.py'...\n"}
+[4.990341] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/msg\n'}
+[4.990528] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/msg/_vehicle_control_command.py\n'}
+[4.990767] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/msg/_vehicle_control_command_s.c\n'}
+[4.990873] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/msg/__init__.py\n'}
+[4.991373] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/autoware_auto_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[4.991746] (autoware_auto_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/autoware_auto_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[4.991989] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/autoware_auto_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[4.992647] (autoware_auto_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/autoware_auto_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[4.992864] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/autoware_auto_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[4.993468] (autoware_auto_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/autoware_auto_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[4.993630] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib/libautoware_auto_msgs__python.so\n'}
+[4.994068] (autoware_auto_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib/libautoware_auto_msgs__python.so" to ""\n'}
+[4.994233] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/msg/VehicleControlCommand.idl\n'}
+[4.994404] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/share/ament_index/resource_index/package_run_dependencies/autoware_auto_msgs\n'}
+[4.994603] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/share/ament_index/resource_index/parent_prefix_path/autoware_auto_msgs\n'}
+[4.994748] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/environment/ament_prefix_path.sh\n'}
+[4.994905] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/environment/ament_prefix_path.dsv\n'}
+[4.995036] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/environment/path.sh\n'}
+[4.995217] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/environment/path.dsv\n'}
+[4.995369] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/local_setup.bash\n'}
+[4.995519] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/local_setup.sh\n'}
+[4.995702] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/local_setup.zsh\n'}
+[4.995866] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/local_setup.dsv\n'}
+[4.996035] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/package.dsv\n'}
+[4.996193] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/share/ament_index/resource_index/packages/autoware_auto_msgs\n'}
+[4.996395] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_generator_cExport.cmake\n'}
+[4.996567] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[4.996772] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[4.996976] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[4.997197] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_typesupport_cExport.cmake\n'}
+[4.997381] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[4.997602] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_generator_cppExport.cmake\n'}
+[4.997794] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[4.997959] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[4.998139] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[4.998326] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[4.998487] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[4.998639] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[4.998808] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[4.998957] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[4.999131] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[4.999310] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[4.999482] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[4.999651] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgsConfig.cmake\n'}
+[4.999769] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgsConfig-version.cmake\n'}
+[4.999922] (autoware_auto_msgs) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/share/autoware_auto_msgs/package.xml\n'}
+[5.004655] (autoware_auto_msgs) CommandEnded: {'returncode': 0}
+[5.011682] (-) TimerEvent: {}
+[5.078657] (autoware_auto_msgs) JobEnded: {'identifier': 'autoware_auto_msgs', 'rc': 0}
+[5.081543] (idan_driver) JobStarted: {'identifier': 'idan_driver'}
+[5.091346] (idan_driver) JobProgress: {'identifier': 'idan_driver', 'progress': 'cmake'}
+[5.092949] (idan_driver) Command: {'cmd': ['/usr/bin/cmake', '/home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver', '-DCMAKE_INSTALL_PREFIX=/home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver'], 'cwd': '/home/kcg/Autonomous_kcg/idan_driver_ws/build/idan_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IL:en'), ('USER', 'kcg'), ('SSH_AGENT_PID', '2036'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib:/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/kcg'), ('OLDPWD', '/home/kcg/Autonomous_kcg'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1822'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=0b1dd3347aa8647f8ecd79166306593d'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'kcg'), ('JOURNAL_STREAM', '8:42967'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'kcg'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/kcg-Alon:@/tmp/.ICE-unix/2074,unix/kcg-Alon:/tmp/.ICE-unix/2074'), ('INVOCATION_ID', 'bfa58d62f8bc4b2ca1e0cf93b8339dc0'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/13707c3f_93c9_48a0_b81a_7ac6ddc279ff'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.92'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs:/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kcg/Autonomous_kcg/idan_driver_ws/build/idan_driver'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=0b1dd3347aa8647f8ecd79166306593d'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib/python3.8/site-packages:/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs:/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs:/opt/ros/foxy')]), 'shell': False}
+[5.111822] (-) TimerEvent: {}
+[5.150982] (idan_driver) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[5.204994] (idan_driver) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[5.209165] (idan_driver) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[5.211913] (-) TimerEvent: {}
+[5.278124] (idan_driver) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[5.278924] (idan_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[5.312050] (-) TimerEvent: {}
+[5.346356] (idan_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[5.356689] (idan_driver) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[5.357105] (idan_driver) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[5.359383] (idan_driver) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[5.412168] (-) TimerEvent: {}
+[5.437533] (idan_driver) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[5.438837] (idan_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[5.512270] (-) TimerEvent: {}
+[5.520302] (idan_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[5.530838] (idan_driver) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[5.531412] (idan_driver) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[5.533177] (idan_driver) StdoutLine: {'line': b'-- Found ament_cmake_auto: 0.9.9 (/opt/ros/foxy/share/ament_cmake_auto/cmake)\n'}
+[5.557246] (idan_driver) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[5.557467] (idan_driver) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[5.612371] (-) TimerEvent: {}
+[5.712596] (-) TimerEvent: {}
+[5.812868] (-) TimerEvent: {}
+[5.822196] (idan_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.828515] (idan_driver) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[5.905253] (idan_driver) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[5.912935] (-) TimerEvent: {}
+[5.931473] (idan_driver) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[6.002785] (idan_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.013031] (-) TimerEvent: {}
+[6.054843] (idan_driver) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[6.056233] (idan_driver) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[6.057062] (idan_driver) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[6.113156] (-) TimerEvent: {}
+[6.127379] (idan_driver) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[6.127623] (idan_driver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[6.201022] (idan_driver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[6.201225] (idan_driver) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[6.213273] (-) TimerEvent: {}
+[6.260301] (idan_driver) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[6.260625] (idan_driver) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[6.313405] (-) TimerEvent: {}
+[6.329236] (idan_driver) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[6.330313] (idan_driver) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[6.413516] (-) TimerEvent: {}
+[6.513839] (-) TimerEvent: {}
+[6.614087] (-) TimerEvent: {}
+[6.714353] (-) TimerEvent: {}
+[6.814575] (-) TimerEvent: {}
+[6.914873] (-) TimerEvent: {}
+[6.985421] (idan_driver) StdoutLine: {'line': b'-- Configuring done\n'}
+[7.014945] (-) TimerEvent: {}
+[7.015216] (idan_driver) StdoutLine: {'line': b'-- Generating done\n'}
+[7.016874] (idan_driver) StdoutLine: {'line': b'-- Build files have been written to: /home/kcg/Autonomous_kcg/idan_driver_ws/build/idan_driver\n'}
+[7.023622] (idan_driver) CommandEnded: {'returncode': 0}
+[7.024269] (idan_driver) JobProgress: {'identifier': 'idan_driver', 'progress': 'build'}
+[7.024583] (idan_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/kcg/Autonomous_kcg/idan_driver_ws/build/idan_driver', '--', '-j8', '-l8'], 'cwd': '/home/kcg/Autonomous_kcg/idan_driver_ws/build/idan_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IL:en'), ('USER', 'kcg'), ('SSH_AGENT_PID', '2036'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib:/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/kcg'), ('OLDPWD', '/home/kcg/Autonomous_kcg'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1822'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=0b1dd3347aa8647f8ecd79166306593d'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'kcg'), ('JOURNAL_STREAM', '8:42967'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'kcg'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/kcg-Alon:@/tmp/.ICE-unix/2074,unix/kcg-Alon:/tmp/.ICE-unix/2074'), ('INVOCATION_ID', 'bfa58d62f8bc4b2ca1e0cf93b8339dc0'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/13707c3f_93c9_48a0_b81a_7ac6ddc279ff'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.92'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs:/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kcg/Autonomous_kcg/idan_driver_ws/build/idan_driver'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=0b1dd3347aa8647f8ecd79166306593d'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib/python3.8/site-packages:/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs:/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs:/opt/ros/foxy')]), 'shell': False}
+[7.068186] (idan_driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target idan_driver\x1b[0m\n'}
+[7.107034] (idan_driver) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/idan_driver.dir/src/listener/listener.cpp.o\x1b[0m\n'}
+[7.115063] (-) TimerEvent: {}
+[7.215357] (-) TimerEvent: {}
+[7.315720] (-) TimerEvent: {}
+[7.416243] (-) TimerEvent: {}
+[7.516530] (-) TimerEvent: {}
+[7.616794] (-) TimerEvent: {}
+[7.717056] (-) TimerEvent: {}
+[7.817324] (-) TimerEvent: {}
+[7.917597] (-) TimerEvent: {}
+[8.017864] (-) TimerEvent: {}
+[8.118131] (-) TimerEvent: {}
+[8.218411] (-) TimerEvent: {}
+[8.318700] (-) TimerEvent: {}
+[8.418964] (-) TimerEvent: {}
+[8.519211] (-) TimerEvent: {}
+[8.619477] (-) TimerEvent: {}
+[8.719752] (-) TimerEvent: {}
+[8.820028] (-) TimerEvent: {}
+[8.920332] (-) TimerEvent: {}
+[9.020636] (-) TimerEvent: {}
+[9.120910] (-) TimerEvent: {}
+[9.221182] (-) TimerEvent: {}
+[9.321457] (-) TimerEvent: {}
+[9.421724] (-) TimerEvent: {}
+[9.521993] (-) TimerEvent: {}
+[9.622261] (-) TimerEvent: {}
+[9.722533] (-) TimerEvent: {}
+[9.822829] (-) TimerEvent: {}
+[9.923105] (-) TimerEvent: {}
+[10.023356] (-) TimerEvent: {}
+[10.123609] (-) TimerEvent: {}
+[10.223868] (-) TimerEvent: {}
+[10.324127] (-) TimerEvent: {}
+[10.424389] (-) TimerEvent: {}
+[10.524691] (-) TimerEvent: {}
+[10.624946] (-) TimerEvent: {}
+[10.725198] (-) TimerEvent: {}
+[10.825451] (-) TimerEvent: {}
+[10.925703] (-) TimerEvent: {}
+[11.025962] (-) TimerEvent: {}
+[11.126217] (-) TimerEvent: {}
+[11.226470] (-) TimerEvent: {}
+[11.326726] (-) TimerEvent: {}
+[11.426988] (-) TimerEvent: {}
+[11.527255] (-) TimerEvent: {}
+[11.590541] (idan_driver) StdoutLine: {'line': b'[ 18%] \x1b[32m\x1b[1mLinking CXX shared library libidan_driver.so\x1b[0m\n'}
+[11.627372] (-) TimerEvent: {}
+[11.727729] (-) TimerEvent: {}
+[11.828276] (-) TimerEvent: {}
+[11.928611] (-) TimerEvent: {}
+[12.028911] (-) TimerEvent: {}
+[12.053495] (idan_driver) StdoutLine: {'line': b'[ 18%] Built target idan_driver\n'}
+[12.064282] (idan_driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target listener_exe\x1b[0m\n'}
+[12.064504] (idan_driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target can_communication_titan_exe\x1b[0m\n'}
+[12.064634] (idan_driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sender_exe\x1b[0m\n'}
+[12.106857] (idan_driver) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/listener_exe.dir/src/listener/listener.cpp.o\x1b[0m\n'}
+[12.107133] (idan_driver) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/listener_exe.dir/src/listener/listener_lib.cpp.o\x1b[0m\n'}
+[12.109672] (idan_driver) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/sender_exe.dir/src/sender/sender.cpp.o\x1b[0m\n'}
+[12.110585] (idan_driver) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/sender_exe.dir/src/sender/sender_lib.cpp.o\x1b[0m\n'}
+[12.111851] (idan_driver) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/can_communication_titan_exe.dir/src/can_communication_titan/can_communication_node.cpp.o\x1b[0m\n'}
+[12.113845] (idan_driver) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/can_communication_titan_exe.dir/src/can_communication_titan/titan_can.cpp.o\x1b[0m\n'}
+[12.129023] (-) TimerEvent: {}
+[12.229360] (-) TimerEvent: {}
+[12.329679] (-) TimerEvent: {}
+[12.430009] (-) TimerEvent: {}
+[12.530346] (-) TimerEvent: {}
+[12.630658] (-) TimerEvent: {}
+[12.731040] (-) TimerEvent: {}
+[12.831403] (-) TimerEvent: {}
+[12.931743] (-) TimerEvent: {}
+[13.032088] (-) TimerEvent: {}
+[13.132413] (-) TimerEvent: {}
+[13.232756] (-) TimerEvent: {}
+[13.333103] (-) TimerEvent: {}
+[13.358027] (idan_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver/src/can_communication_titan/titan_can.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool TitanComm::connect()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.358373] (idan_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver/src/can_communication_titan/titan_can.cpp:19:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids converting a string constant to \xe2\x80\x98\x1b[01m\x1b[KCHAR*\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kchar*\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wwrite-strings\x1b[m\x1b[K]\n'}
+[13.358510] (idan_driver) StderrLine: {'line': b'   19 |  CHAR *ComPort = \x1b[01;35m\x1b[K"/dev/ttyUSB0"\x1b[m\x1b[K;\n'}
+[13.358622] (idan_driver) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.358731] (idan_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver/src/can_communication_titan/titan_can.cpp:20:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids converting a string constant to \xe2\x80\x98\x1b[01m\x1b[KCHAR*\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kchar*\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wwrite-strings\x1b[m\x1b[K]\n'}
+[13.358848] (idan_driver) StderrLine: {'line': b'   20 |  CHAR *szBitrate = \x1b[01;35m\x1b[K"500"\x1b[m\x1b[K;\n'}
+[13.358953] (idan_driver) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[13.359082] (idan_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver/src/can_communication_titan/titan_can.cpp:21:26:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids converting a string constant to \xe2\x80\x98\x1b[01m\x1b[KCHAR*\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kchar*\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wwrite-strings\x1b[m\x1b[K]\n'}
+[13.359199] (idan_driver) StderrLine: {'line': b'   21 |  CHAR *acceptance_code = \x1b[01;35m\x1b[K"1FFFFFFF"\x1b[m\x1b[K;\n'}
+[13.359310] (idan_driver) StderrLine: {'line': b'      |                          \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.359415] (idan_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver/src/can_communication_titan/titan_can.cpp:22:26:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids converting a string constant to \xe2\x80\x98\x1b[01m\x1b[KCHAR*\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kchar*\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wwrite-strings\x1b[m\x1b[K]\n'}
+[13.359524] (idan_driver) StderrLine: {'line': b'   22 |  CHAR *acceptance_mask = \x1b[01;35m\x1b[K"00000039"\x1b[m\x1b[K; //"00000039";\n'}
+[13.359629] (idan_driver) StderrLine: {'line': b'      |                          \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.433214] (-) TimerEvent: {}
+[13.533539] (-) TimerEvent: {}
+[13.633864] (-) TimerEvent: {}
+[13.734199] (-) TimerEvent: {}
+[13.834501] (-) TimerEvent: {}
+[13.934829] (-) TimerEvent: {}
+[14.035173] (-) TimerEvent: {}
+[14.135503] (-) TimerEvent: {}
+[14.235849] (-) TimerEvent: {}
+[14.336175] (-) TimerEvent: {}
+[14.436510] (-) TimerEvent: {}
+[14.536811] (-) TimerEvent: {}
+[14.637146] (-) TimerEvent: {}
+[14.737447] (-) TimerEvent: {}
+[14.837754] (-) TimerEvent: {}
+[14.938092] (-) TimerEvent: {}
+[15.038404] (-) TimerEvent: {}
+[15.138762] (-) TimerEvent: {}
+[15.239180] (-) TimerEvent: {}
+[15.339518] (-) TimerEvent: {}
+[15.439802] (-) TimerEvent: {}
+[15.540082] (-) TimerEvent: {}
+[15.640372] (-) TimerEvent: {}
+[15.740658] (-) TimerEvent: {}
+[15.840935] (-) TimerEvent: {}
+[15.941218] (-) TimerEvent: {}
+[16.041494] (-) TimerEvent: {}
+[16.141790] (-) TimerEvent: {}
+[16.242036] (-) TimerEvent: {}
+[16.342272] (-) TimerEvent: {}
+[16.442510] (-) TimerEvent: {}
+[16.542773] (-) TimerEvent: {}
+[16.643032] (-) TimerEvent: {}
+[16.743262] (-) TimerEvent: {}
+[16.843525] (-) TimerEvent: {}
+[16.943787] (-) TimerEvent: {}
+[17.044111] (-) TimerEvent: {}
+[17.124585] (idan_driver) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX executable listener_exe\x1b[0m\n'}
+[17.144238] (-) TimerEvent: {}
+[17.244648] (-) TimerEvent: {}
+[17.278466] (idan_driver) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking CXX executable can_communication_titan_exe\x1b[0m\n'}
+[17.279092] (idan_driver) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable sender_exe\x1b[0m\n'}
+[17.344778] (-) TimerEvent: {}
+[17.445272] (-) TimerEvent: {}
+[17.541181] (idan_driver) StdoutLine: {'line': b'[100%] Built target listener_exe\n'}
+[17.545340] (-) TimerEvent: {}
+[17.645673] (-) TimerEvent: {}
+[17.660335] (idan_driver) StdoutLine: {'line': b'[100%] Built target sender_exe\n'}
+[17.664652] (idan_driver) StdoutLine: {'line': b'[100%] Built target can_communication_titan_exe\n'}
+[17.676197] (idan_driver) CommandEnded: {'returncode': 0}
+[17.708954] (idan_driver) JobProgress: {'identifier': 'idan_driver', 'progress': 'install'}
+[17.709372] (idan_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/kcg/Autonomous_kcg/idan_driver_ws/build/idan_driver'], 'cwd': '/home/kcg/Autonomous_kcg/idan_driver_ws/build/idan_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IL:en'), ('USER', 'kcg'), ('SSH_AGENT_PID', '2036'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib:/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/kcg'), ('OLDPWD', '/home/kcg/Autonomous_kcg'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1822'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=0b1dd3347aa8647f8ecd79166306593d'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'kcg'), ('JOURNAL_STREAM', '8:42967'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'kcg'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/kcg-Alon:@/tmp/.ICE-unix/2074,unix/kcg-Alon:/tmp/.ICE-unix/2074'), ('INVOCATION_ID', 'bfa58d62f8bc4b2ca1e0cf93b8339dc0'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/13707c3f_93c9_48a0_b81a_7ac6ddc279ff'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.92'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs:/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kcg/Autonomous_kcg/idan_driver_ws/build/idan_driver'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=0b1dd3347aa8647f8ecd79166306593d'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib/python3.8/site-packages:/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs:/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs:/opt/ros/foxy')]), 'shell': False}
+[17.719948] (idan_driver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[17.720126] (idan_driver) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/include\n'}
+[17.720273] (idan_driver) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/include/can_communication_titan\n'}
+[17.720366] (idan_driver) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/include/can_communication_titan/titan_can.hpp\n'}
+[17.720525] (idan_driver) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/include/can_communication_titan/LinuxCAN_API_x64.h\n'}
+[17.720619] (idan_driver) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/include/can_communication_titan/LinuxCAN_API.h\n'}
+[17.720706] (idan_driver) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/include/sender\n'}
+[17.720765] (idan_driver) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/include/sender/sender.hpp\n'}
+[17.720821] (idan_driver) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/include/listener\n'}
+[17.720888] (idan_driver) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/include/listener/listener.hpp\n'}
+[17.720944] (idan_driver) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/environment/library_path.sh\n'}
+[17.721062] (idan_driver) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/environment/library_path.dsv\n'}
+[17.721299] (idan_driver) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/lib/libidan_driver.so\n'}
+[17.724992] (idan_driver) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/lib/libidan_driver.so" to ""\n'}
+[17.725156] (idan_driver) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/lib/idan_driver/can_communication_titan_exe\n'}
+[17.727680] (idan_driver) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/lib/idan_driver/can_communication_titan_exe" to ""\n'}
+[17.727845] (idan_driver) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/lib/idan_driver/listener_exe\n'}
+[17.730118] (idan_driver) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/lib/idan_driver/listener_exe" to ""\n'}
+[17.730313] (idan_driver) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/lib/idan_driver/sender_exe\n'}
+[17.732573] (idan_driver) StdoutLine: {'line': b'-- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/lib/idan_driver/sender_exe" to ""\n'}
+[17.732796] (idan_driver) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/launch\n'}
+[17.732870] (idan_driver) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/launch/idan.launch.py\n'}
+[17.733008] (idan_driver) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/ament_index/resource_index/package_run_dependencies/idan_driver\n'}
+[17.733118] (idan_driver) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/ament_index/resource_index/parent_prefix_path/idan_driver\n'}
+[17.733212] (idan_driver) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/environment/ament_prefix_path.sh\n'}
+[17.733386] (idan_driver) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/environment/ament_prefix_path.dsv\n'}
+[17.733529] (idan_driver) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/environment/path.sh\n'}
+[17.733701] (idan_driver) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/environment/path.dsv\n'}
+[17.733812] (idan_driver) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/local_setup.bash\n'}
+[17.733971] (idan_driver) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/local_setup.sh\n'}
+[17.734165] (idan_driver) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/local_setup.zsh\n'}
+[17.734347] (idan_driver) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/local_setup.dsv\n'}
+[17.734491] (idan_driver) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/package.dsv\n'}
+[17.734629] (idan_driver) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/ament_index/resource_index/packages/idan_driver\n'}
+[17.734795] (idan_driver) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[17.734915] (idan_driver) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[17.735129] (idan_driver) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[17.735280] (idan_driver) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/cmake/idan_driverConfig.cmake\n'}
+[17.735416] (idan_driver) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/cmake/idan_driverConfig-version.cmake\n'}
+[17.735588] (idan_driver) StdoutLine: {'line': b'-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/package.xml\n'}
+[17.739657] (idan_driver) CommandEnded: {'returncode': 0}
+[17.746754] (-) TimerEvent: {}
+[17.794535] (idan_driver) JobEnded: {'identifier': 'idan_driver', 'rc': 0}
+[17.795551] (-) EventReactorShutdown: {}

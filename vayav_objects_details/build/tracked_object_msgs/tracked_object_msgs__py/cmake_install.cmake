@@ -1,8 +1,8 @@
-# Install script for directory: /home/shovals/copy/vayav_objects_details/build/tracked_object_msgs/tracked_object_msgs__py
+# Install script for directory: /home/kcg/Autonomous_kcg/vayav_objects_details/build/tracked_object_msgs/tracked_object_msgs__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/shovals/copy/vayav_objects_details/install/tracked_object_msgs")
+  set(CMAKE_INSTALL_PREFIX "/home/kcg/Autonomous_kcg/vayav_objects_details/install/tracked_object_msgs")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

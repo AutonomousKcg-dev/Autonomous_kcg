@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC   -Wall -std=gnu++14
 
 CXX_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROS_PACKAGE_NAME=\"additional_msgs\" -Dadditional_msgs__rosidl_typesupport_introspection_cpp_EXPORTS
 
-CXX_INCLUDES = -I/home/kcg/copy/ROS2Sample/build/additional_msgs/rosidl_generator_cpp -isystem /opt/ros/foxy/include 
+CXX_INCLUDES = -I/home/kcg/Autonomous_kcg/ROS2Sample/build/additional_msgs/rosidl_generator_cpp -isystem /opt/ros/foxy/include 
 

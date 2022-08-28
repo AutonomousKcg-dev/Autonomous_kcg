@@ -26,6 +26,7 @@ setup(
         "pid = controllerPID.PID:output",
         "rcc = python_publisher.record_sub:main",
         "gev = python_publisher.google_earth_viz:main",
+        "acc_vaya = python_publisher.adaptive_cruise_control_vaya:main",
         ],
     },
 )

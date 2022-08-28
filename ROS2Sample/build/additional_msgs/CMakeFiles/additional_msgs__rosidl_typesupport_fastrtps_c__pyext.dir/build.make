@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kcg/copy/ROS2Sample/src/msgs/additional_msgs
+CMAKE_SOURCE_DIR = /home/kcg/Autonomous_kcg/ROS2Sample/src/msgs/additional_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kcg/copy/ROS2Sample/build/additional_msgs
+CMAKE_BINARY_DIR = /home/kcg/Autonomous_kcg/ROS2Sample/build/additional_msgs
 
 # Include any dependencies generated for this target.
 include CMakeFiles/additional_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/additional_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/fla
 
 CMakeFiles/additional_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/additional_msgs/_additional_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o: CMakeFiles/additional_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/flags.make
 CMakeFiles/additional_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/additional_msgs/_additional_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o: rosidl_generator_py/additional_msgs/_additional_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kcg/copy/ROS2Sample/build/additional_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/additional_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/additional_msgs/_additional_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/additional_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/additional_msgs/_additional_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o   -c /home/kcg/copy/ROS2Sample/build/additional_msgs/rosidl_generator_py/additional_msgs/_additional_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kcg/Autonomous_kcg/ROS2Sample/build/additional_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/additional_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/additional_msgs/_additional_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/additional_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/additional_msgs/_additional_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o   -c /home/kcg/Autonomous_kcg/ROS2Sample/build/additional_msgs/rosidl_generator_py/additional_msgs/_additional_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 
 CMakeFiles/additional_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/additional_msgs/_additional_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/additional_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/additional_msgs/_additional_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kcg/copy/ROS2Sample/build/additional_msgs/rosidl_generator_py/additional_msgs/_additional_msgs_s.ep.rosidl_typesupport_fastrtps_c.c > CMakeFiles/additional_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/additional_msgs/_additional_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kcg/Autonomous_kcg/ROS2Sample/build/additional_msgs/rosidl_generator_py/additional_msgs/_additional_msgs_s.ep.rosidl_typesupport_fastrtps_c.c > CMakeFiles/additional_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/additional_msgs/_additional_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.i
 
 CMakeFiles/additional_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/additional_msgs/_additional_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/additional_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/additional_msgs/_additional_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kcg/copy/ROS2Sample/build/additional_msgs/rosidl_generator_py/additional_msgs/_additional_msgs_s.ep.rosidl_typesupport_fastrtps_c.c -o CMakeFiles/additional_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/additional_msgs/_additional_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kcg/Autonomous_kcg/ROS2Sample/build/additional_msgs/rosidl_generator_py/additional_msgs/_additional_msgs_s.ep.rosidl_typesupport_fastrtps_c.c -o CMakeFiles/additional_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/additional_msgs/_additional_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.s
 
 # Object files for target additional_msgs__rosidl_typesupport_fastrtps_c__pyext
 additional_msgs__rosidl_typesupport_fastrtps_c__pyext_OBJECTS = \
@@ -121,7 +121,7 @@ rosidl_generator_py/additional_msgs/additional_msgs_s__rosidl_typesupport_fastrt
 rosidl_generator_py/additional_msgs/additional_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libcrypto.so
 rosidl_generator_py/additional_msgs/additional_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so: /opt/ros/foxy/lib/libfastcdr.so.1.0.13
 rosidl_generator_py/additional_msgs/additional_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so: CMakeFiles/additional_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kcg/copy/ROS2Sample/build/additional_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library rosidl_generator_py/additional_msgs/additional_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kcg/Autonomous_kcg/ROS2Sample/build/additional_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library rosidl_generator_py/additional_msgs/additional_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/additional_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -134,6 +134,6 @@ CMakeFiles/additional_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/clean:
 .PHONY : CMakeFiles/additional_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/clean
 
 CMakeFiles/additional_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/depend:
-	cd /home/kcg/copy/ROS2Sample/build/additional_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kcg/copy/ROS2Sample/src/msgs/additional_msgs /home/kcg/copy/ROS2Sample/src/msgs/additional_msgs /home/kcg/copy/ROS2Sample/build/additional_msgs /home/kcg/copy/ROS2Sample/build/additional_msgs /home/kcg/copy/ROS2Sample/build/additional_msgs/CMakeFiles/additional_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kcg/Autonomous_kcg/ROS2Sample/build/additional_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kcg/Autonomous_kcg/ROS2Sample/src/msgs/additional_msgs /home/kcg/Autonomous_kcg/ROS2Sample/src/msgs/additional_msgs /home/kcg/Autonomous_kcg/ROS2Sample/build/additional_msgs /home/kcg/Autonomous_kcg/ROS2Sample/build/additional_msgs /home/kcg/Autonomous_kcg/ROS2Sample/build/additional_msgs/CMakeFiles/additional_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/additional_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/depend
 

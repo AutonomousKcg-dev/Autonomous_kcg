@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kcg/copy/ROS2Sample/src/msgs/additional_msgs
+CMAKE_SOURCE_DIR = /home/kcg/Autonomous_kcg/ROS2Sample/src/msgs/additional_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kcg/copy/ROS2Sample/build/additional_msgs
+CMAKE_BINARY_DIR = /home/kcg/Autonomous_kcg/ROS2Sample/build/additional_msgs
 
 # Utility rule file for additional_msgs__cpp.
 
@@ -74,7 +74,7 @@ rosidl_generator_cpp/additional_msgs/msg/can_packet.hpp: /opt/ros/foxy/share/ros
 rosidl_generator_cpp/additional_msgs/msg/can_packet.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/srv__builder.hpp.em
 rosidl_generator_cpp/additional_msgs/msg/can_packet.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
 rosidl_generator_cpp/additional_msgs/msg/can_packet.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
-rosidl_generator_cpp/additional_msgs/msg/can_packet.hpp: /home/kcg/copy/ROS2Sample/src/msgs/additional_msgs/msg/CanPacket.idl
+rosidl_generator_cpp/additional_msgs/msg/can_packet.hpp: /home/kcg/Autonomous_kcg/ROS2Sample/src/msgs/additional_msgs/msg/CanPacket.idl
 rosidl_generator_cpp/additional_msgs/msg/can_packet.hpp: /opt/ros/foxy/share/std_msgs/msg/Bool.idl
 rosidl_generator_cpp/additional_msgs/msg/can_packet.hpp: /opt/ros/foxy/share/std_msgs/msg/Byte.idl
 rosidl_generator_cpp/additional_msgs/msg/can_packet.hpp: /opt/ros/foxy/share/std_msgs/msg/ByteMultiArray.idl
@@ -107,8 +107,8 @@ rosidl_generator_cpp/additional_msgs/msg/can_packet.hpp: /opt/ros/foxy/share/std
 rosidl_generator_cpp/additional_msgs/msg/can_packet.hpp: /opt/ros/foxy/share/std_msgs/msg/UInt8MultiArray.idl
 rosidl_generator_cpp/additional_msgs/msg/can_packet.hpp: /opt/ros/foxy/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_cpp/additional_msgs/msg/can_packet.hpp: /opt/ros/foxy/share/builtin_interfaces/msg/Time.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kcg/copy/ROS2Sample/build/additional_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/foxy/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/kcg/copy/ROS2Sample/build/additional_msgs/rosidl_generator_cpp__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kcg/Autonomous_kcg/ROS2Sample/build/additional_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/foxy/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/kcg/Autonomous_kcg/ROS2Sample/build/additional_msgs/rosidl_generator_cpp__arguments.json
 
 rosidl_generator_cpp/additional_msgs/msg/detail/can_packet__builder.hpp: rosidl_generator_cpp/additional_msgs/msg/can_packet.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/additional_msgs/msg/detail/can_packet__builder.hpp
@@ -138,6 +138,6 @@ CMakeFiles/additional_msgs__cpp.dir/clean:
 .PHONY : CMakeFiles/additional_msgs__cpp.dir/clean
 
 CMakeFiles/additional_msgs__cpp.dir/depend:
-	cd /home/kcg/copy/ROS2Sample/build/additional_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kcg/copy/ROS2Sample/src/msgs/additional_msgs /home/kcg/copy/ROS2Sample/src/msgs/additional_msgs /home/kcg/copy/ROS2Sample/build/additional_msgs /home/kcg/copy/ROS2Sample/build/additional_msgs /home/kcg/copy/ROS2Sample/build/additional_msgs/CMakeFiles/additional_msgs__cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kcg/Autonomous_kcg/ROS2Sample/build/additional_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kcg/Autonomous_kcg/ROS2Sample/src/msgs/additional_msgs /home/kcg/Autonomous_kcg/ROS2Sample/src/msgs/additional_msgs /home/kcg/Autonomous_kcg/ROS2Sample/build/additional_msgs /home/kcg/Autonomous_kcg/ROS2Sample/build/additional_msgs /home/kcg/Autonomous_kcg/ROS2Sample/build/additional_msgs/CMakeFiles/additional_msgs__cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/additional_msgs__cpp.dir/depend
 

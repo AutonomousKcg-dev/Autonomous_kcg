@@ -1,4 +1,0 @@
-Invoking command in '/home/kcg/copy/idan_driver_ws/build/autoware_auto_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/kcg/copy/idan_driver_ws/src/msgs/autoware_auto_msgs -DCMAKE_INSTALL_PREFIX=/home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs
-Invoked command in '/home/kcg/copy/idan_driver_ws/build/autoware_auto_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/kcg/copy/idan_driver_ws/src/msgs/autoware_auto_msgs -DCMAKE_INSTALL_PREFIX=/home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs
-Invoking command in '/home/kcg/copy/idan_driver_ws/build/autoware_auto_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/kcg/copy/idan_driver_ws/build/autoware_auto_msgs -- -j20 -l20
-Invoked command in '/home/kcg/copy/idan_driver_ws/build/autoware_auto_msgs' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/kcg/copy/idan_driver_ws/build/autoware_auto_msgs -- -j20 -l20

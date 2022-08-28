@@ -1,4 +1,4 @@
-/home/shovals/copy/vayav_objects_details/build/tracked_lane_msgs/rosidl_adapter/tracked_lane_msgs:msg/LaneResults.idl
-/home/shovals/copy/vayav_objects_details/build/tracked_lane_msgs/rosidl_adapter/tracked_lane_msgs:msg/Lane.idl
-/home/shovals/copy/vayav_objects_details/build/tracked_lane_msgs/rosidl_adapter/tracked_lane_msgs:msg/Boundary.idl
-/home/shovals/copy/vayav_objects_details/build/tracked_lane_msgs/rosidl_adapter/tracked_lane_msgs:msg/Point.idl
+/home/kcg/Autonomous_kcg/vayav_objects_details/build/tracked_lane_msgs/rosidl_adapter/tracked_lane_msgs:msg/LaneResults.idl
+/home/kcg/Autonomous_kcg/vayav_objects_details/build/tracked_lane_msgs/rosidl_adapter/tracked_lane_msgs:msg/Lane.idl
+/home/kcg/Autonomous_kcg/vayav_objects_details/build/tracked_lane_msgs/rosidl_adapter/tracked_lane_msgs:msg/Boundary.idl
+/home/kcg/Autonomous_kcg/vayav_objects_details/build/tracked_lane_msgs/rosidl_adapter/tracked_lane_msgs:msg/Point.idl

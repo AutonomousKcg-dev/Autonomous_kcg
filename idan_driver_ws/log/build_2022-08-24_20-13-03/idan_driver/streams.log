@@ -1,0 +1,114 @@
+[0.013s] Invoking command in '/home/kcg/Autonomous_kcg/idan_driver_ws/build/idan_driver': AMENT_PREFIX_PATH=/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs:/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs:/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib:/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib/python3.8/site-packages:/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver -DCMAKE_INSTALL_PREFIX=/home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver
+[0.070s] -- The C compiler identification is GNU 9.4.0
+[0.124s] -- The CXX compiler identification is GNU 9.4.0
+[0.128s] -- Check for working C compiler: /usr/bin/cc
+[0.197s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.197s] -- Detecting C compiler ABI info
+[0.265s] -- Detecting C compiler ABI info - done
+[0.275s] -- Detecting C compile features
+[0.276s] -- Detecting C compile features - done
+[0.278s] -- Check for working CXX compiler: /usr/bin/c++
+[0.356s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.357s] -- Detecting CXX compiler ABI info
+[0.439s] -- Detecting CXX compiler ABI info - done
+[0.449s] -- Detecting CXX compile features
+[0.450s] -- Detecting CXX compile features - done
+[0.452s] -- Found ament_cmake_auto: 0.9.9 (/opt/ros/foxy/share/ament_cmake_auto/cmake)
+[0.476s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.476s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.741s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.747s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.824s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.850s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.921s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.973s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.975s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.976s] -- Looking for pthread.h
+[1.046s] -- Looking for pthread.h - found
+[1.046s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.120s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.120s] -- Looking for pthread_create in pthreads
+[1.179s] -- Looking for pthread_create in pthreads - not found
+[1.179s] -- Looking for pthread_create in pthread
+[1.248s] -- Looking for pthread_create in pthread - found
+[1.249s] -- Found Threads: TRUE  
+[1.904s] -- Configuring done
+[1.934s] -- Generating done
+[1.935s] -- Build files have been written to: /home/kcg/Autonomous_kcg/idan_driver_ws/build/idan_driver
+[1.942s] Invoked command in '/home/kcg/Autonomous_kcg/idan_driver_ws/build/idan_driver' returned '0': AMENT_PREFIX_PATH=/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs:/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs:/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib:/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib/python3.8/site-packages:/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver -DCMAKE_INSTALL_PREFIX=/home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver
+[1.944s] Invoking command in '/home/kcg/Autonomous_kcg/idan_driver_ws/build/idan_driver': AMENT_PREFIX_PATH=/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs:/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs:/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib:/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib/python3.8/site-packages:/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/kcg/Autonomous_kcg/idan_driver_ws/build/idan_driver -- -j8 -l8
+[1.987s] [35m[1mScanning dependencies of target idan_driver[0m
+[2.026s] [  9%] [32mBuilding CXX object CMakeFiles/idan_driver.dir/src/listener/listener.cpp.o[0m
+[6.509s] [ 18%] [32m[1mLinking CXX shared library libidan_driver.so[0m
+[6.972s] [ 18%] Built target idan_driver
+[6.983s] [35m[1mScanning dependencies of target listener_exe[0m
+[6.983s] [35m[1mScanning dependencies of target can_communication_titan_exe[0m
+[6.983s] [35m[1mScanning dependencies of target sender_exe[0m
+[7.025s] [ 27%] [32mBuilding CXX object CMakeFiles/listener_exe.dir/src/listener/listener.cpp.o[0m
+[7.026s] [ 36%] [32mBuilding CXX object CMakeFiles/listener_exe.dir/src/listener/listener_lib.cpp.o[0m
+[7.028s] [ 45%] [32mBuilding CXX object CMakeFiles/sender_exe.dir/src/sender/sender.cpp.o[0m
+[7.029s] [ 54%] [32mBuilding CXX object CMakeFiles/sender_exe.dir/src/sender/sender_lib.cpp.o[0m
+[7.030s] [ 63%] [32mBuilding CXX object CMakeFiles/can_communication_titan_exe.dir/src/can_communication_titan/can_communication_node.cpp.o[0m
+[7.032s] [ 72%] [32mBuilding CXX object CMakeFiles/can_communication_titan_exe.dir/src/can_communication_titan/titan_can.cpp.o[0m
+[8.277s] [01m[K/home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver/src/can_communication_titan/titan_can.cpp:[m[K In member function ‘[01m[Kbool TitanComm::connect()[m[K’:
+[8.277s] [01m[K/home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver/src/can_communication_titan/titan_can.cpp:19:18:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KCHAR*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[8.277s]    19 |  CHAR *ComPort = [01;35m[K"/dev/ttyUSB0"[m[K;
+[8.277s]       |                  [01;35m[K^~~~~~~~~~~~~~[m[K
+[8.277s] [01m[K/home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver/src/can_communication_titan/titan_can.cpp:20:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KCHAR*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[8.277s]    20 |  CHAR *szBitrate = [01;35m[K"500"[m[K;
+[8.277s]       |                    [01;35m[K^~~~~[m[K
+[8.278s] [01m[K/home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver/src/can_communication_titan/titan_can.cpp:21:26:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KCHAR*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[8.278s]    21 |  CHAR *acceptance_code = [01;35m[K"1FFFFFFF"[m[K;
+[8.278s]       |                          [01;35m[K^~~~~~~~~~[m[K
+[8.278s] [01m[K/home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver/src/can_communication_titan/titan_can.cpp:22:26:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KCHAR*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[8.278s]    22 |  CHAR *acceptance_mask = [01;35m[K"00000039"[m[K; //"00000039";
+[8.278s]       |                          [01;35m[K^~~~~~~~~~[m[K
+[12.043s] [ 81%] [32m[1mLinking CXX executable listener_exe[0m
+[12.197s] [ 90%] [32m[1mLinking CXX executable can_communication_titan_exe[0m
+[12.198s] [100%] [32m[1mLinking CXX executable sender_exe[0m
+[12.460s] [100%] Built target listener_exe
+[12.579s] [100%] Built target sender_exe
+[12.583s] [100%] Built target can_communication_titan_exe
+[12.595s] Invoked command in '/home/kcg/Autonomous_kcg/idan_driver_ws/build/idan_driver' returned '0': AMENT_PREFIX_PATH=/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs:/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs:/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib:/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib/python3.8/site-packages:/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/kcg/Autonomous_kcg/idan_driver_ws/build/idan_driver -- -j8 -l8
+[12.630s] Invoking command in '/home/kcg/Autonomous_kcg/idan_driver_ws/build/idan_driver': AMENT_PREFIX_PATH=/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs:/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs:/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib:/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib/python3.8/site-packages:/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/kcg/Autonomous_kcg/idan_driver_ws/build/idan_driver
+[12.639s] -- Install configuration: ""
+[12.639s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/include
+[12.639s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/include/can_communication_titan
+[12.639s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/include/can_communication_titan/titan_can.hpp
+[12.639s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/include/can_communication_titan/LinuxCAN_API_x64.h
+[12.639s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/include/can_communication_titan/LinuxCAN_API.h
+[12.639s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/include/sender
+[12.639s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/include/sender/sender.hpp
+[12.639s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/include/listener
+[12.639s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/include/listener/listener.hpp
+[12.639s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/environment/library_path.sh
+[12.640s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/environment/library_path.dsv
+[12.640s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/lib/libidan_driver.so
+[12.644s] -- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/lib/libidan_driver.so" to ""
+[12.644s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/lib/idan_driver/can_communication_titan_exe
+[12.646s] -- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/lib/idan_driver/can_communication_titan_exe" to ""
+[12.646s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/lib/idan_driver/listener_exe
+[12.649s] -- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/lib/idan_driver/listener_exe" to ""
+[12.649s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/lib/idan_driver/sender_exe
+[12.651s] -- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/lib/idan_driver/sender_exe" to ""
+[12.651s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/launch
+[12.651s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/launch/idan.launch.py
+[12.652s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/ament_index/resource_index/package_run_dependencies/idan_driver
+[12.652s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/ament_index/resource_index/parent_prefix_path/idan_driver
+[12.652s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/environment/ament_prefix_path.sh
+[12.652s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/environment/ament_prefix_path.dsv
+[12.652s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/environment/path.sh
+[12.652s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/environment/path.dsv
+[12.652s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/local_setup.bash
+[12.652s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/local_setup.sh
+[12.653s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/local_setup.zsh
+[12.653s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/local_setup.dsv
+[12.653s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/package.dsv
+[12.653s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/ament_index/resource_index/packages/idan_driver
+[12.653s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/cmake/ament_cmake_export_dependencies-extras.cmake
+[12.653s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/cmake/ament_cmake_export_include_directories-extras.cmake
+[12.654s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/cmake/ament_cmake_export_libraries-extras.cmake
+[12.654s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/cmake/idan_driverConfig.cmake
+[12.654s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/cmake/idan_driverConfig-version.cmake
+[12.654s] -- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/package.xml
+[12.658s] Invoked command in '/home/kcg/Autonomous_kcg/idan_driver_ws/build/idan_driver' returned '0': AMENT_PREFIX_PATH=/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs:/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs:/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib:/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib/python3.8/site-packages:/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/kcg/Autonomous_kcg/idan_driver_ws/build/idan_driver

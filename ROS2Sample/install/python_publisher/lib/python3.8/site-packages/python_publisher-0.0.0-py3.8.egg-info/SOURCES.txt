@@ -11,6 +11,7 @@ setup.py
 ../../build/python_publisher/python_publisher.egg-info/zip-safe
 python_publisher/__init__.py
 python_publisher/adaptive_cruise_control.py
+python_publisher/adaptive_cruise_control_vaya.py
 python_publisher/controllerPID.py
 python_publisher/controllerPID_test.py
 python_publisher/google_earth_viz.py
@@ -20,6 +21,7 @@ python_publisher/submodules/Pure_Pursuit.py
 python_publisher/submodules/__init__.py
 python_publisher/submodules/lane_reader.py
 python_publisher/submodules/switch_cognata.py
+python_publisher/submodules/switch_vaya.py
 resource/python_publisher
 test/test_copyright.py
 test/test_flake8.py

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kcg/copy/idan_driver_ws/src/idan_driver
+CMAKE_SOURCE_DIR = /home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kcg/copy/idan_driver_ws/build/idan_driver
+CMAKE_BINARY_DIR = /home/kcg/Autonomous_kcg/idan_driver_ws/build/idan_driver
 
 # Utility rule file for uninstall.
 
@@ -67,6 +67,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/kcg/copy/idan_driver_ws/build/idan_driver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kcg/copy/idan_driver_ws/src/idan_driver /home/kcg/copy/idan_driver_ws/src/idan_driver /home/kcg/copy/idan_driver_ws/build/idan_driver /home/kcg/copy/idan_driver_ws/build/idan_driver /home/kcg/copy/idan_driver_ws/build/idan_driver/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kcg/Autonomous_kcg/idan_driver_ws/build/idan_driver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver /home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver /home/kcg/Autonomous_kcg/idan_driver_ws/build/idan_driver /home/kcg/Autonomous_kcg/idan_driver_ws/build/idan_driver /home/kcg/Autonomous_kcg/idan_driver_ws/build/idan_driver/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

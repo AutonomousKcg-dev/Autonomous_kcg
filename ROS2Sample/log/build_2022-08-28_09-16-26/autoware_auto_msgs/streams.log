@@ -1,0 +1,112 @@
+[0.044s] Invoking command in '/home/kcg/Autonomous_kcg/ROS2Sample/build/autoware_auto_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher:/opt/ros/foxy /usr/bin/cmake --build /home/kcg/Autonomous_kcg/ROS2Sample/build/autoware_auto_msgs -- -j8 -l8
+[0.382s] [  3%] Built target autoware_auto_msgs__cpp
+[0.392s] [ 12%] Built target autoware_auto_msgs__rosidl_generator_c
+[0.477s] [ 22%] Built target autoware_auto_msgs__rosidl_typesupport_fastrtps_cpp
+[0.481s] [ 32%] Built target autoware_auto_msgs__rosidl_typesupport_introspection_cpp
+[0.505s] [ 41%] Built target autoware_auto_msgs__rosidl_typesupport_cpp
+[0.513s] [ 51%] Built target autoware_auto_msgs__rosidl_typesupport_introspection_c
+[0.531s] [ 61%] Built target autoware_auto_msgs__rosidl_typesupport_c
+[0.584s] [ 70%] Built target autoware_auto_msgs__rosidl_typesupport_fastrtps_c
+[0.617s] [ 70%] Built target autoware_auto_msgs
+[0.655s] [ 74%] Built target autoware_auto_msgs__py
+[0.702s] [ 80%] Built target autoware_auto_msgs__python
+[0.772s] [ 87%] Built target autoware_auto_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.790s] [ 93%] Built target autoware_auto_msgs__rosidl_typesupport_c__pyext
+[0.796s] [100%] Built target autoware_auto_msgs__rosidl_typesupport_introspection_c__pyext
+[0.819s] Invoked command in '/home/kcg/Autonomous_kcg/ROS2Sample/build/autoware_auto_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher:/opt/ros/foxy /usr/bin/cmake --build /home/kcg/Autonomous_kcg/ROS2Sample/build/autoware_auto_msgs -- -j8 -l8
+[0.924s] Invoking command in '/home/kcg/Autonomous_kcg/ROS2Sample/build/autoware_auto_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher:/opt/ros/foxy /usr/bin/cmake --install /home/kcg/Autonomous_kcg/ROS2Sample/build/autoware_auto_msgs
+[0.939s] -- Install configuration: ""
+[0.939s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/ament_index/resource_index/rosidl_interfaces/autoware_auto_msgs
+[0.939s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs
+[0.939s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg
+[0.939s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/rosidl_generator_c__visibility_control.h
+[0.940s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/vehicle_control_command.h
+[0.940s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail
+[0.940s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__struct.h
+[0.940s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__functions.h
+[0.942s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__functions.c
+[0.943s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__type_support.h
+[0.943s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/environment/library_path.sh
+[0.943s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/environment/library_path.dsv
+[0.943s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_generator_c.so
+[0.943s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs
+[0.944s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg
+[0.944s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.945s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail
+[0.945s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__rosidl_typesupport_fastrtps_c.h
+[0.945s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_fastrtps_c.so
+[0.946s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs
+[0.946s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg
+[0.946s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail
+[0.946s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/dds_fastrtps
+[0.946s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__rosidl_typesupport_fastrtps_cpp.hpp
+[0.946s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.946s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_fastrtps_cpp.so
+[0.946s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs
+[0.947s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg
+[0.947s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.947s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail
+[0.947s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__type_support.c
+[0.947s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__rosidl_typesupport_introspection_c.h
+[0.947s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_introspection_c.so
+[0.950s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_c.so
+[0.951s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs
+[0.952s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg
+[0.952s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail
+[0.953s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__builder.hpp
+[0.953s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__struct.hpp
+[0.954s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__traits.hpp
+[0.955s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/vehicle_control_command.hpp
+[0.955s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs
+[0.955s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg
+[0.956s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail
+[0.956s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__rosidl_typesupport_introspection_cpp.hpp
+[0.956s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/include/autoware_auto_msgs/msg/detail/vehicle_control_command__type_support.cpp
+[0.960s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_introspection_cpp.so
+[0.960s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_cpp.so
+[0.960s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/environment/pythonpath.sh
+[0.960s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/environment/pythonpath.dsv
+[0.960s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/__init__.py
+[1.042s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/msg
+[1.043s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/msg/_vehicle_control_command.py
+[1.044s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/msg/_vehicle_control_command_s.c
+[1.045s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/msg/__init__.py
+[1.058s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/autoware_auto_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[1.065s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/autoware_auto_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[1.065s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/lib/python3.8/site-packages/autoware_auto_msgs/autoware_auto_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[1.076s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/lib/libautoware_auto_msgs__python.so
+[1.076s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/msg/VehicleControlCommand.idl
+[1.077s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/ament_index/resource_index/package_run_dependencies/autoware_auto_msgs
+[1.078s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/ament_index/resource_index/parent_prefix_path/autoware_auto_msgs
+[1.079s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/environment/ament_prefix_path.sh
+[1.080s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/environment/ament_prefix_path.dsv
+[1.095s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/environment/path.sh
+[1.102s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/environment/path.dsv
+[1.108s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/local_setup.bash
+[1.109s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/local_setup.sh
+[1.109s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/local_setup.zsh
+[1.109s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/local_setup.dsv
+[1.110s] -- Installing: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/package.dsv
+[1.111s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/ament_index/resource_index/packages/autoware_auto_msgs
+[1.111s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_generator_cExport.cmake
+[1.112s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_generator_cExport-noconfig.cmake
+[1.112s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_typesupport_introspection_cExport.cmake
+[1.112s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.113s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_typesupport_cExport.cmake
+[1.113s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[1.113s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_generator_cppExport.cmake
+[1.113s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[1.113s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.114s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_typesupport_cppExport.cmake
+[1.114s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[1.114s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/rosidl_cmake-extras.cmake
+[1.114s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.115s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[1.116s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[1.116s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.117s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.121s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.122s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgsConfig.cmake
+[1.122s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/cmake/autoware_auto_msgsConfig-version.cmake
+[1.122s] -- Up-to-date: /home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/package.xml
+[1.126s] Invoked command in '/home/kcg/Autonomous_kcg/ROS2Sample/build/autoware_auto_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher:/opt/ros/foxy /usr/bin/cmake --install /home/kcg/Autonomous_kcg/ROS2Sample/build/autoware_auto_msgs

@@ -1,0 +1,108 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake_auto: 0.9.9 (/opt/ros/foxy/share/ament_cmake_auto/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+-- Found FastRTPS: /opt/ros/foxy/include  
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/kcg/Autonomous_kcg/idan_driver_ws/build/idan_driver
+[35m[1mScanning dependencies of target idan_driver[0m
+[  9%] [32mBuilding CXX object CMakeFiles/idan_driver.dir/src/listener/listener.cpp.o[0m
+[ 18%] [32m[1mLinking CXX shared library libidan_driver.so[0m
+[ 18%] Built target idan_driver
+[35m[1mScanning dependencies of target listener_exe[0m
+[35m[1mScanning dependencies of target can_communication_titan_exe[0m
+[35m[1mScanning dependencies of target sender_exe[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/listener_exe.dir/src/listener/listener.cpp.o[0m
+[ 36%] [32mBuilding CXX object CMakeFiles/listener_exe.dir/src/listener/listener_lib.cpp.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/sender_exe.dir/src/sender/sender.cpp.o[0m
+[ 54%] [32mBuilding CXX object CMakeFiles/sender_exe.dir/src/sender/sender_lib.cpp.o[0m
+[ 63%] [32mBuilding CXX object CMakeFiles/can_communication_titan_exe.dir/src/can_communication_titan/can_communication_node.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/can_communication_titan_exe.dir/src/can_communication_titan/titan_can.cpp.o[0m
+[01m[K/home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver/src/can_communication_titan/titan_can.cpp:[m[K In member function ‘[01m[Kbool TitanComm::connect()[m[K’:
+[01m[K/home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver/src/can_communication_titan/titan_can.cpp:19:18:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KCHAR*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+   19 |  CHAR *ComPort = [01;35m[K"/dev/ttyUSB0"[m[K;
+      |                  [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver/src/can_communication_titan/titan_can.cpp:20:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KCHAR*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+   20 |  CHAR *szBitrate = [01;35m[K"500"[m[K;
+      |                    [01;35m[K^~~~~[m[K
+[01m[K/home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver/src/can_communication_titan/titan_can.cpp:21:26:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KCHAR*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+   21 |  CHAR *acceptance_code = [01;35m[K"1FFFFFFF"[m[K;
+      |                          [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver/src/can_communication_titan/titan_can.cpp:22:26:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KCHAR*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+   22 |  CHAR *acceptance_mask = [01;35m[K"00000039"[m[K; //"00000039";
+      |                          [01;35m[K^~~~~~~~~~[m[K
+[ 81%] [32m[1mLinking CXX executable listener_exe[0m
+[ 90%] [32m[1mLinking CXX executable can_communication_titan_exe[0m
+[100%] [32m[1mLinking CXX executable sender_exe[0m
+[100%] Built target listener_exe
+[100%] Built target sender_exe
+[100%] Built target can_communication_titan_exe
+-- Install configuration: ""
+-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/include
+-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/include/can_communication_titan
+-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/include/can_communication_titan/titan_can.hpp
+-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/include/can_communication_titan/LinuxCAN_API_x64.h
+-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/include/can_communication_titan/LinuxCAN_API.h
+-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/include/sender
+-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/include/sender/sender.hpp
+-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/include/listener
+-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/include/listener/listener.hpp
+-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/environment/library_path.sh
+-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/environment/library_path.dsv
+-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/lib/libidan_driver.so
+-- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/lib/libidan_driver.so" to ""
+-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/lib/idan_driver/can_communication_titan_exe
+-- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/lib/idan_driver/can_communication_titan_exe" to ""
+-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/lib/idan_driver/listener_exe
+-- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/lib/idan_driver/listener_exe" to ""
+-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/lib/idan_driver/sender_exe
+-- Set runtime path of "/home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/lib/idan_driver/sender_exe" to ""
+-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/launch
+-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/launch/idan.launch.py
+-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/ament_index/resource_index/package_run_dependencies/idan_driver
+-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/ament_index/resource_index/parent_prefix_path/idan_driver
+-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/environment/ament_prefix_path.sh
+-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/environment/ament_prefix_path.dsv
+-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/environment/path.sh
+-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/environment/path.dsv
+-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/local_setup.bash
+-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/local_setup.sh
+-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/local_setup.zsh
+-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/local_setup.dsv
+-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/package.dsv
+-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/ament_index/resource_index/packages/idan_driver
+-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/cmake/idan_driverConfig.cmake
+-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/cmake/idan_driverConfig-version.cmake
+-- Installing: /home/kcg/Autonomous_kcg/idan_driver_ws/install/idan_driver/share/idan_driver/package.xml

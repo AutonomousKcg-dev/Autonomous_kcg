@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/kcg/copy/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/can_packet.hpp
+/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/can_packet.hpp
 additional_msgs/msg/detail/can_packet__struct.hpp
-/home/kcg/copy/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/additional_msgs/msg/detail/can_packet__struct.hpp
+/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/additional_msgs/msg/detail/can_packet__struct.hpp
 additional_msgs/msg/detail/can_packet__builder.hpp
-/home/kcg/copy/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/additional_msgs/msg/detail/can_packet__builder.hpp
+/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/additional_msgs/msg/detail/can_packet__builder.hpp
 additional_msgs/msg/detail/can_packet__traits.hpp
-/home/kcg/copy/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/additional_msgs/msg/detail/can_packet__traits.hpp
+/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/additional_msgs/msg/detail/can_packet__traits.hpp
 
-/home/kcg/copy/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__builder.hpp
+/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__builder.hpp
 additional_msgs/msg/detail/can_packet__struct.hpp
-/home/kcg/copy/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail/additional_msgs/msg/detail/can_packet__struct.hpp
+/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail/additional_msgs/msg/detail/can_packet__struct.hpp
 rosidl_runtime_cpp/message_initialization.hpp
 -
 algorithm
@@ -24,7 +24,7 @@ algorithm
 utility
 -
 
-/home/kcg/copy/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__struct.hpp
+/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__struct.hpp
 rosidl_runtime_cpp/bounded_vector.hpp
 -
 rosidl_runtime_cpp/message_initialization.hpp
@@ -40,11 +40,11 @@ string
 vector
 -
 std_msgs/msg/detail/header__struct.hpp
-/home/kcg/copy/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail/std_msgs/msg/detail/header__struct.hpp
+/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail/std_msgs/msg/detail/header__struct.hpp
 
-/home/kcg/copy/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__traits.hpp
+/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__traits.hpp
 additional_msgs/msg/detail/can_packet__struct.hpp
-/home/kcg/copy/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail/additional_msgs/msg/detail/can_packet__struct.hpp
+/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail/additional_msgs/msg/detail/can_packet__struct.hpp
 rosidl_runtime_cpp/traits.hpp
 -
 stdint.h
@@ -52,17 +52,17 @@ stdint.h
 type_traits
 -
 std_msgs/msg/detail/header__traits.hpp
-/home/kcg/copy/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail/std_msgs/msg/detail/header__traits.hpp
+/home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/include/additional_msgs/msg/detail/std_msgs/msg/detail/header__traits.hpp
 
-/home/kcg/copy/idan_driver_ws/src/idan_driver/include/can_communication_titan/LinuxCAN_API.h
+/home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver/include/can_communication_titan/LinuxCAN_API.h
 semaphore.h
 -
 
-/home/kcg/copy/idan_driver_ws/src/idan_driver/include/can_communication_titan/titan_can.hpp
+/home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver/include/can_communication_titan/titan_can.hpp
 can_communication_titan/LinuxCAN_API.h
 -
 
-/home/kcg/copy/idan_driver_ws/src/idan_driver/src/can_communication_titan/can_communication_node.cpp
+/home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver/src/can_communication_titan/can_communication_node.cpp
 stdio.h
 -
 signal.h
@@ -74,13 +74,13 @@ unistd.h
 time.h
 -
 rclcpp/rclcpp.hpp
-/home/kcg/copy/idan_driver_ws/src/idan_driver/src/can_communication_titan/rclcpp/rclcpp.hpp
+/home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver/src/can_communication_titan/rclcpp/rclcpp.hpp
 additional_msgs/msg/can_packet.hpp
 -
 can_communication_titan/titan_can.hpp
 -
 
-/home/kcg/copy/idan_driver_ws/src/idan_driver/src/can_communication_titan/titan_can.cpp
+/home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver/src/can_communication_titan/titan_can.cpp
 stdio.h
 -
 stdlib.h
@@ -88,7 +88,7 @@ stdlib.h
 iostream
 -
 rclcpp/rclcpp.hpp
-/home/kcg/copy/idan_driver_ws/src/idan_driver/src/can_communication_titan/rclcpp/rclcpp.hpp
+/home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver/src/can_communication_titan/rclcpp/rclcpp.hpp
 can_communication_titan/titan_can.hpp
 -
 cstring

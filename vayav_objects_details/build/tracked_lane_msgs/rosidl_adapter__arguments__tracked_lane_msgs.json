@@ -1,9 +1,9 @@
 {
   "package_name": "tracked_lane_msgs",
   "non_idl_tuples": [
-    "/home/shovals/copy/vayav_objects_details/src/tracked_lane_msgs:msg/LaneResults.msg",
-    "/home/shovals/copy/vayav_objects_details/src/tracked_lane_msgs:msg/Lane.msg",
-    "/home/shovals/copy/vayav_objects_details/src/tracked_lane_msgs:msg/Boundary.msg",
-    "/home/shovals/copy/vayav_objects_details/src/tracked_lane_msgs:msg/Point.msg"
+    "/home/kcg/Autonomous_kcg/vayav_objects_details/src/tracked_lane_msgs:msg/LaneResults.msg",
+    "/home/kcg/Autonomous_kcg/vayav_objects_details/src/tracked_lane_msgs:msg/Lane.msg",
+    "/home/kcg/Autonomous_kcg/vayav_objects_details/src/tracked_lane_msgs:msg/Boundary.msg",
+    "/home/kcg/Autonomous_kcg/vayav_objects_details/src/tracked_lane_msgs:msg/Point.msg"
   ]
 }

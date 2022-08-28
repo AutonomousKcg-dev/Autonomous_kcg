@@ -6,5 +6,5 @@ C_FLAGS = -fPIC   -Wall -std=gnu11
 
 C_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROS_PACKAGE_NAME=\"additional_msgs\" -Dadditional_msgs__rosidl_generator_c_EXPORTS
 
-C_INCLUDES = -I/home/kcg/copy/idan_driver_ws/build/additional_msgs/rosidl_generator_c -isystem /opt/ros/foxy/include 
+C_INCLUDES = -I/home/kcg/Autonomous_kcg/idan_driver_ws/build/additional_msgs/rosidl_generator_c -isystem /opt/ros/foxy/include 
 

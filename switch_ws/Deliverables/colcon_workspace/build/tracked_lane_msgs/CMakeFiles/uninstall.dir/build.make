@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/shovals/copy/switch_ws/Deliverables/colcon_workspace/src/tracked_lane_msgs
+CMAKE_SOURCE_DIR = /home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/src/tracked_lane_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/shovals/copy/switch_ws/Deliverables/colcon_workspace/build/tracked_lane_msgs
+CMAKE_BINARY_DIR = /home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/build/tracked_lane_msgs
 
 # Utility rule file for uninstall.
 
@@ -67,6 +67,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/shovals/copy/switch_ws/Deliverables/colcon_workspace/build/tracked_lane_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/shovals/copy/switch_ws/Deliverables/colcon_workspace/src/tracked_lane_msgs /home/shovals/copy/switch_ws/Deliverables/colcon_workspace/src/tracked_lane_msgs /home/shovals/copy/switch_ws/Deliverables/colcon_workspace/build/tracked_lane_msgs /home/shovals/copy/switch_ws/Deliverables/colcon_workspace/build/tracked_lane_msgs /home/shovals/copy/switch_ws/Deliverables/colcon_workspace/build/tracked_lane_msgs/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/build/tracked_lane_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/src/tracked_lane_msgs /home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/src/tracked_lane_msgs /home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/build/tracked_lane_msgs /home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/build/tracked_lane_msgs /home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/build/tracked_lane_msgs/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

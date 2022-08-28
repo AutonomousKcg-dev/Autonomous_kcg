@@ -1,9 +1,9 @@
 {
   "package_name": "additional_msgs",
-  "output_dir": "/home/kcg/copy/idan_driver_ws/build/additional_msgs/rosidl_generator_c/additional_msgs",
+  "output_dir": "/home/kcg/Autonomous_kcg/idan_driver_ws/build/additional_msgs/rosidl_generator_c/additional_msgs",
   "template_dir": "/opt/ros/foxy/share/rosidl_generator_c/cmake/../resource",
   "idl_tuples": [
-    "/home/kcg/copy/idan_driver_ws/src/msgs/additional_msgs:msg/CanPacket.idl"
+    "/home/kcg/Autonomous_kcg/idan_driver_ws/src/msgs/additional_msgs:msg/CanPacket.idl"
   ],
   "ros_interface_dependencies": [
     "std_msgs:/opt/ros/foxy/share/std_msgs/msg/Bool.idl",
@@ -53,7 +53,7 @@
     "/opt/ros/foxy/share/rosidl_generator_c/cmake/../resource/msg__struct.h.em",
     "/opt/ros/foxy/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
     "/opt/ros/foxy/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
-    "/home/kcg/copy/idan_driver_ws/src/msgs/additional_msgs/msg/CanPacket.idl",
+    "/home/kcg/Autonomous_kcg/idan_driver_ws/src/msgs/additional_msgs/msg/CanPacket.idl",
     "/opt/ros/foxy/share/std_msgs/msg/Bool.idl",
     "/opt/ros/foxy/share/std_msgs/msg/Byte.idl",
     "/opt/ros/foxy/share/std_msgs/msg/ByteMultiArray.idl",

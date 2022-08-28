@@ -1,8 +1,8 @@
 {
   "package_name": "tracked_object_msgs",
   "non_idl_tuples": [
-    "/home/shovals/copy/switch_ws/Deliverables/colcon_workspace/src/tracked_object_msgs:msg/ObjectTypes.msg",
-    "/home/shovals/copy/switch_ws/Deliverables/colcon_workspace/src/tracked_object_msgs:msg/TrackedObject.msg",
-    "/home/shovals/copy/switch_ws/Deliverables/colcon_workspace/src/tracked_object_msgs:msg/TrackedObjectArray.msg"
+    "/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/src/tracked_object_msgs:msg/ObjectTypes.msg",
+    "/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/src/tracked_object_msgs:msg/TrackedObject.msg",
+    "/home/kcg/Autonomous_kcg/switch_ws/Deliverables/colcon_workspace/src/tracked_object_msgs:msg/TrackedObjectArray.msg"
   ]
 }

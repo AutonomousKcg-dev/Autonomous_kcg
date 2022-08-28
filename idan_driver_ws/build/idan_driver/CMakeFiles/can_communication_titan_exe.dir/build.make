@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kcg/copy/idan_driver_ws/src/idan_driver
+CMAKE_SOURCE_DIR = /home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kcg/copy/idan_driver_ws/build/idan_driver
+CMAKE_BINARY_DIR = /home/kcg/Autonomous_kcg/idan_driver_ws/build/idan_driver
 
 # Include any dependencies generated for this target.
 include CMakeFiles/can_communication_titan_exe.dir/depend.make
@@ -58,30 +58,30 @@ include CMakeFiles/can_communication_titan_exe.dir/progress.make
 include CMakeFiles/can_communication_titan_exe.dir/flags.make
 
 CMakeFiles/can_communication_titan_exe.dir/src/can_communication_titan/can_communication_node.cpp.o: CMakeFiles/can_communication_titan_exe.dir/flags.make
-CMakeFiles/can_communication_titan_exe.dir/src/can_communication_titan/can_communication_node.cpp.o: /home/kcg/copy/idan_driver_ws/src/idan_driver/src/can_communication_titan/can_communication_node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kcg/copy/idan_driver_ws/build/idan_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/can_communication_titan_exe.dir/src/can_communication_titan/can_communication_node.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/can_communication_titan_exe.dir/src/can_communication_titan/can_communication_node.cpp.o -c /home/kcg/copy/idan_driver_ws/src/idan_driver/src/can_communication_titan/can_communication_node.cpp
+CMakeFiles/can_communication_titan_exe.dir/src/can_communication_titan/can_communication_node.cpp.o: /home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver/src/can_communication_titan/can_communication_node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kcg/Autonomous_kcg/idan_driver_ws/build/idan_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/can_communication_titan_exe.dir/src/can_communication_titan/can_communication_node.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/can_communication_titan_exe.dir/src/can_communication_titan/can_communication_node.cpp.o -c /home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver/src/can_communication_titan/can_communication_node.cpp
 
 CMakeFiles/can_communication_titan_exe.dir/src/can_communication_titan/can_communication_node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/can_communication_titan_exe.dir/src/can_communication_titan/can_communication_node.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kcg/copy/idan_driver_ws/src/idan_driver/src/can_communication_titan/can_communication_node.cpp > CMakeFiles/can_communication_titan_exe.dir/src/can_communication_titan/can_communication_node.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver/src/can_communication_titan/can_communication_node.cpp > CMakeFiles/can_communication_titan_exe.dir/src/can_communication_titan/can_communication_node.cpp.i
 
 CMakeFiles/can_communication_titan_exe.dir/src/can_communication_titan/can_communication_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/can_communication_titan_exe.dir/src/can_communication_titan/can_communication_node.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kcg/copy/idan_driver_ws/src/idan_driver/src/can_communication_titan/can_communication_node.cpp -o CMakeFiles/can_communication_titan_exe.dir/src/can_communication_titan/can_communication_node.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver/src/can_communication_titan/can_communication_node.cpp -o CMakeFiles/can_communication_titan_exe.dir/src/can_communication_titan/can_communication_node.cpp.s
 
 CMakeFiles/can_communication_titan_exe.dir/src/can_communication_titan/titan_can.cpp.o: CMakeFiles/can_communication_titan_exe.dir/flags.make
-CMakeFiles/can_communication_titan_exe.dir/src/can_communication_titan/titan_can.cpp.o: /home/kcg/copy/idan_driver_ws/src/idan_driver/src/can_communication_titan/titan_can.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kcg/copy/idan_driver_ws/build/idan_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/can_communication_titan_exe.dir/src/can_communication_titan/titan_can.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/can_communication_titan_exe.dir/src/can_communication_titan/titan_can.cpp.o -c /home/kcg/copy/idan_driver_ws/src/idan_driver/src/can_communication_titan/titan_can.cpp
+CMakeFiles/can_communication_titan_exe.dir/src/can_communication_titan/titan_can.cpp.o: /home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver/src/can_communication_titan/titan_can.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kcg/Autonomous_kcg/idan_driver_ws/build/idan_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/can_communication_titan_exe.dir/src/can_communication_titan/titan_can.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/can_communication_titan_exe.dir/src/can_communication_titan/titan_can.cpp.o -c /home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver/src/can_communication_titan/titan_can.cpp
 
 CMakeFiles/can_communication_titan_exe.dir/src/can_communication_titan/titan_can.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/can_communication_titan_exe.dir/src/can_communication_titan/titan_can.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kcg/copy/idan_driver_ws/src/idan_driver/src/can_communication_titan/titan_can.cpp > CMakeFiles/can_communication_titan_exe.dir/src/can_communication_titan/titan_can.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver/src/can_communication_titan/titan_can.cpp > CMakeFiles/can_communication_titan_exe.dir/src/can_communication_titan/titan_can.cpp.i
 
 CMakeFiles/can_communication_titan_exe.dir/src/can_communication_titan/titan_can.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/can_communication_titan_exe.dir/src/can_communication_titan/titan_can.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kcg/copy/idan_driver_ws/src/idan_driver/src/can_communication_titan/titan_can.cpp -o CMakeFiles/can_communication_titan_exe.dir/src/can_communication_titan/titan_can.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver/src/can_communication_titan/titan_can.cpp -o CMakeFiles/can_communication_titan_exe.dir/src/can_communication_titan/titan_can.cpp.s
 
 # Object files for target can_communication_titan_exe
 can_communication_titan_exe_OBJECTS = \
@@ -101,16 +101,16 @@ can_communication_titan_exe: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupp
 can_communication_titan_exe: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_c.so
 can_communication_titan_exe: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
 can_communication_titan_exe: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
-can_communication_titan_exe: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_introspection_c.so
-can_communication_titan_exe: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_c.so
-can_communication_titan_exe: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_introspection_cpp.so
-can_communication_titan_exe: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_cpp.so
+can_communication_titan_exe: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_introspection_c.so
+can_communication_titan_exe: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_c.so
+can_communication_titan_exe: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_introspection_cpp.so
+can_communication_titan_exe: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_typesupport_cpp.so
 can_communication_titan_exe: /opt/ros/foxy/lib/librclcpp.so
-can_communication_titan_exe: /home/kcg/copy/idan_driver_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_typesupport_introspection_c.so
-can_communication_titan_exe: /home/kcg/copy/idan_driver_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_typesupport_c.so
-can_communication_titan_exe: /home/kcg/copy/idan_driver_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_typesupport_introspection_cpp.so
-can_communication_titan_exe: /home/kcg/copy/idan_driver_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_typesupport_cpp.so
-can_communication_titan_exe: /home/kcg/copy/idan_driver_ws/src/idan_driver/lib/libLinuxCAN_API_x64.a
+can_communication_titan_exe: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_typesupport_introspection_c.so
+can_communication_titan_exe: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_typesupport_c.so
+can_communication_titan_exe: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_typesupport_introspection_cpp.so
+can_communication_titan_exe: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_typesupport_cpp.so
+can_communication_titan_exe: /home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver/lib/libLinuxCAN_API_x64.a
 can_communication_titan_exe: /opt/ros/foxy/lib/librcl_action.so
 can_communication_titan_exe: /opt/ros/foxy/lib/libaction_msgs__rosidl_typesupport_introspection_c.so
 can_communication_titan_exe: /opt/ros/foxy/lib/libaction_msgs__rosidl_generator_c.so
@@ -160,8 +160,8 @@ can_communication_titan_exe: /opt/ros/foxy/lib/librcl_interfaces__rosidl_typesup
 can_communication_titan_exe: /opt/ros/foxy/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so
 can_communication_titan_exe: /opt/ros/foxy/lib/librcl_interfaces__rosidl_typesupport_cpp.so
 can_communication_titan_exe: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_generator_c.so
-can_communication_titan_exe: /home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_generator_c.so
-can_communication_titan_exe: /home/kcg/copy/idan_driver_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_generator_c.so
+can_communication_titan_exe: /home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs/lib/libautoware_auto_msgs__rosidl_generator_c.so
+can_communication_titan_exe: /home/kcg/Autonomous_kcg/idan_driver_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_generator_c.so
 can_communication_titan_exe: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
 can_communication_titan_exe: /opt/ros/foxy/lib/libstd_msgs__rosidl_generator_c.so
 can_communication_titan_exe: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_c.so
@@ -180,7 +180,7 @@ can_communication_titan_exe: /opt/ros/foxy/lib/librcpputils.so
 can_communication_titan_exe: /opt/ros/foxy/lib/librosidl_runtime_c.so
 can_communication_titan_exe: /opt/ros/foxy/lib/librcutils.so
 can_communication_titan_exe: CMakeFiles/can_communication_titan_exe.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kcg/copy/idan_driver_ws/build/idan_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable can_communication_titan_exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kcg/Autonomous_kcg/idan_driver_ws/build/idan_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable can_communication_titan_exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/can_communication_titan_exe.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -193,6 +193,6 @@ CMakeFiles/can_communication_titan_exe.dir/clean:
 .PHONY : CMakeFiles/can_communication_titan_exe.dir/clean
 
 CMakeFiles/can_communication_titan_exe.dir/depend:
-	cd /home/kcg/copy/idan_driver_ws/build/idan_driver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kcg/copy/idan_driver_ws/src/idan_driver /home/kcg/copy/idan_driver_ws/src/idan_driver /home/kcg/copy/idan_driver_ws/build/idan_driver /home/kcg/copy/idan_driver_ws/build/idan_driver /home/kcg/copy/idan_driver_ws/build/idan_driver/CMakeFiles/can_communication_titan_exe.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kcg/Autonomous_kcg/idan_driver_ws/build/idan_driver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver /home/kcg/Autonomous_kcg/idan_driver_ws/src/idan_driver /home/kcg/Autonomous_kcg/idan_driver_ws/build/idan_driver /home/kcg/Autonomous_kcg/idan_driver_ws/build/idan_driver /home/kcg/Autonomous_kcg/idan_driver_ws/build/idan_driver/CMakeFiles/can_communication_titan_exe.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/can_communication_titan_exe.dir/depend
 

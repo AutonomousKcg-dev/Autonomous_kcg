@@ -1,8 +1,8 @@
-# Install script for directory: /home/kcg/copy/ROS2Sample/build/additional_msgs/additional_msgs__py
+# Install script for directory: /home/kcg/Autonomous_kcg/ROS2Sample/build/additional_msgs/additional_msgs__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/kcg/copy/ROS2Sample/install/additional_msgs")
+  set(CMAKE_INSTALL_PREFIX "/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

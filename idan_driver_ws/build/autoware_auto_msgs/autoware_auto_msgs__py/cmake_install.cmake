@@ -1,8 +1,8 @@
-# Install script for directory: /home/kcg/copy/idan_driver_ws/build/autoware_auto_msgs/autoware_auto_msgs__py
+# Install script for directory: /home/kcg/Autonomous_kcg/idan_driver_ws/build/autoware_auto_msgs/autoware_auto_msgs__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/kcg/copy/idan_driver_ws/install/autoware_auto_msgs")
+  set(CMAKE_INSTALL_PREFIX "/home/kcg/Autonomous_kcg/idan_driver_ws/install/autoware_auto_msgs")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

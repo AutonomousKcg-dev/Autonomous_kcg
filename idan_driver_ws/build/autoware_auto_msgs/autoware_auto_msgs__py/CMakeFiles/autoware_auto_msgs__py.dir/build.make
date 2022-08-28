@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kcg/copy/idan_driver_ws/src/msgs/autoware_auto_msgs
+CMAKE_SOURCE_DIR = /home/kcg/Autonomous_kcg/idan_driver_ws/src/msgs/autoware_auto_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kcg/copy/idan_driver_ws/build/autoware_auto_msgs
+CMAKE_BINARY_DIR = /home/kcg/Autonomous_kcg/idan_driver_ws/build/autoware_auto_msgs
 
 # Utility rule file for autoware_auto_msgs__py.
 
@@ -74,7 +74,7 @@ rosidl_generator_py/autoware_auto_msgs/_autoware_auto_msgs_s.ep.rosidl_typesuppo
 rosidl_generator_py/autoware_auto_msgs/_autoware_auto_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/rosidl_generator_py/resource/_msg.py.em
 rosidl_generator_py/autoware_auto_msgs/_autoware_auto_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/rosidl_generator_py/resource/_srv_pkg_typesupport_entry_point.c.em
 rosidl_generator_py/autoware_auto_msgs/_autoware_auto_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/rosidl_generator_py/resource/_srv.py.em
-rosidl_generator_py/autoware_auto_msgs/_autoware_auto_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /home/kcg/copy/idan_driver_ws/src/msgs/autoware_auto_msgs/msg/VehicleControlCommand.idl
+rosidl_generator_py/autoware_auto_msgs/_autoware_auto_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /home/kcg/Autonomous_kcg/idan_driver_ws/src/msgs/autoware_auto_msgs/msg/VehicleControlCommand.idl
 rosidl_generator_py/autoware_auto_msgs/_autoware_auto_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_py/autoware_auto_msgs/_autoware_auto_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/builtin_interfaces/msg/Time.idl
 rosidl_generator_py/autoware_auto_msgs/_autoware_auto_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/std_msgs/msg/Bool.idl
@@ -107,8 +107,8 @@ rosidl_generator_py/autoware_auto_msgs/_autoware_auto_msgs_s.ep.rosidl_typesuppo
 rosidl_generator_py/autoware_auto_msgs/_autoware_auto_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/std_msgs/msg/UInt64MultiArray.idl
 rosidl_generator_py/autoware_auto_msgs/_autoware_auto_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/std_msgs/msg/UInt8.idl
 rosidl_generator_py/autoware_auto_msgs/_autoware_auto_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/std_msgs/msg/UInt8MultiArray.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kcg/copy/idan_driver_ws/build/autoware_auto_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
-	cd /home/kcg/copy/idan_driver_ws/build/autoware_auto_msgs/autoware_auto_msgs__py && /usr/bin/python3 /opt/ros/foxy/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/kcg/copy/idan_driver_ws/build/autoware_auto_msgs/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kcg/Autonomous_kcg/idan_driver_ws/build/autoware_auto_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
+	cd /home/kcg/Autonomous_kcg/idan_driver_ws/build/autoware_auto_msgs/autoware_auto_msgs__py && /usr/bin/python3 /opt/ros/foxy/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/kcg/Autonomous_kcg/idan_driver_ws/build/autoware_auto_msgs/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
 rosidl_generator_py/autoware_auto_msgs/_autoware_auto_msgs_s.ep.rosidl_typesupport_introspection_c.c: rosidl_generator_py/autoware_auto_msgs/_autoware_auto_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/autoware_auto_msgs/_autoware_auto_msgs_s.ep.rosidl_typesupport_introspection_c.c
@@ -142,10 +142,10 @@ autoware_auto_msgs__py/CMakeFiles/autoware_auto_msgs__py.dir/build: autoware_aut
 .PHONY : autoware_auto_msgs__py/CMakeFiles/autoware_auto_msgs__py.dir/build
 
 autoware_auto_msgs__py/CMakeFiles/autoware_auto_msgs__py.dir/clean:
-	cd /home/kcg/copy/idan_driver_ws/build/autoware_auto_msgs/autoware_auto_msgs__py && $(CMAKE_COMMAND) -P CMakeFiles/autoware_auto_msgs__py.dir/cmake_clean.cmake
+	cd /home/kcg/Autonomous_kcg/idan_driver_ws/build/autoware_auto_msgs/autoware_auto_msgs__py && $(CMAKE_COMMAND) -P CMakeFiles/autoware_auto_msgs__py.dir/cmake_clean.cmake
 .PHONY : autoware_auto_msgs__py/CMakeFiles/autoware_auto_msgs__py.dir/clean
 
 autoware_auto_msgs__py/CMakeFiles/autoware_auto_msgs__py.dir/depend:
-	cd /home/kcg/copy/idan_driver_ws/build/autoware_auto_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kcg/copy/idan_driver_ws/src/msgs/autoware_auto_msgs /home/kcg/copy/idan_driver_ws/build/autoware_auto_msgs/autoware_auto_msgs__py /home/kcg/copy/idan_driver_ws/build/autoware_auto_msgs /home/kcg/copy/idan_driver_ws/build/autoware_auto_msgs/autoware_auto_msgs__py /home/kcg/copy/idan_driver_ws/build/autoware_auto_msgs/autoware_auto_msgs__py/CMakeFiles/autoware_auto_msgs__py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kcg/Autonomous_kcg/idan_driver_ws/build/autoware_auto_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kcg/Autonomous_kcg/idan_driver_ws/src/msgs/autoware_auto_msgs /home/kcg/Autonomous_kcg/idan_driver_ws/build/autoware_auto_msgs/autoware_auto_msgs__py /home/kcg/Autonomous_kcg/idan_driver_ws/build/autoware_auto_msgs /home/kcg/Autonomous_kcg/idan_driver_ws/build/autoware_auto_msgs/autoware_auto_msgs__py /home/kcg/Autonomous_kcg/idan_driver_ws/build/autoware_auto_msgs/autoware_auto_msgs__py/CMakeFiles/autoware_auto_msgs__py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : autoware_auto_msgs__py/CMakeFiles/autoware_auto_msgs__py.dir/depend
 

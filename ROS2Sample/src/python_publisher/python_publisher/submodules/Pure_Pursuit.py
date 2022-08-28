@@ -37,34 +37,43 @@ class PurePursuit:
         self.target_point = None
         self.car_state = State(cx[0], cy[0], cx[0], cy[0])
         self.linear_reg = None
-        self.sample = 75
+        self.sample = 5
         np.seterr(all='ignore')
 
     def closest_point(self):
         # find closest point
-        closest_point = (self.cx[self.curr_index], self.cy[self.curr_index])
-        position = (self.car_state.x_coord, self.car_state.y_coord)
-        closest_point_index = self.curr_index
+        if self.curr_index < len(self.cx):
+            closest_point = (self.cx[self.curr_index], self.cy[self.curr_index])
+            position = (self.car_state.x_coord, self.car_state.y_coord)
+            closest_point_index = self.curr_index
 
-        for i in range(self.curr_index, len(self.cx)):
-            point = (self.cx[i], self.cy[i])
-            if math.dist(position, closest_point) > math.dist(position, point):
-                closest_point = point
-                closest_point_index = i
+            for i in range(self.curr_index, len(self.cx)):
+                point = (self.cx[i], self.cy[i])
+                if math.dist(position, closest_point) > math.dist(position, point):
+                    closest_point = point
+                    closest_point_index = i
 
-        self.curr_index = closest_point_index
+            self.curr_index = closest_point_index
 
-        # estimate road direction
-        x = np.array(
-            self.cx[self.curr_index:self.curr_index + self.sample]).reshape((-1, 1))
-        y = np.array(
-            self.cy[self.curr_index:self.curr_index + self.sample]).reshape((-1, 1))
-        self.linear_reg = LinearRegression()
-        self.linear_reg.fit(x, y)
-
-        x_target = self.cx[self.curr_index + self.sample + 1]
-        y_target = self.linear_reg.predict(np.array([x_target]).reshape(-1, 1))
-        self.target_point = (x_target, y_target)
+            # estimate road direction
+            x = np.array(
+                self.cx[self.curr_index:self.curr_index + self.sample]).reshape((-1, 1))
+            y = np.array(
+                self.cy[self.curr_index:self.curr_index + self.sample]).reshape((-1, 1))
+            self.linear_reg = LinearRegression()
+            self.linear_reg.fit(x, y)
+            print(len(self.cx))
+            print(len(self.cy))
+            print(self.curr_index + self.sample + 1)
+            if self.curr_index + self.sample + 1 < len(self.cx):
+                x_target = self.cx[self.curr_index + self.sample + 1]
+                y_target = self.linear_reg.predict(np.array([x_target]).reshape(-1, 1))
+                self.target_point = (x_target, y_target)
+            else:
+                x_target = self.cx[0]
+                y_target = self.linear_reg.predict(np.array([x_target]).reshape(-1, 1))
+                self.target_point = (x_target, y_target)
+        
 
     def run(self):
         """

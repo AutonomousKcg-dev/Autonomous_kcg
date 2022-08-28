@@ -52,8 +52,8 @@ class switch_cognata():
 
         self.pedestrian_list = []
         self.vehicle_list = []
-        self.front_car: VehicleMsg = None
-        self.front_ped: PedestrianMsg = None
+        self.front_car = None
+        self.front_ped = None
 
         self.curr_lane = 1
         self.target_lane = self.curr_lane
@@ -116,7 +116,7 @@ class switch_cognata():
         right_area_x = (-self.radius/2, -self.radius *
                         (3/2))     # Actually Y in cognata
 
-        # Actually X in cognata
+        # Actually Y in cognata
         right_area_y = (
             self.side_lane_look_ahead[0], self.side_lane_look_ahead[1])
 
