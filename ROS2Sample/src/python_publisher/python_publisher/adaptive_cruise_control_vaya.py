@@ -94,6 +94,7 @@ class adaptive_cruise_control(Node):
         self.ego_car_pose_x_nav = 0.0
         self.reference_distance = 50  # Desired keeping distance
         self.keyboard_increment_factor = 0.1
+        self.max_speed = 5.0
 
         # ego car:
         self.ego_car_lane = 0
@@ -107,19 +108,17 @@ class adaptive_cruise_control(Node):
         self.ego_lane : Lane = Lane()   # ego lane
         self.desired_lane: Lane = self.ego_lane    # serves us when switching lane
         self.num_of_lanes = 4   # default -> update alone
+        self.cx = [0.0]
+        self.cy = [0.0]
+
 
         # PID
-        self.velocity_PID = PID(kp=0.8, ki=0, kd=0.13)
+        self.velocity_PID = PID(kp=0.08, ki=0, kd=0.013)
         self.wheel_PID = PID(kp=0.05, ki=0, kd=0.002)
         self._switching_lane = False
 
         # Switch
         self.switch = switch_vaya(self.reference_distance)
-
-        # pure pursuit algo
-        cx = [0.0]
-        cy = [0.0]
-        self.pure_pursuit = PurePursuit(cy, cx, 0.0)
 
         # Rate
         self.rate = self.create_rate(8)  # 10 [Hz]
@@ -210,30 +209,7 @@ class adaptive_cruise_control(Node):
         self.ego_car_pose_y_nav = msg.latitude
         self.ego_car_pose_x_nav = msg.longitude
 
-        # use pure pursuit algo
-        self.pure_pursuit.car_state.last_x_coord = self.pure_pursuit.car_state.x_coord
-        self.pure_pursuit.car_state.last_y_coord = self.pure_pursuit.car_state.y_coord
-        self.pure_pursuit.car_state.x_coord = self.ego_car_pose_x_nav
-        self.pure_pursuit.car_state.y_coord = self.ego_car_pose_y_nav
-        self.pure_pursuit.run()
-
-        # plot
-        ax.clear()
-        ax.plot(self.pure_pursuit.cx, self.pure_pursuit.cy, "-r")  # plot course
-
-        ax.plot([self.pure_pursuit.car_state.x_coord, self.pure_pursuit.target_point[0]],
-                [self.pure_pursuit.car_state.y_coord, self.pure_pursuit.target_point[1]], "-g")  # pot target point
-
-        self.abline(self.pure_pursuit.linear_reg.coef_, self.pure_pursuit.linear_reg.intercept_, ax,
-               self.pure_pursuit.cx[self.pure_pursuit.curr_index], self.pure_pursuit.cx[self.pure_pursuit.curr_index + self.pure_pursuit.sample])  # draw linear regression
-
-        ax.scatter([self.pure_pursuit.target_point[0]],
-                   [self.pure_pursuit.target_point[1]], marker="+")  # mark target point
-
-        ax.scatter([self.pure_pursuit.car_state.x_coord],
-                   [self.pure_pursuit.car_state.y_coord])  # draw car
-        plt.pause(0.001)
-
+       
     #####################################################
     # GPS message callback
     #####################################################
@@ -274,7 +250,6 @@ class adaptive_cruise_control(Node):
         """
             This method is responsible for lanes update.
         """
-        # if self.ego_lane == self.desired_lane:
         # update left lanes
         for lane in msg.adjacent_left:
             self.left_lanes.append(lane)
@@ -304,6 +279,12 @@ class adaptive_cruise_control(Node):
     ##################################################
     ### UTILS   ######################################
     ##################################################
+    def get_target_point(self, radius):
+        """
+        find the farthest point from us in a certain radius
+        """
+        
+
 
     def dist(self, point1, point2):
         # return distance betweeen point1 and point2 - 8 digit accuracy - meters
@@ -399,9 +380,16 @@ class adaptive_cruise_control(Node):
         dist_error_car = self.front_car.distance_x - self.reference_distance  
         dist_error_ped = self.front_padasterian.distance_x - self.reference_distance
         dist_error = dist_error_car if dist_error_car < dist_error_ped else dist_error_ped
-
-        # find the gas & brake output using the PID class
-        output = self.velocity_PID.output(dist_error)
+        
+        error_speed = self.max_speed - self.ego_car_speed
+        error = error_speed
+        # if no object detected, use speed as an error
+        if len(self.padesterianList) == 0 and len(self.vehicleList) == 0:
+            output = self.velocity_PID.output(error)
+        else: 
+            # find the gas & brake output using the PID class
+            output = self.velocity_PID.output(dist_error)
+        
         return output
     
     def calc_output_wheel(self):
@@ -411,39 +399,65 @@ class adaptive_cruise_control(Node):
             and using PID, finds the desired output.
         """
         # finds the Yaw error
-        error_yaw, _ = self.pure_pursuit.run()
-        curr_index = self.pure_pursuit.curr_index
+        velocity_angle = math.atan2(self.ego_car_v_y, self.ego_car_v_x)
 
-        # find the distance error
-        target_point = (self.pure_pursuit.cx[curr_index], self.pure_pursuit.cy[curr_index])
-        current_point = (0,0)
-        dist_error = math.dist(current_point, target_point) * math.exp(7)
+        # calculate path angle
+        path_angle = 0.0
+        self.target_point = self.get_target_point(30.0)
+        if self.target_point:
+            desired_vector = (
+                self.target_point[0] - self.ego_car_pose_y_nav, self.target_point[1] - self.ego_car_pose_x_nav)
+            path_angle = math.atan2(desired_vector[0], desired_vector[1])
 
-        # calculate the Wheel error
-        error_w = error_yaw + math.sqrt(dist_error)
+        # calculate shovals angle
+        path_relative_angle = 0.0
+        if self.target_point:
+            on_path_vector = (self.target_point[0] - self.cx[self.current_idx],
+                            self.target_point[1] - self.cy[self.current_idx])
+            on_path_angle = math.atan2(on_path_vector[0], on_path_vector[1])
+            path_relative_angle = path_angle - on_path_angle
 
-        # calculate the output using PID
-        output = self.wheel_PID.output(error_w)
-        return output
+        error_w = path_relative_angle - velocity_angle
+
+        print("Velocity Angle: ", math.degrees(velocity_angle))
+        print("Path Angle: (Relative)", math.degrees(path_relative_angle))
+        print("Result Angle: ", math.degrees(-error_w))
+
+        output_w = self.wheel_PID.output(-error_w)
 
 
     def update_pure_pursuit(self, lane : Lane):
         """
             This method update the cx, cy values of the pure pursuit object
         """
-        cx = []
-        cy = []
+        self.cx = []
+        self.cy = []
         for pointL, pointR in zip(lane.left_boundary.points, lane.right_boundary.points):
             pointL:Point = pointL
             pointR:Point = pointR
             x = (pointL.x + pointR.x) / 2.0
             y = (pointL.y + pointR.y) / 2.0
-            cx.append(x)
-            cy.append(y)
-        self.pure_pursuit.update_path(cx, cy)
+            self.cx.append(x)
+            self.cy.append(y)
         ax.cla()
-        ax.plot(cx, cy, "-r")
+        ax.plot(self.cx, self.cy, "-r")
         plt.pause(0.1)
+    
+    def get_path(self, file_name):
+        """
+            only if use gps path and gps data
+        """
+        with open(file_name, 'r') as datafile:
+            plotting = csv.reader(datafile, delimiter=',')
+
+            X = []
+            Y = []
+
+            for ROWS in plotting:
+                Y.append(float(ROWS[0]))
+                X.append(float(ROWS[1]))
+
+            return Y, X
         
 
 
@@ -464,15 +478,15 @@ class adaptive_cruise_control(Node):
         gas_msg = Float32()
         brake_msg = Float32()
 
-        max_speed = 30
+        self.max_speed = 30
         output_gas_brake = self.calc_output_vel()
 
         # base on the current speed decide the final output
         if (output_gas_brake > 0):
-            if self.ego_car_speed > max_speed:
+            if self.ego_car_speed > self.max_speed:
                 gas_msg.data = 0.0
                 brake_msg.data = 0.0
-            elif max_speed - 10 < self.ego_car_speed < max_speed:
+            elif self.max_speed - 10 < self.ego_car_speed < self.max_speed:
                 gas_msg.data = output_gas_brake * 0.7
                 brake_msg.data = 0.0
             else:
