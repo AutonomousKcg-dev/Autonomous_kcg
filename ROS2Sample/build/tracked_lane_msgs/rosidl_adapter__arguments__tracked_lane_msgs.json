@@ -1,9 +1,9 @@
 {
   "package_name": "tracked_lane_msgs",
   "non_idl_tuples": [
-    "/home/shovals/Documents/Autonomous_kcg/ROS2Sample/src/msgs/tracked_lane_msgs:msg/LaneResults.msg",
-    "/home/shovals/Documents/Autonomous_kcg/ROS2Sample/src/msgs/tracked_lane_msgs:msg/Lane.msg",
-    "/home/shovals/Documents/Autonomous_kcg/ROS2Sample/src/msgs/tracked_lane_msgs:msg/Boundary.msg",
-    "/home/shovals/Documents/Autonomous_kcg/ROS2Sample/src/msgs/tracked_lane_msgs:msg/Point.msg"
+    "/home/kcg/Autonomous_kcg/ROS2Sample/src/msgs/tracked_lane_msgs:msg/LaneResults.msg",
+    "/home/kcg/Autonomous_kcg/ROS2Sample/src/msgs/tracked_lane_msgs:msg/Lane.msg",
+    "/home/kcg/Autonomous_kcg/ROS2Sample/src/msgs/tracked_lane_msgs:msg/Boundary.msg",
+    "/home/kcg/Autonomous_kcg/ROS2Sample/src/msgs/tracked_lane_msgs:msg/Point.msg"
   ]
 }

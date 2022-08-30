@@ -1,0 +1,578 @@
+[0.363s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.363s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f63a090e5e0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=8, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f63a090e5e0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f63a090eb20>)
+[0.386s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.386s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.386s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.386s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.386s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.386s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.386s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/kcg/Autonomous_kcg/ROS2Sample'
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2022_07_17-10_58_20) by extensions ['ignore', 'ignore_ament_install']
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2022_07_17-10_58_20) by extension 'ignore'
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2022_07_17-10_58_20) by extension 'ignore_ament_install'
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2022_07_17-10_58_20) by extensions ['colcon_pkg']
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2022_07_17-10_58_20) by extension 'colcon_pkg'
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2022_07_17-10_58_20) by extensions ['colcon_meta']
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2022_07_17-10_58_20) by extension 'colcon_meta'
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2022_07_17-10_58_20) by extensions ['ros']
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2022_07_17-10_58_20) by extension 'ros'
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2022_07_17-10_58_20) by extensions ['cmake', 'python']
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2022_07_17-10_58_20) by extension 'cmake'
+[0.401s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2022_07_17-10_58_20) by extension 'python'
+[0.401s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2022_07_17-10_58_20) by extensions ['python_setup_py']
+[0.401s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2022_07_17-10_58_20) by extension 'python_setup_py'
+[0.401s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.401s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.401s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.401s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.401s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.401s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.401s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.401s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.401s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.401s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.401s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extensions ['ignore', 'ignore_ament_install']
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extension 'ignore'
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) ignored
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(src/cognata_sdk_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(src/cognata_sdk_ros2) by extension 'ignore'
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(src/cognata_sdk_ros2) by extension 'ignore_ament_install'
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(src/cognata_sdk_ros2) by extensions ['colcon_pkg']
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(src/cognata_sdk_ros2) by extension 'colcon_pkg'
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(src/cognata_sdk_ros2) by extensions ['colcon_meta']
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(src/cognata_sdk_ros2) by extension 'colcon_meta'
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(src/cognata_sdk_ros2) by extensions ['ros']
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(src/cognata_sdk_ros2) by extension 'ros'
+[0.407s] DEBUG:colcon.colcon_core.package_identification:Package 'src/cognata_sdk_ros2' with type 'ros.ament_cmake' and name 'cognata_sdk_ros2'
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extensions ['ignore', 'ignore_ament_install']
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extension 'ignore'
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) ignored
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extensions ['ignore', 'ignore_ament_install']
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extension 'ignore'
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) ignored
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs) by extension 'ignore'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs) by extension 'ignore_ament_install'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs) by extensions ['colcon_pkg']
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs) by extension 'colcon_pkg'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs) by extensions ['colcon_meta']
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs) by extension 'colcon_meta'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs) by extensions ['ros']
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs) by extension 'ros'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs) by extensions ['cmake', 'python']
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs) by extension 'cmake'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs) by extension 'python'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs) by extensions ['python_setup_py']
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs) by extension 'python_setup_py'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs/additional_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs/additional_msgs) by extension 'ignore'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs/additional_msgs) by extension 'ignore_ament_install'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs/additional_msgs) by extensions ['colcon_pkg']
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs/additional_msgs) by extension 'colcon_pkg'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs/additional_msgs) by extensions ['colcon_meta']
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs/additional_msgs) by extension 'colcon_meta'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs/additional_msgs) by extensions ['ros']
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs/additional_msgs) by extension 'ros'
+[0.437s] DEBUG:colcon.colcon_core.package_identification:Package 'src/msgs/additional_msgs' with type 'ros.ament_cmake' and name 'additional_msgs'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs/autoware_auto_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs/autoware_auto_msgs) by extension 'ignore'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs/autoware_auto_msgs) by extension 'ignore_ament_install'
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs/autoware_auto_msgs) by extensions ['colcon_pkg']
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs/autoware_auto_msgs) by extension 'colcon_pkg'
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs/autoware_auto_msgs) by extensions ['colcon_meta']
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs/autoware_auto_msgs) by extension 'colcon_meta'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs/autoware_auto_msgs) by extensions ['ros']
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs/autoware_auto_msgs) by extension 'ros'
+[0.446s] DEBUG:colcon.colcon_core.package_identification:Package 'src/msgs/autoware_auto_msgs' with type 'ros.ament_cmake' and name 'autoware_auto_msgs'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs/tracked_lane_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs/tracked_lane_msgs) by extension 'ignore'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs/tracked_lane_msgs) by extension 'ignore_ament_install'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs/tracked_lane_msgs) by extensions ['colcon_pkg']
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs/tracked_lane_msgs) by extension 'colcon_pkg'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs/tracked_lane_msgs) by extensions ['colcon_meta']
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs/tracked_lane_msgs) by extension 'colcon_meta'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs/tracked_lane_msgs) by extensions ['ros']
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs/tracked_lane_msgs) by extension 'ros'
+[0.451s] DEBUG:colcon.colcon_core.package_identification:Package 'src/msgs/tracked_lane_msgs' with type 'ros.ament_cmake' and name 'tracked_lane_msgs'
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs/tracked_object_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs/tracked_object_msgs) by extension 'ignore'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs/tracked_object_msgs) by extension 'ignore_ament_install'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs/tracked_object_msgs) by extensions ['colcon_pkg']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs/tracked_object_msgs) by extension 'colcon_pkg'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs/tracked_object_msgs) by extensions ['colcon_meta']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs/tracked_object_msgs) by extension 'colcon_meta'
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs/tracked_object_msgs) by extensions ['ros']
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs/tracked_object_msgs) by extension 'ros'
+[0.465s] DEBUG:colcon.colcon_core.package_identification:Package 'src/msgs/tracked_object_msgs' with type 'ros.ament_cmake' and name 'tracked_object_msgs'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/python3) by extensions ['ignore', 'ignore_ament_install']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/python3) by extension 'ignore'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/python3) by extension 'ignore_ament_install'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/python3) by extensions ['colcon_pkg']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/python3) by extension 'colcon_pkg'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/python3) by extensions ['colcon_meta']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/python3) by extension 'colcon_meta'
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(src/python3) by extensions ['ros']
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(src/python3) by extension 'ros'
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(src/python3) by extensions ['cmake', 'python']
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(src/python3) by extension 'cmake'
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(src/python3) by extension 'python'
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(src/python3) by extensions ['python_setup_py']
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(src/python3) by extension 'python_setup_py'
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(src/python_publisher) by extensions ['ignore', 'ignore_ament_install']
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(src/python_publisher) by extension 'ignore'
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(src/python_publisher) by extension 'ignore_ament_install'
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(src/python_publisher) by extensions ['colcon_pkg']
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(src/python_publisher) by extension 'colcon_pkg'
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(src/python_publisher) by extensions ['colcon_meta']
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(src/python_publisher) by extension 'colcon_meta'
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(src/python_publisher) by extensions ['ros']
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(src/python_publisher) by extension 'ros'
+[0.470s] DEBUG:colcon.colcon_core.package_identification:Package 'src/python_publisher' with type 'ros.ament_python' and name 'python_publisher'
+[0.470s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.470s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.470s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.471s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.471s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.545s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.545s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.548s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/kcg/Autonomous_kcg/ROS2Sample/install
+[0.550s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 256 installed packages in /opt/ros/foxy
+[0.551s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.614s] Level 5:colcon.colcon_core.verb:set package 'additional_msgs' build argument 'cmake_args' from command line to 'None'
+[0.614s] Level 5:colcon.colcon_core.verb:set package 'additional_msgs' build argument 'cmake_target' from command line to 'None'
+[0.614s] Level 5:colcon.colcon_core.verb:set package 'additional_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.614s] Level 5:colcon.colcon_core.verb:set package 'additional_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.614s] Level 5:colcon.colcon_core.verb:set package 'additional_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.614s] Level 5:colcon.colcon_core.verb:set package 'additional_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.614s] Level 5:colcon.colcon_core.verb:set package 'additional_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.614s] Level 5:colcon.colcon_core.verb:set package 'additional_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.614s] Level 5:colcon.colcon_core.verb:set package 'additional_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.614s] DEBUG:colcon.colcon_core.verb:Building package 'additional_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kcg/Autonomous_kcg/ROS2Sample/build/additional_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs', 'merge_install': False, 'path': '/home/kcg/Autonomous_kcg/ROS2Sample/src/msgs/additional_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.616s] Level 5:colcon.colcon_core.verb:set package 'autoware_auto_msgs' build argument 'cmake_args' from command line to 'None'
+[0.616s] Level 5:colcon.colcon_core.verb:set package 'autoware_auto_msgs' build argument 'cmake_target' from command line to 'None'
+[0.616s] Level 5:colcon.colcon_core.verb:set package 'autoware_auto_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.616s] Level 5:colcon.colcon_core.verb:set package 'autoware_auto_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.616s] Level 5:colcon.colcon_core.verb:set package 'autoware_auto_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.616s] Level 5:colcon.colcon_core.verb:set package 'autoware_auto_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.616s] Level 5:colcon.colcon_core.verb:set package 'autoware_auto_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.616s] Level 5:colcon.colcon_core.verb:set package 'autoware_auto_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.616s] Level 5:colcon.colcon_core.verb:set package 'autoware_auto_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.616s] DEBUG:colcon.colcon_core.verb:Building package 'autoware_auto_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kcg/Autonomous_kcg/ROS2Sample/build/autoware_auto_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs', 'merge_install': False, 'path': '/home/kcg/Autonomous_kcg/ROS2Sample/src/msgs/autoware_auto_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.618s] Level 5:colcon.colcon_core.verb:set package 'cognata_sdk_ros2' build argument 'cmake_args' from command line to 'None'
+[0.618s] Level 5:colcon.colcon_core.verb:set package 'cognata_sdk_ros2' build argument 'cmake_target' from command line to 'None'
+[0.618s] Level 5:colcon.colcon_core.verb:set package 'cognata_sdk_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.618s] Level 5:colcon.colcon_core.verb:set package 'cognata_sdk_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.618s] Level 5:colcon.colcon_core.verb:set package 'cognata_sdk_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[0.618s] Level 5:colcon.colcon_core.verb:set package 'cognata_sdk_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[0.618s] Level 5:colcon.colcon_core.verb:set package 'cognata_sdk_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[0.618s] Level 5:colcon.colcon_core.verb:set package 'cognata_sdk_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.618s] Level 5:colcon.colcon_core.verb:set package 'cognata_sdk_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.618s] DEBUG:colcon.colcon_core.verb:Building package 'cognata_sdk_ros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kcg/Autonomous_kcg/ROS2Sample/build/cognata_sdk_ros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2', 'merge_install': False, 'path': '/home/kcg/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2', 'symlink_install': False, 'test_result_base': None}
+[0.620s] Level 5:colcon.colcon_core.verb:set package 'tracked_lane_msgs' build argument 'cmake_args' from command line to 'None'
+[0.620s] Level 5:colcon.colcon_core.verb:set package 'tracked_lane_msgs' build argument 'cmake_target' from command line to 'None'
+[0.620s] Level 5:colcon.colcon_core.verb:set package 'tracked_lane_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.620s] Level 5:colcon.colcon_core.verb:set package 'tracked_lane_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.620s] Level 5:colcon.colcon_core.verb:set package 'tracked_lane_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.620s] Level 5:colcon.colcon_core.verb:set package 'tracked_lane_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.620s] Level 5:colcon.colcon_core.verb:set package 'tracked_lane_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.620s] Level 5:colcon.colcon_core.verb:set package 'tracked_lane_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.620s] Level 5:colcon.colcon_core.verb:set package 'tracked_lane_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.620s] DEBUG:colcon.colcon_core.verb:Building package 'tracked_lane_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kcg/Autonomous_kcg/ROS2Sample/build/tracked_lane_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs', 'merge_install': False, 'path': '/home/kcg/Autonomous_kcg/ROS2Sample/src/msgs/tracked_lane_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.622s] Level 5:colcon.colcon_core.verb:set package 'tracked_object_msgs' build argument 'cmake_args' from command line to 'None'
+[0.622s] Level 5:colcon.colcon_core.verb:set package 'tracked_object_msgs' build argument 'cmake_target' from command line to 'None'
+[0.622s] Level 5:colcon.colcon_core.verb:set package 'tracked_object_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.622s] Level 5:colcon.colcon_core.verb:set package 'tracked_object_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.622s] Level 5:colcon.colcon_core.verb:set package 'tracked_object_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.622s] Level 5:colcon.colcon_core.verb:set package 'tracked_object_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.622s] Level 5:colcon.colcon_core.verb:set package 'tracked_object_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.622s] Level 5:colcon.colcon_core.verb:set package 'tracked_object_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.622s] Level 5:colcon.colcon_core.verb:set package 'tracked_object_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.622s] DEBUG:colcon.colcon_core.verb:Building package 'tracked_object_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kcg/Autonomous_kcg/ROS2Sample/build/tracked_object_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs', 'merge_install': False, 'path': '/home/kcg/Autonomous_kcg/ROS2Sample/src/msgs/tracked_object_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.624s] Level 5:colcon.colcon_core.verb:set package 'python_publisher' build argument 'cmake_args' from command line to 'None'
+[0.624s] Level 5:colcon.colcon_core.verb:set package 'python_publisher' build argument 'cmake_target' from command line to 'None'
+[0.624s] Level 5:colcon.colcon_core.verb:set package 'python_publisher' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.624s] Level 5:colcon.colcon_core.verb:set package 'python_publisher' build argument 'cmake_clean_cache' from command line to 'False'
+[0.624s] Level 5:colcon.colcon_core.verb:set package 'python_publisher' build argument 'cmake_clean_first' from command line to 'False'
+[0.624s] Level 5:colcon.colcon_core.verb:set package 'python_publisher' build argument 'cmake_force_configure' from command line to 'False'
+[0.624s] Level 5:colcon.colcon_core.verb:set package 'python_publisher' build argument 'ament_cmake_args' from command line to 'None'
+[0.624s] Level 5:colcon.colcon_core.verb:set package 'python_publisher' build argument 'catkin_cmake_args' from command line to 'None'
+[0.624s] Level 5:colcon.colcon_core.verb:set package 'python_publisher' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.624s] DEBUG:colcon.colcon_core.verb:Building package 'python_publisher' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kcg/Autonomous_kcg/ROS2Sample/build/python_publisher', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher', 'merge_install': False, 'path': '/home/kcg/Autonomous_kcg/ROS2Sample/src/python_publisher', 'symlink_install': False, 'test_result_base': None}
+[0.625s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.631s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.632s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kcg/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2' with build type 'ament_cmake'
+[0.632s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kcg/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2'
+[0.636s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.636s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.636s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.642s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kcg/Autonomous_kcg/ROS2Sample/src/msgs/tracked_lane_msgs' with build type 'ament_cmake'
+[0.642s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kcg/Autonomous_kcg/ROS2Sample/src/msgs/tracked_lane_msgs'
+[0.644s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.644s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.650s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kcg/Autonomous_kcg/ROS2Sample/src/msgs/tracked_object_msgs' with build type 'ament_cmake'
+[0.650s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kcg/Autonomous_kcg/ROS2Sample/src/msgs/tracked_object_msgs'
+[0.652s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.652s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.658s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kcg/Autonomous_kcg/ROS2Sample/src/msgs/additional_msgs' with build type 'ament_cmake'
+[0.658s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kcg/Autonomous_kcg/ROS2Sample/src/msgs/additional_msgs'
+[0.660s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.660s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.667s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kcg/Autonomous_kcg/ROS2Sample/src/msgs/autoware_auto_msgs' with build type 'ament_cmake'
+[0.667s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kcg/Autonomous_kcg/ROS2Sample/src/msgs/autoware_auto_msgs'
+[0.669s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.669s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.681s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kcg/Autonomous_kcg/ROS2Sample/build/cognata_sdk_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher:/opt/ros/foxy /usr/bin/cmake --build /home/kcg/Autonomous_kcg/ROS2Sample/build/cognata_sdk_ros2 -- -j8 -l8
+[0.717s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kcg/Autonomous_kcg/ROS2Sample/build/tracked_lane_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher:/opt/ros/foxy /usr/bin/cmake --build /home/kcg/Autonomous_kcg/ROS2Sample/build/tracked_lane_msgs -- -j8 -l8
+[0.724s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kcg/Autonomous_kcg/ROS2Sample/build/tracked_object_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher:/opt/ros/foxy /usr/bin/cmake --build /home/kcg/Autonomous_kcg/ROS2Sample/build/tracked_object_msgs -- -j8 -l8
+[0.729s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kcg/Autonomous_kcg/ROS2Sample/build/additional_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher:/opt/ros/foxy /usr/bin/cmake --build /home/kcg/Autonomous_kcg/ROS2Sample/build/additional_msgs -- -j8 -l8
+[0.739s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kcg/Autonomous_kcg/ROS2Sample/build/autoware_auto_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher:/opt/ros/foxy /usr/bin/cmake --build /home/kcg/Autonomous_kcg/ROS2Sample/build/autoware_auto_msgs -- -j8 -l8
+[1.509s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kcg/Autonomous_kcg/ROS2Sample/build/tracked_object_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher:/opt/ros/foxy /usr/bin/cmake --build /home/kcg/Autonomous_kcg/ROS2Sample/build/tracked_object_msgs -- -j8 -l8
+[1.557s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kcg/Autonomous_kcg/ROS2Sample/build/tracked_lane_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher:/opt/ros/foxy /usr/bin/cmake --build /home/kcg/Autonomous_kcg/ROS2Sample/build/tracked_lane_msgs -- -j8 -l8
+[1.568s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kcg/Autonomous_kcg/ROS2Sample/build/additional_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher:/opt/ros/foxy /usr/bin/cmake --build /home/kcg/Autonomous_kcg/ROS2Sample/build/additional_msgs -- -j8 -l8
+[1.629s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kcg/Autonomous_kcg/ROS2Sample/build/tracked_object_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher:/opt/ros/foxy /usr/bin/cmake --install /home/kcg/Autonomous_kcg/ROS2Sample/build/tracked_object_msgs
+[1.636s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kcg/Autonomous_kcg/ROS2Sample/build/additional_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher:/opt/ros/foxy /usr/bin/cmake --install /home/kcg/Autonomous_kcg/ROS2Sample/build/additional_msgs
+[1.640s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kcg/Autonomous_kcg/ROS2Sample/build/autoware_auto_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher:/opt/ros/foxy /usr/bin/cmake --build /home/kcg/Autonomous_kcg/ROS2Sample/build/autoware_auto_msgs -- -j8 -l8
+[1.679s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kcg/Autonomous_kcg/ROS2Sample/build/tracked_lane_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher:/opt/ros/foxy /usr/bin/cmake --install /home/kcg/Autonomous_kcg/ROS2Sample/build/tracked_lane_msgs
+[1.701s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kcg/Autonomous_kcg/ROS2Sample/build/autoware_auto_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher:/opt/ros/foxy /usr/bin/cmake --install /home/kcg/Autonomous_kcg/ROS2Sample/build/autoware_auto_msgs
+[1.723s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kcg/Autonomous_kcg/ROS2Sample/build/cognata_sdk_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher:/opt/ros/foxy /usr/bin/cmake --build /home/kcg/Autonomous_kcg/ROS2Sample/build/cognata_sdk_ros2 -- -j8 -l8
+[1.786s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tracked_object_msgs)
+[1.801s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs' for CMake module files
+[1.802s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kcg/Autonomous_kcg/ROS2Sample/build/tracked_object_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher:/opt/ros/foxy /usr/bin/cmake --install /home/kcg/Autonomous_kcg/ROS2Sample/build/tracked_object_msgs
+[1.805s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs' for CMake config files
+[1.808s] Level 1:colcon.colcon_core.shell:create_environment_hook('tracked_object_msgs', 'cmake_prefix_path')
+[1.811s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/share/tracked_object_msgs/hook/cmake_prefix_path.ps1'
+[1.812s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/share/tracked_object_msgs/hook/cmake_prefix_path.dsv'
+[1.812s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/share/tracked_object_msgs/hook/cmake_prefix_path.sh'
+[1.813s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/lib'
+[1.814s] Level 1:colcon.colcon_core.shell:create_environment_hook('tracked_object_msgs', 'ld_library_path_lib')
+[1.816s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/share/tracked_object_msgs/hook/ld_library_path_lib.ps1'
+[1.816s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/share/tracked_object_msgs/hook/ld_library_path_lib.dsv'
+[1.817s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/share/tracked_object_msgs/hook/ld_library_path_lib.sh'
+[1.817s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/bin'
+[1.817s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/lib/pkgconfig/tracked_object_msgs.pc'
+[1.817s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/lib/python3.8/site-packages'
+[1.817s] Level 1:colcon.colcon_core.shell:create_environment_hook('tracked_object_msgs', 'pythonpath')
+[1.819s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/share/tracked_object_msgs/hook/pythonpath.ps1'
+[1.819s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/share/tracked_object_msgs/hook/pythonpath.dsv'
+[1.820s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/share/tracked_object_msgs/hook/pythonpath.sh'
+[1.820s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/bin'
+[1.821s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/share/tracked_object_msgs/package.ps1'
+[1.822s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/share/tracked_object_msgs/package.dsv'
+[1.822s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/share/tracked_object_msgs/package.sh'
+[1.823s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/share/tracked_object_msgs/package.bash'
+[1.824s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/share/tracked_object_msgs/package.zsh'
+[1.824s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/share/colcon-core/packages/tracked_object_msgs)
+[1.828s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(additional_msgs)
+[1.831s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs' for CMake module files
+[1.832s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kcg/Autonomous_kcg/ROS2Sample/build/additional_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher:/opt/ros/foxy /usr/bin/cmake --install /home/kcg/Autonomous_kcg/ROS2Sample/build/additional_msgs
+[1.832s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs' for CMake config files
+[1.833s] Level 1:colcon.colcon_core.shell:create_environment_hook('additional_msgs', 'cmake_prefix_path')
+[1.834s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/share/additional_msgs/hook/cmake_prefix_path.ps1'
+[1.834s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/share/additional_msgs/hook/cmake_prefix_path.dsv'
+[1.835s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/share/additional_msgs/hook/cmake_prefix_path.sh'
+[1.835s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/lib'
+[1.835s] Level 1:colcon.colcon_core.shell:create_environment_hook('additional_msgs', 'ld_library_path_lib')
+[1.836s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/share/additional_msgs/hook/ld_library_path_lib.ps1'
+[1.837s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/share/additional_msgs/hook/ld_library_path_lib.dsv'
+[1.837s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/share/additional_msgs/hook/ld_library_path_lib.sh'
+[1.838s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/bin'
+[1.838s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/lib/pkgconfig/additional_msgs.pc'
+[1.838s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/lib/python3.8/site-packages'
+[1.838s] Level 1:colcon.colcon_core.shell:create_environment_hook('additional_msgs', 'pythonpath')
+[1.840s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/share/additional_msgs/hook/pythonpath.ps1'
+[1.840s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/share/additional_msgs/hook/pythonpath.dsv'
+[1.840s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/share/additional_msgs/hook/pythonpath.sh'
+[1.841s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/bin'
+[1.842s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/share/additional_msgs/package.ps1'
+[1.843s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/share/additional_msgs/package.dsv'
+[1.843s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/share/additional_msgs/package.sh'
+[1.843s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/share/additional_msgs/package.bash'
+[1.844s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/share/additional_msgs/package.zsh'
+[1.844s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/share/colcon-core/packages/additional_msgs)
+[1.848s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tracked_lane_msgs)
+[1.851s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs' for CMake module files
+[1.852s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kcg/Autonomous_kcg/ROS2Sample/build/tracked_lane_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher:/opt/ros/foxy /usr/bin/cmake --install /home/kcg/Autonomous_kcg/ROS2Sample/build/tracked_lane_msgs
+[1.852s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs' for CMake config files
+[1.853s] Level 1:colcon.colcon_core.shell:create_environment_hook('tracked_lane_msgs', 'cmake_prefix_path')
+[1.855s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/share/tracked_lane_msgs/hook/cmake_prefix_path.ps1'
+[1.856s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/share/tracked_lane_msgs/hook/cmake_prefix_path.dsv'
+[1.856s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/share/tracked_lane_msgs/hook/cmake_prefix_path.sh'
+[1.856s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/lib'
+[1.857s] Level 1:colcon.colcon_core.shell:create_environment_hook('tracked_lane_msgs', 'ld_library_path_lib')
+[1.859s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/share/tracked_lane_msgs/hook/ld_library_path_lib.ps1'
+[1.859s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/share/tracked_lane_msgs/hook/ld_library_path_lib.dsv'
+[1.860s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/share/tracked_lane_msgs/hook/ld_library_path_lib.sh'
+[1.860s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/bin'
+[1.860s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/lib/pkgconfig/tracked_lane_msgs.pc'
+[1.860s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/lib/python3.8/site-packages'
+[1.860s] Level 1:colcon.colcon_core.shell:create_environment_hook('tracked_lane_msgs', 'pythonpath')
+[1.862s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/share/tracked_lane_msgs/hook/pythonpath.ps1'
+[1.862s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/share/tracked_lane_msgs/hook/pythonpath.dsv'
+[1.862s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/share/tracked_lane_msgs/hook/pythonpath.sh'
+[1.863s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/bin'
+[1.864s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/share/tracked_lane_msgs/package.ps1'
+[1.865s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/share/tracked_lane_msgs/package.dsv'
+[1.866s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/share/tracked_lane_msgs/package.sh'
+[1.866s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/share/tracked_lane_msgs/package.bash'
+[1.867s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/share/tracked_lane_msgs/package.zsh'
+[1.867s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/share/colcon-core/packages/tracked_lane_msgs)
+[1.870s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(autoware_auto_msgs)
+[1.875s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs' for CMake module files
+[1.876s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kcg/Autonomous_kcg/ROS2Sample/build/autoware_auto_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher:/opt/ros/foxy /usr/bin/cmake --install /home/kcg/Autonomous_kcg/ROS2Sample/build/autoware_auto_msgs
+[1.876s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs' for CMake config files
+[1.877s] Level 1:colcon.colcon_core.shell:create_environment_hook('autoware_auto_msgs', 'cmake_prefix_path')
+[1.878s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/hook/cmake_prefix_path.ps1'
+[1.879s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/hook/cmake_prefix_path.dsv'
+[1.879s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/hook/cmake_prefix_path.sh'
+[1.880s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/lib'
+[1.880s] Level 1:colcon.colcon_core.shell:create_environment_hook('autoware_auto_msgs', 'ld_library_path_lib')
+[1.883s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/hook/ld_library_path_lib.ps1'
+[1.883s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/hook/ld_library_path_lib.dsv'
+[1.884s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/hook/ld_library_path_lib.sh'
+[1.884s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/bin'
+[1.884s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/lib/pkgconfig/autoware_auto_msgs.pc'
+[1.885s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/lib/python3.8/site-packages'
+[1.885s] Level 1:colcon.colcon_core.shell:create_environment_hook('autoware_auto_msgs', 'pythonpath')
+[1.887s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/hook/pythonpath.ps1'
+[1.888s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/hook/pythonpath.dsv'
+[1.888s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/hook/pythonpath.sh'
+[1.889s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/bin'
+[1.891s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/package.ps1'
+[1.892s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/package.dsv'
+[1.892s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/package.sh'
+[1.893s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/package.bash'
+[1.893s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/package.zsh'
+[1.893s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/colcon-core/packages/autoware_auto_msgs)
+[1.909s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(additional_msgs)
+[1.911s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs' for CMake module files
+[1.912s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs' for CMake config files
+[1.913s] Level 1:colcon.colcon_core.shell:create_environment_hook('additional_msgs', 'cmake_prefix_path')
+[1.915s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/share/additional_msgs/hook/cmake_prefix_path.ps1'
+[1.916s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/share/additional_msgs/hook/cmake_prefix_path.dsv'
+[1.916s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/share/additional_msgs/hook/cmake_prefix_path.sh'
+[1.917s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/lib'
+[1.917s] Level 1:colcon.colcon_core.shell:create_environment_hook('additional_msgs', 'ld_library_path_lib')
+[1.919s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/share/additional_msgs/hook/ld_library_path_lib.ps1'
+[1.919s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/share/additional_msgs/hook/ld_library_path_lib.dsv'
+[1.920s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/share/additional_msgs/hook/ld_library_path_lib.sh'
+[1.920s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/bin'
+[1.920s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/lib/pkgconfig/additional_msgs.pc'
+[1.921s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/lib/python3.8/site-packages'
+[1.921s] Level 1:colcon.colcon_core.shell:create_environment_hook('additional_msgs', 'pythonpath')
+[1.923s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/share/additional_msgs/hook/pythonpath.ps1'
+[1.923s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/share/additional_msgs/hook/pythonpath.dsv'
+[1.923s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/share/additional_msgs/hook/pythonpath.sh'
+[1.924s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/bin'
+[1.926s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/share/additional_msgs/package.ps1'
+[1.927s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/share/additional_msgs/package.dsv'
+[1.928s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/share/additional_msgs/package.sh'
+[1.928s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/share/additional_msgs/package.bash'
+[1.929s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/share/additional_msgs/package.zsh'
+[1.929s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/share/colcon-core/packages/additional_msgs)
+[1.933s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tracked_object_msgs)
+[1.936s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs' for CMake module files
+[1.937s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs' for CMake config files
+[1.938s] Level 1:colcon.colcon_core.shell:create_environment_hook('tracked_object_msgs', 'cmake_prefix_path')
+[1.939s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/share/tracked_object_msgs/hook/cmake_prefix_path.ps1'
+[1.940s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/share/tracked_object_msgs/hook/cmake_prefix_path.dsv'
+[1.940s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/share/tracked_object_msgs/hook/cmake_prefix_path.sh'
+[1.940s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/lib'
+[1.940s] Level 1:colcon.colcon_core.shell:create_environment_hook('tracked_object_msgs', 'ld_library_path_lib')
+[1.943s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/share/tracked_object_msgs/hook/ld_library_path_lib.ps1'
+[1.943s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/share/tracked_object_msgs/hook/ld_library_path_lib.dsv'
+[1.943s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/share/tracked_object_msgs/hook/ld_library_path_lib.sh'
+[1.943s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/bin'
+[1.944s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/lib/pkgconfig/tracked_object_msgs.pc'
+[1.944s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/lib/python3.8/site-packages'
+[1.944s] Level 1:colcon.colcon_core.shell:create_environment_hook('tracked_object_msgs', 'pythonpath')
+[1.946s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/share/tracked_object_msgs/hook/pythonpath.ps1'
+[1.946s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/share/tracked_object_msgs/hook/pythonpath.dsv'
+[1.947s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/share/tracked_object_msgs/hook/pythonpath.sh'
+[1.947s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/bin'
+[1.949s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/share/tracked_object_msgs/package.ps1'
+[1.950s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/share/tracked_object_msgs/package.dsv'
+[1.950s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/share/tracked_object_msgs/package.sh'
+[1.951s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/share/tracked_object_msgs/package.bash'
+[1.952s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/share/tracked_object_msgs/package.zsh'
+[1.952s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/share/colcon-core/packages/tracked_object_msgs)
+[1.964s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(autoware_auto_msgs)
+[1.968s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs' for CMake module files
+[1.968s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs' for CMake config files
+[1.969s] Level 1:colcon.colcon_core.shell:create_environment_hook('autoware_auto_msgs', 'cmake_prefix_path')
+[1.970s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/hook/cmake_prefix_path.ps1'
+[1.971s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/hook/cmake_prefix_path.dsv'
+[1.971s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/hook/cmake_prefix_path.sh'
+[1.972s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/lib'
+[1.972s] Level 1:colcon.colcon_core.shell:create_environment_hook('autoware_auto_msgs', 'ld_library_path_lib')
+[1.973s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/hook/ld_library_path_lib.ps1'
+[1.974s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/hook/ld_library_path_lib.dsv'
+[1.974s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/hook/ld_library_path_lib.sh'
+[1.974s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/bin'
+[1.975s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/lib/pkgconfig/autoware_auto_msgs.pc'
+[1.975s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/lib/python3.8/site-packages'
+[1.975s] Level 1:colcon.colcon_core.shell:create_environment_hook('autoware_auto_msgs', 'pythonpath')
+[1.977s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/hook/pythonpath.ps1'
+[1.977s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/hook/pythonpath.dsv'
+[1.978s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/hook/pythonpath.sh'
+[1.978s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/bin'
+[1.980s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/package.ps1'
+[1.981s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/package.dsv'
+[1.981s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/package.sh'
+[1.982s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/package.bash'
+[1.982s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/autoware_auto_msgs/package.zsh'
+[1.983s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/share/colcon-core/packages/autoware_auto_msgs)
+[1.993s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tracked_lane_msgs)
+[1.995s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs' for CMake module files
+[1.996s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs' for CMake config files
+[1.996s] Level 1:colcon.colcon_core.shell:create_environment_hook('tracked_lane_msgs', 'cmake_prefix_path')
+[1.998s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/share/tracked_lane_msgs/hook/cmake_prefix_path.ps1'
+[1.998s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/share/tracked_lane_msgs/hook/cmake_prefix_path.dsv'
+[1.998s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/share/tracked_lane_msgs/hook/cmake_prefix_path.sh'
+[1.999s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/lib'
+[1.999s] Level 1:colcon.colcon_core.shell:create_environment_hook('tracked_lane_msgs', 'ld_library_path_lib')
+[2.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/share/tracked_lane_msgs/hook/ld_library_path_lib.ps1'
+[2.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/share/tracked_lane_msgs/hook/ld_library_path_lib.dsv'
+[2.001s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/share/tracked_lane_msgs/hook/ld_library_path_lib.sh'
+[2.001s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/bin'
+[2.001s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/lib/pkgconfig/tracked_lane_msgs.pc'
+[2.001s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/lib/python3.8/site-packages'
+[2.001s] Level 1:colcon.colcon_core.shell:create_environment_hook('tracked_lane_msgs', 'pythonpath')
+[2.002s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/share/tracked_lane_msgs/hook/pythonpath.ps1'
+[2.003s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/share/tracked_lane_msgs/hook/pythonpath.dsv'
+[2.003s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/share/tracked_lane_msgs/hook/pythonpath.sh'
+[2.004s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/bin'
+[2.005s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/share/tracked_lane_msgs/package.ps1'
+[2.006s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/share/tracked_lane_msgs/package.dsv'
+[2.007s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/share/tracked_lane_msgs/package.sh'
+[2.007s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/share/tracked_lane_msgs/package.bash'
+[2.007s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/share/tracked_lane_msgs/package.zsh'
+[2.008s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/share/colcon-core/packages/tracked_lane_msgs)
+[2.022s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kcg/Autonomous_kcg/ROS2Sample/build/cognata_sdk_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher:/opt/ros/foxy /usr/bin/cmake --install /home/kcg/Autonomous_kcg/ROS2Sample/build/cognata_sdk_ros2
+[2.097s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cognata_sdk_ros2)
+[2.100s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2' for CMake module files
+[2.100s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kcg/Autonomous_kcg/ROS2Sample/build/cognata_sdk_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher:/opt/ros/foxy /usr/bin/cmake --install /home/kcg/Autonomous_kcg/ROS2Sample/build/cognata_sdk_ros2
+[2.101s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2' for CMake config files
+[2.101s] Level 1:colcon.colcon_core.shell:create_environment_hook('cognata_sdk_ros2', 'cmake_prefix_path')
+[2.103s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/share/cognata_sdk_ros2/hook/cmake_prefix_path.ps1'
+[2.103s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/share/cognata_sdk_ros2/hook/cmake_prefix_path.dsv'
+[2.103s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/share/cognata_sdk_ros2/hook/cmake_prefix_path.sh'
+[2.104s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/lib'
+[2.104s] Level 1:colcon.colcon_core.shell:create_environment_hook('cognata_sdk_ros2', 'ld_library_path_lib')
+[2.105s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/share/cognata_sdk_ros2/hook/ld_library_path_lib.ps1'
+[2.105s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/share/cognata_sdk_ros2/hook/ld_library_path_lib.dsv'
+[2.106s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/share/cognata_sdk_ros2/hook/ld_library_path_lib.sh'
+[2.106s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/bin'
+[2.106s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/lib/pkgconfig/cognata_sdk_ros2.pc'
+[2.107s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/lib/python3.8/site-packages'
+[2.107s] Level 1:colcon.colcon_core.shell:create_environment_hook('cognata_sdk_ros2', 'pythonpath')
+[2.108s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/share/cognata_sdk_ros2/hook/pythonpath.ps1'
+[2.108s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/share/cognata_sdk_ros2/hook/pythonpath.dsv'
+[2.108s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/share/cognata_sdk_ros2/hook/pythonpath.sh'
+[2.109s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/bin'
+[2.110s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/share/cognata_sdk_ros2/package.ps1'
+[2.110s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/share/cognata_sdk_ros2/package.dsv'
+[2.111s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/share/cognata_sdk_ros2/package.sh'
+[2.111s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/share/cognata_sdk_ros2/package.bash'
+[2.111s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/share/cognata_sdk_ros2/package.zsh'
+[2.112s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/share/colcon-core/packages/cognata_sdk_ros2)
+[2.403s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cognata_sdk_ros2)
+[2.405s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2' for CMake module files
+[2.406s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2' for CMake config files
+[2.406s] Level 1:colcon.colcon_core.shell:create_environment_hook('cognata_sdk_ros2', 'cmake_prefix_path')
+[2.408s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/share/cognata_sdk_ros2/hook/cmake_prefix_path.ps1'
+[2.408s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/share/cognata_sdk_ros2/hook/cmake_prefix_path.dsv'
+[2.408s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/share/cognata_sdk_ros2/hook/cmake_prefix_path.sh'
+[2.409s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/lib'
+[2.409s] Level 1:colcon.colcon_core.shell:create_environment_hook('cognata_sdk_ros2', 'ld_library_path_lib')
+[2.410s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/share/cognata_sdk_ros2/hook/ld_library_path_lib.ps1'
+[2.410s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/share/cognata_sdk_ros2/hook/ld_library_path_lib.dsv'
+[2.411s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/share/cognata_sdk_ros2/hook/ld_library_path_lib.sh'
+[2.411s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/bin'
+[2.411s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/lib/pkgconfig/cognata_sdk_ros2.pc'
+[2.411s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/lib/python3.8/site-packages'
+[2.411s] Level 1:colcon.colcon_core.shell:create_environment_hook('cognata_sdk_ros2', 'pythonpath')
+[2.412s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/share/cognata_sdk_ros2/hook/pythonpath.ps1'
+[2.413s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/share/cognata_sdk_ros2/hook/pythonpath.dsv'
+[2.413s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/share/cognata_sdk_ros2/hook/pythonpath.sh'
+[2.413s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/bin'
+[2.414s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/share/cognata_sdk_ros2/package.ps1'
+[2.415s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/share/cognata_sdk_ros2/package.dsv'
+[2.415s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/share/cognata_sdk_ros2/package.sh'
+[2.416s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/share/cognata_sdk_ros2/package.bash'
+[2.416s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/share/cognata_sdk_ros2/package.zsh'
+[2.416s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/share/colcon-core/packages/cognata_sdk_ros2)
+[2.417s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/kcg/Autonomous_kcg/ROS2Sample/src/python_publisher' with build type 'ament_python'
+[2.417s] Level 1:colcon.colcon_core.shell:create_environment_hook('python_publisher', 'ament_prefix_path')
+[2.418s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher/share/python_publisher/hook/ament_prefix_path.ps1'
+[2.418s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher/share/python_publisher/hook/ament_prefix_path.dsv'
+[2.419s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher/share/python_publisher/hook/ament_prefix_path.sh'
+[2.420s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.420s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.637s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/kcg/Autonomous_kcg/ROS2Sample/src/python_publisher'
+[2.639s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.639s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.996s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kcg/Autonomous_kcg/ROS2Sample/src/python_publisher': PYTHONPATH=/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher/lib/python3.8/site-packages:/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/lib/python3.8/site-packages:/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/lib/python3.8/site-packages:/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/lib/python3.8/site-packages:/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher/lib/python3.8/site-packages:/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/lib/python3.8/site-packages:/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/python_publisher build --build-base /home/kcg/Autonomous_kcg/ROS2Sample/build/python_publisher/build install --prefix /home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher --record /home/kcg/Autonomous_kcg/ROS2Sample/build/python_publisher/install.log --single-version-externally-managed
+[3.255s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher' for CMake module files
+[3.256s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kcg/Autonomous_kcg/ROS2Sample/src/python_publisher' returned '0': PYTHONPATH=/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher/lib/python3.8/site-packages:/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_object_msgs/lib/python3.8/site-packages:/home/kcg/Autonomous_kcg/ROS2Sample/install/tracked_lane_msgs/lib/python3.8/site-packages:/home/kcg/Autonomous_kcg/ROS2Sample/install/cognata_sdk_ros2/lib/python3.8/site-packages:/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher/lib/python3.8/site-packages:/home/kcg/Autonomous_kcg/ROS2Sample/install/autoware_auto_msgs/lib/python3.8/site-packages:/home/kcg/Autonomous_kcg/ROS2Sample/install/additional_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/python_publisher build --build-base /home/kcg/Autonomous_kcg/ROS2Sample/build/python_publisher/build install --prefix /home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher --record /home/kcg/Autonomous_kcg/ROS2Sample/build/python_publisher/install.log --single-version-externally-managed
+[3.256s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher' for CMake config files
+[3.257s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher/lib'
+[3.257s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher/bin'
+[3.257s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher/lib/pkgconfig/python_publisher.pc'
+[3.257s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher/lib/python3.8/site-packages'
+[3.257s] Level 1:colcon.colcon_core.shell:create_environment_hook('python_publisher', 'pythonpath')
+[3.258s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher/share/python_publisher/hook/pythonpath.ps1'
+[3.259s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher/share/python_publisher/hook/pythonpath.dsv'
+[3.259s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher/share/python_publisher/hook/pythonpath.sh'
+[3.260s] Level 1:colcon.colcon_core.environment:checking '/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher/bin'
+[3.260s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(python_publisher)
+[3.261s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher/share/python_publisher/package.ps1'
+[3.261s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher/share/python_publisher/package.dsv'
+[3.262s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher/share/python_publisher/package.sh'
+[3.262s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher/share/python_publisher/package.bash'
+[3.262s] INFO:colcon.colcon_core.shell:Creating package script '/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher/share/python_publisher/package.zsh'
+[3.263s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kcg/Autonomous_kcg/ROS2Sample/install/python_publisher/share/colcon-core/packages/python_publisher)
+[3.263s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.263s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.263s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.263s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.271s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.271s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.271s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.283s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.284s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kcg/Autonomous_kcg/ROS2Sample/install/local_setup.ps1'
+[3.285s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kcg/Autonomous_kcg/ROS2Sample/install/_local_setup_util_ps1.py'
+[3.286s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kcg/Autonomous_kcg/ROS2Sample/install/setup.ps1'
+[3.288s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kcg/Autonomous_kcg/ROS2Sample/install/local_setup.sh'
+[3.289s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kcg/Autonomous_kcg/ROS2Sample/install/_local_setup_util_sh.py'
+[3.289s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kcg/Autonomous_kcg/ROS2Sample/install/setup.sh'
+[3.291s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kcg/Autonomous_kcg/ROS2Sample/install/local_setup.bash'
+[3.291s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kcg/Autonomous_kcg/ROS2Sample/install/setup.bash'
+[3.292s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kcg/Autonomous_kcg/ROS2Sample/install/local_setup.zsh'
+[3.293s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kcg/Autonomous_kcg/ROS2Sample/install/setup.zsh'

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/shovals/Documents/Autonomous_kcg/ROS2Sample/src/msgs/additional_msgs
+CMAKE_SOURCE_DIR = /home/kcg/Autonomous_kcg/ROS2Sample/src/msgs/additional_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/shovals/Documents/Autonomous_kcg/ROS2Sample/build/additional_msgs
+CMAKE_BINARY_DIR = /home/kcg/Autonomous_kcg/ROS2Sample/build/additional_msgs
 
 # Utility rule file for additional_msgs_uninstall.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/shovals/Documents/Autonomous_kcg/ROS2Sample/build/addit
 include CMakeFiles/additional_msgs_uninstall.dir/progress.make
 
 CMakeFiles/additional_msgs_uninstall:
-	/usr/bin/cmake -P /home/shovals/Documents/Autonomous_kcg/ROS2Sample/build/additional_msgs/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/kcg/Autonomous_kcg/ROS2Sample/build/additional_msgs/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 additional_msgs_uninstall: CMakeFiles/additional_msgs_uninstall
 additional_msgs_uninstall: CMakeFiles/additional_msgs_uninstall.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/additional_msgs_uninstall.dir/clean:
 .PHONY : CMakeFiles/additional_msgs_uninstall.dir/clean
 
 CMakeFiles/additional_msgs_uninstall.dir/depend:
-	cd /home/shovals/Documents/Autonomous_kcg/ROS2Sample/build/additional_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/shovals/Documents/Autonomous_kcg/ROS2Sample/src/msgs/additional_msgs /home/shovals/Documents/Autonomous_kcg/ROS2Sample/src/msgs/additional_msgs /home/shovals/Documents/Autonomous_kcg/ROS2Sample/build/additional_msgs /home/shovals/Documents/Autonomous_kcg/ROS2Sample/build/additional_msgs /home/shovals/Documents/Autonomous_kcg/ROS2Sample/build/additional_msgs/CMakeFiles/additional_msgs_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kcg/Autonomous_kcg/ROS2Sample/build/additional_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kcg/Autonomous_kcg/ROS2Sample/src/msgs/additional_msgs /home/kcg/Autonomous_kcg/ROS2Sample/src/msgs/additional_msgs /home/kcg/Autonomous_kcg/ROS2Sample/build/additional_msgs /home/kcg/Autonomous_kcg/ROS2Sample/build/additional_msgs /home/kcg/Autonomous_kcg/ROS2Sample/build/additional_msgs/CMakeFiles/additional_msgs_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/additional_msgs_uninstall.dir/depend
 

@@ -223,6 +223,8 @@ class adaptive_cruise_control(Node):
         self.ego_car_v_y = msg.twist.twist.linear.y
         speed_square = math.pow(self.ego_car_v_x ,2) + math.pow(self.ego_car_v_y, 2)
         self.ego_car_speed = math.sqrt(speed_square)
+        print(msg.pose.pose.position.x)
+        print(msg.pose.pose.position.y)
         print("SPEED: ", self.ego_car_speed)
         
     
@@ -279,13 +281,7 @@ class adaptive_cruise_control(Node):
     ##################################################
     ### UTILS   ######################################
     ##################################################
-    def get_target_point(self, radius):
-        """
-        find the farthest point from us in a certain radius
-        """
-        
-
-
+    
     def dist(self, point1, point2):
         # return distance betweeen point1 and point2 - 8 digit accuracy - meters
         dist = hs.haversine(point1, point2)
@@ -321,6 +317,17 @@ class adaptive_cruise_control(Node):
                     int(point.position.y) >= int(pointR.y) - radius_y and int(point.position.y) <= int(pointR.y) + radius_y:
                     return True
         return False
+    
+    def get_target_point(self, radius):
+        """
+        find the farthest point from us in a certain radius.
+        """
+        current_point = (self.cx[0], self.cy[0])
+        for i, (x, y) in enumerate(zip(self.cx, self.cy)):
+            if math.dist(current_point, (x,y)) > radius:
+                return (x, y)
+
+
 
     def get_front_padasterian(self):
         """
@@ -404,16 +411,16 @@ class adaptive_cruise_control(Node):
         # calculate path angle
         path_angle = 0.0
         self.target_point = self.get_target_point(30.0)
+        
         if self.target_point:
-            desired_vector = (
-                self.target_point[0] - self.ego_car_pose_y_nav, self.target_point[1] - self.ego_car_pose_x_nav)
+            desired_vector = (self.target_point[0] - self.cx[0], self.target_point[1] - self.cy[0])
+
             path_angle = math.atan2(desired_vector[0], desired_vector[1])
 
-        # calculate shovals angle
         path_relative_angle = 0.0
         if self.target_point:
-            on_path_vector = (self.target_point[0] - self.cx[self.current_idx],
-                            self.target_point[1] - self.cy[self.current_idx])
+            on_path_vector = (self.target_point[0] - self.cx[0],
+                            self.target_point[1] - self.cy[0])
             on_path_angle = math.atan2(on_path_vector[0], on_path_vector[1])
             path_relative_angle = path_angle - on_path_angle
 
@@ -423,7 +430,8 @@ class adaptive_cruise_control(Node):
         print("Path Angle: (Relative)", math.degrees(path_relative_angle))
         print("Result Angle: ", math.degrees(-error_w))
 
-        output_w = self.wheel_PID.output(-error_w)
+        output = self.wheel_PID.output(-error_w)
+        return output
 
 
     def update_pure_pursuit(self, lane : Lane):
@@ -459,7 +467,6 @@ class adaptive_cruise_control(Node):
 
             return Y, X
         
-
 
     #####################################################
     # PID control for applying adaptive cruise
