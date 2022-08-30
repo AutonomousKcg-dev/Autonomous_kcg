@@ -156,7 +156,10 @@ class adaptive_cruise_control(Node):
         self.create_subscription(
             OccupancyGrid, "/occupancy_grid", self.occupancy_grid_callback, 10)
         self.create_subscription(
-            Odometry, "/ego_motion", self.ego_motion_callback, 10)      
+            Odometry, "/ego_motion", self.ego_motion_callback, 10)  
+        self.create_subscription(
+            NavSatFix, "TODO", self.GPScb_nav)
+        
         
         
         # Idan Subscriber
