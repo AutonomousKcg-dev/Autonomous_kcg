@@ -137,7 +137,8 @@ class PID():
             # I term            
             self.iTerm += self.ki * error * dt
             # D term
-            self.dTerm = self.kd * (error/dt)          
+            self.dTerm = self.kd * (error/dt)
+                     
             # Check for windup problems if anti-windup is enabled
             self.antiWindUp()
             

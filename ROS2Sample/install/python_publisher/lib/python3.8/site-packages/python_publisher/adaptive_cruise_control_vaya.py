@@ -271,6 +271,9 @@ class adaptive_cruise_control(Node):
         """
             This method is responsible for lanes update.
         """
+        self.left_lanes.clear()
+        self.right_lanes.clear()
+
         # update left lanes
         for lane in msg.adjacent_left:
             self.left_lanes.append(lane)
@@ -478,22 +481,51 @@ class adaptive_cruise_control(Node):
         return output
 
 
-    def update_pure_pursuit(self, lane : Lane):
+    def update_pure_pursuit(self, ego_lane : Lane):
         """
             This method update the cx, cy values of the pure pursuit object
         """
         self.cx = []
         self.cy = []
-        for pointL, pointR in zip(lane.left_boundary.points, lane.right_boundary.points):
+        cx2, cy2 = [], []
+
+        ax.cla()
+        for lane in self.right_lanes:
+            for pointL, pointR in zip(lane.left_boundary.points, lane.right_boundary.points):
+                pointL:Point = pointL
+                pointR:Point = pointR
+                x = (pointL.x + pointR.x) / 2.0
+                y = (pointL.y + pointR.y) / 2.0
+                cx2.append(x)
+                cy2.append(y)
+
+            ax.plot(cx2, cy2, "--b")
+            cx2.clear()
+            cy2.clear()
+
+        for lane in self.left_lanes:
+            for pointL, pointR in zip(lane.left_boundary.points, lane.right_boundary.points):
+                pointL:Point = pointL
+                pointR:Point = pointR
+                x = (pointL.x + pointR.x) / 2.0
+                y = (pointL.y + pointR.y) / 2.0
+                cx2.append(x)
+                cy2.append(y)
+
+            ax.plot(cx2, cy2, "--b")
+            cx2.clear()
+            cy2.clear()
+        
+        for pointL, pointR in zip(ego_lane.left_boundary.points, ego_lane.right_boundary.points):
             pointL:Point = pointL
             pointR:Point = pointR
             x = (pointL.x + pointR.x) / 2.0
             y = (pointL.y + pointR.y) / 2.0
             self.cx.append(x)
             self.cy.append(y)
-        ax.cla()
         ax.plot(self.cx, self.cy, "-r")
-        plt.pause(0.1)
+
+        plt.pause(0.01)
     
     def get_path(self, file_name):
         """
