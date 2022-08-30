@@ -3,6 +3,8 @@
 from audioop import avg
 from dataclasses import dataclass
 from os import stat
+from turtle import st
+from xmlrpc.client import DateTime
 import matplotlib as plt
 from threading import Thread
 import rclpy
@@ -12,7 +14,8 @@ import csv
 import keyboard  # Requires Super User (sudo -s)
 import haversine as hs
 import numpy as np
-
+import pandas as pd
+from datetime import *
 
 # Ros Topics Data types - Vaya
 from tracked_lane_msgs.msg import LaneResults, Lane, Boundary, Point
@@ -31,6 +34,7 @@ from .submodules.switch_vaya import *
 # Idan driver
 from autoware_auto_msgs.msg import VehicleControlCommand
 from additional_msgs.msg import CanPacket
+
 
 # Google Earth
 # from simplekml import Kml
@@ -95,6 +99,8 @@ class adaptive_cruise_control(Node):
         self.reference_distance = 50  # Desired keeping distance
         self.keyboard_increment_factor = 0.1
         self.max_speed = 5.0
+        self.ego_car_v_x = 0.0
+        self.ego_car_v_y = 0.0
 
         # ego car:
         self.ego_car_lane = 0
@@ -116,6 +122,10 @@ class adaptive_cruise_control(Node):
         self.velocity_PID = PID(kp=0.08, ki=0, kd=0.013)
         self.wheel_PID = PID(kp=0.05, ki=0, kd=0.002)
         self._switching_lane = False
+        self.error_w = 0
+        self.error_v = 0
+        self.output_w = 0.0
+        self.output_v = 0.0
 
         # Switch
         self.switch = switch_vaya(self.reference_distance)
@@ -127,6 +137,13 @@ class adaptive_cruise_control(Node):
         self.colormap = [[0,0,0],[0,240,0],[0,100,0],[120,0,0],[255,0,0]]+[[255,255,255] for i in range(251)]
         self.color_lookup = np.array(self.colormap, dtype=np.uint8)
         self.channels = 3
+
+        # Log section
+        self.log_pd = pd.DataFrame(columns=
+        ['Time stamp', 'Error Wheel', 'Output wheel', 'Error Velocity / Brake', 'Output velocity' , 'Center Point - Lane x', 'Center Point - Lane Y', 'GPS', 'Ego Velocity', 'P', 'I', 'D'])
+        self.curr_date = datetime.now()
+        self.log_filename = str("src/python_publisher/python_publisher/submodules/log/log_%s.csv" % self.curr_date )
+
 
         print(fonts.YELLOW + "waiting for all topics to be avalable...")
         
@@ -198,6 +215,8 @@ class adaptive_cruise_control(Node):
         
         # update the data of the Vaya Switch 
         self.switch.update_objects(vehicle_list, pedestrian_list)
+
+        self.save_state("%s:%s" % (msg.header.stamp.sec , msg.header.stamp.nanosec))
 
 
     #####################################################
@@ -281,6 +300,27 @@ class adaptive_cruise_control(Node):
     ##################################################
     ### UTILS   ######################################
     ##################################################
+
+    def save_state(self, time_stamp):
+        """
+            This method saves the current state in the pandas table:
+            Time stamp', 'Error Wheel', 'Output wheel', 'Error Velocity / Brake', 'Output velocity' , 'Center Point - Lane x', 'Center Point - Lane Y', 'GPS', 'Ego Velocity', 'P', 'I', 'D'
+        """
+        state_data = []
+        state_data.append(time_stamp)
+        state_data.append(self.error_w)
+        state_data.append(self.output_w)
+        state_data.append(self.error_v)
+        state_data.append(self.output_v)
+        state_data.append(self.cx)
+        state_data.append(self.cy)
+        state_data.append((self.ego_car_pose_x_nav, self.ego_car_pose_y_nav))
+        state_data.append((self.ego_car_v_x, self.ego_car_v_y))
+        state_data.append(self.wheel_PID.pTerm)
+        state_data.append(self.wheel_PID.iTerm)
+        state_data.append(self.wheel_PID.dTerm)
+        self.log_pd.loc[len(self.log_pd.index)] = state_data
+        self.log_pd.to_csv(self.log_filename, index=False)
     
     def dist(self, point1, point2):
         # return distance betweeen point1 and point2 - 8 digit accuracy - meters
@@ -393,10 +433,12 @@ class adaptive_cruise_control(Node):
         # if no object detected, use speed as an error
         if len(self.padesterianList) == 0 and len(self.vehicleList) == 0:
             output = self.velocity_PID.output(error)
+            self.error_v = error
         else: 
             # find the gas & brake output using the PID class
             output = self.velocity_PID.output(dist_error)
-        
+            self.error_v = error
+        self.output_v = output
         return output
     
     def calc_output_wheel(self):
@@ -431,6 +473,8 @@ class adaptive_cruise_control(Node):
         print("Result Angle: ", math.degrees(-error_w))
 
         output = self.wheel_PID.output(-error_w)
+        self.error_w = -error_w
+        self.output_w = output
         return output
 
 
