@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # generic imports
 from audioop import avg
+from calendar import c
 from dataclasses import dataclass
 from os import stat
 from turtle import st
@@ -260,6 +261,14 @@ class adaptive_cruise_control(Node):
         grid = np.array(list(data), dtype=np.uint8)
         grid = np.reshape(grid, (msg.info.height, msg.info.width, 3))
         grid = cv2.resize(grid,(1080,720), fx=0.4, fy=0.4)
+        wheel_img = cv2.imread("src/python_publisher/python_publisher/submodules/tesla_wheel.png")
+        (h, w) = wheel_img.shape[:2]
+        (cX, cY) = (w // 2, h // 2)
+        angle = self.output_w * 45
+        M = cv2.getRotationMatrix2D((cX, cY), int(angle), 1.0)
+        wheel_img = cv2.warpAffine(wheel_img, M, (w, h))
+        wheel_img = cv2.putText(wheel_img, str(angle), (0, 50), cv2.FONT_HERSHEY_COMPLEX , 2, (255, 0, 0), 5)
+        cv2.imshow("Wheel", wheel_img)
         cv2.imshow("frame", grid)
         cv2.waitKey(1)
     
