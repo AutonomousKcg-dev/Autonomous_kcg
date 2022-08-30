@@ -346,12 +346,6 @@ class adaptive_cruise_control(Node):
         # if self.in_session:
         print(fonts.BOLD + fonts.CYAN + "Quitting Adaptive Cruise Control")
     
-    def abline(self, slope, intercept, ax, min_x, max_x):
-        """Plot a line from slope and intercept"""
-        x_vals = np.array([min_x, max_x])
-        y_vals = intercept + slope * x_vals
-        ax.plot(x_vals.flatten(), y_vals.flatten(), '--')
-    
     def at_boundary(self, point: Pose) -> bool:
         """
             For a given 3D point (x, y, z), 
@@ -533,6 +527,8 @@ class adaptive_cruise_control(Node):
             self.cx.append(x)
             self.cy.append(y)
         ax.plot(self.cx, self.cy, "-r")
+        if self.target_point:
+            ax.scatter(self.target_point[0], self.target_point[1], c="b")
 
         plt.pause(0.01)
     
