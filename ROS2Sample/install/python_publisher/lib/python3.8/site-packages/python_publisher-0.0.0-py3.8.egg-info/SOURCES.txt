@@ -15,6 +15,7 @@ python_publisher/adaptive_cruise_control_vaya.py
 python_publisher/controllerPID.py
 python_publisher/controllerPID_test.py
 python_publisher/google_earth_viz.py
+python_publisher/gps_to_plane.py
 python_publisher/record_sub.py
 python_publisher/steertry.py
 python_publisher/submodules/Pure_Pursuit.py

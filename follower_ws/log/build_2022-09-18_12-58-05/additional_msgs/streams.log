@@ -1,0 +1,112 @@
+[0.018s] Invoking command in '/home/shovals/Documents/Autonomous_kcg/follower_ws/build/additional_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/shovals/Documents/Autonomous_kcg/follower_ws/build/additional_msgs -- -j16 -l16
+[0.050s] [  3%] Built target additional_msgs__cpp
+[0.053s] [ 12%] Built target additional_msgs__rosidl_generator_c
+[0.080s] [ 25%] Built target additional_msgs__rosidl_typesupport_introspection_cpp
+[0.080s] [ 35%] Built target additional_msgs__rosidl_typesupport_fastrtps_cpp
+[0.080s] [ 51%] Built target additional_msgs__rosidl_typesupport_c
+[0.081s] [ 51%] Built target additional_msgs__rosidl_typesupport_cpp
+[0.081s] [ 61%] Built target additional_msgs__rosidl_typesupport_introspection_c
+[0.099s] [ 70%] Built target additional_msgs__rosidl_typesupport_fastrtps_c
+[0.112s] [ 70%] Built target additional_msgs
+[0.127s] [ 74%] Built target additional_msgs__py
+[0.144s] [ 80%] Built target additional_msgs__python
+[0.164s] [ 87%] Built target additional_msgs__rosidl_typesupport_c__pyext
+[0.167s] [ 93%] Built target additional_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.168s] [100%] Built target additional_msgs__rosidl_typesupport_introspection_c__pyext
+[0.178s] Invoked command in '/home/shovals/Documents/Autonomous_kcg/follower_ws/build/additional_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/shovals/Documents/Autonomous_kcg/follower_ws/build/additional_msgs -- -j16 -l16
+[0.219s] Invoking command in '/home/shovals/Documents/Autonomous_kcg/follower_ws/build/additional_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/shovals/Documents/Autonomous_kcg/follower_ws/build/additional_msgs
+[0.225s] -- Install configuration: ""
+[0.225s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/share/ament_index/resource_index/rosidl_interfaces/additional_msgs
+[0.225s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/include/additional_msgs
+[0.225s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/include/additional_msgs/msg
+[0.225s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/include/additional_msgs/msg/can_packet.h
+[0.225s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/include/additional_msgs/msg/rosidl_generator_c__visibility_control.h
+[0.225s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/include/additional_msgs/msg/detail
+[0.225s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__struct.h
+[0.226s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__functions.c
+[0.226s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__functions.h
+[0.226s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__type_support.h
+[0.227s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/share/additional_msgs/environment/library_path.sh
+[0.227s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/share/additional_msgs/environment/library_path.dsv
+[0.227s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_generator_c.so
+[0.227s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/include/additional_msgs
+[0.227s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/include/additional_msgs/msg
+[0.227s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/include/additional_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.227s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/include/additional_msgs/msg/detail
+[0.227s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__rosidl_typesupport_fastrtps_c.h
+[0.227s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_typesupport_fastrtps_c.so
+[0.227s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/include/additional_msgs
+[0.227s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/include/additional_msgs/msg
+[0.228s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/include/additional_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.228s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/include/additional_msgs/msg/detail
+[0.228s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__rosidl_typesupport_fastrtps_cpp.hpp
+[0.228s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/include/additional_msgs/msg/detail/dds_fastrtps
+[0.228s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_typesupport_fastrtps_cpp.so
+[0.228s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/include/additional_msgs
+[0.228s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/include/additional_msgs/msg
+[0.228s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/include/additional_msgs/msg/detail
+[0.228s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__type_support.c
+[0.228s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__rosidl_typesupport_introspection_c.h
+[0.228s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/include/additional_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.228s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_typesupport_introspection_c.so
+[0.228s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_typesupport_c.so
+[0.228s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/include/additional_msgs
+[0.229s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/include/additional_msgs/msg
+[0.229s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/include/additional_msgs/msg/detail
+[0.229s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__builder.hpp
+[0.229s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__struct.hpp
+[0.229s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__traits.hpp
+[0.229s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/include/additional_msgs/msg/can_packet.hpp
+[0.229s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/include/additional_msgs
+[0.229s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/include/additional_msgs/msg
+[0.229s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/include/additional_msgs/msg/detail
+[0.229s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__type_support.cpp
+[0.229s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/include/additional_msgs/msg/detail/can_packet__rosidl_typesupport_introspection_cpp.hpp
+[0.229s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_typesupport_introspection_cpp.so
+[0.229s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/lib/libadditional_msgs__rosidl_typesupport_cpp.so
+[0.229s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/share/additional_msgs/environment/pythonpath.sh
+[0.229s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/share/additional_msgs/environment/pythonpath.dsv
+[0.229s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/lib/python3.8/site-packages/additional_msgs/__init__.py
+[0.252s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/lib/python3.8/site-packages/additional_msgs/msg
+[0.252s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/lib/python3.8/site-packages/additional_msgs/msg/__init__.py
+[0.252s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/lib/python3.8/site-packages/additional_msgs/msg/_can_packet.py
+[0.253s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/lib/python3.8/site-packages/additional_msgs/msg/_can_packet_s.c
+[0.253s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/lib/python3.8/site-packages/additional_msgs/additional_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[0.254s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/lib/python3.8/site-packages/additional_msgs/additional_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[0.255s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/lib/python3.8/site-packages/additional_msgs/additional_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[0.256s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/lib/libadditional_msgs__python.so
+[0.256s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/share/additional_msgs/msg/CanPacket.idl
+[0.256s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/share/ament_index/resource_index/package_run_dependencies/additional_msgs
+[0.257s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/share/ament_index/resource_index/parent_prefix_path/additional_msgs
+[0.261s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/share/additional_msgs/environment/ament_prefix_path.sh
+[0.262s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/share/additional_msgs/environment/ament_prefix_path.dsv
+[0.262s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/share/additional_msgs/environment/path.sh
+[0.262s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/share/additional_msgs/environment/path.dsv
+[0.263s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/share/additional_msgs/local_setup.bash
+[0.263s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/share/additional_msgs/local_setup.sh
+[0.263s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/share/additional_msgs/local_setup.zsh
+[0.263s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/share/additional_msgs/local_setup.dsv
+[0.264s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/share/additional_msgs/package.dsv
+[0.265s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/share/ament_index/resource_index/packages/additional_msgs
+[0.265s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/share/additional_msgs/cmake/additional_msgs__rosidl_generator_cExport.cmake
+[0.266s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/share/additional_msgs/cmake/additional_msgs__rosidl_generator_cExport-noconfig.cmake
+[0.268s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/share/additional_msgs/cmake/additional_msgs__rosidl_typesupport_introspection_cExport.cmake
+[0.268s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/share/additional_msgs/cmake/additional_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.271s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/share/additional_msgs/cmake/additional_msgs__rosidl_typesupport_cExport.cmake
+[0.271s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/share/additional_msgs/cmake/additional_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[0.274s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/share/additional_msgs/cmake/additional_msgs__rosidl_generator_cppExport.cmake
+[0.275s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/share/additional_msgs/cmake/additional_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[0.276s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/share/additional_msgs/cmake/additional_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.277s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/share/additional_msgs/cmake/additional_msgs__rosidl_typesupport_cppExport.cmake
+[0.277s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/share/additional_msgs/cmake/additional_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[0.277s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/share/additional_msgs/cmake/rosidl_cmake-extras.cmake
+[0.278s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/share/additional_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.278s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/share/additional_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[0.278s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/share/additional_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[0.278s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/share/additional_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.279s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/share/additional_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.280s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/share/additional_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.280s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/share/additional_msgs/cmake/additional_msgsConfig.cmake
+[0.280s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/share/additional_msgs/cmake/additional_msgsConfig-version.cmake
+[0.280s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/additional_msgs/share/additional_msgs/package.xml
+[0.306s] Invoked command in '/home/shovals/Documents/Autonomous_kcg/follower_ws/build/additional_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/shovals/Documents/Autonomous_kcg/follower_ws/build/additional_msgs

@@ -5,6 +5,7 @@ from calendar import c
 from dataclasses import dataclass
 from os import stat
 from turtle import st
+from typing import Tuple
 from xmlrpc.client import DateTime
 import matplotlib as plt
 from threading import Thread
@@ -12,11 +13,12 @@ import rclpy
 from rclpy.node import Node
 import matplotlib.pyplot as plt
 import csv
-import keyboard  # Requires Super User (sudo -s)
+# import keyboard  # Requires Super User (sudo -s)
 import haversine as hs
 import numpy as np
 import pandas as pd
 from datetime import *
+import os
 
 # Ros Topics Data types - Vaya
 from tracked_lane_msgs.msg import LaneResults, Lane, Boundary, Point
@@ -102,6 +104,7 @@ class adaptive_cruise_control(Node):
         self.max_speed = 5.0
         self.ego_car_v_x = 0.0
         self.ego_car_v_y = 0.0
+        self.target_point = (0,0)
 
         # ego car:
         self.ego_car_lane = 0
@@ -118,6 +121,8 @@ class adaptive_cruise_control(Node):
         self.cx = [0.0]
         self.cy = [0.0]
 
+        # Route Plane GPS
+        self.route = []
 
         # PID
         self.velocity_PID = PID(kp=0.08, ki=0, kd=0.013)
@@ -158,9 +163,10 @@ class adaptive_cruise_control(Node):
         self.create_subscription(
             Odometry, "/ego_motion", self.ego_motion_callback, 10)  
         self.create_subscription(
-            NavSatFix, "TODO", self.GPScb_nav)
-        
-        
+            NavSatFix, "gps_data", self.GPScb_nav, 10)
+        self.create_subscription(
+            Tuple, "plane_topic", self.plane_cb, 10)
+
         
         # Idan Subscriber
         self.Idan_driver_listener = self.create_subscription(
@@ -231,10 +237,22 @@ class adaptive_cruise_control(Node):
         #self.ego_car_degree = np.arccos(self.ego_car_velocity._x / (self.ego_car_speed/3.6))
         self.ego_car_pose_y_nav = msg.latitude
         self.ego_car_pose_x_nav = msg.longitude
+        
 
-       
+   #####################################################
+    # Plane message callback
+    ##################################################### 
+    
+    def plane_cb(self, msg : Tuple):
+        """
+            This method receives a point on the plane from the converter Node.
+            Adds to the route list.
+        """
+        self.route.append(msg)
+
+
     #####################################################
-    # GPS message callback
+    # Ego Motion message callback
     #####################################################
 
     def ego_motion_callback(self, msg : Odometry):
@@ -250,6 +268,7 @@ class adaptive_cruise_control(Node):
         print(msg.pose.pose.position.y)
         print("SPEED: ", self.ego_car_speed)
         
+        
     
     ##################################################
     ## Occupancy Grid call back ######################
@@ -260,20 +279,21 @@ class adaptive_cruise_control(Node):
             This method is responsible for GUI & Occupancy Grid data update
         """
         
-        data = map(self.change_color, msg.data) 
-        grid = np.array(list(data), dtype=np.uint8)
-        grid = np.reshape(grid, (msg.info.height, msg.info.width, 3))
-        grid = cv2.resize(grid,(1080,720), fx=0.4, fy=0.4)
-        wheel_img = cv2.imread("src/python_publisher/python_publisher/submodules/tesla_wheel.png")
-        (h, w) = wheel_img.shape[:2]
-        (cX, cY) = (w // 2, h // 2)
-        angle = self.output_w * 45
-        M = cv2.getRotationMatrix2D((cX, cY), int(angle), 1.0)
-        wheel_img = cv2.warpAffine(wheel_img, M, (w, h))
-        wheel_img = cv2.putText(wheel_img, str(angle), (0, 50), cv2.FONT_HERSHEY_COMPLEX , 2, (255, 0, 0), 5)
-        cv2.imshow("Wheel", wheel_img)
-        cv2.imshow("frame", grid)
-        cv2.waitKey(1)
+        if len(list(msg.data)) > 0:
+            data = map(self.change_color, msg.data) 
+            grid = np.array(list(data), dtype=np.uint8)
+            print("all zeros: ", all(np.equal(grid.flatten(), np.zeros_like(grid).flatten())))
+            grid = np.reshape(grid, (msg.info.height, msg.info.width, 3))
+            wheel_img = cv2.imread("src/python_publisher/python_publisher/submodules/tesla_wheel.png")
+            (h, w) = wheel_img.shape[:2]
+            (cX, cY) = (w // 2, h // 2)
+            angle = self.output_w * 45
+            M = cv2.getRotationMatrix2D((cX, cY), int(angle), 1.0)
+            wheel_img = cv2.warpAffine(wheel_img, M, (w, h))
+            wheel_img = cv2.putText(wheel_img, str(angle), (0, 50), cv2.FONT_HERSHEY_COMPLEX , 2, (255, 0, 0), 5)
+            cv2.imshow("Wheel", wheel_img)
+            cv2.imshow("frame", grid)
+            cv2.waitKey(1)
     
     ###################################################
     ######  Lane call back ############################
@@ -371,7 +391,7 @@ class adaptive_cruise_control(Node):
         """
         find the farthest point from us in a certain radius.
         """
-        current_point = (self.cx[0], self.cy[0])
+        current_point = (0,0)
         for i, (x, y) in enumerate(zip(self.cx, self.cy)):
             if math.dist(current_point, (x,y)) > radius:
                 return (x, y)

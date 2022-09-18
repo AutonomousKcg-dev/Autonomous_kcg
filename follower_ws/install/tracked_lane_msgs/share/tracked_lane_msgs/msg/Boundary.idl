@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tracked_lane_msgs/msg/Boundary.msg
+// generated code does not contain a copyright notice
+
+#include "tracked_lane_msgs/msg/Point.idl"
+
+module tracked_lane_msgs {
+  module msg {
+    struct Boundary {
+      @verbatim (language="comment", text=
+        " Points along the boundary line")
+      sequence<tracked_lane_msgs::msg::Point> points;
+
+      @verbatim (language="comment", text=
+        " default 180 Points")
+      uint32 num_points;
+    };
+  };
+};

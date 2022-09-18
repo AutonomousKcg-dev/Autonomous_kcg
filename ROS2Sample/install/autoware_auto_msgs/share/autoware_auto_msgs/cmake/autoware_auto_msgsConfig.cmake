@@ -16,7 +16,7 @@ set(_autoware_auto_msgs_CONFIG_INCLUDED TRUE)
 
 # output package information
 if(NOT autoware_auto_msgs_FIND_QUIETLY)
-  message(STATUS "Found autoware_auto_msgs: 1.0.0 (${autoware_auto_msgs_DIR})")
+  message(STATUS "Found autoware_auto_msgs: 0.1.0 (${autoware_auto_msgs_DIR})")
 endif()
 
 # warn when using a deprecated package

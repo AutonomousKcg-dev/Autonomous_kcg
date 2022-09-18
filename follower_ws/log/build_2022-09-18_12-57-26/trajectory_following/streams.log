@@ -1,0 +1,42 @@
+[0.010s] Invoking command in '/home/shovals/Documents/Autonomous_kcg/follower_ws/build/trajectory_following': AMENT_PREFIX_PATH=/home/shovals/Documents/Autonomous_kcg/follower_ws/install/autoware_auto_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/shovals/Documents/Autonomous_kcg/follower_ws/install/autoware_auto_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/shovals/Documents/Autonomous_kcg/follower_ws/install/autoware_auto_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/shovals/Documents/Autonomous_kcg/follower_ws/install/autoware_auto_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/shovals/Documents/Autonomous_kcg/follower_ws/src/trajectory_following -DCMAKE_INSTALL_PREFIX=/home/shovals/Documents/Autonomous_kcg/follower_ws/install/trajectory_following
+[0.099s] -- The C compiler identification is GNU 9.4.0
+[0.136s] -- The CXX compiler identification is GNU 9.4.0
+[0.139s] -- Check for working C compiler: /usr/bin/cc
+[0.189s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.190s] -- Detecting C compiler ABI info
+[0.244s] -- Detecting C compiler ABI info - done
+[0.252s] -- Detecting C compile features
+[0.252s] -- Detecting C compile features - done
+[0.255s] -- Check for working CXX compiler: /usr/bin/c++
+[0.319s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.319s] -- Detecting CXX compiler ABI info
+[0.380s] -- Detecting CXX compiler ABI info - done
+[0.396s] -- Detecting CXX compile features
+[0.396s] -- Detecting CXX compile features - done
+[0.398s] -- Found ament_cmake_auto: 0.9.9 (/opt/ros/foxy/share/ament_cmake_auto/cmake)
+[0.420s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.420s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.641s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.645s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.703s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.721s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.771s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.807s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.807s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.808s] -- Looking for pthread.h
+[0.855s] -- Looking for pthread.h - found
+[0.855s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.914s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[0.914s] -- Looking for pthread_create in pthreads
+[0.953s] -- Looking for pthread_create in pthreads - not found
+[0.953s] -- Looking for pthread_create in pthread
+[0.998s] -- Looking for pthread_create in pthread - found
+[0.999s] -- Found Threads: TRUE  
+[1.287s] CMake Error at CMakeLists.txt:22 (autoware_set_compile_options):
+[1.287s]   Unknown CMake command "autoware_set_compile_options".
+[1.287s] 
+[1.287s] 
+[1.288s] -- Configuring incomplete, errors occurred!
+[1.288s] See also "/home/shovals/Documents/Autonomous_kcg/follower_ws/build/trajectory_following/CMakeFiles/CMakeOutput.log".
+[1.288s] See also "/home/shovals/Documents/Autonomous_kcg/follower_ws/build/trajectory_following/CMakeFiles/CMakeError.log".
+[1.293s] Invoked command in '/home/shovals/Documents/Autonomous_kcg/follower_ws/build/trajectory_following' returned '1': AMENT_PREFIX_PATH=/home/shovals/Documents/Autonomous_kcg/follower_ws/install/autoware_auto_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/shovals/Documents/Autonomous_kcg/follower_ws/install/autoware_auto_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/shovals/Documents/Autonomous_kcg/follower_ws/install/autoware_auto_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/shovals/Documents/Autonomous_kcg/follower_ws/install/autoware_auto_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/shovals/Documents/Autonomous_kcg/follower_ws/src/trajectory_following -DCMAKE_INSTALL_PREFIX=/home/shovals/Documents/Autonomous_kcg/follower_ws/install/trajectory_following

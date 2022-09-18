@@ -1,0 +1,8 @@
+{
+  "package_name": "tracked_object_msgs",
+  "non_idl_tuples": [
+    "/home/shovals/Documents/Autonomous_kcg/follower_ws/src/msgs/tracked_object_msgs:msg/ObjectTypes.msg",
+    "/home/shovals/Documents/Autonomous_kcg/follower_ws/src/msgs/tracked_object_msgs:msg/TrackedObject.msg",
+    "/home/shovals/Documents/Autonomous_kcg/follower_ws/src/msgs/tracked_object_msgs:msg/TrackedObjectArray.msg"
+  ]
+}

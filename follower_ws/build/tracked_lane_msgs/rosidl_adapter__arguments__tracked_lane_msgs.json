@@ -1,0 +1,9 @@
+{
+  "package_name": "tracked_lane_msgs",
+  "non_idl_tuples": [
+    "/home/shovals/Documents/Autonomous_kcg/follower_ws/src/msgs/tracked_lane_msgs:msg/LaneResults.msg",
+    "/home/shovals/Documents/Autonomous_kcg/follower_ws/src/msgs/tracked_lane_msgs:msg/Lane.msg",
+    "/home/shovals/Documents/Autonomous_kcg/follower_ws/src/msgs/tracked_lane_msgs:msg/Boundary.msg",
+    "/home/shovals/Documents/Autonomous_kcg/follower_ws/src/msgs/tracked_lane_msgs:msg/Point.msg"
+  ]
+}

@@ -1,0 +1,4 @@
+Invoking command in '/home/shovals/Documents/Autonomous_kcg/follower_ws/build/autoware_auto_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/shovals/Documents/Autonomous_kcg/follower_ws/build/autoware_auto_msgs -- -j16 -l16
+Invoked command in '/home/shovals/Documents/Autonomous_kcg/follower_ws/build/autoware_auto_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/shovals/Documents/Autonomous_kcg/follower_ws/build/autoware_auto_msgs -- -j16 -l16
+Invoking command in '/home/shovals/Documents/Autonomous_kcg/follower_ws/build/autoware_auto_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/shovals/Documents/Autonomous_kcg/follower_ws/build/autoware_auto_msgs
+Invoked command in '/home/shovals/Documents/Autonomous_kcg/follower_ws/build/autoware_auto_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/shovals/Documents/Autonomous_kcg/follower_ws/build/autoware_auto_msgs

@@ -1,0 +1,55 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tracked_object_msgs/msg/TrackedObject.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+#include "geometry_msgs/msg/Pose.idl"
+#include "geometry_msgs/msg/Twist.idl"
+#include "geometry_msgs/msg/Vector3.idl"
+
+module tracked_object_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      " This message defines an object that has been detected and is being tracked accross multiple frames." "\n"
+      " Units must be meters for position, meters per second for velocity, radians per second for angular velocity." "\n"
+      " The field object_type must be set and interpreted using tracked_object_msgs/ObjectTypes." "\n"
+      " The field uuid must always be set with a unique value for each object.")
+    struct TrackedObject {
+      @verbatim (language="comment", text=
+        " UUID for tracking an object across multiple messages")
+      uint32 uuid;
+
+      @verbatim (language="comment", text=
+        " Timestamp associated with this message.")
+      builtin_interfaces::msg::Time stamp;
+
+      @verbatim (language="comment", text=
+        " Type identifier of object (see TrimbleObjectTypes.msg)")
+      uint32 object_type;
+
+      @verbatim (language="comment", text=
+        " Transform from the body frame of object to a base frame")
+      geometry_msgs::msg::Pose object_pose_m_quat;
+
+      @verbatim (language="comment", text=
+        " Name of the base frame")
+      string base_frame_id;
+
+      @verbatim (language="comment", text=
+        " 6 dof velocity of the object in the object (obj) frame")
+      geometry_msgs::msg::Twist object_velocity_mps_radps;
+
+      @verbatim (language="comment", text=
+        " Bounding box dimensions along object body x- y- and z-axis")
+      geometry_msgs::msg::Vector3 box_dimensions_m;
+
+      @verbatim (language="comment", text=
+        " Confidence")
+      float confidence;
+
+      @verbatim (language="comment", text=
+        " Arbitrary meta data")
+      string metadata;
+    };
+  };
+};

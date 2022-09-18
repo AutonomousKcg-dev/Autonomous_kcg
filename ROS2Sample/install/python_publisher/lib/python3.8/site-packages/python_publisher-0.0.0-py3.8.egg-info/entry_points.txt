@@ -1,6 +1,7 @@
 [console_scripts]
 acc = python_publisher.adaptive_cruise_control:main
 acc_vaya = python_publisher.adaptive_cruise_control_vaya:main
+convertor = python_publisher.gps_to_plane:main
 gev = python_publisher.google_earth_viz:main
 pid = controllerPID.PID:output
 publisher = python_publisher.steertry:main

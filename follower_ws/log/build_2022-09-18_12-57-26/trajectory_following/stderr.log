@@ -1,0 +1,4 @@
+CMake Error at CMakeLists.txt:22 (autoware_set_compile_options):
+  Unknown CMake command "autoware_set_compile_options".
+
+

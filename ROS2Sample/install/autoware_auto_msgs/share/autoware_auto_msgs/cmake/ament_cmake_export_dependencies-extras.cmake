@@ -1,6 +1,6 @@
 # generated from ament_cmake_export_dependencies/cmake/ament_cmake_export_dependencies-extras.cmake.in
 
-set(_exported_dependencies "builtin_interfaces;std_msgs;builtin_interfaces;std_msgs;rosidl_runtime_c;rosidl_typesupport_interface;builtin_interfaces;std_msgs;builtin_interfaces;std_msgs;builtin_interfaces;std_msgs")
+set(_exported_dependencies "std_msgs;geometry_msgs;sensor_msgs;action_msgs;std_msgs;builtin_interfaces;geometry_msgs;sensor_msgs;action_msgs;unique_identifier_msgs;rosidl_runtime_c;rosidl_typesupport_interface;std_msgs;builtin_interfaces;geometry_msgs;sensor_msgs;action_msgs;unique_identifier_msgs;std_msgs;builtin_interfaces;geometry_msgs;sensor_msgs;action_msgs;unique_identifier_msgs;action_msgs;geometry_msgs;sensor_msgs;std_msgs")
 
 find_package(ament_cmake_libraries QUIET REQUIRED)
 

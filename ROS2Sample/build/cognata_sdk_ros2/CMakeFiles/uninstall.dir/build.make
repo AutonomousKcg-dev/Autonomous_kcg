@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kcg/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2
+CMAKE_SOURCE_DIR = /home/shovals/Documents/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kcg/Autonomous_kcg/ROS2Sample/build/cognata_sdk_ros2
+CMAKE_BINARY_DIR = /home/shovals/Documents/Autonomous_kcg/ROS2Sample/build/cognata_sdk_ros2
 
 # Utility rule file for uninstall.
 
@@ -67,6 +67,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/kcg/Autonomous_kcg/ROS2Sample/build/cognata_sdk_ros2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kcg/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2 /home/kcg/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2 /home/kcg/Autonomous_kcg/ROS2Sample/build/cognata_sdk_ros2 /home/kcg/Autonomous_kcg/ROS2Sample/build/cognata_sdk_ros2 /home/kcg/Autonomous_kcg/ROS2Sample/build/cognata_sdk_ros2/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/shovals/Documents/Autonomous_kcg/ROS2Sample/build/cognata_sdk_ros2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/shovals/Documents/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2 /home/shovals/Documents/Autonomous_kcg/ROS2Sample/src/cognata_sdk_ros2 /home/shovals/Documents/Autonomous_kcg/ROS2Sample/build/cognata_sdk_ros2 /home/shovals/Documents/Autonomous_kcg/ROS2Sample/build/cognata_sdk_ros2 /home/shovals/Documents/Autonomous_kcg/ROS2Sample/build/cognata_sdk_ros2/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

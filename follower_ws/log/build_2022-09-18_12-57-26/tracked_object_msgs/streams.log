@@ -1,0 +1,126 @@
+[0.017s] Invoking command in '/home/shovals/Documents/Autonomous_kcg/follower_ws/build/tracked_object_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/shovals/Documents/Autonomous_kcg/follower_ws/src/msgs/tracked_object_msgs -DCMAKE_INSTALL_PREFIX=/home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs
+[0.061s] -- The C compiler identification is GNU 9.4.0
+[0.106s] -- The CXX compiler identification is GNU 9.4.0
+[0.111s] -- Check for working C compiler: /usr/bin/cc
+[0.160s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.161s] -- Detecting C compiler ABI info
+[0.207s] -- Detecting C compiler ABI info - done
+[0.218s] -- Detecting C compile features
+[0.218s] -- Detecting C compile features - done
+[0.221s] -- Check for working CXX compiler: /usr/bin/c++
+[0.278s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.279s] -- Detecting CXX compiler ABI info
+[0.337s] -- Detecting CXX compiler ABI info - done
+[0.347s] -- Detecting CXX compile features
+[0.347s] -- Detecting CXX compile features - done
+[0.348s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.365s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.365s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.503s] -- Found builtin_interfaces: 1.0.0 (/opt/ros/foxy/share/builtin_interfaces/cmake)
+[0.520s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.523s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.580s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.599s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.647s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.664s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[0.700s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[0.723s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[0.853s] -- Found ament_cmake_cppcheck: 0.9.6 (/opt/ros/foxy/share/ament_cmake_cppcheck/cmake)
+[0.855s] -- Found ament_cmake_cpplint: 0.9.6 (/opt/ros/foxy/share/ament_cmake_cpplint/cmake)
+[0.856s] -- Found ament_cmake_uncrustify: 0.9.6 (/opt/ros/foxy/share/ament_cmake_uncrustify/cmake)
+[0.857s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[1.015s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.092s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.112s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[1.113s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[1.138s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[1.139s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.139s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[1.139s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[1.158s] -- Found PythonExtra: .so  
+[1.233s] -- Found ament_cmake_flake8: 0.9.6 (/opt/ros/foxy/share/ament_cmake_flake8/cmake)
+[1.235s] -- Found ament_cmake_pep257: 0.9.6 (/opt/ros/foxy/share/ament_cmake_pep257/cmake)
+[1.236s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.246s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.246s] -- Added test 'lint_cmake' to check CMake code style
+[1.246s] -- Added test 'xmllint' to check XML markup files
+[1.249s] -- Configuring done
+[1.300s] -- Generating done
+[1.302s] -- Build files have been written to: /home/shovals/Documents/Autonomous_kcg/follower_ws/build/tracked_object_msgs
+[1.310s] Invoked command in '/home/shovals/Documents/Autonomous_kcg/follower_ws/build/tracked_object_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/shovals/Documents/Autonomous_kcg/follower_ws/src/msgs/tracked_object_msgs -DCMAKE_INSTALL_PREFIX=/home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs
+[1.313s] Invoking command in '/home/shovals/Documents/Autonomous_kcg/follower_ws/build/tracked_object_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/shovals/Documents/Autonomous_kcg/follower_ws/build/tracked_object_msgs -- -j16 -l16
+[1.345s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.347s] [35m[1mScanning dependencies of target tracked_object_msgs__cpp[0m
+[1.358s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.435s] [  4%] Built target tracked_object_msgs__cpp
+[2.447s] [35m[1mScanning dependencies of target tracked_object_msgs__rosidl_generator_c[0m
+[2.447s] [  6%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.457s] [  8%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.458s] [ 10%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.468s] [ 12%] [32mBuilding C object CMakeFiles/tracked_object_msgs__rosidl_generator_c.dir/rosidl_generator_c/tracked_object_msgs/msg/detail/object_types__functions.c.o[0m
+[2.469s] [ 14%] [32mBuilding C object CMakeFiles/tracked_object_msgs__rosidl_generator_c.dir/rosidl_generator_c/tracked_object_msgs/msg/detail/tracked_object__functions.c.o[0m
+[2.478s] [ 17%] [32mBuilding C object CMakeFiles/tracked_object_msgs__rosidl_generator_c.dir/rosidl_generator_c/tracked_object_msgs/msg/detail/tracked_object_array__functions.c.o[0m
+[2.514s] [ 19%] [32m[1mLinking C shared library libtracked_object_msgs__rosidl_generator_c.so[0m
+[2.543s] [ 19%] Built target tracked_object_msgs__rosidl_generator_c
+[2.552s] [ 23%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.552s] [ 23%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[3.043s] [35m[1mScanning dependencies of target tracked_object_msgs__rosidl_typesupport_cpp[0m
+[3.056s] [ 27%] [32mBuilding CXX object CMakeFiles/tracked_object_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tracked_object_msgs/msg/tracked_object__type_support.cpp.o[0m
+[3.056s] [ 27%] [32mBuilding CXX object CMakeFiles/tracked_object_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tracked_object_msgs/msg/object_types__type_support.cpp.o[0m
+[3.056s] [ 29%] [32mBuilding CXX object CMakeFiles/tracked_object_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tracked_object_msgs/msg/tracked_object_array__type_support.cpp.o[0m
+[3.080s] [35m[1mScanning dependencies of target tracked_object_msgs__rosidl_typesupport_c[0m
+[3.094s] [ 36%] [32mBuilding CXX object CMakeFiles/tracked_object_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tracked_object_msgs/msg/tracked_object__type_support.cpp.o[0m
+[3.094s] [ 36%] [32mBuilding CXX object CMakeFiles/tracked_object_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tracked_object_msgs/msg/tracked_object_array__type_support.cpp.o[0m
+[3.094s] [ 36%] [32mBuilding CXX object CMakeFiles/tracked_object_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tracked_object_msgs/msg/object_types__type_support.cpp.o[0m
+[3.124s] [35m[1mScanning dependencies of target tracked_object_msgs__rosidl_typesupport_introspection_c[0m
+[3.128s] [ 38%] [32m[1mLinking CXX shared library libtracked_object_msgs__rosidl_typesupport_c.so[0m
+[3.140s] [ 44%] [32mBuilding C object CMakeFiles/tracked_object_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tracked_object_msgs/msg/detail/tracked_object__type_support.c.o[0m
+[3.140s] [ 44%] [32mBuilding C object CMakeFiles/tracked_object_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tracked_object_msgs/msg/detail/object_types__type_support.c.o[0m
+[3.140s] [ 44%] [32mBuilding C object CMakeFiles/tracked_object_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tracked_object_msgs/msg/detail/tracked_object_array__type_support.c.o[0m
+[3.164s] [ 44%] Built target tracked_object_msgs__rosidl_typesupport_c
+[3.169s] [35m[1mScanning dependencies of target tracked_object_msgs__rosidl_typesupport_introspection_cpp[0m
+[3.176s] [35m[1mScanning dependencies of target tracked_object_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[3.176s] [ 46%] [32m[1mLinking C shared library libtracked_object_msgs__rosidl_typesupport_introspection_c.so[0m
+[3.181s] [ 48%] [32mBuilding CXX object CMakeFiles/tracked_object_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tracked_object_msgs/msg/detail/object_types__type_support.cpp.o[0m
+[3.182s] [ 51%] [32mBuilding CXX object CMakeFiles/tracked_object_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tracked_object_msgs/msg/detail/tracked_object__type_support.cpp.o[0m
+[3.182s] [ 53%] [32mBuilding CXX object CMakeFiles/tracked_object_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tracked_object_msgs/msg/detail/tracked_object_array__type_support.cpp.o[0m
+[3.190s] [ 57%] [32mBuilding CXX object CMakeFiles/tracked_object_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tracked_object_msgs/msg/detail/dds_fastrtps/object_types__type_support.cpp.o[0m
+[3.190s] [ 57%] [32mBuilding CXX object CMakeFiles/tracked_object_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tracked_object_msgs/msg/detail/dds_fastrtps/tracked_object_array__type_support.cpp.o[0m
+[3.191s] [ 59%] [32mBuilding CXX object CMakeFiles/tracked_object_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tracked_object_msgs/msg/detail/dds_fastrtps/tracked_object__type_support.cpp.o[0m
+[3.210s] [ 59%] Built target tracked_object_msgs__rosidl_typesupport_introspection_c
+[3.353s] [ 61%] [32m[1mLinking CXX shared library libtracked_object_msgs__rosidl_typesupport_cpp.so[0m
+[3.400s] [ 61%] Built target tracked_object_msgs__rosidl_typesupport_cpp
+[3.548s] [ 63%] [32m[1mLinking CXX shared library libtracked_object_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[3.609s] [ 63%] Built target tracked_object_msgs__rosidl_typesupport_introspection_cpp
+[3.700s] [ 65%] [32m[1mLinking CXX shared library libtracked_object_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[3.763s] [ 65%] Built target tracked_object_msgs__rosidl_typesupport_fastrtps_cpp
+[3.769s] [ 68%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[4.265s] [35m[1mScanning dependencies of target tracked_object_msgs__rosidl_typesupport_fastrtps_c[0m
+[4.278s] [ 70%] [32mBuilding CXX object CMakeFiles/tracked_object_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tracked_object_msgs/msg/detail/object_types__type_support_c.cpp.o[0m
+[4.278s] [ 72%] [32mBuilding CXX object CMakeFiles/tracked_object_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tracked_object_msgs/msg/detail/tracked_object__type_support_c.cpp.o[0m
+[4.278s] [ 74%] [32mBuilding CXX object CMakeFiles/tracked_object_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tracked_object_msgs/msg/detail/tracked_object_array__type_support_c.cpp.o[0m
+[4.543s] [ 76%] [32m[1mLinking CXX shared library libtracked_object_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[4.604s] [ 76%] Built target tracked_object_msgs__rosidl_typesupport_fastrtps_c
+[4.612s] [35m[1mScanning dependencies of target tracked_object_msgs[0m
+[4.621s] [ 76%] Built target tracked_object_msgs
+[4.628s] [35m[1mScanning dependencies of target tracked_object_msgs__py[0m
+[4.634s] [ 78%] [34m[1mGenerating Python code for ROS interfaces[0m
+[5.460s] [ 78%] Built target tracked_object_msgs__py
+[5.466s] [35m[1mScanning dependencies of target tracked_object_msgs__python[0m
+[5.478s] [ 80%] [32mBuilding C object CMakeFiles/tracked_object_msgs__python.dir/rosidl_generator_py/tracked_object_msgs/msg/_object_types_s.c.o[0m
+[5.479s] [ 82%] [32mBuilding C object CMakeFiles/tracked_object_msgs__python.dir/rosidl_generator_py/tracked_object_msgs/msg/_tracked_object_s.c.o[0m
+[5.480s] [ 85%] [32mBuilding C object CMakeFiles/tracked_object_msgs__python.dir/rosidl_generator_py/tracked_object_msgs/msg/_tracked_object_array_s.c.o[0m
+[5.536s] [ 87%] [32m[1mLinking C shared library rosidl_generator_py/tracked_object_msgs/libtracked_object_msgs__python.so[0m
+[5.561s] [ 87%] Built target tracked_object_msgs__python
+[5.568s] [35m[1mScanning dependencies of target tracked_object_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[5.568s] [35m[1mScanning dependencies of target tracked_object_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[5.568s] [35m[1mScanning dependencies of target tracked_object_msgs__rosidl_typesupport_c__pyext[0m
+[5.580s] [ 91%] [32mBuilding C object CMakeFiles/tracked_object_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/tracked_object_msgs/_tracked_object_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[5.580s] [ 91%] [32mBuilding C object CMakeFiles/tracked_object_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/tracked_object_msgs/_tracked_object_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[5.581s] [ 93%] [32mBuilding C object CMakeFiles/tracked_object_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/tracked_object_msgs/_tracked_object_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[5.634s] [100%] [32m[1mLinking C shared library rosidl_generator_py/tracked_object_msgs/tracked_object_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[5.634s] [100%] [32m[1mLinking C shared library rosidl_generator_py/tracked_object_msgs/tracked_object_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[5.635s] [100%] [32m[1mLinking CXX shared library rosidl_generator_py/tracked_object_msgs/tracked_object_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
+[5.658s] [100%] Built target tracked_object_msgs__rosidl_typesupport_c__pyext
+[5.658s] [100%] Built target tracked_object_msgs__rosidl_typesupport_introspection_c__pyext
+[5.675s] [100%] Built target tracked_object_msgs__rosidl_typesupport_fastrtps_c__pyext

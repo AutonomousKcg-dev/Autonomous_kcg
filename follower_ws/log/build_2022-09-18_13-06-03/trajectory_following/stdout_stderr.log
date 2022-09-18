@@ -1,0 +1,17 @@
+[ 16%] [32mBuilding CXX object CMakeFiles/trajectory_following.dir/src/trajectory_following_node.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/trajectory_following.dir/src/trajectory_following.cpp.o[0m
+In file included from [01m[K/home/shovals/Documents/Autonomous_kcg/follower_ws/src/trajectory_following/src/trajectory_following.cpp:4[m[K:
+[01m[K/home/shovals/Documents/Autonomous_kcg/follower_ws/src/trajectory_following/include/trajectory_following/trajectory_following.hpp:4:10:[m[K [01;31m[Kfatal error: [m[Kautoware_auto_msgs/msg/vehicle_kinematic_state.hpp: No such file or directory
+    4 | #include [01;31m[K<autoware_auto_msgs/msg/vehicle_kinematic_state.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/trajectory_following.dir/build.make:76: CMakeFiles/trajectory_following.dir/src/trajectory_following.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/shovals/Documents/Autonomous_kcg/follower_ws/src/trajectory_following/src/trajectory_following_node.cpp:13[m[K:
+[01m[K/home/shovals/Documents/Autonomous_kcg/follower_ws/src/trajectory_following/include/trajectory_following/trajectory_following.hpp:4:10:[m[K [01;31m[Kfatal error: [m[Kautoware_auto_msgs/msg/vehicle_kinematic_state.hpp: No such file or directory
+    4 | #include [01;31m[K<autoware_auto_msgs/msg/vehicle_kinematic_state.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/trajectory_following.dir/build.make:63: CMakeFiles/trajectory_following.dir/src/trajectory_following_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/trajectory_following.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

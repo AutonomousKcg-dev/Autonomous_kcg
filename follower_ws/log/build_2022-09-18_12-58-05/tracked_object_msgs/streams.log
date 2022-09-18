@@ -1,0 +1,163 @@
+[0.017s] Invoking command in '/home/shovals/Documents/Autonomous_kcg/follower_ws/build/tracked_object_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/shovals/Documents/Autonomous_kcg/follower_ws/build/tracked_object_msgs -- -j16 -l16
+[0.054s] [  2%] Built target tracked_object_msgs__cpp
+[0.058s] [ 12%] Built target tracked_object_msgs__rosidl_generator_c
+[0.076s] [ 23%] Built target tracked_object_msgs__rosidl_typesupport_cpp
+[0.079s] [ 34%] Built target tracked_object_msgs__rosidl_typesupport_introspection_cpp
+[0.081s] [ 44%] Built target tracked_object_msgs__rosidl_typesupport_fastrtps_cpp
+[0.081s] [ 55%] Built target tracked_object_msgs__rosidl_typesupport_c
+[0.082s] [ 65%] Built target tracked_object_msgs__rosidl_typesupport_introspection_c
+[0.100s] [ 76%] Built target tracked_object_msgs__rosidl_typesupport_fastrtps_c
+[0.113s] [ 76%] Built target tracked_object_msgs
+[0.127s] [ 78%] Built target tracked_object_msgs__py
+[0.149s] [ 87%] Built target tracked_object_msgs__python
+[0.171s] [ 95%] Built target tracked_object_msgs__rosidl_typesupport_c__pyext
+[0.172s] [ 95%] Built target tracked_object_msgs__rosidl_typesupport_introspection_c__pyext
+[0.173s] [100%] Built target tracked_object_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.181s] Invoked command in '/home/shovals/Documents/Autonomous_kcg/follower_ws/build/tracked_object_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/shovals/Documents/Autonomous_kcg/follower_ws/build/tracked_object_msgs -- -j16 -l16
+[0.237s] Invoking command in '/home/shovals/Documents/Autonomous_kcg/follower_ws/build/tracked_object_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/shovals/Documents/Autonomous_kcg/follower_ws/build/tracked_object_msgs
+[0.244s] -- Install configuration: ""
+[0.244s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/ament_index/resource_index/rosidl_interfaces/tracked_object_msgs
+[0.244s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs
+[0.244s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg
+[0.244s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/rosidl_generator_c__visibility_control.h
+[0.244s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/tracked_object_array.h
+[0.244s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail
+[0.245s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail/tracked_object_array__type_support.h
+[0.245s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail/tracked_object__functions.h
+[0.245s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail/object_types__functions.c
+[0.245s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail/object_types__struct.h
+[0.245s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail/tracked_object_array__struct.h
+[0.245s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail/tracked_object_array__functions.h
+[0.245s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail/tracked_object_array__functions.c
+[0.245s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail/tracked_object__struct.h
+[0.245s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail/object_types__functions.h
+[0.245s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail/tracked_object__functions.c
+[0.245s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail/object_types__type_support.h
+[0.245s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail/tracked_object__type_support.h
+[0.246s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/object_types.h
+[0.246s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/tracked_object.h
+[0.246s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/tracked_object_msgs/environment/library_path.sh
+[0.246s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/tracked_object_msgs/environment/library_path.dsv
+[0.247s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/lib/libtracked_object_msgs__rosidl_generator_c.so
+[0.247s] -- Set runtime path of "/home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/lib/libtracked_object_msgs__rosidl_generator_c.so" to ""
+[0.248s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs
+[0.249s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg
+[0.249s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.251s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail
+[0.251s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail/tracked_object__rosidl_typesupport_fastrtps_c.h
+[0.252s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail/object_types__rosidl_typesupport_fastrtps_c.h
+[0.252s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail/tracked_object_array__rosidl_typesupport_fastrtps_c.h
+[0.256s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/lib/libtracked_object_msgs__rosidl_typesupport_fastrtps_c.so
+[0.256s] -- Set runtime path of "/home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/lib/libtracked_object_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[0.257s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs
+[0.257s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg
+[0.257s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.259s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail
+[0.259s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail/tracked_object__rosidl_typesupport_fastrtps_cpp.hpp
+[0.262s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail/dds_fastrtps
+[0.262s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail/object_types__rosidl_typesupport_fastrtps_cpp.hpp
+[0.271s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail/tracked_object_array__rosidl_typesupport_fastrtps_cpp.hpp
+[0.271s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/lib/libtracked_object_msgs__rosidl_typesupport_fastrtps_cpp.so
+[0.280s] -- Set runtime path of "/home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/lib/libtracked_object_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[0.281s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs
+[0.282s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg
+[0.283s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail
+[0.283s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail/tracked_object__rosidl_typesupport_introspection_c.h
+[0.286s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail/tracked_object_array__type_support.c
+[0.287s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail/tracked_object_array__rosidl_typesupport_introspection_c.h
+[0.288s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail/object_types__rosidl_typesupport_introspection_c.h
+[0.288s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail/object_types__type_support.c
+[0.289s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail/tracked_object__type_support.c
+[0.289s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.289s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/lib/libtracked_object_msgs__rosidl_typesupport_introspection_c.so
+[0.294s] -- Set runtime path of "/home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/lib/libtracked_object_msgs__rosidl_typesupport_introspection_c.so" to ""
+[0.295s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/lib/libtracked_object_msgs__rosidl_typesupport_c.so
+[0.298s] -- Set runtime path of "/home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/lib/libtracked_object_msgs__rosidl_typesupport_c.so" to ""
+[0.298s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs
+[0.298s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg
+[0.298s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/object_types.hpp
+[0.299s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/tracked_object.hpp
+[0.299s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail
+[0.299s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail/tracked_object__builder.hpp
+[0.300s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail/tracked_object_array__builder.hpp
+[0.300s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail/object_types__builder.hpp
+[0.301s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail/tracked_object__struct.hpp
+[0.301s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail/tracked_object__traits.hpp
+[0.302s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail/tracked_object_array__struct.hpp
+[0.302s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail/object_types__traits.hpp
+[0.303s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail/tracked_object_array__traits.hpp
+[0.303s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail/object_types__struct.hpp
+[0.303s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/tracked_object_array.hpp
+[0.303s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs
+[0.303s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg
+[0.304s] -- Up-to-date: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail
+[0.304s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail/object_types__type_support.cpp
+[0.305s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail/object_types__rosidl_typesupport_introspection_cpp.hpp
+[0.305s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail/tracked_object_array__type_support.cpp
+[0.306s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail/tracked_object_array__rosidl_typesupport_introspection_cpp.hpp
+[0.306s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail/tracked_object__type_support.cpp
+[0.306s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/include/tracked_object_msgs/msg/detail/tracked_object__rosidl_typesupport_introspection_cpp.hpp
+[0.306s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/lib/libtracked_object_msgs__rosidl_typesupport_introspection_cpp.so
+[0.307s] -- Set runtime path of "/home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/lib/libtracked_object_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[0.307s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/lib/libtracked_object_msgs__rosidl_typesupport_cpp.so
+[0.307s] -- Set runtime path of "/home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/lib/libtracked_object_msgs__rosidl_typesupport_cpp.so" to ""
+[0.307s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/tracked_object_msgs/environment/pythonpath.sh
+[0.307s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/tracked_object_msgs/environment/pythonpath.dsv
+[0.307s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/lib/python3.8/site-packages/tracked_object_msgs/__init__.py
+[0.307s] Compiling '/home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/lib/python3.8/site-packages/tracked_object_msgs/__init__.py'...
+[0.313s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/lib/python3.8/site-packages/tracked_object_msgs/msg
+[0.315s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/lib/python3.8/site-packages/tracked_object_msgs/msg/_tracked_object_array.py
+[0.315s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/lib/python3.8/site-packages/tracked_object_msgs/msg/_object_types.py
+[0.316s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/lib/python3.8/site-packages/tracked_object_msgs/msg/__init__.py
+[0.316s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/lib/python3.8/site-packages/tracked_object_msgs/msg/_tracked_object.py
+[0.316s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/lib/python3.8/site-packages/tracked_object_msgs/msg/_object_types_s.c
+[0.320s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/lib/python3.8/site-packages/tracked_object_msgs/msg/_tracked_object_s.c
+[0.320s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/lib/python3.8/site-packages/tracked_object_msgs/msg/_tracked_object_array_s.c
+[0.321s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/lib/python3.8/site-packages/tracked_object_msgs/tracked_object_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[0.321s] -- Set runtime path of "/home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/lib/python3.8/site-packages/tracked_object_msgs/tracked_object_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""
+[0.323s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/lib/python3.8/site-packages/tracked_object_msgs/tracked_object_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[0.324s] -- Set runtime path of "/home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/lib/python3.8/site-packages/tracked_object_msgs/tracked_object_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""
+[0.325s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/lib/python3.8/site-packages/tracked_object_msgs/tracked_object_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[0.326s] -- Set runtime path of "/home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/lib/python3.8/site-packages/tracked_object_msgs/tracked_object_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""
+[0.326s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/lib/libtracked_object_msgs__python.so
+[0.326s] -- Set runtime path of "/home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/lib/libtracked_object_msgs__python.so" to ""
+[0.326s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/tracked_object_msgs/msg/ObjectTypes.idl
+[0.326s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/tracked_object_msgs/msg/TrackedObject.idl
+[0.326s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/tracked_object_msgs/msg/TrackedObjectArray.idl
+[0.327s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/tracked_object_msgs/msg/ObjectTypes.msg
+[0.327s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/tracked_object_msgs/msg/TrackedObject.msg
+[0.327s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/tracked_object_msgs/msg/TrackedObjectArray.msg
+[0.330s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/ament_index/resource_index/package_run_dependencies/tracked_object_msgs
+[0.330s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/ament_index/resource_index/parent_prefix_path/tracked_object_msgs
+[0.331s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/tracked_object_msgs/environment/ament_prefix_path.sh
+[0.331s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/tracked_object_msgs/environment/ament_prefix_path.dsv
+[0.331s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/tracked_object_msgs/environment/path.sh
+[0.331s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/tracked_object_msgs/environment/path.dsv
+[0.332s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/tracked_object_msgs/local_setup.bash
+[0.332s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/tracked_object_msgs/local_setup.sh
+[0.333s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/tracked_object_msgs/local_setup.zsh
+[0.333s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/tracked_object_msgs/local_setup.dsv
+[0.333s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/tracked_object_msgs/package.dsv
+[0.333s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/ament_index/resource_index/packages/tracked_object_msgs
+[0.333s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/tracked_object_msgs/cmake/tracked_object_msgs__rosidl_generator_cExport.cmake
+[0.333s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/tracked_object_msgs/cmake/tracked_object_msgs__rosidl_generator_cExport-noconfig.cmake
+[0.333s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/tracked_object_msgs/cmake/tracked_object_msgs__rosidl_typesupport_introspection_cExport.cmake
+[0.333s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/tracked_object_msgs/cmake/tracked_object_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.334s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/tracked_object_msgs/cmake/tracked_object_msgs__rosidl_typesupport_cExport.cmake
+[0.334s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/tracked_object_msgs/cmake/tracked_object_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[0.334s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/tracked_object_msgs/cmake/tracked_object_msgs__rosidl_generator_cppExport.cmake
+[0.334s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/tracked_object_msgs/cmake/tracked_object_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[0.334s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/tracked_object_msgs/cmake/tracked_object_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.334s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/tracked_object_msgs/cmake/tracked_object_msgs__rosidl_typesupport_cppExport.cmake
+[0.335s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/tracked_object_msgs/cmake/tracked_object_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[0.335s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/tracked_object_msgs/cmake/rosidl_cmake-extras.cmake
+[0.336s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/tracked_object_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.336s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/tracked_object_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[0.336s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/tracked_object_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[0.337s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/tracked_object_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.338s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/tracked_object_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.338s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/tracked_object_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.338s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/tracked_object_msgs/cmake/tracked_object_msgsConfig.cmake
+[0.338s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/tracked_object_msgs/cmake/tracked_object_msgsConfig-version.cmake
+[0.338s] -- Installing: /home/shovals/Documents/Autonomous_kcg/follower_ws/install/tracked_object_msgs/share/tracked_object_msgs/package.xml
+[0.339s] Invoked command in '/home/shovals/Documents/Autonomous_kcg/follower_ws/build/tracked_object_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/shovals/Documents/Autonomous_kcg/follower_ws/build/tracked_object_msgs

@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tracked_lane_msgs/msg/Lane.msg
+// generated code does not contain a copyright notice
+
+#include "tracked_lane_msgs/msg/Boundary.idl"
+
+module tracked_lane_msgs {
+  module msg {
+    struct Lane {
+      tracked_lane_msgs::msg::Boundary left_boundary;
+
+      tracked_lane_msgs::msg::Boundary right_boundary;
+    };
+  };
+};

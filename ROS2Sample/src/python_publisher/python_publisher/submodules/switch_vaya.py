@@ -68,6 +68,7 @@ class switch_vaya:
         self.refernce_distance = ref_dist   # the distance the car should keep from its front car
         self.side_lane_look_ahead = (-30, 30)  # meters
         self.min_speed = 5     # front car should be atleast that speed
+        self.changed_lane = True
     
     def update_objects(self, vehicle_list, pedestrian_list):
         """
@@ -203,46 +204,47 @@ class switch_vaya:
             (self.front_car.velocity_x, self.front_car.velocity_y)) * 3.6
 
         # print(front_car_speed)
+        self.state = State.ACC
 
-        if self.state == State.ACC:
-            if self.object_priority(self.front_car, self.front_ped):
-                # ped is closer
-                if self.front_ped.distance_x < self.refernce_distance:
-                    # STOP!!!!
-                    self.state = State.STOP_PED
-            else:
-                # car is closer
-                if self.front_car.distance_x < self.refernce_distance:
-                    # car is damn close
-                    # Debug
-                    print("Front Car Speed: ", front_car_speed)
-                    if front_car_speed < self.min_speed:
-                        # the car infornt of us is slow af
-                        self.state = State.STOP_CAR
-                    elif front_car_speed < self.speed:
-                        # we want tp switch lane
-                        if self.switch_lane_is_possible():
-                            # we want and can switch lane
-                            self.state = State.CHANGE_LANE
-                        # else, keep on ACC
-        elif self.state == State.STOP_PED:
-            # DECIDE WHETER TO HOLD THE BRAKE OR MOVE TO ACC
-            if self.front_ped.distance_y > self.radius or self.front_ped.distance_y < -self.radius:
-                # ped cleared the way
-                self.state = State.ACC
-        elif self.state == State.STOP_CAR:
-            if self.front_car.distance_x > self.refernce_distance:
-                # front car cleared way
-                self.state = State.ACC
-            elif front_car_speed > self.min_speed:
-                # front car is speeding
-                self.state = State.ACC
+        # if self.state == State.ACC:
+        #     if self.object_priority(self.front_car, self.front_ped):
+        #         # ped is closer
+        #         if self.front_ped.distance_x < self.refernce_distance:
+        #             # STOP!!!!
+        #             self.state = State.STOP_PED
+        #     else:
+        #         # car is closer
+        #         if self.front_car.distance_x < self.refernce_distance:
+        #             # car is damn close
+        #             # Debug
+        #             print("Front Car Speed: ", front_car_speed)
+        #             if front_car_speed < self.min_speed:
+        #                 # the car infornt of us is slow af
+        #                 self.state = State.STOP_CAR
+        #             elif front_car_speed < self.speed:
+        #                 # we want tp switch lane
+        #                 if self.switch_lane_is_possible():
+        #                     # we want and can switch lane
+        #                     self.state = State.CHANGE_LANE
+        #                 # else, keep on ACC
+        # elif self.state == State.STOP_PED:
+        #     # DECIDE WHETER TO HOLD THE BRAKE OR MOVE TO ACC
+        #     if self.front_ped.distance_y > self.radius or self.front_ped.distance_y < -self.radius:
+        #         # ped cleared the way
+        #         self.state = State.ACC
+        # elif self.state == State.STOP_CAR:
+        #     if self.front_car.distance_x > self.refernce_distance:
+        #         # front car cleared way
+        #         self.state = State.ACC
+        #     elif front_car_speed > self.min_speed:
+        #         # front car is speeding
+        #         self.state = State.ACC
 
-        else:
-            # STATE = CHANGE_LANE
-            if self.changed_lane:
-                self.state = State.ACC
-                self.changed_lane = False
+        # else:
+        #     # STATE = CHANGE_LANE
+        #     if self.changed_lane:
+        #         self.state = State.ACC
+        #         self.changed_lane = False
             
         # DEBUG
         self.print_debug()

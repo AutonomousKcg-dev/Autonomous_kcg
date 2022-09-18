@@ -1,7 +1,0 @@
-[console_scripts]
-acc = python_publisher.adaptive_cruise_control:main
-gev = python_publisher.google_earth_viz:main
-pid = controllerPID.PID:output
-publisher = python_publisher.steertry:main
-rcc = python_publisher.record_sub:main
-

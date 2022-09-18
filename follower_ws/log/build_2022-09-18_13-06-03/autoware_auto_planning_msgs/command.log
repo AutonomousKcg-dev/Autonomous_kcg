@@ -1,0 +1,1 @@
+Invoking command in '/home/shovals/Documents/Autonomous_kcg/follower_ws/build/autoware_auto_planning_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/shovals/Documents/Autonomous_kcg/follower_ws/src/msgs/autoware_auto_planning_msgs -DCMAKE_INSTALL_PREFIX=/home/shovals/Documents/Autonomous_kcg/follower_ws/install/autoware_auto_planning_msgs
